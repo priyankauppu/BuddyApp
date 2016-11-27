@@ -135,8 +135,36 @@ SWIFT_CLASS("_TtC5Buddy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
+@class UITextField;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC5Buddy19LoginViewController")
+@interface LoginViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
+@property (nonatomic) NSInteger flag;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)Submit:(id _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC5Buddy22PriyankaViewController")
+@interface PriyankaViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pri;
+@property (nonatomic, copy) NSString * _Nonnull trytext;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC5Buddy14ViewController")
 @interface ViewController : UIViewController

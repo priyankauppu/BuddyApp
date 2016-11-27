@@ -11,9 +11,12 @@
 		999725031DEA8576004CEB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999725021DEA8576004CEB70 /* ViewController.swift */; };
 		999725061DEA8577004CEB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999725041DEA8576004CEB70 /* Main.storyboard */; };
 		999725081DEA8577004CEB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999725071DEA8577004CEB70 /* Assets.xcassets */; };
-		9997250B1DEA8577004CEB70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999725091DEA8577004CEB70 /* LaunchScreen.storyboard */; };
 		999725161DEA8577004CEB70 /* BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999725151DEA8577004CEB70 /* BuddyTests.swift */; };
 		999725211DEA8577004CEB70 /* BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999725201DEA8577004CEB70 /* BuddyUITests.swift */; };
+		999725361DEAA310004CEB70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999725351DEAA310004CEB70 /* LoginViewController.swift */; };
+		9997253B1DEAA55E004CEB70 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997253A1DEAA55E004CEB70 /* SWRevealViewController.m */; };
+		999725411DEAACB2004CEB70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999725401DEAACB2004CEB70 /* LaunchScreen.xib */; };
+		999725431DEAB148004CEB70 /* PriyankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999725421DEAB148004CEB70 /* PriyankaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		999725021DEA8576004CEB70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		999725051DEA8576004CEB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		999725071DEA8577004CEB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9997250A1DEA8577004CEB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9997250C1DEA8577004CEB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999725111DEA8577004CEB70 /* BuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		999725151DEA8577004CEB70 /* BuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyTests.swift; sourceTree = "<group>"; };
@@ -47,6 +49,12 @@
 		9997251C1DEA8577004CEB70 /* BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		999725201DEA8577004CEB70 /* BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyUITests.swift; sourceTree = "<group>"; };
 		999725221DEA8577004CEB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999725351DEAA310004CEB70 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		999725381DEAA55D004CEB70 /* Buddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Buddy-Bridging-Header.h"; sourceTree = "<group>"; };
+		999725391DEAA55E004CEB70 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		9997253A1DEAA55E004CEB70 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		999725401DEAACB2004CEB70 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		999725421DEAB148004CEB70 /* PriyankaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriyankaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,15 @@
 		999724FF1DEA8576004CEB70 /* Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				999725401DEAACB2004CEB70 /* LaunchScreen.xib */,
+				999725371DEAA53F004CEB70 /* SWRevealViewController */,
 				999725001DEA8576004CEB70 /* AppDelegate.swift */,
 				999725021DEA8576004CEB70 /* ViewController.swift */,
 				999725041DEA8576004CEB70 /* Main.storyboard */,
 				999725071DEA8577004CEB70 /* Assets.xcassets */,
-				999725091DEA8577004CEB70 /* LaunchScreen.storyboard */,
 				9997250C1DEA8577004CEB70 /* Info.plist */,
+				999725351DEAA310004CEB70 /* LoginViewController.swift */,
+				999725421DEAB148004CEB70 /* PriyankaViewController.swift */,
 			);
 			path = Buddy;
 			sourceTree = "<group>";
@@ -123,6 +134,16 @@
 				999725221DEA8577004CEB70 /* Info.plist */,
 			);
 			path = BuddyUITests;
+			sourceTree = "<group>";
+		};
+		999725371DEAA53F004CEB70 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				999725381DEAA55D004CEB70 /* Buddy-Bridging-Header.h */,
+				9997253A1DEAA55E004CEB70 /* SWRevealViewController.m */,
+				999725391DEAA55E004CEB70 /* SWRevealViewController.h */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +215,7 @@
 					999724FC1DEA8576004CEB70 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 2W2ZFX86X8;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					999725101DEA8577004CEB70 = {
@@ -235,7 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9997250B1DEA8577004CEB70 /* LaunchScreen.storyboard in Resources */,
+				999725411DEAACB2004CEB70 /* LaunchScreen.xib in Resources */,
 				999725081DEA8577004CEB70 /* Assets.xcassets in Resources */,
 				999725061DEA8577004CEB70 /* Main.storyboard in Resources */,
 			);
@@ -262,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999725361DEAA310004CEB70 /* LoginViewController.swift in Sources */,
 				999725031DEA8576004CEB70 /* ViewController.swift in Sources */,
 				999725011DEA8576004CEB70 /* AppDelegate.swift in Sources */,
+				999725431DEAB148004CEB70 /* PriyankaViewController.swift in Sources */,
+				9997253B1DEAA55E004CEB70 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +330,6 @@
 				999725051DEA8576004CEB70 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		999725091DEA8577004CEB70 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9997250A1DEA8577004CEB70 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,11 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2W2ZFX86X8;
 				INFOPLIST_FILE = Buddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.buddy.uppu.Buddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Buddy/Buddy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,11 +448,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2W2ZFX86X8;
 				INFOPLIST_FILE = Buddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.buddy.uppu.Buddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Buddy/Buddy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
