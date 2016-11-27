@@ -1,8 +1,9 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "8287bf2b150039cd4e867cbbefa704b7"
-build_time: [533543045, 969032000]
+build_time: [533596118, 871270000]
 inputs:
-  "/Users/apple/Desktop/iOS/Buddy/Buddy/LoginViewController.swift": [533543045, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/LoginViewController.swift": [533586807, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/ViewController.swift": [533531254, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/GeoViewController.swift": [533595863, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/AppDelegate.swift": [533531254, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/PriyankaViewController.swift": [533542589, 0]

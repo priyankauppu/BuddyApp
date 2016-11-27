@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C5Buddy22PriyankaViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
-- "trytext"
 - "pri"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "trytext"
 depends-top-level:
-- "PriyankaViewController"
-- "UILabel"
-- "AssignmentPrecedence"
-- "String"
-- "UIViewController"
 - "StringLiteralType"
 - !private "print"
+- "PriyankaViewController"
+- "UILabel"
+- "String"
+- "UIViewController"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]

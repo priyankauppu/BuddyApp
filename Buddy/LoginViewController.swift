@@ -30,19 +30,20 @@ class LoginViewController: UIViewController {
         print("password=*",password.text)
         
         self.flag=1
-       performSegue(withIdentifier: "loginSeague", sender: view)
+      // performSegue(withIdentifier: "loginSegue", sender: view)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //if(flag==1){
            // performSegue(withIdentifier: "loginSeague", sender: view)
-        if (segue.identifier == "loginSeague" )
+        if (segue.identifier == "loginSegue" )
         {
-            let nextController = segue.destination as! PriyankaViewController
+            let nextController = segue.destination as! SWRevealViewController
             print ("Next Controller: *\(nextController)*")
-            let text1:String=String(describing: username.text)
-            nextController.trytext=text1
+            
+           // let text1:String=String(describing: username.text)
+            //nextController.trytext=text1
             
             }//}
     }

@@ -135,10 +135,21 @@ SWIFT_CLASS("_TtC5Buddy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIStoryboardSegue;
-@class UITextField;
+@class UIBarButtonItem;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC5Buddy17GeoViewController")
+@interface GeoViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIStoryboardSegue;
+@class UITextField;
 
 SWIFT_CLASS("_TtC5Buddy19LoginViewController")
 @interface LoginViewController : UIViewController
