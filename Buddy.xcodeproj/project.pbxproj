@@ -18,6 +18,7 @@
 		999725411DEAACB2004CEB70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999725401DEAACB2004CEB70 /* LaunchScreen.xib */; };
 		999725431DEAB148004CEB70 /* PriyankaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999725421DEAB148004CEB70 /* PriyankaViewController.swift */; };
 		999D23FC1DEB819D00CAEE59 /* GeoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999D23FB1DEB819D00CAEE59 /* GeoViewController.swift */; };
+		999D23FE1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999D23FD1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		999725401DEAACB2004CEB70 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		999725421DEAB148004CEB70 /* PriyankaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriyankaViewController.swift; sourceTree = "<group>"; };
 		999D23FB1DEB819D00CAEE59 /* GeoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoViewController.swift; sourceTree = "<group>"; };
+		999D23FD1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddiesGoingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				999725351DEAA310004CEB70 /* LoginViewController.swift */,
 				999725421DEAB148004CEB70 /* PriyankaViewController.swift */,
 				999D23FB1DEB819D00CAEE59 /* GeoViewController.swift */,
+				999D23FD1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift */,
 			);
 			path = Buddy;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				999D23FC1DEB819D00CAEE59 /* GeoViewController.swift in Sources */,
 				999725011DEA8576004CEB70 /* AppDelegate.swift in Sources */,
 				999725431DEAB148004CEB70 /* PriyankaViewController.swift in Sources */,
+				999D23FE1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift in Sources */,
 				9997253B1DEAA55E004CEB70 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

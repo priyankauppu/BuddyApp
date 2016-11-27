@@ -14,10 +14,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     var flag=0
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,8 +37,8 @@ class LoginViewController: UIViewController {
         print("password=*",password.text)
         
         self.flag=1
-      // performSegue(withIdentifier: "loginSegue", sender: view)
-        
+    performSegue(withIdentifier: "loginSegue", sender: view)
+    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,11 +46,11 @@ class LoginViewController: UIViewController {
            // performSegue(withIdentifier: "loginSeague", sender: view)
         if (segue.identifier == "loginSegue" )
         {
-            let nextController = segue.destination as! SWRevealViewController
+            let nextController = segue.destination as! UINavigationController
             print ("Next Controller: *\(nextController)*")
             
-           // let text1:String=String(describing: username.text)
-            //nextController.trytext=text1
+           let text1:String=String(describing: username.text)
+      // nextController.trytext=text1
             
             }//}
     }
