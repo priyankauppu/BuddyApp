@@ -1,2 +1,2 @@
 # Buddy
-V1: Added the map, MKCircle, Slider
+Added Login Screen
