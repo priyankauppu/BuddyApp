@@ -9,11 +9,19 @@
 import UIKit
 import MapKit
 import CoreLocation
+import HealthKit
 
 class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     @IBOutlet weak var healthData: UILabel!
+    //Health Data related
+    let healthStore = HKHealthStore()
+    let activeEnergyBurnedType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.activeEnergyBurned)
+    
+    
+    
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     var location:CLLocation=CLLocation()
@@ -44,7 +52,7 @@ class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocatio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //healthData.text="500 Cal/1000 Cal"
         // Do any additional setup after loading the view.
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -72,6 +80,50 @@ class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocatio
         
         drawCircle(location:location,radius: radius)
         addLongPressGesture()
+        
+        //Health Related display
+         let activeEnergy = NSSet(object: activeEnergyBurnedType!)
+        // Create the date components for the predicate
+        let calendar = NSCalendar.current
+        let now = NSDate()
+        
+        let components = calendar.dateComponents([.day, .month, .year], from: now as Date)
+        let startDate = calendar.date(from: components)
+        let endDate=calendar.date(byAdding:.day, value: 1, to: startDate!)
+        let sampleType = HKQuantityType.quantityType(
+            forIdentifier: HKQuantityTypeIdentifier.dietaryEnergyConsumed)
+        
+        let predicate = HKQuery.predicateForSamples(withStart: startDate,
+                                                    end: endDate, options: .strictStartDate)
+        
+        
+        
+        healthStore.requestAuthorization(toShare: nil,
+                                         read: activeEnergy as? Set<HKObjectType>,
+                                         completion: { [unowned self] (success, error) in
+                                            if success {
+                                                print("SUCCESS")
+                                            } else {
+                                                print(error.debugDescription)
+                                            }
+        })
+        let sumOption = HKStatisticsOptions.cumulativeSum
+        
+        let statisticsSumQuery = HKStatisticsQuery(quantityType: activeEnergyBurnedType!, quantitySamplePredicate: predicate,
+                                                   options: sumOption)
+        { [unowned self] (query, result, error) in
+            if let sumQuantity = result?.sumQuantity() {
+                print("**********\(sumQuantity)CALLLLLL*********")
+                var cal:String=String(describing: sumQuantity)
+                self.healthData.text="Calories Burnt Today : \(cal) / 500kCal"
+            }
+            
+            
+            
+        }
+        
+        healthStore.execute(statisticsSumQuery)
+        
     }
 
     override func didReceiveMemoryWarning() {

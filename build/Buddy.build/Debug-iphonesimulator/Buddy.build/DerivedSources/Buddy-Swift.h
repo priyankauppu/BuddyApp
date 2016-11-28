@@ -263,11 +263,15 @@ SWIFT_CLASS("_TtC5Buddy17GeoViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class HKHealthStore;
+@class HKQuantityType;
 
 SWIFT_CLASS("_TtC5Buddy27GeoWithHealthViewController")
 @interface GeoWithHealthViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified healthData;
+@property (nonatomic, readonly, strong) HKHealthStore * _Nonnull healthStore;
+@property (nonatomic, readonly, strong) HKQuantityType * _Nullable activeEnergyBurnedType;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, strong) CLLocation * _Nonnull location;

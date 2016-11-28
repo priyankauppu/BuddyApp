@@ -23,6 +23,7 @@
 		99B09C851DEC98E300A14B8B /* GeoWithHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B09C841DEC98E300A14B8B /* GeoWithHealthViewController.swift */; };
 		99B09C871DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B09C861DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift */; };
 		99B09C891DECA2B700A14B8B /* DirectionWithHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */; };
+		99B09C8D1DECBD1F00A14B8B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B09C8C1DECBD1F00A14B8B /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		99B09C841DEC98E300A14B8B /* GeoWithHealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoWithHealthViewController.swift; sourceTree = "<group>"; };
 		99B09C861DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddiesWithHealthGoingTableViewController.swift; sourceTree = "<group>"; };
 		99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionWithHealthViewController.swift; sourceTree = "<group>"; };
+		99B09C8A1DECBD1F00A14B8B /* Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Buddy.entitlements; sourceTree = "<group>"; };
+		99B09C8C1DECBD1F00A14B8B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B09C8D1DECBD1F00A14B8B /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +105,7 @@
 				999725141DEA8577004CEB70 /* BuddyTests */,
 				9997251F1DEA8577004CEB70 /* BuddyUITests */,
 				999724FE1DEA8576004CEB70 /* Products */,
+				99B09C8B1DECBD1F00A14B8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +122,7 @@
 		999724FF1DEA8576004CEB70 /* Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				99B09C8A1DECBD1F00A14B8B /* Buddy.entitlements */,
 				999725401DEAACB2004CEB70 /* LaunchScreen.xib */,
 				999725371DEAA53F004CEB70 /* SWRevealViewController */,
 				999725001DEA8576004CEB70 /* AppDelegate.swift */,
@@ -126,9 +132,7 @@
 				9997250C1DEA8577004CEB70 /* Info.plist */,
 				999725351DEAA310004CEB70 /* LoginViewController.swift */,
 				999725421DEAB148004CEB70 /* PriyankaViewController.swift */,
-				999D23FB1DEB819D00CAEE59 /* GeoViewController.swift */,
-				999D23FD1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift */,
-				999D23FF1DEBA71300CAEE59 /* DirectionViewController.swift */,
+				99B09C8E1DECBE9300A14B8B /* Find a restaurant */,
 				99B09C841DEC98E300A14B8B /* GeoWithHealthViewController.swift */,
 				99B09C861DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift */,
 				99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */,
@@ -162,6 +166,24 @@
 				999725391DEAA55E004CEB70 /* SWRevealViewController.h */,
 			);
 			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		99B09C8B1DECBD1F00A14B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99B09C8C1DECBD1F00A14B8B /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99B09C8E1DECBE9300A14B8B /* Find a restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				999D23FB1DEB819D00CAEE59 /* GeoViewController.swift */,
+				999D23FD1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift */,
+				999D23FF1DEBA71300CAEE59 /* DirectionViewController.swift */,
+			);
+			name = "Find a restaurant";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +257,11 @@
 						DevelopmentTeam = 2W2ZFX86X8;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					999725101DEA8577004CEB70 = {
 						CreatedOnToolsVersion = 8.1;
@@ -457,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Buddy/Buddy.entitlements;
 				DEVELOPMENT_TEAM = 2W2ZFX86X8;
 				INFOPLIST_FILE = Buddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -473,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Buddy/Buddy.entitlements;
 				DEVELOPMENT_TEAM = 2W2ZFX86X8;
 				INFOPLIST_FILE = Buddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

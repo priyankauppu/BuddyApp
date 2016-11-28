@@ -564,8 +564,8 @@
                                 <rect key="frame" x="0.0" y="557" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOA-jZ-4qY">
-                                <rect key="frame" x="296" y="85" width="60" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOA-jZ-4qY">
+                                <rect key="frame" x="0.0" y="85" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -698,8 +698,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="c5y-bt-GV9"/>
         <segue reference="nRa-Fb-dLF"/>
-        <segue reference="KOb-cZ-eps"/>
         <segue reference="Xav-l2-Tum"/>
+        <segue reference="vND-6X-TsK"/>
         <segue reference="Ztc-zu-oSk"/>
     </inferredMetricsTieBreakers>
 </document>

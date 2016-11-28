@@ -6,119 +6,133 @@ provides-nominal:
 provides-member:
 - ["C5Buddy27GeoWithHealthViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "menuButton"
-- "radius"
-- "pickerData"
-- "sortConvex"
-- "handleLongPress"
-- "location"
-- "sliderMoved"
-- "polygon"
-- "numberOfComponents"
-- "plotKnn"
-- "picker"
-- "locationManager"
-- "addRadiusCircle"
-- "prepare"
-- "knnChanged"
-- "annotations"
-- "knn"
-- "para"
-- "updateOverlay"
-- "selectedPickerData"
-- "urll"
-- "healthData"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "sliderValue"
-- "addLongPressGesture"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
 - "drawCircle"
+- "plotKnn"
+- "menuButton"
+- "knnChanged"
+- "picker"
+- "didReceiveMemoryWarning"
+- "polygon"
+- "updateOverlay"
+- "pickerData"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
+- "radius"
+- "addLongPressGesture"
+- "activeEnergyBurnedType"
 - "trytext"
+- "sortConvex"
+- "numberOfComponents"
 - "slider"
+- "prepare"
+- "sliderMoved"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "healthStore"
+- "urll"
 - "viewDidLoad"
+- "sliderValue"
+- "selectedPickerData"
+- "para"
+- "healthData"
+- "locationManager"
+- "knn"
+- "location"
+- "annotations"
+- "handleLongPress"
+- "addRadiusCircle"
 depends-top-level:
+- !private "CLLocationDistance"
+- !private "Set"
+- "Array"
+- "UILabel"
+- !private "HKObjectType"
+- "UIViewController"
+- !private "UIColor"
+- !private "NSDate"
+- "UISlider"
+- "MKPolygon"
+- !private "UIButton"
+- !private "&&"
+- "UIPickerViewDelegate"
+- "MKAnnotation"
+- !private "HKStatisticsOptions"
 - "MKMapViewDelegate"
 - "CLLocationManagerDelegate"
-- !private "NSMutableURLRequest"
-- "CLLocationCoordinate2D"
-- "MKPolygon"
-- "UIPickerViewDataSource"
-- "MKOverlayRenderer"
-- "CLLocation"
-- !private "!="
-- "GeoWithHealthViewController"
-- "UIPickerView"
-- !private "Dictionary"
-- !private "BuddiesWithHealthGoingTableViewController"
-- !private "MKCircleRenderer"
-- !private "<"
-- "UIBarButtonItem"
-- "UISlider"
-- !private "URLSession"
-- !private "BooleanLiteralType"
-- !private "CLLocationCoordinate2DMake"
-- "UILabel"
-- "UIGestureRecognizer"
-- !private "CLLocationDegrees"
-- !private "*"
-- "MKOverlay"
-- "UIViewController"
-- "StringLiteralType"
-- !private "CLLocationDistance"
-- "String"
-- !private "NSURL"
-- !private "JSONSerialization"
-- "UITextField"
-- "NSMutableDictionary"
-- !private "NSDictionary"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "SWRevealViewController"
-- "MKPointAnnotation"
-- !private "kCLLocationAccuracyBest"
-- !private "MKPolygonRenderer"
-- !private "AnyObject"
-- !private "Float"
-- "UIControl"
-- !private "UINavigationController"
-- "Double"
-- "Int"
-- !private "TernaryPrecedence"
-- !private "URLRequest"
-- !private "=="
-- !private "<="
-- !private "URL"
-- !private "MKCoordinateSpanMake"
-- !private "DispatchQueue"
-- "MKAnnotationViewDragState"
-- "CLLocationManager"
 - "MKAnnotationView"
-- !private "MKUserLocation"
-- !private "&&"
-- !private "CGPoint"
-- "MKMapView"
-- !private "UIButton"
-- !private "MKCoordinateRegion"
+- "UIPickerViewDataSource"
+- !private "Date"
 - !private "+"
-- "MKAnnotation"
-- "UIPickerViewDelegate"
-- !private "MKCircle"
-- !private "MKPinAnnotationView"
+- !private "JSONSerialization"
+- !private "DispatchQueue"
+- !private "MKCircleRenderer"
+- "HKQuantityTypeIdentifier"
+- "String"
 - !private "UIImage"
-- !private "print"
-- !private "-"
-- "UIStoryboardSegue"
-- "Array"
+- !private "kCLLocationAccuracyBest"
+- !private "<"
+- "UIPickerView"
+- "MKPointAnnotation"
+- "HKQuantityType"
+- !private "MKCoordinateSpanMake"
+- "MKMapView"
+- "GeoWithHealthViewController"
+- !private "*"
+- !private "Float"
+- "UITextField"
+- !private "URL"
+- !private "NSURL"
+- "MKOverlayRenderer"
 - !private "UILongPressGestureRecognizer"
+- !private "HKQuery"
+- !private "BuddiesWithHealthGoingTableViewController"
+- "UIControl"
+- "CLLocationManager"
+- !private "!="
+- !private "UINavigationController"
+- !private "NSDictionary"
+- !private "MKPolygonRenderer"
+- !private "URLRequest"
+- !private "TernaryPrecedence"
+- "Double"
+- !private "CLLocationDegrees"
+- "HKHealthStore"
+- "UIBarButtonItem"
+- !private "SWRevealViewController"
+- !private "-"
+- !private "MKCoordinateRegion"
+- !private "print"
+- !private "CLLocationCoordinate2DMake"
+- !private "CGPoint"
+- !private "NSMutableURLRequest"
+- "MKOverlay"
+- "AssignmentPrecedence"
+- "UIGestureRecognizer"
+- !private "NSSet"
+- "CastingPrecedence"
+- !private "=="
+- "CLLocationCoordinate2D"
+- !private "<="
+- !private "NSCalendar"
+- !private "AnyObject"
+- "StringLiteralType"
+- !private "MKUserLocation"
+- "Int"
+- "NSMutableDictionary"
 - !private ">="
-- !private "UIColor"
+- "MKAnnotationViewDragState"
+- "UIStoryboardSegue"
+- !private "BooleanLiteralType"
+- !private "MKCircle"
+- "CLLocation"
+- !private "HKStatisticsQuery"
+- !private "MKPinAnnotationView"
+- !private "URLSession"
+- !private "Dictionary"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGPoint"]
@@ -131,6 +145,12 @@ depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "Float"]
+- ["Ps9AnyObject", "HKHealthStore"]
+- ["Ps9AnyObject", "HKQuantityType"]
+- ["Ps9AnyObject", "HKQuantityTypeIdentifier"]
+- !private ["Ps9AnyObject", "HKQuery"]
+- !private ["Ps9AnyObject", "HKStatisticsOptions"]
+- !private ["Ps9AnyObject", "HKStatisticsQuery"]
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "JSONSerialization"]
 - !private ["Ps9AnyObject", "MKCircle"]
@@ -142,8 +162,11 @@ depends-member:
 - ["Ps9AnyObject", "MKPointAnnotation"]
 - !private ["Ps9AnyObject", "MKPolygon"]
 - !private ["Ps9AnyObject", "MKPolygonRenderer"]
+- !private ["Ps9AnyObject", "NSCalendar"]
+- !private ["Ps9AnyObject", "NSDate"]
 - ["Ps9AnyObject", "NSMutableDictionary"]
 - !private ["Ps9AnyObject", "NSMutableURLRequest"]
+- !private ["Ps9AnyObject", "NSSet"]
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "ReadingOptions"]
 - !private ["Ps9AnyObject", "SWRevealViewController"]
@@ -155,6 +178,7 @@ depends-member:
 - !private ["Ps9AnyObject", "URLSession"]
 - !private ["Ps9AnyObject", "WritingOptions"]
 - !private ["Ps9AnyObject", "action"]
+- ["Ps9AnyObject", "activeEnergyBurnedType"]
 - !private ["Ps9AnyObject", "add"]
 - !private ["Ps9AnyObject", "addAnnotation"]
 - !private ["Ps9AnyObject", "addGestureRecognizer"]
@@ -171,6 +195,7 @@ depends-member:
 - !private ["Ps9AnyObject", "convert"]
 - !private ["Ps9AnyObject", "coordinate"]
 - !private ["Ps9AnyObject", "cuisine"]
+- !private ["Ps9AnyObject", "current"]
 - !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "dataTask"]
@@ -180,10 +205,12 @@ depends-member:
 - !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "drawCircle"]
+- !private ["Ps9AnyObject", "execute"]
 - !private ["Ps9AnyObject", "fillColor"]
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "handleLongPress"]
 - ["Ps9AnyObject", "healthData"]
+- ["Ps9AnyObject", "healthStore"]
 - !private ["Ps9AnyObject", "httpBody"]
 - !private ["Ps9AnyObject", "httpMethod"]
 - !private ["Ps9AnyObject", "identifier"]
@@ -222,13 +249,16 @@ depends-member:
 - ["Ps9AnyObject", "pickerView"]
 - ["Ps9AnyObject", "plotKnn"]
 - ["Ps9AnyObject", "polygon"]
+- !private ["Ps9AnyObject", "predicateForSamples"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "quantityType"]
 - ["Ps9AnyObject", "radius"]
 - !private ["Ps9AnyObject", "red"]
 - !private ["Ps9AnyObject", "remove"]
 - !private ["Ps9AnyObject", "removeAnnotations"]
 - !private ["Ps9AnyObject", "removeOverlays"]
+- !private ["Ps9AnyObject", "requestAuthorization"]
 - !private ["Ps9AnyObject", "requestWhenInUseAuthorization"]
 - !private ["Ps9AnyObject", "restaurant"]
 - !private ["Ps9AnyObject", "restaurantLatitude"]
@@ -250,6 +280,7 @@ depends-member:
 - !private ["Ps9AnyObject", "state"]
 - !private ["Ps9AnyObject", "strokeColor"]
 - !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "sumQuantity"]
 - !private ["Ps9AnyObject", "target"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
@@ -384,6 +415,12 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "DispatchQueue"]
 - !private ["PSo25CLLocationManagerDelegate", "Double"]
 - !private ["PSo25CLLocationManagerDelegate", "Float"]
+- ["PSo25CLLocationManagerDelegate", "HKHealthStore"]
+- ["PSo25CLLocationManagerDelegate", "HKQuantityType"]
+- ["PSo25CLLocationManagerDelegate", "HKQuantityTypeIdentifier"]
+- !private ["PSo25CLLocationManagerDelegate", "HKQuery"]
+- !private ["PSo25CLLocationManagerDelegate", "HKStatisticsOptions"]
+- !private ["PSo25CLLocationManagerDelegate", "HKStatisticsQuery"]
 - !private ["PSo25CLLocationManagerDelegate", "Int"]
 - !private ["PSo25CLLocationManagerDelegate", "JSONSerialization"]
 - !private ["PSo25CLLocationManagerDelegate", "MKCircle"]
@@ -395,8 +432,11 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "MKPointAnnotation"]
 - !private ["PSo25CLLocationManagerDelegate", "MKPolygon"]
 - !private ["PSo25CLLocationManagerDelegate", "MKPolygonRenderer"]
+- !private ["PSo25CLLocationManagerDelegate", "NSCalendar"]
+- !private ["PSo25CLLocationManagerDelegate", "NSDate"]
 - ["PSo25CLLocationManagerDelegate", "NSMutableDictionary"]
 - !private ["PSo25CLLocationManagerDelegate", "NSMutableURLRequest"]
+- !private ["PSo25CLLocationManagerDelegate", "NSSet"]
 - !private ["PSo25CLLocationManagerDelegate", "NSURL"]
 - !private ["PSo25CLLocationManagerDelegate", "SWRevealViewController"]
 - !private ["PSo25CLLocationManagerDelegate", "String"]
@@ -405,11 +445,14 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "UIImage"]
 - !private ["PSo25CLLocationManagerDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo25CLLocationManagerDelegate", "URLSession"]
+- !private ["PSo25CLLocationManagerDelegate", "activeEnergyBurnedType"]
 - !private ["PSo25CLLocationManagerDelegate", "addLongPressGesture"]
 - !private ["PSo25CLLocationManagerDelegate", "addRadiusCircle"]
 - !private ["PSo25CLLocationManagerDelegate", "annotations"]
 - !private ["PSo25CLLocationManagerDelegate", "drawCircle"]
 - !private ["PSo25CLLocationManagerDelegate", "handleLongPress"]
+- !private ["PSo25CLLocationManagerDelegate", "healthData"]
+- !private ["PSo25CLLocationManagerDelegate", "healthStore"]
 - !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyBest"]
 - !private ["PSo25CLLocationManagerDelegate", "knn"]
 - !private ["PSo25CLLocationManagerDelegate", "location"]
@@ -456,6 +499,12 @@ depends-member:
 - !private ["Ps7CVarArg", "Double"]
 - ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Float"]
+- ["Ps7CVarArg", "HKHealthStore"]
+- ["Ps7CVarArg", "HKQuantityType"]
+- ["Ps7CVarArg", "HKQuantityTypeIdentifier"]
+- !private ["Ps7CVarArg", "HKQuery"]
+- !private ["Ps7CVarArg", "HKStatisticsOptions"]
+- !private ["Ps7CVarArg", "HKStatisticsQuery"]
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "Int"]
@@ -471,8 +520,11 @@ depends-member:
 - ["Ps7CVarArg", "MKPointAnnotation"]
 - !private ["Ps7CVarArg", "MKPolygon"]
 - !private ["Ps7CVarArg", "MKPolygonRenderer"]
+- !private ["Ps7CVarArg", "NSCalendar"]
+- !private ["Ps7CVarArg", "NSDate"]
 - ["Ps7CVarArg", "NSMutableDictionary"]
 - !private ["Ps7CVarArg", "NSMutableURLRequest"]
+- !private ["Ps7CVarArg", "NSSet"]
 - !private ["Ps7CVarArg", "NSURL"]
 - !private ["Ps7CVarArg", "ReadingOptions"]
 - !private ["Ps7CVarArg", "SWRevealViewController"]
@@ -488,6 +540,7 @@ depends-member:
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "action"]
+- ["Ps7CVarArg", "activeEnergyBurnedType"]
 - !private ["Ps7CVarArg", "add"]
 - !private ["Ps7CVarArg", "addAnnotation"]
 - !private ["Ps7CVarArg", "addGestureRecognizer"]
@@ -506,6 +559,7 @@ depends-member:
 - !private ["Ps7CVarArg", "coordinate"]
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "cuisine"]
+- !private ["Ps7CVarArg", "current"]
 - !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "dataSource"]
 - !private ["Ps7CVarArg", "dataTask"]
@@ -515,10 +569,12 @@ depends-member:
 - !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "drawCircle"]
+- !private ["Ps7CVarArg", "execute"]
 - !private ["Ps7CVarArg", "fillColor"]
 - !private ["Ps7CVarArg", "frame"]
 - ["Ps7CVarArg", "handleLongPress"]
 - ["Ps7CVarArg", "healthData"]
+- ["Ps7CVarArg", "healthStore"]
 - !private ["Ps7CVarArg", "httpBody"]
 - !private ["Ps7CVarArg", "httpMethod"]
 - !private ["Ps7CVarArg", "identifier"]
@@ -559,14 +615,17 @@ depends-member:
 - ["Ps7CVarArg", "pickerView"]
 - ["Ps7CVarArg", "plotKnn"]
 - ["Ps7CVarArg", "polygon"]
+- !private ["Ps7CVarArg", "predicateForSamples"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
+- ["Ps7CVarArg", "quantityType"]
 - ["Ps7CVarArg", "radius"]
 - !private ["Ps7CVarArg", "red"]
 - !private ["Ps7CVarArg", "remove"]
 - !private ["Ps7CVarArg", "removeAnnotations"]
 - !private ["Ps7CVarArg", "removeLast"]
 - !private ["Ps7CVarArg", "removeOverlays"]
+- !private ["Ps7CVarArg", "requestAuthorization"]
 - !private ["Ps7CVarArg", "requestWhenInUseAuthorization"]
 - !private ["Ps7CVarArg", "restaurant"]
 - !private ["Ps7CVarArg", "restaurantLatitude"]
@@ -590,6 +649,7 @@ depends-member:
 - !private ["Ps7CVarArg", "state"]
 - !private ["Ps7CVarArg", "strokeColor"]
 - !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "sumQuantity"]
 - !private ["Ps7CVarArg", "target"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "title"]
@@ -603,6 +663,9 @@ depends-member:
 - ["Ps7CVarArg", "viewDidLoad"]
 - !private ["Ps7CVarArg", "withAlphaComponent"]
 - ["Ps7CVarArg", ""]
+- !private ["V10Foundation8Calendar", "date"]
+- !private ["V10Foundation8Calendar", "dateComponents"]
+- ["V10Foundation8Calendar", "deinit"]
 - !private ["Vs9Character", "deinit"]
 - ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Index"]
@@ -623,7 +686,13 @@ depends-member:
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- ["Ps10Comparable", "activeEnergyBurned"]
+- !private ["Ps10Comparable", "dietaryEnergyConsumed"]
 - ["Ps10Comparable", "init"]
+- !private ["OV10Foundation8Calendar9Component", "day"]
+- ["OV10Foundation8Calendar9Component", "deinit"]
+- !private ["OV10Foundation8Calendar9Component", "month"]
+- !private ["OV10Foundation8Calendar9Component", "year"]
 - !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - ["Ps28CustomDebugStringConvertible", "CLLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocationCoordinate2D"]
@@ -635,6 +704,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
 - ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Float"]
+- ["Ps28CustomDebugStringConvertible", "HKHealthStore"]
+- ["Ps28CustomDebugStringConvertible", "HKQuantityType"]
+- ["Ps28CustomDebugStringConvertible", "HKQuantityTypeIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "HKQuery"]
+- !private ["Ps28CustomDebugStringConvertible", "HKStatisticsOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "HKStatisticsQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "Int"]
@@ -649,8 +724,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "MKPointAnnotation"]
 - !private ["Ps28CustomDebugStringConvertible", "MKPolygon"]
 - !private ["Ps28CustomDebugStringConvertible", "MKPolygonRenderer"]
+- !private ["Ps28CustomDebugStringConvertible", "NSCalendar"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDate"]
 - ["Ps28CustomDebugStringConvertible", "NSMutableDictionary"]
 - !private ["Ps28CustomDebugStringConvertible", "NSMutableURLRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "NSSet"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "ReadingOptions"]
 - !private ["Ps28CustomDebugStringConvertible", "SWRevealViewController"]
@@ -664,6 +742,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "WritingOptions"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "action"]
+- ["Ps28CustomDebugStringConvertible", "activeEnergyBurnedType"]
 - !private ["Ps28CustomDebugStringConvertible", "add"]
 - !private ["Ps28CustomDebugStringConvertible", "addAnnotation"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
@@ -682,19 +761,25 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "coordinate"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "cuisine"]
+- !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "dataTask"]
+- !private ["Ps28CustomDebugStringConvertible", "date"]
+- !private ["Ps28CustomDebugStringConvertible", "dateComponents"]
+- !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableAnnotationView"]
 - !private ["Ps28CustomDebugStringConvertible", "desiredAccuracy"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "drawCircle"]
+- !private ["Ps28CustomDebugStringConvertible", "execute"]
 - !private ["Ps28CustomDebugStringConvertible", "fillColor"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - ["Ps28CustomDebugStringConvertible", "handleLongPress"]
 - ["Ps28CustomDebugStringConvertible", "healthData"]
+- ["Ps28CustomDebugStringConvertible", "healthStore"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - !private ["Ps28CustomDebugStringConvertible", "httpBody"]
 - !private ["Ps28CustomDebugStringConvertible", "httpMethod"]
@@ -736,14 +821,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "pickerView"]
 - ["Ps28CustomDebugStringConvertible", "plotKnn"]
 - ["Ps28CustomDebugStringConvertible", "polygon"]
+- !private ["Ps28CustomDebugStringConvertible", "predicateForSamples"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "quantityType"]
 - ["Ps28CustomDebugStringConvertible", "radius"]
 - !private ["Ps28CustomDebugStringConvertible", "red"]
 - !private ["Ps28CustomDebugStringConvertible", "remove"]
 - !private ["Ps28CustomDebugStringConvertible", "removeAnnotations"]
 - !private ["Ps28CustomDebugStringConvertible", "removeLast"]
 - !private ["Ps28CustomDebugStringConvertible", "removeOverlays"]
+- !private ["Ps28CustomDebugStringConvertible", "requestAuthorization"]
 - !private ["Ps28CustomDebugStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps28CustomDebugStringConvertible", "restaurant"]
 - !private ["Ps28CustomDebugStringConvertible", "restaurantLatitude"]
@@ -768,6 +856,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "state"]
 - !private ["Ps28CustomDebugStringConvertible", "strokeColor"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "sumQuantity"]
 - !private ["Ps28CustomDebugStringConvertible", "target"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
@@ -802,6 +891,9 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "date"]
+- !private ["Ps17CustomReflectable", "dateComponents"]
+- !private ["Ps17CustomReflectable", "debugDescription"]
 - !private ["Ps17CustomReflectable", "height"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "isEmpty"]
@@ -824,6 +916,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Double"]
 - ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Float"]
+- ["Ps23CustomStringConvertible", "HKHealthStore"]
+- ["Ps23CustomStringConvertible", "HKQuantityType"]
+- ["Ps23CustomStringConvertible", "HKQuantityTypeIdentifier"]
+- !private ["Ps23CustomStringConvertible", "HKQuery"]
+- !private ["Ps23CustomStringConvertible", "HKStatisticsOptions"]
+- !private ["Ps23CustomStringConvertible", "HKStatisticsQuery"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "Int"]
@@ -839,8 +937,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "MKPointAnnotation"]
 - !private ["Ps23CustomStringConvertible", "MKPolygon"]
 - !private ["Ps23CustomStringConvertible", "MKPolygonRenderer"]
+- !private ["Ps23CustomStringConvertible", "NSCalendar"]
+- !private ["Ps23CustomStringConvertible", "NSDate"]
 - ["Ps23CustomStringConvertible", "NSMutableDictionary"]
 - !private ["Ps23CustomStringConvertible", "NSMutableURLRequest"]
+- !private ["Ps23CustomStringConvertible", "NSSet"]
 - !private ["Ps23CustomStringConvertible", "NSURL"]
 - !private ["Ps23CustomStringConvertible", "ReadingOptions"]
 - !private ["Ps23CustomStringConvertible", "SWRevealViewController"]
@@ -857,6 +958,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "action"]
+- ["Ps23CustomStringConvertible", "activeEnergyBurnedType"]
 - !private ["Ps23CustomStringConvertible", "add"]
 - !private ["Ps23CustomStringConvertible", "addAnnotation"]
 - !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
@@ -875,19 +977,24 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "coordinate"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "cuisine"]
+- !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "data"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "dataTask"]
+- !private ["Ps23CustomStringConvertible", "date"]
+- !private ["Ps23CustomStringConvertible", "dateComponents"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableAnnotationView"]
 - !private ["Ps23CustomStringConvertible", "desiredAccuracy"]
 - !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "drawCircle"]
+- !private ["Ps23CustomStringConvertible", "execute"]
 - !private ["Ps23CustomStringConvertible", "fillColor"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - ["Ps23CustomStringConvertible", "handleLongPress"]
 - ["Ps23CustomStringConvertible", "healthData"]
+- ["Ps23CustomStringConvertible", "healthStore"]
 - !private ["Ps23CustomStringConvertible", "httpBody"]
 - !private ["Ps23CustomStringConvertible", "httpMethod"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
@@ -928,14 +1035,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "pickerView"]
 - ["Ps23CustomStringConvertible", "plotKnn"]
 - ["Ps23CustomStringConvertible", "polygon"]
+- !private ["Ps23CustomStringConvertible", "predicateForSamples"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "quantityType"]
 - ["Ps23CustomStringConvertible", "radius"]
 - !private ["Ps23CustomStringConvertible", "red"]
 - !private ["Ps23CustomStringConvertible", "remove"]
 - !private ["Ps23CustomStringConvertible", "removeAnnotations"]
 - !private ["Ps23CustomStringConvertible", "removeLast"]
 - !private ["Ps23CustomStringConvertible", "removeOverlays"]
+- !private ["Ps23CustomStringConvertible", "requestAuthorization"]
 - !private ["Ps23CustomStringConvertible", "requestWhenInUseAuthorization"]
 - !private ["Ps23CustomStringConvertible", "restaurant"]
 - !private ["Ps23CustomStringConvertible", "restaurantLatitude"]
@@ -959,6 +1069,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "state"]
 - !private ["Ps23CustomStringConvertible", "strokeColor"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "sumQuantity"]
 - !private ["Ps23CustomStringConvertible", "target"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
@@ -973,6 +1084,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "withAlphaComponent"]
 - ["Ps23CustomStringConvertible", ""]
 - ["V10Foundation4Data", "deinit"]
+- ["V10Foundation4Date", "deinit"]
+- ["V10Foundation14DateComponents", "deinit"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
 - !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
@@ -1005,6 +1118,12 @@ depends-member:
 - !private ["Ps9Equatable", "Double"]
 - !private ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "Float"]
+- ["Ps9Equatable", "HKHealthStore"]
+- ["Ps9Equatable", "HKQuantityType"]
+- ["Ps9Equatable", "HKQuantityTypeIdentifier"]
+- !private ["Ps9Equatable", "HKQuery"]
+- !private ["Ps9Equatable", "HKStatisticsOptions"]
+- !private ["Ps9Equatable", "HKStatisticsQuery"]
 - !private ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "JSONSerialization"]
@@ -1017,8 +1136,11 @@ depends-member:
 - ["Ps9Equatable", "MKPointAnnotation"]
 - !private ["Ps9Equatable", "MKPolygon"]
 - !private ["Ps9Equatable", "MKPolygonRenderer"]
+- !private ["Ps9Equatable", "NSCalendar"]
+- !private ["Ps9Equatable", "NSDate"]
 - ["Ps9Equatable", "NSMutableDictionary"]
 - !private ["Ps9Equatable", "NSMutableURLRequest"]
+- !private ["Ps9Equatable", "NSSet"]
 - !private ["Ps9Equatable", "NSURL"]
 - !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "ReadingOptions"]
@@ -1034,6 +1156,8 @@ depends-member:
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "action"]
+- ["Ps9Equatable", "activeEnergyBurned"]
+- ["Ps9Equatable", "activeEnergyBurnedType"]
 - !private ["Ps9Equatable", "add"]
 - !private ["Ps9Equatable", "addAnnotation"]
 - !private ["Ps9Equatable", "addGestureRecognizer"]
@@ -1051,19 +1175,27 @@ depends-member:
 - !private ["Ps9Equatable", "convert"]
 - !private ["Ps9Equatable", "coordinate"]
 - !private ["Ps9Equatable", "cuisine"]
+- !private ["Ps9Equatable", "cumulativeSum"]
+- !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "data"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "dataTask"]
+- !private ["Ps9Equatable", "date"]
+- !private ["Ps9Equatable", "dateComponents"]
+- !private ["Ps9Equatable", "day"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dequeueReusableAnnotationView"]
 - !private ["Ps9Equatable", "desiredAccuracy"]
 - !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "dietaryEnergyConsumed"]
 - ["Ps9Equatable", "drawCircle"]
+- !private ["Ps9Equatable", "execute"]
 - !private ["Ps9Equatable", "fillColor"]
 - !private ["Ps9Equatable", "frame"]
 - ["Ps9Equatable", "handleLongPress"]
 - ["Ps9Equatable", "healthData"]
+- ["Ps9Equatable", "healthStore"]
 - !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "httpBody"]
 - !private ["Ps9Equatable", "httpMethod"]
@@ -1092,6 +1224,7 @@ depends-member:
 - ["Ps9Equatable", "mapViewWillStartRenderingMap"]
 - ["Ps9Equatable", "menuButton"]
 - !private ["Ps9Equatable", "minimumPressDuration"]
+- !private ["Ps9Equatable", "month"]
 - !private ["Ps9Equatable", "normal"]
 - ["Ps9Equatable", "numberOfComponents"]
 - ["Ps9Equatable", "numberOfComponentsInPickerView"]
@@ -1104,13 +1237,16 @@ depends-member:
 - ["Ps9Equatable", "pickerView"]
 - ["Ps9Equatable", "plotKnn"]
 - ["Ps9Equatable", "polygon"]
+- !private ["Ps9Equatable", "predicateForSamples"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "quantityType"]
 - ["Ps9Equatable", "radius"]
 - !private ["Ps9Equatable", "red"]
 - !private ["Ps9Equatable", "remove"]
 - !private ["Ps9Equatable", "removeAnnotations"]
 - !private ["Ps9Equatable", "removeOverlays"]
+- !private ["Ps9Equatable", "requestAuthorization"]
 - !private ["Ps9Equatable", "requestWhenInUseAuthorization"]
 - !private ["Ps9Equatable", "restaurant"]
 - !private ["Ps9Equatable", "restaurantLatitude"]
@@ -1131,8 +1267,10 @@ depends-member:
 - ["Ps9Equatable", "sortConvex"]
 - !private ["Ps9Equatable", "startUpdatingLocation"]
 - !private ["Ps9Equatable", "state"]
+- !private ["Ps9Equatable", "strictStartDate"]
 - !private ["Ps9Equatable", "strokeColor"]
 - !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "sumQuantity"]
 - !private ["Ps9Equatable", "target"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
@@ -1146,6 +1284,7 @@ depends-member:
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "withAlphaComponent"]
+- !private ["Ps9Equatable", "year"]
 - ["Ps9Equatable", ""]
 - !private ["Ps5Error", "deinit"]
 - !private ["Ps5Error", "localizedDescription"]
@@ -1158,6 +1297,8 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "cumulativeSum"]
+- !private ["Ps25ExpressibleByArrayLiteral", "day"]
 - ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "isEmpty"]
 - !private ["Ps25ExpressibleByArrayLiteral", "map"]
@@ -1165,6 +1306,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "removeLast"]
 - !private ["Ps25ExpressibleByArrayLiteral", "reversed"]
 - !private ["Ps25ExpressibleByArrayLiteral", "sorted"]
+- !private ["Ps25ExpressibleByArrayLiteral", "strictStartDate"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
@@ -1178,6 +1320,7 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "debugDescription"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -1193,10 +1336,18 @@ depends-member:
 - !private ["C5Buddy27GeoWithHealthViewController", "CLLocationDegrees"]
 - !private ["C5Buddy27GeoWithHealthViewController", "CLLocationDistance"]
 - ["C5Buddy27GeoWithHealthViewController", "CLLocationManager"]
+- !private ["C5Buddy27GeoWithHealthViewController", "Date"]
 - !private ["C5Buddy27GeoWithHealthViewController", "Dictionary"]
 - !private ["C5Buddy27GeoWithHealthViewController", "DispatchQueue"]
 - ["C5Buddy27GeoWithHealthViewController", "Double"]
 - !private ["C5Buddy27GeoWithHealthViewController", "Float"]
+- ["C5Buddy27GeoWithHealthViewController", "HKHealthStore"]
+- !private ["C5Buddy27GeoWithHealthViewController", "HKObjectType"]
+- ["C5Buddy27GeoWithHealthViewController", "HKQuantityType"]
+- ["C5Buddy27GeoWithHealthViewController", "HKQuantityTypeIdentifier"]
+- !private ["C5Buddy27GeoWithHealthViewController", "HKQuery"]
+- !private ["C5Buddy27GeoWithHealthViewController", "HKStatisticsOptions"]
+- !private ["C5Buddy27GeoWithHealthViewController", "HKStatisticsQuery"]
 - ["C5Buddy27GeoWithHealthViewController", "Int"]
 - !private ["C5Buddy27GeoWithHealthViewController", "JSONSerialization"]
 - ["C5Buddy27GeoWithHealthViewController", "MKAnnotation"]
@@ -1214,11 +1365,15 @@ depends-member:
 - ["C5Buddy27GeoWithHealthViewController", "MKPolygon"]
 - !private ["C5Buddy27GeoWithHealthViewController", "MKPolygonRenderer"]
 - !private ["C5Buddy27GeoWithHealthViewController", "MKUserLocation"]
+- !private ["C5Buddy27GeoWithHealthViewController", "NSCalendar"]
+- !private ["C5Buddy27GeoWithHealthViewController", "NSDate"]
 - !private ["C5Buddy27GeoWithHealthViewController", "NSDictionary"]
 - ["C5Buddy27GeoWithHealthViewController", "NSMutableDictionary"]
 - !private ["C5Buddy27GeoWithHealthViewController", "NSMutableURLRequest"]
+- !private ["C5Buddy27GeoWithHealthViewController", "NSSet"]
 - !private ["C5Buddy27GeoWithHealthViewController", "NSURL"]
 - !private ["C5Buddy27GeoWithHealthViewController", "SWRevealViewController"]
+- !private ["C5Buddy27GeoWithHealthViewController", "Set"]
 - ["C5Buddy27GeoWithHealthViewController", "String"]
 - ["C5Buddy27GeoWithHealthViewController", "UIBarButtonItem"]
 - !private ["C5Buddy27GeoWithHealthViewController", "UIButton"]
@@ -1236,6 +1391,7 @@ depends-member:
 - !private ["C5Buddy27GeoWithHealthViewController", "URL"]
 - !private ["C5Buddy27GeoWithHealthViewController", "URLRequest"]
 - !private ["C5Buddy27GeoWithHealthViewController", "URLSession"]
+- ["C5Buddy27GeoWithHealthViewController", "activeEnergyBurnedType"]
 - ["C5Buddy27GeoWithHealthViewController", "addLongPressGesture"]
 - ["C5Buddy27GeoWithHealthViewController", "addRadiusCircle"]
 - ["C5Buddy27GeoWithHealthViewController", "annotations"]
@@ -1244,6 +1400,7 @@ depends-member:
 - ["C5Buddy27GeoWithHealthViewController", "drawCircle"]
 - ["C5Buddy27GeoWithHealthViewController", "handleLongPress"]
 - ["C5Buddy27GeoWithHealthViewController", "healthData"]
+- ["C5Buddy27GeoWithHealthViewController", "healthStore"]
 - ["C5Buddy27GeoWithHealthViewController", "init"]
 - !private ["C5Buddy27GeoWithHealthViewController", "kCLLocationAccuracyBest"]
 - ["C5Buddy27GeoWithHealthViewController", "knn"]
@@ -1285,6 +1442,28 @@ depends-member:
 - ["C5Buddy27GeoWithHealthViewController", "urll"]
 - !private ["C5Buddy27GeoWithHealthViewController", "view"]
 - ["C5Buddy27GeoWithHealthViewController", "viewDidLoad"]
+- ["CSo13HKHealthStore", "deinit"]
+- !private ["CSo13HKHealthStore", "execute"]
+- ["CSo13HKHealthStore", "init"]
+- !private ["CSo13HKHealthStore", "requestAuthorization"]
+- ["CSo12HKObjectType", "quantityType"]
+- !private ["CSo10HKQuantity", "deinit"]
+- ["CSo14HKQuantityType", "deinit"]
+- ["CSo14HKQuantityType", "quantityType"]
+- ["VSC24HKQuantityTypeIdentifier", "activeEnergyBurned"]
+- ["VSC24HKQuantityTypeIdentifier", "deinit"]
+- !private ["VSC24HKQuantityTypeIdentifier", "dietaryEnergyConsumed"]
+- !private ["CSo7HKQuery", "init"]
+- !private ["CSo7HKQuery", "predicateForSamples"]
+- ["VSC14HKQueryOptions", "deinit"]
+- !private ["VSC14HKQueryOptions", "strictStartDate"]
+- ["CSo12HKSampleType", "quantityType"]
+- !private ["CSo12HKStatistics", "deinit"]
+- !private ["CSo12HKStatistics", "sumQuantity"]
+- !private ["VSC19HKStatisticsOptions", "cumulativeSum"]
+- ["VSC19HKStatisticsOptions", "deinit"]
+- ["CSo17HKStatisticsQuery", "deinit"]
+- !private ["CSo17HKStatisticsQuery", "init"]
 - !private ["Ps8Hashable", "CGPoint"]
 - ["Ps8Hashable", "CLLocation"]
 - !private ["Ps8Hashable", "CLLocationCoordinate2D"]
@@ -1294,7 +1473,14 @@ depends-member:
 - ["Ps8Hashable", "CLLocationManager"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "Double"]
+- !private ["Ps8Hashable", "Element"]
 - !private ["Ps8Hashable", "Float"]
+- ["Ps8Hashable", "HKHealthStore"]
+- ["Ps8Hashable", "HKQuantityType"]
+- ["Ps8Hashable", "HKQuantityTypeIdentifier"]
+- !private ["Ps8Hashable", "HKQuery"]
+- !private ["Ps8Hashable", "HKStatisticsOptions"]
+- !private ["Ps8Hashable", "HKStatisticsQuery"]
 - !private ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSONSerialization"]
@@ -1307,8 +1493,11 @@ depends-member:
 - ["Ps8Hashable", "MKPointAnnotation"]
 - !private ["Ps8Hashable", "MKPolygon"]
 - !private ["Ps8Hashable", "MKPolygonRenderer"]
+- !private ["Ps8Hashable", "NSCalendar"]
+- !private ["Ps8Hashable", "NSDate"]
 - ["Ps8Hashable", "NSMutableDictionary"]
 - !private ["Ps8Hashable", "NSMutableURLRequest"]
+- !private ["Ps8Hashable", "NSSet"]
 - !private ["Ps8Hashable", "NSURL"]
 - !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "ReadingOptions"]
@@ -1324,6 +1513,8 @@ depends-member:
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "action"]
+- ["Ps8Hashable", "activeEnergyBurned"]
+- ["Ps8Hashable", "activeEnergyBurnedType"]
 - !private ["Ps8Hashable", "add"]
 - !private ["Ps8Hashable", "addAnnotation"]
 - !private ["Ps8Hashable", "addGestureRecognizer"]
@@ -1341,19 +1532,26 @@ depends-member:
 - !private ["Ps8Hashable", "convert"]
 - !private ["Ps8Hashable", "coordinate"]
 - !private ["Ps8Hashable", "cuisine"]
+- !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "data"]
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "dataTask"]
+- !private ["Ps8Hashable", "date"]
+- !private ["Ps8Hashable", "dateComponents"]
+- !private ["Ps8Hashable", "day"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dequeueReusableAnnotationView"]
 - !private ["Ps8Hashable", "desiredAccuracy"]
 - !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "dietaryEnergyConsumed"]
 - ["Ps8Hashable", "drawCircle"]
+- !private ["Ps8Hashable", "execute"]
 - !private ["Ps8Hashable", "fillColor"]
 - !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "handleLongPress"]
 - ["Ps8Hashable", "healthData"]
+- ["Ps8Hashable", "healthStore"]
 - !private ["Ps8Hashable", "httpBody"]
 - !private ["Ps8Hashable", "httpMethod"]
 - !private ["Ps8Hashable", "identifier"]
@@ -1381,6 +1579,7 @@ depends-member:
 - ["Ps8Hashable", "mapViewWillStartRenderingMap"]
 - ["Ps8Hashable", "menuButton"]
 - !private ["Ps8Hashable", "minimumPressDuration"]
+- !private ["Ps8Hashable", "month"]
 - ["Ps8Hashable", "numberOfComponents"]
 - ["Ps8Hashable", "numberOfComponentsInPickerView"]
 - !private ["Ps8Hashable", "overlays"]
@@ -1392,13 +1591,16 @@ depends-member:
 - ["Ps8Hashable", "pickerView"]
 - ["Ps8Hashable", "plotKnn"]
 - ["Ps8Hashable", "polygon"]
+- !private ["Ps8Hashable", "predicateForSamples"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "quantityType"]
 - ["Ps8Hashable", "radius"]
 - !private ["Ps8Hashable", "red"]
 - !private ["Ps8Hashable", "remove"]
 - !private ["Ps8Hashable", "removeAnnotations"]
 - !private ["Ps8Hashable", "removeOverlays"]
+- !private ["Ps8Hashable", "requestAuthorization"]
 - !private ["Ps8Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps8Hashable", "restaurant"]
 - !private ["Ps8Hashable", "restaurantLatitude"]
@@ -1420,6 +1622,7 @@ depends-member:
 - !private ["Ps8Hashable", "state"]
 - !private ["Ps8Hashable", "strokeColor"]
 - !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "sumQuantity"]
 - !private ["Ps8Hashable", "target"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
@@ -1432,6 +1635,7 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "withAlphaComponent"]
+- !private ["Ps8Hashable", "year"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - ["Ps9Indexable", "Element"]
@@ -1537,6 +1741,12 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "DispatchQueue"]
 - !private ["PSo17MKMapViewDelegate", "Double"]
 - !private ["PSo17MKMapViewDelegate", "Float"]
+- ["PSo17MKMapViewDelegate", "HKHealthStore"]
+- ["PSo17MKMapViewDelegate", "HKQuantityType"]
+- ["PSo17MKMapViewDelegate", "HKQuantityTypeIdentifier"]
+- !private ["PSo17MKMapViewDelegate", "HKQuery"]
+- !private ["PSo17MKMapViewDelegate", "HKStatisticsOptions"]
+- !private ["PSo17MKMapViewDelegate", "HKStatisticsQuery"]
 - !private ["PSo17MKMapViewDelegate", "Int"]
 - !private ["PSo17MKMapViewDelegate", "JSONSerialization"]
 - !private ["PSo17MKMapViewDelegate", "MKCircle"]
@@ -1548,8 +1758,11 @@ depends-member:
 - ["PSo17MKMapViewDelegate", "MKPointAnnotation"]
 - !private ["PSo17MKMapViewDelegate", "MKPolygon"]
 - !private ["PSo17MKMapViewDelegate", "MKPolygonRenderer"]
+- !private ["PSo17MKMapViewDelegate", "NSCalendar"]
+- !private ["PSo17MKMapViewDelegate", "NSDate"]
 - ["PSo17MKMapViewDelegate", "NSMutableDictionary"]
 - !private ["PSo17MKMapViewDelegate", "NSMutableURLRequest"]
+- !private ["PSo17MKMapViewDelegate", "NSSet"]
 - !private ["PSo17MKMapViewDelegate", "NSURL"]
 - !private ["PSo17MKMapViewDelegate", "SWRevealViewController"]
 - !private ["PSo17MKMapViewDelegate", "String"]
@@ -1558,11 +1771,14 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "UIImage"]
 - !private ["PSo17MKMapViewDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo17MKMapViewDelegate", "URLSession"]
+- !private ["PSo17MKMapViewDelegate", "activeEnergyBurnedType"]
 - !private ["PSo17MKMapViewDelegate", "addLongPressGesture"]
 - !private ["PSo17MKMapViewDelegate", "addRadiusCircle"]
 - !private ["PSo17MKMapViewDelegate", "annotations"]
 - !private ["PSo17MKMapViewDelegate", "drawCircle"]
 - !private ["PSo17MKMapViewDelegate", "handleLongPress"]
+- !private ["PSo17MKMapViewDelegate", "healthData"]
+- !private ["PSo17MKMapViewDelegate", "healthStore"]
 - !private ["PSo17MKMapViewDelegate", "kCLLocationAccuracyBest"]
 - !private ["PSo17MKMapViewDelegate", "knn"]
 - !private ["PSo17MKMapViewDelegate", "location"]
@@ -1667,6 +1883,7 @@ depends-member:
 - !private ["Ps16MutableIndexable", "reversed"]
 - !private ["Ps16MutableIndexable", "sorted"]
 - !private ["Ps16MutableIndexable", "subscript"]
+- !private ["CSo10NSCalendar", "current"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CGPoint"]
 - ["PSo8NSCoding", "CLLocation"]
@@ -1678,6 +1895,12 @@ depends-member:
 - !private ["PSo8NSCoding", "DispatchQueue"]
 - !private ["PSo8NSCoding", "Double"]
 - !private ["PSo8NSCoding", "Float"]
+- ["PSo8NSCoding", "HKHealthStore"]
+- ["PSo8NSCoding", "HKQuantityType"]
+- ["PSo8NSCoding", "HKQuantityTypeIdentifier"]
+- !private ["PSo8NSCoding", "HKQuery"]
+- !private ["PSo8NSCoding", "HKStatisticsOptions"]
+- !private ["PSo8NSCoding", "HKStatisticsQuery"]
 - !private ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "JSONSerialization"]
 - !private ["PSo8NSCoding", "MKCircle"]
@@ -1689,8 +1912,11 @@ depends-member:
 - ["PSo8NSCoding", "MKPointAnnotation"]
 - !private ["PSo8NSCoding", "MKPolygon"]
 - !private ["PSo8NSCoding", "MKPolygonRenderer"]
+- !private ["PSo8NSCoding", "NSCalendar"]
+- !private ["PSo8NSCoding", "NSDate"]
 - ["PSo8NSCoding", "NSMutableDictionary"]
 - !private ["PSo8NSCoding", "NSMutableURLRequest"]
+- !private ["PSo8NSCoding", "NSSet"]
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "SWRevealViewController"]
 - !private ["PSo8NSCoding", "String"]
@@ -1700,6 +1926,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UILongPressGestureRecognizer"]
 - !private ["PSo8NSCoding", "URLSession"]
 - !private ["PSo8NSCoding", "action"]
+- ["PSo8NSCoding", "activeEnergyBurnedType"]
 - !private ["PSo8NSCoding", "add"]
 - !private ["PSo8NSCoding", "addAnnotation"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
@@ -1715,6 +1942,7 @@ depends-member:
 - !private ["PSo8NSCoding", "convert"]
 - !private ["PSo8NSCoding", "coordinate"]
 - !private ["PSo8NSCoding", "cuisine"]
+- !private ["PSo8NSCoding", "current"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dequeueReusableAnnotationView"]
@@ -1723,6 +1951,7 @@ depends-member:
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "handleLongPress"]
 - ["PSo8NSCoding", "healthData"]
+- ["PSo8NSCoding", "healthStore"]
 - !private ["PSo8NSCoding", "httpBody"]
 - !private ["PSo8NSCoding", "httpMethod"]
 - ["PSo8NSCoding", "init"]
@@ -1758,6 +1987,7 @@ depends-member:
 - ["PSo8NSCoding", "polygon"]
 - ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "quantityType"]
 - ["PSo8NSCoding", "radius"]
 - !private ["PSo8NSCoding", "red"]
 - !private ["PSo8NSCoding", "remove"]
@@ -1778,6 +2008,7 @@ depends-member:
 - ["PSo8NSCoding", "sliderValue"]
 - ["PSo8NSCoding", "sortConvex"]
 - !private ["PSo8NSCoding", "subscript"]
+- !private ["PSo8NSCoding", "sumQuantity"]
 - !private ["PSo8NSCoding", "target"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "topViewController"]
@@ -1793,16 +2024,21 @@ depends-member:
 - !private ["PSo9NSCopying", "black"]
 - !private ["PSo9NSCopying", "blue"]
 - !private ["PSo9NSCopying", "coordinate"]
+- !private ["PSo9NSCopying", "current"]
 - !private ["PSo9NSCopying", "deinit"]
 - !private ["PSo9NSCopying", "httpBody"]
 - !private ["PSo9NSCopying", "httpMethod"]
 - ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "quantityType"]
 - !private ["PSo9NSCopying", "red"]
 - !private ["PSo9NSCopying", "resume"]
 - !private ["PSo9NSCopying", "setValue"]
 - !private ["PSo9NSCopying", "subscript"]
+- !private ["PSo9NSCopying", "sumQuantity"]
 - !private ["PSo9NSCopying", "url"]
 - !private ["PSo9NSCopying", "withAlphaComponent"]
+- ["CSo6NSDate", "deinit"]
+- !private ["CSo6NSDate", "init"]
 - !private ["CSo12NSDictionary", "deinit"]
 - ["CSo12NSDictionary", "init"]
 - !private ["CSo12NSDictionary", "setValue"]
@@ -1817,6 +2053,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "DispatchQueue"]
 - !private ["PSo26NSExtensionRequestHandling", "Double"]
 - !private ["PSo26NSExtensionRequestHandling", "Float"]
+- ["PSo26NSExtensionRequestHandling", "HKHealthStore"]
+- ["PSo26NSExtensionRequestHandling", "HKQuantityType"]
+- ["PSo26NSExtensionRequestHandling", "HKQuantityTypeIdentifier"]
+- !private ["PSo26NSExtensionRequestHandling", "HKQuery"]
+- !private ["PSo26NSExtensionRequestHandling", "HKStatisticsOptions"]
+- !private ["PSo26NSExtensionRequestHandling", "HKStatisticsQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "JSONSerialization"]
 - !private ["PSo26NSExtensionRequestHandling", "MKCircle"]
@@ -1828,8 +2070,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "MKPointAnnotation"]
 - !private ["PSo26NSExtensionRequestHandling", "MKPolygon"]
 - !private ["PSo26NSExtensionRequestHandling", "MKPolygonRenderer"]
+- !private ["PSo26NSExtensionRequestHandling", "NSCalendar"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDate"]
 - ["PSo26NSExtensionRequestHandling", "NSMutableDictionary"]
 - !private ["PSo26NSExtensionRequestHandling", "NSMutableURLRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "NSSet"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "SWRevealViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
@@ -1838,6 +2083,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UILongPressGestureRecognizer"]
 - !private ["PSo26NSExtensionRequestHandling", "URLSession"]
+- ["PSo26NSExtensionRequestHandling", "activeEnergyBurnedType"]
 - ["PSo26NSExtensionRequestHandling", "addLongPressGesture"]
 - ["PSo26NSExtensionRequestHandling", "addRadiusCircle"]
 - ["PSo26NSExtensionRequestHandling", "annotations"]
@@ -1846,6 +2092,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "drawCircle"]
 - ["PSo26NSExtensionRequestHandling", "handleLongPress"]
 - ["PSo26NSExtensionRequestHandling", "healthData"]
+- ["PSo26NSExtensionRequestHandling", "healthStore"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "kCLLocationAccuracyBest"]
 - ["PSo26NSExtensionRequestHandling", "knn"]
@@ -1921,10 +2168,18 @@ depends-member:
 - !private ["CSo8NSObject", "CLLocationDegrees"]
 - !private ["CSo8NSObject", "CLLocationDistance"]
 - ["CSo8NSObject", "CLLocationManager"]
+- !private ["CSo8NSObject", "Date"]
 - !private ["CSo8NSObject", "Dictionary"]
 - !private ["CSo8NSObject", "DispatchQueue"]
 - ["CSo8NSObject", "Double"]
 - !private ["CSo8NSObject", "Float"]
+- ["CSo8NSObject", "HKHealthStore"]
+- !private ["CSo8NSObject", "HKObjectType"]
+- ["CSo8NSObject", "HKQuantityType"]
+- ["CSo8NSObject", "HKQuantityTypeIdentifier"]
+- !private ["CSo8NSObject", "HKQuery"]
+- !private ["CSo8NSObject", "HKStatisticsOptions"]
+- !private ["CSo8NSObject", "HKStatisticsQuery"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JSONSerialization"]
 - ["CSo8NSObject", "MKAnnotation"]
@@ -1942,12 +2197,16 @@ depends-member:
 - ["CSo8NSObject", "MKPolygon"]
 - !private ["CSo8NSObject", "MKPolygonRenderer"]
 - !private ["CSo8NSObject", "MKUserLocation"]
+- !private ["CSo8NSObject", "NSCalendar"]
+- !private ["CSo8NSObject", "NSDate"]
 - !private ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSMutableDictionary"]
 - !private ["CSo8NSObject", "NSMutableURLRequest"]
+- !private ["CSo8NSObject", "NSSet"]
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "ReadingOptions"]
 - !private ["CSo8NSObject", "SWRevealViewController"]
+- !private ["CSo8NSObject", "Set"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIButton"]
@@ -1967,6 +2226,7 @@ depends-member:
 - !private ["CSo8NSObject", "URLSession"]
 - !private ["CSo8NSObject", "WritingOptions"]
 - !private ["CSo8NSObject", "action"]
+- ["CSo8NSObject", "activeEnergyBurnedType"]
 - !private ["CSo8NSObject", "add"]
 - !private ["CSo8NSObject", "addAnnotation"]
 - !private ["CSo8NSObject", "addGestureRecognizer"]
@@ -1983,6 +2243,7 @@ depends-member:
 - !private ["CSo8NSObject", "convert"]
 - !private ["CSo8NSObject", "coordinate"]
 - !private ["CSo8NSObject", "cuisine"]
+- !private ["CSo8NSObject", "current"]
 - !private ["CSo8NSObject", "data"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "dataTask"]
@@ -1993,10 +2254,12 @@ depends-member:
 - !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "drawCircle"]
+- !private ["CSo8NSObject", "execute"]
 - !private ["CSo8NSObject", "fillColor"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "handleLongPress"]
 - ["CSo8NSObject", "healthData"]
+- ["CSo8NSObject", "healthStore"]
 - !private ["CSo8NSObject", "httpBody"]
 - !private ["CSo8NSObject", "httpMethod"]
 - !private ["CSo8NSObject", "identifier"]
@@ -2035,13 +2298,16 @@ depends-member:
 - ["CSo8NSObject", "pickerView"]
 - ["CSo8NSObject", "plotKnn"]
 - ["CSo8NSObject", "polygon"]
+- !private ["CSo8NSObject", "predicateForSamples"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "quantityType"]
 - ["CSo8NSObject", "radius"]
 - !private ["CSo8NSObject", "red"]
 - !private ["CSo8NSObject", "remove"]
 - !private ["CSo8NSObject", "removeAnnotations"]
 - !private ["CSo8NSObject", "removeOverlays"]
+- !private ["CSo8NSObject", "requestAuthorization"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
 - !private ["CSo8NSObject", "restaurant"]
 - !private ["CSo8NSObject", "restaurantLatitude"]
@@ -2063,6 +2329,7 @@ depends-member:
 - !private ["CSo8NSObject", "state"]
 - !private ["CSo8NSObject", "strokeColor"]
 - !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "sumQuantity"]
 - !private ["CSo8NSObject", "target"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
@@ -2085,6 +2352,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - !private ["PSo16NSObjectProtocol", "Float"]
+- ["PSo16NSObjectProtocol", "HKHealthStore"]
+- ["PSo16NSObjectProtocol", "HKQuantityType"]
+- ["PSo16NSObjectProtocol", "HKQuantityTypeIdentifier"]
+- !private ["PSo16NSObjectProtocol", "HKQuery"]
+- !private ["PSo16NSObjectProtocol", "HKStatisticsOptions"]
+- !private ["PSo16NSObjectProtocol", "HKStatisticsQuery"]
 - !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "JSONSerialization"]
 - !private ["PSo16NSObjectProtocol", "MKCircle"]
@@ -2096,8 +2369,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "MKPointAnnotation"]
 - !private ["PSo16NSObjectProtocol", "MKPolygon"]
 - !private ["PSo16NSObjectProtocol", "MKPolygonRenderer"]
+- !private ["PSo16NSObjectProtocol", "NSCalendar"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
 - ["PSo16NSObjectProtocol", "NSMutableDictionary"]
 - !private ["PSo16NSObjectProtocol", "NSMutableURLRequest"]
+- !private ["PSo16NSObjectProtocol", "NSSet"]
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "ReadingOptions"]
 - !private ["PSo16NSObjectProtocol", "SWRevealViewController"]
@@ -2109,6 +2385,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "URLSession"]
 - !private ["PSo16NSObjectProtocol", "WritingOptions"]
 - !private ["PSo16NSObjectProtocol", "action"]
+- ["PSo16NSObjectProtocol", "activeEnergyBurnedType"]
 - !private ["PSo16NSObjectProtocol", "add"]
 - !private ["PSo16NSObjectProtocol", "addAnnotation"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
@@ -2125,6 +2402,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "convert"]
 - !private ["PSo16NSObjectProtocol", "coordinate"]
 - !private ["PSo16NSObjectProtocol", "cuisine"]
+- !private ["PSo16NSObjectProtocol", "current"]
 - !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "dataTask"]
@@ -2134,10 +2412,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "drawCircle"]
+- !private ["PSo16NSObjectProtocol", "execute"]
 - !private ["PSo16NSObjectProtocol", "fillColor"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "handleLongPress"]
 - ["PSo16NSObjectProtocol", "healthData"]
+- ["PSo16NSObjectProtocol", "healthStore"]
 - !private ["PSo16NSObjectProtocol", "httpBody"]
 - !private ["PSo16NSObjectProtocol", "httpMethod"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
@@ -2177,13 +2457,16 @@ depends-member:
 - ["PSo16NSObjectProtocol", "pickerView"]
 - ["PSo16NSObjectProtocol", "plotKnn"]
 - ["PSo16NSObjectProtocol", "polygon"]
+- !private ["PSo16NSObjectProtocol", "predicateForSamples"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "quantityType"]
 - ["PSo16NSObjectProtocol", "radius"]
 - !private ["PSo16NSObjectProtocol", "red"]
 - !private ["PSo16NSObjectProtocol", "remove"]
 - !private ["PSo16NSObjectProtocol", "removeAnnotations"]
 - !private ["PSo16NSObjectProtocol", "removeOverlays"]
+- !private ["PSo16NSObjectProtocol", "requestAuthorization"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
 - !private ["PSo16NSObjectProtocol", "restaurant"]
 - !private ["PSo16NSObjectProtocol", "restaurantLatitude"]
@@ -2205,6 +2488,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "state"]
 - !private ["PSo16NSObjectProtocol", "strokeColor"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "sumQuantity"]
 - !private ["PSo16NSObjectProtocol", "target"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
@@ -2218,17 +2502,23 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "withAlphaComponent"]
 - ["PSo16NSObjectProtocol", ""]
+- ["CSo11NSPredicate", "deinit"]
 - !private ["PSo14NSSecureCoding", "black"]
 - !private ["PSo14NSSecureCoding", "blue"]
 - !private ["PSo14NSSecureCoding", "coordinate"]
+- !private ["PSo14NSSecureCoding", "current"]
 - !private ["PSo14NSSecureCoding", "httpBody"]
 - !private ["PSo14NSSecureCoding", "httpMethod"]
 - ["PSo14NSSecureCoding", "init"]
+- ["PSo14NSSecureCoding", "quantityType"]
 - !private ["PSo14NSSecureCoding", "red"]
 - !private ["PSo14NSSecureCoding", "setValue"]
 - !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["PSo14NSSecureCoding", "sumQuantity"]
 - !private ["PSo14NSSecureCoding", "url"]
 - !private ["PSo14NSSecureCoding", "withAlphaComponent"]
+- ["CSo5NSSet", "deinit"]
+- !private ["CSo5NSSet", "init"]
 - ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "init"]
 - !private ["CSo12NSURLRequest", "httpBody"]
@@ -2240,8 +2530,12 @@ depends-member:
 - !private ["CSo9OS_object", "main"]
 - !private ["Ps9OptionSet", "Element"]
 - !private ["Ps9OptionSet", "RawValue"]
+- !private ["Ps9OptionSet", "cumulativeSum"]
+- !private ["Ps9OptionSet", "day"]
 - !private ["Ps9OptionSet", "init"]
 - !private ["Ps9OptionSet", "normal"]
+- !private ["Ps9OptionSet", "strictStartDate"]
+- !private ["Sq", "debugDescription"]
 - ["Sq", "deinit"]
 - ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
@@ -2313,13 +2607,20 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "Element"]
 - !private ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "activeEnergyBurned"]
 - !private ["Ps16RawRepresentable", "began"]
+- !private ["Ps16RawRepresentable", "cumulativeSum"]
+- !private ["Ps16RawRepresentable", "day"]
+- !private ["Ps16RawRepresentable", "dietaryEnergyConsumed"]
 - !private ["Ps16RawRepresentable", "init"]
 - !private ["Ps16RawRepresentable", "normal"]
+- !private ["Ps16RawRepresentable", "strictStartDate"]
 - !private ["VCSo17JSONSerialization14ReadingOptions", "Element"]
 - !private ["VCSo17JSONSerialization14ReadingOptions", "RawValue"]
 - !private ["VCSo17JSONSerialization14ReadingOptions", "deinit"]
 - !private ["VCSo17JSONSerialization14ReadingOptions", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "date"]
+- !private ["P10Foundation20ReferenceConvertible", "dateComponents"]
 - !private ["Vs18ReversedCollection", "Iterator"]
 - !private ["Vs18ReversedCollection", "_Element"]
 - !private ["Vs30ReversedRandomAccessCollection", "Iterator"]
@@ -2345,10 +2646,15 @@ depends-member:
 - !private ["Ps8Sequence", "setValue"]
 - !private ["Ps8Sequence", "sorted"]
 - !private ["Ps8Sequence", "subscript"]
+- !private ["Vs3Set", "Element"]
+- ["Vs3Set", "deinit"]
 - !private ["Ps10SetAlgebra", "Element"]
 - !private ["Ps10SetAlgebra", "RawValue"]
+- !private ["Ps10SetAlgebra", "cumulativeSum"]
+- !private ["Ps10SetAlgebra", "day"]
 - !private ["Ps10SetAlgebra", "init"]
 - !private ["Ps10SetAlgebra", "normal"]
+- !private ["Ps10SetAlgebra", "strictStartDate"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
 - !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
@@ -2433,6 +2739,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "DispatchQueue"]
 - !private ["PSo21UIAppearanceContainer", "Double"]
 - !private ["PSo21UIAppearanceContainer", "Float"]
+- ["PSo21UIAppearanceContainer", "HKHealthStore"]
+- ["PSo21UIAppearanceContainer", "HKQuantityType"]
+- ["PSo21UIAppearanceContainer", "HKQuantityTypeIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "HKQuery"]
+- !private ["PSo21UIAppearanceContainer", "HKStatisticsOptions"]
+- !private ["PSo21UIAppearanceContainer", "HKStatisticsQuery"]
 - !private ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "JSONSerialization"]
 - !private ["PSo21UIAppearanceContainer", "MKCircle"]
@@ -2444,8 +2756,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "MKPointAnnotation"]
 - !private ["PSo21UIAppearanceContainer", "MKPolygon"]
 - !private ["PSo21UIAppearanceContainer", "MKPolygonRenderer"]
+- !private ["PSo21UIAppearanceContainer", "NSCalendar"]
+- !private ["PSo21UIAppearanceContainer", "NSDate"]
 - ["PSo21UIAppearanceContainer", "NSMutableDictionary"]
 - !private ["PSo21UIAppearanceContainer", "NSMutableURLRequest"]
+- !private ["PSo21UIAppearanceContainer", "NSSet"]
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "SWRevealViewController"]
 - !private ["PSo21UIAppearanceContainer", "String"]
@@ -2454,6 +2769,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UILongPressGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "URLSession"]
+- ["PSo21UIAppearanceContainer", "activeEnergyBurnedType"]
 - !private ["PSo21UIAppearanceContainer", "add"]
 - !private ["PSo21UIAppearanceContainer", "addAnnotation"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
@@ -2474,6 +2790,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "handleLongPress"]
 - ["PSo21UIAppearanceContainer", "healthData"]
+- ["PSo21UIAppearanceContainer", "healthStore"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isDraggable"]
 - !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyBest"]
@@ -2557,6 +2874,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "DispatchQueue"]
 - !private ["PSo18UIContentContainer", "Double"]
 - !private ["PSo18UIContentContainer", "Float"]
+- ["PSo18UIContentContainer", "HKHealthStore"]
+- ["PSo18UIContentContainer", "HKQuantityType"]
+- ["PSo18UIContentContainer", "HKQuantityTypeIdentifier"]
+- !private ["PSo18UIContentContainer", "HKQuery"]
+- !private ["PSo18UIContentContainer", "HKStatisticsOptions"]
+- !private ["PSo18UIContentContainer", "HKStatisticsQuery"]
 - !private ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "JSONSerialization"]
 - !private ["PSo18UIContentContainer", "MKCircle"]
@@ -2568,8 +2891,11 @@ depends-member:
 - ["PSo18UIContentContainer", "MKPointAnnotation"]
 - !private ["PSo18UIContentContainer", "MKPolygon"]
 - !private ["PSo18UIContentContainer", "MKPolygonRenderer"]
+- !private ["PSo18UIContentContainer", "NSCalendar"]
+- !private ["PSo18UIContentContainer", "NSDate"]
 - ["PSo18UIContentContainer", "NSMutableDictionary"]
 - !private ["PSo18UIContentContainer", "NSMutableURLRequest"]
+- !private ["PSo18UIContentContainer", "NSSet"]
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "SWRevealViewController"]
 - !private ["PSo18UIContentContainer", "String"]
@@ -2578,6 +2904,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UILongPressGestureRecognizer"]
 - !private ["PSo18UIContentContainer", "URLSession"]
+- ["PSo18UIContentContainer", "activeEnergyBurnedType"]
 - ["PSo18UIContentContainer", "addLongPressGesture"]
 - ["PSo18UIContentContainer", "addRadiusCircle"]
 - ["PSo18UIContentContainer", "annotations"]
@@ -2586,6 +2913,7 @@ depends-member:
 - ["PSo18UIContentContainer", "drawCircle"]
 - ["PSo18UIContentContainer", "handleLongPress"]
 - ["PSo18UIContentContainer", "healthData"]
+- ["PSo18UIContentContainer", "healthStore"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "kCLLocationAccuracyBest"]
 - ["PSo18UIContentContainer", "knn"]
@@ -2704,6 +3032,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "DispatchQueue"]
 - !private ["PSo18UIFocusEnvironment", "Double"]
 - !private ["PSo18UIFocusEnvironment", "Float"]
+- ["PSo18UIFocusEnvironment", "HKHealthStore"]
+- ["PSo18UIFocusEnvironment", "HKQuantityType"]
+- ["PSo18UIFocusEnvironment", "HKQuantityTypeIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "HKQuery"]
+- !private ["PSo18UIFocusEnvironment", "HKStatisticsOptions"]
+- !private ["PSo18UIFocusEnvironment", "HKStatisticsQuery"]
 - !private ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "JSONSerialization"]
 - !private ["PSo18UIFocusEnvironment", "MKCircle"]
@@ -2715,8 +3049,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "MKPointAnnotation"]
 - !private ["PSo18UIFocusEnvironment", "MKPolygon"]
 - !private ["PSo18UIFocusEnvironment", "MKPolygonRenderer"]
+- !private ["PSo18UIFocusEnvironment", "NSCalendar"]
+- !private ["PSo18UIFocusEnvironment", "NSDate"]
 - ["PSo18UIFocusEnvironment", "NSMutableDictionary"]
 - !private ["PSo18UIFocusEnvironment", "NSMutableURLRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSSet"]
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "SWRevealViewController"]
 - !private ["PSo18UIFocusEnvironment", "String"]
@@ -2725,6 +3062,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UILongPressGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "URLSession"]
+- ["PSo18UIFocusEnvironment", "activeEnergyBurnedType"]
 - !private ["PSo18UIFocusEnvironment", "add"]
 - !private ["PSo18UIFocusEnvironment", "addAnnotation"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
@@ -2745,6 +3083,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "handleLongPress"]
 - ["PSo18UIFocusEnvironment", "healthData"]
+- ["PSo18UIFocusEnvironment", "healthStore"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isDraggable"]
 - !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBest"]
@@ -2857,6 +3196,12 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "DispatchQueue"]
 - !private ["PSo22UIPickerViewDataSource", "Double"]
 - !private ["PSo22UIPickerViewDataSource", "Float"]
+- ["PSo22UIPickerViewDataSource", "HKHealthStore"]
+- ["PSo22UIPickerViewDataSource", "HKQuantityType"]
+- ["PSo22UIPickerViewDataSource", "HKQuantityTypeIdentifier"]
+- !private ["PSo22UIPickerViewDataSource", "HKQuery"]
+- !private ["PSo22UIPickerViewDataSource", "HKStatisticsOptions"]
+- !private ["PSo22UIPickerViewDataSource", "HKStatisticsQuery"]
 - !private ["PSo22UIPickerViewDataSource", "Int"]
 - !private ["PSo22UIPickerViewDataSource", "JSONSerialization"]
 - !private ["PSo22UIPickerViewDataSource", "MKCircle"]
@@ -2868,8 +3213,11 @@ depends-member:
 - ["PSo22UIPickerViewDataSource", "MKPointAnnotation"]
 - !private ["PSo22UIPickerViewDataSource", "MKPolygon"]
 - !private ["PSo22UIPickerViewDataSource", "MKPolygonRenderer"]
+- !private ["PSo22UIPickerViewDataSource", "NSCalendar"]
+- !private ["PSo22UIPickerViewDataSource", "NSDate"]
 - ["PSo22UIPickerViewDataSource", "NSMutableDictionary"]
 - !private ["PSo22UIPickerViewDataSource", "NSMutableURLRequest"]
+- !private ["PSo22UIPickerViewDataSource", "NSSet"]
 - !private ["PSo22UIPickerViewDataSource", "NSURL"]
 - !private ["PSo22UIPickerViewDataSource", "SWRevealViewController"]
 - !private ["PSo22UIPickerViewDataSource", "String"]
@@ -2878,11 +3226,14 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "UIImage"]
 - !private ["PSo22UIPickerViewDataSource", "UILongPressGestureRecognizer"]
 - !private ["PSo22UIPickerViewDataSource", "URLSession"]
+- !private ["PSo22UIPickerViewDataSource", "activeEnergyBurnedType"]
 - !private ["PSo22UIPickerViewDataSource", "addLongPressGesture"]
 - !private ["PSo22UIPickerViewDataSource", "addRadiusCircle"]
 - !private ["PSo22UIPickerViewDataSource", "annotations"]
 - !private ["PSo22UIPickerViewDataSource", "drawCircle"]
 - !private ["PSo22UIPickerViewDataSource", "handleLongPress"]
+- !private ["PSo22UIPickerViewDataSource", "healthData"]
+- !private ["PSo22UIPickerViewDataSource", "healthStore"]
 - !private ["PSo22UIPickerViewDataSource", "kCLLocationAccuracyBest"]
 - !private ["PSo22UIPickerViewDataSource", "knn"]
 - !private ["PSo22UIPickerViewDataSource", "location"]
@@ -2928,6 +3279,12 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "DispatchQueue"]
 - !private ["PSo20UIPickerViewDelegate", "Double"]
 - !private ["PSo20UIPickerViewDelegate", "Float"]
+- ["PSo20UIPickerViewDelegate", "HKHealthStore"]
+- ["PSo20UIPickerViewDelegate", "HKQuantityType"]
+- ["PSo20UIPickerViewDelegate", "HKQuantityTypeIdentifier"]
+- !private ["PSo20UIPickerViewDelegate", "HKQuery"]
+- !private ["PSo20UIPickerViewDelegate", "HKStatisticsOptions"]
+- !private ["PSo20UIPickerViewDelegate", "HKStatisticsQuery"]
 - !private ["PSo20UIPickerViewDelegate", "Int"]
 - !private ["PSo20UIPickerViewDelegate", "JSONSerialization"]
 - !private ["PSo20UIPickerViewDelegate", "MKCircle"]
@@ -2939,8 +3296,11 @@ depends-member:
 - ["PSo20UIPickerViewDelegate", "MKPointAnnotation"]
 - !private ["PSo20UIPickerViewDelegate", "MKPolygon"]
 - !private ["PSo20UIPickerViewDelegate", "MKPolygonRenderer"]
+- !private ["PSo20UIPickerViewDelegate", "NSCalendar"]
+- !private ["PSo20UIPickerViewDelegate", "NSDate"]
 - ["PSo20UIPickerViewDelegate", "NSMutableDictionary"]
 - !private ["PSo20UIPickerViewDelegate", "NSMutableURLRequest"]
+- !private ["PSo20UIPickerViewDelegate", "NSSet"]
 - !private ["PSo20UIPickerViewDelegate", "NSURL"]
 - !private ["PSo20UIPickerViewDelegate", "SWRevealViewController"]
 - !private ["PSo20UIPickerViewDelegate", "String"]
@@ -2949,11 +3309,14 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "UIImage"]
 - !private ["PSo20UIPickerViewDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo20UIPickerViewDelegate", "URLSession"]
+- !private ["PSo20UIPickerViewDelegate", "activeEnergyBurnedType"]
 - !private ["PSo20UIPickerViewDelegate", "addLongPressGesture"]
 - !private ["PSo20UIPickerViewDelegate", "addRadiusCircle"]
 - !private ["PSo20UIPickerViewDelegate", "annotations"]
 - !private ["PSo20UIPickerViewDelegate", "drawCircle"]
 - !private ["PSo20UIPickerViewDelegate", "handleLongPress"]
+- !private ["PSo20UIPickerViewDelegate", "healthData"]
+- !private ["PSo20UIPickerViewDelegate", "healthStore"]
 - !private ["PSo20UIPickerViewDelegate", "kCLLocationAccuracyBest"]
 - !private ["PSo20UIPickerViewDelegate", "knn"]
 - !private ["PSo20UIPickerViewDelegate", "location"]
@@ -2998,10 +3361,18 @@ depends-member:
 - !private ["CSo11UIResponder", "CLLocationDegrees"]
 - !private ["CSo11UIResponder", "CLLocationDistance"]
 - ["CSo11UIResponder", "CLLocationManager"]
+- !private ["CSo11UIResponder", "Date"]
 - !private ["CSo11UIResponder", "Dictionary"]
 - !private ["CSo11UIResponder", "DispatchQueue"]
 - ["CSo11UIResponder", "Double"]
 - !private ["CSo11UIResponder", "Float"]
+- ["CSo11UIResponder", "HKHealthStore"]
+- !private ["CSo11UIResponder", "HKObjectType"]
+- ["CSo11UIResponder", "HKQuantityType"]
+- ["CSo11UIResponder", "HKQuantityTypeIdentifier"]
+- !private ["CSo11UIResponder", "HKQuery"]
+- !private ["CSo11UIResponder", "HKStatisticsOptions"]
+- !private ["CSo11UIResponder", "HKStatisticsQuery"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "JSONSerialization"]
 - ["CSo11UIResponder", "MKAnnotation"]
@@ -3019,11 +3390,15 @@ depends-member:
 - ["CSo11UIResponder", "MKPolygon"]
 - !private ["CSo11UIResponder", "MKPolygonRenderer"]
 - !private ["CSo11UIResponder", "MKUserLocation"]
+- !private ["CSo11UIResponder", "NSCalendar"]
+- !private ["CSo11UIResponder", "NSDate"]
 - !private ["CSo11UIResponder", "NSDictionary"]
 - ["CSo11UIResponder", "NSMutableDictionary"]
 - !private ["CSo11UIResponder", "NSMutableURLRequest"]
+- !private ["CSo11UIResponder", "NSSet"]
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "SWRevealViewController"]
+- !private ["CSo11UIResponder", "Set"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIButton"]
@@ -3041,6 +3416,7 @@ depends-member:
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "URLRequest"]
 - !private ["CSo11UIResponder", "URLSession"]
+- ["CSo11UIResponder", "activeEnergyBurnedType"]
 - !private ["CSo11UIResponder", "add"]
 - !private ["CSo11UIResponder", "addAnnotation"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
@@ -3062,6 +3438,7 @@ depends-member:
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "handleLongPress"]
 - ["CSo11UIResponder", "healthData"]
+- ["CSo11UIResponder", "healthStore"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isDraggable"]
 - !private ["CSo11UIResponder", "kCLLocationAccuracyBest"]
@@ -3130,6 +3507,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "DispatchQueue"]
 - !private ["PSo30UIResponderStandardEditActions", "Double"]
 - !private ["PSo30UIResponderStandardEditActions", "Float"]
+- ["PSo30UIResponderStandardEditActions", "HKHealthStore"]
+- ["PSo30UIResponderStandardEditActions", "HKQuantityType"]
+- ["PSo30UIResponderStandardEditActions", "HKQuantityTypeIdentifier"]
+- !private ["PSo30UIResponderStandardEditActions", "HKQuery"]
+- !private ["PSo30UIResponderStandardEditActions", "HKStatisticsOptions"]
+- !private ["PSo30UIResponderStandardEditActions", "HKStatisticsQuery"]
 - !private ["PSo30UIResponderStandardEditActions", "Int"]
 - !private ["PSo30UIResponderStandardEditActions", "JSONSerialization"]
 - !private ["PSo30UIResponderStandardEditActions", "MKCircle"]
@@ -3141,8 +3524,11 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "MKPointAnnotation"]
 - !private ["PSo30UIResponderStandardEditActions", "MKPolygon"]
 - !private ["PSo30UIResponderStandardEditActions", "MKPolygonRenderer"]
+- !private ["PSo30UIResponderStandardEditActions", "NSCalendar"]
+- !private ["PSo30UIResponderStandardEditActions", "NSDate"]
 - ["PSo30UIResponderStandardEditActions", "NSMutableDictionary"]
 - !private ["PSo30UIResponderStandardEditActions", "NSMutableURLRequest"]
+- !private ["PSo30UIResponderStandardEditActions", "NSSet"]
 - !private ["PSo30UIResponderStandardEditActions", "NSURL"]
 - !private ["PSo30UIResponderStandardEditActions", "SWRevealViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
@@ -3151,6 +3537,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UILongPressGestureRecognizer"]
 - !private ["PSo30UIResponderStandardEditActions", "URLSession"]
+- ["PSo30UIResponderStandardEditActions", "activeEnergyBurnedType"]
 - !private ["PSo30UIResponderStandardEditActions", "add"]
 - !private ["PSo30UIResponderStandardEditActions", "addAnnotation"]
 - !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
@@ -3171,6 +3558,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
 - ["PSo30UIResponderStandardEditActions", "handleLongPress"]
 - ["PSo30UIResponderStandardEditActions", "healthData"]
+- ["PSo30UIResponderStandardEditActions", "healthStore"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "isDraggable"]
 - !private ["PSo30UIResponderStandardEditActions", "kCLLocationAccuracyBest"]
@@ -3246,6 +3634,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "DispatchQueue"]
 - !private ["PSo16UIStateRestoring", "Double"]
 - !private ["PSo16UIStateRestoring", "Float"]
+- ["PSo16UIStateRestoring", "HKHealthStore"]
+- ["PSo16UIStateRestoring", "HKQuantityType"]
+- ["PSo16UIStateRestoring", "HKQuantityTypeIdentifier"]
+- !private ["PSo16UIStateRestoring", "HKQuery"]
+- !private ["PSo16UIStateRestoring", "HKStatisticsOptions"]
+- !private ["PSo16UIStateRestoring", "HKStatisticsQuery"]
 - !private ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "JSONSerialization"]
 - !private ["PSo16UIStateRestoring", "MKCircle"]
@@ -3257,8 +3651,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "MKPointAnnotation"]
 - !private ["PSo16UIStateRestoring", "MKPolygon"]
 - !private ["PSo16UIStateRestoring", "MKPolygonRenderer"]
+- !private ["PSo16UIStateRestoring", "NSCalendar"]
+- !private ["PSo16UIStateRestoring", "NSDate"]
 - ["PSo16UIStateRestoring", "NSMutableDictionary"]
 - !private ["PSo16UIStateRestoring", "NSMutableURLRequest"]
+- !private ["PSo16UIStateRestoring", "NSSet"]
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "SWRevealViewController"]
 - !private ["PSo16UIStateRestoring", "String"]
@@ -3267,6 +3664,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UILongPressGestureRecognizer"]
 - !private ["PSo16UIStateRestoring", "URLSession"]
+- ["PSo16UIStateRestoring", "activeEnergyBurnedType"]
 - ["PSo16UIStateRestoring", "addLongPressGesture"]
 - ["PSo16UIStateRestoring", "addRadiusCircle"]
 - ["PSo16UIStateRestoring", "annotations"]
@@ -3275,6 +3673,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "drawCircle"]
 - ["PSo16UIStateRestoring", "handleLongPress"]
 - ["PSo16UIStateRestoring", "healthData"]
+- ["PSo16UIStateRestoring", "healthStore"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "kCLLocationAccuracyBest"]
 - ["PSo16UIStateRestoring", "knn"]
@@ -3351,6 +3750,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "DispatchQueue"]
 - !private ["PSo18UITraitEnvironment", "Double"]
 - !private ["PSo18UITraitEnvironment", "Float"]
+- ["PSo18UITraitEnvironment", "HKHealthStore"]
+- ["PSo18UITraitEnvironment", "HKQuantityType"]
+- ["PSo18UITraitEnvironment", "HKQuantityTypeIdentifier"]
+- !private ["PSo18UITraitEnvironment", "HKQuery"]
+- !private ["PSo18UITraitEnvironment", "HKStatisticsOptions"]
+- !private ["PSo18UITraitEnvironment", "HKStatisticsQuery"]
 - !private ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "JSONSerialization"]
 - !private ["PSo18UITraitEnvironment", "MKCircle"]
@@ -3362,8 +3767,11 @@ depends-member:
 - ["PSo18UITraitEnvironment", "MKPointAnnotation"]
 - !private ["PSo18UITraitEnvironment", "MKPolygon"]
 - !private ["PSo18UITraitEnvironment", "MKPolygonRenderer"]
+- !private ["PSo18UITraitEnvironment", "NSCalendar"]
+- !private ["PSo18UITraitEnvironment", "NSDate"]
 - ["PSo18UITraitEnvironment", "NSMutableDictionary"]
 - !private ["PSo18UITraitEnvironment", "NSMutableURLRequest"]
+- !private ["PSo18UITraitEnvironment", "NSSet"]
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "SWRevealViewController"]
 - !private ["PSo18UITraitEnvironment", "String"]
@@ -3372,6 +3780,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UILongPressGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "URLSession"]
+- ["PSo18UITraitEnvironment", "activeEnergyBurnedType"]
 - !private ["PSo18UITraitEnvironment", "add"]
 - !private ["PSo18UITraitEnvironment", "addAnnotation"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
@@ -3392,6 +3801,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "handleLongPress"]
 - ["PSo18UITraitEnvironment", "healthData"]
+- ["PSo18UITraitEnvironment", "healthStore"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isDraggable"]
 - !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyBest"]
@@ -3486,10 +3896,18 @@ depends-member:
 - !private ["CSo16UIViewController", "CLLocationDegrees"]
 - !private ["CSo16UIViewController", "CLLocationDistance"]
 - ["CSo16UIViewController", "CLLocationManager"]
+- !private ["CSo16UIViewController", "Date"]
 - !private ["CSo16UIViewController", "Dictionary"]
 - !private ["CSo16UIViewController", "DispatchQueue"]
 - ["CSo16UIViewController", "Double"]
 - !private ["CSo16UIViewController", "Float"]
+- ["CSo16UIViewController", "HKHealthStore"]
+- !private ["CSo16UIViewController", "HKObjectType"]
+- ["CSo16UIViewController", "HKQuantityType"]
+- ["CSo16UIViewController", "HKQuantityTypeIdentifier"]
+- !private ["CSo16UIViewController", "HKQuery"]
+- !private ["CSo16UIViewController", "HKStatisticsOptions"]
+- !private ["CSo16UIViewController", "HKStatisticsQuery"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "JSONSerialization"]
 - ["CSo16UIViewController", "MKAnnotation"]
@@ -3507,11 +3925,15 @@ depends-member:
 - ["CSo16UIViewController", "MKPolygon"]
 - !private ["CSo16UIViewController", "MKPolygonRenderer"]
 - !private ["CSo16UIViewController", "MKUserLocation"]
+- !private ["CSo16UIViewController", "NSCalendar"]
+- !private ["CSo16UIViewController", "NSDate"]
 - !private ["CSo16UIViewController", "NSDictionary"]
 - ["CSo16UIViewController", "NSMutableDictionary"]
 - !private ["CSo16UIViewController", "NSMutableURLRequest"]
+- !private ["CSo16UIViewController", "NSSet"]
 - !private ["CSo16UIViewController", "NSURL"]
 - !private ["CSo16UIViewController", "SWRevealViewController"]
+- !private ["CSo16UIViewController", "Set"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIButton"]
@@ -3529,6 +3951,7 @@ depends-member:
 - !private ["CSo16UIViewController", "URL"]
 - !private ["CSo16UIViewController", "URLRequest"]
 - !private ["CSo16UIViewController", "URLSession"]
+- ["CSo16UIViewController", "activeEnergyBurnedType"]
 - ["CSo16UIViewController", "addLongPressGesture"]
 - ["CSo16UIViewController", "addRadiusCircle"]
 - ["CSo16UIViewController", "annotations"]
@@ -3538,6 +3961,7 @@ depends-member:
 - ["CSo16UIViewController", "drawCircle"]
 - ["CSo16UIViewController", "handleLongPress"]
 - ["CSo16UIViewController", "healthData"]
+- ["CSo16UIViewController", "healthStore"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "kCLLocationAccuracyBest"]
 - ["CSo16UIViewController", "knn"]
@@ -3599,6 +4023,7 @@ depends-member:
 - !private ["CSo18URLSessionDataTask", "resume"]
 - !private ["CSo14URLSessionTask", "resume"]
 - !private ["Sc", "deinit"]
+- !private ["VCSo10NSCalendar4Unit", "day"]
 - !private ["VCSo17JSONSerialization14WritingOptions", "Element"]
 - !private ["VCSo17JSONSerialization14WritingOptions", "RawValue"]
 - ["VCSo17JSONSerialization14WritingOptions", "deinit"]
@@ -3675,6 +4100,7 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "red"]
 - !private ["Ps26_ExpressibleByColorLiteral", "withAlphaComponent"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "current"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "httpBody"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "httpMethod"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
@@ -3689,7 +4115,14 @@ depends-member:
 - ["Ps9_Hashable", "CLLocationManager"]
 - !private ["Ps9_Hashable", "DispatchQueue"]
 - !private ["Ps9_Hashable", "Double"]
+- !private ["Ps9_Hashable", "Element"]
 - !private ["Ps9_Hashable", "Float"]
+- ["Ps9_Hashable", "HKHealthStore"]
+- ["Ps9_Hashable", "HKQuantityType"]
+- ["Ps9_Hashable", "HKQuantityTypeIdentifier"]
+- !private ["Ps9_Hashable", "HKQuery"]
+- !private ["Ps9_Hashable", "HKStatisticsOptions"]
+- !private ["Ps9_Hashable", "HKStatisticsQuery"]
 - !private ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "JSONSerialization"]
@@ -3702,8 +4135,11 @@ depends-member:
 - ["Ps9_Hashable", "MKPointAnnotation"]
 - !private ["Ps9_Hashable", "MKPolygon"]
 - !private ["Ps9_Hashable", "MKPolygonRenderer"]
+- !private ["Ps9_Hashable", "NSCalendar"]
+- !private ["Ps9_Hashable", "NSDate"]
 - ["Ps9_Hashable", "NSMutableDictionary"]
 - !private ["Ps9_Hashable", "NSMutableURLRequest"]
+- !private ["Ps9_Hashable", "NSSet"]
 - !private ["Ps9_Hashable", "NSURL"]
 - !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "ReadingOptions"]
@@ -3719,6 +4155,8 @@ depends-member:
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "action"]
+- ["Ps9_Hashable", "activeEnergyBurned"]
+- ["Ps9_Hashable", "activeEnergyBurnedType"]
 - !private ["Ps9_Hashable", "add"]
 - !private ["Ps9_Hashable", "addAnnotation"]
 - !private ["Ps9_Hashable", "addGestureRecognizer"]
@@ -3736,19 +4174,26 @@ depends-member:
 - !private ["Ps9_Hashable", "convert"]
 - !private ["Ps9_Hashable", "coordinate"]
 - !private ["Ps9_Hashable", "cuisine"]
+- !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "data"]
 - !private ["Ps9_Hashable", "dataSource"]
 - !private ["Ps9_Hashable", "dataTask"]
+- !private ["Ps9_Hashable", "date"]
+- !private ["Ps9_Hashable", "dateComponents"]
+- !private ["Ps9_Hashable", "day"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dequeueReusableAnnotationView"]
 - !private ["Ps9_Hashable", "desiredAccuracy"]
 - !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "dietaryEnergyConsumed"]
 - ["Ps9_Hashable", "drawCircle"]
+- !private ["Ps9_Hashable", "execute"]
 - !private ["Ps9_Hashable", "fillColor"]
 - !private ["Ps9_Hashable", "frame"]
 - ["Ps9_Hashable", "handleLongPress"]
 - ["Ps9_Hashable", "healthData"]
+- ["Ps9_Hashable", "healthStore"]
 - !private ["Ps9_Hashable", "httpBody"]
 - !private ["Ps9_Hashable", "httpMethod"]
 - !private ["Ps9_Hashable", "identifier"]
@@ -3776,6 +4221,7 @@ depends-member:
 - ["Ps9_Hashable", "mapViewWillStartRenderingMap"]
 - ["Ps9_Hashable", "menuButton"]
 - !private ["Ps9_Hashable", "minimumPressDuration"]
+- !private ["Ps9_Hashable", "month"]
 - ["Ps9_Hashable", "numberOfComponents"]
 - ["Ps9_Hashable", "numberOfComponentsInPickerView"]
 - !private ["Ps9_Hashable", "overlays"]
@@ -3787,13 +4233,16 @@ depends-member:
 - ["Ps9_Hashable", "pickerView"]
 - ["Ps9_Hashable", "plotKnn"]
 - ["Ps9_Hashable", "polygon"]
+- !private ["Ps9_Hashable", "predicateForSamples"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "quantityType"]
 - ["Ps9_Hashable", "radius"]
 - !private ["Ps9_Hashable", "red"]
 - !private ["Ps9_Hashable", "remove"]
 - !private ["Ps9_Hashable", "removeAnnotations"]
 - !private ["Ps9_Hashable", "removeOverlays"]
+- !private ["Ps9_Hashable", "requestAuthorization"]
 - !private ["Ps9_Hashable", "requestWhenInUseAuthorization"]
 - !private ["Ps9_Hashable", "restaurant"]
 - !private ["Ps9_Hashable", "restaurantLatitude"]
@@ -3815,6 +4264,7 @@ depends-member:
 - !private ["Ps9_Hashable", "state"]
 - !private ["Ps9_Hashable", "strokeColor"]
 - !private ["Ps9_Hashable", "subscript"]
+- !private ["Ps9_Hashable", "sumQuantity"]
 - !private ["Ps9_Hashable", "target"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "title"]
@@ -3827,6 +4277,7 @@ depends-member:
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - !private ["Ps9_Hashable", "withAlphaComponent"]
+- !private ["Ps9_Hashable", "year"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]
@@ -3840,6 +4291,8 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["P10Foundation14_MutableBoxing", "date"]
+- !private ["P10Foundation14_MutableBoxing", "dateComponents"]
 - ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
@@ -3850,8 +4303,13 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "activeEnergyBurned"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "date"]
+- !private ["Ps21_ObjectiveCBridgeable", "dateComponents"]
+- !private ["Ps21_ObjectiveCBridgeable", "debugDescription"]
+- !private ["Ps21_ObjectiveCBridgeable", "dietaryEnergyConsumed"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
@@ -3873,6 +4331,8 @@ depends-member:
 - !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps11_Strideable", "_DisabledRangeIndex"]
 - !private ["Ps11_Strideable", "init"]
+- ["Ps20_SwiftNewtypeWrapper", "activeEnergyBurned"]
+- !private ["Ps20_SwiftNewtypeWrapper", "dietaryEnergyConsumed"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
@@ -3894,14 +4354,18 @@ depends-nominal:
 - "CSo17CLLocationManager"
 - "PSo25CLLocationManagerDelegate"
 - "Ps7CVarArg"
+- "V10Foundation8Calendar"
 - !private "Vs9Character"
 - "Ps10Collection"
 - "Ps10Comparable"
+- "OV10Foundation8Calendar9Component"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Data"
+- "V10Foundation4Date"
+- "V10Foundation14DateComponents"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
 - !private "Vs10Dictionary"
@@ -3916,12 +4380,24 @@ depends-nominal:
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Sf"
 - !private "Ps13FloatingPoint"
 - "C5Buddy27GeoWithHealthViewController"
+- "CSo13HKHealthStore"
+- "CSo12HKObjectType"
+- !private "CSo10HKQuantity"
+- "CSo14HKQuantityType"
+- "VSC24HKQuantityTypeIdentifier"
+- !private "CSo7HKQuery"
+- "VSC14HKQueryOptions"
+- "CSo12HKSampleType"
+- !private "CSo12HKStatistics"
+- "VSC19HKStatisticsOptions"
+- "CSo17HKStatisticsQuery"
 - "Ps8Hashable"
 - "SQ"
 - "Ps9Indexable"
@@ -3958,9 +4434,11 @@ depends-nominal:
 - "Ps10MirrorPath"
 - "Ps17MutableCollection"
 - "Ps16MutableIndexable"
+- !private "CSo10NSCalendar"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
+- "CSo6NSDate"
 - "CSo12NSDictionary"
 - "PSo26NSExtensionRequestHandling"
 - "PSo17NSFastEnumeration"
@@ -3969,7 +4447,9 @@ depends-nominal:
 - "CSo19NSMutableURLRequest"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- "CSo11NSPredicate"
 - "PSo14NSSecureCoding"
+- "CSo5NSSet"
 - "CSo8NSString"
 - !private "CSo5NSURL"
 - !private "CSo12NSURLRequest"
@@ -3981,13 +4461,15 @@ depends-nominal:
 - !private "Vs17RandomAccessSlice"
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
-- !private "Ps16RawRepresentable"
+- "Ps16RawRepresentable"
 - !private "VCSo17JSONSerialization14ReadingOptions"
+- !private "P10Foundation20ReferenceConvertible"
 - !private "Vs18ReversedCollection"
 - "Vs30ReversedRandomAccessCollection"
 - !private "CSo22SWRevealViewController"
 - "V10ObjectiveC8Selector"
 - "Ps8Sequence"
+- "Vs3Set"
 - !private "Ps10SetAlgebra"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
@@ -4046,6 +4528,7 @@ depends-nominal:
 - "CSo18URLSessionDataTask"
 - !private "CSo14URLSessionTask"
 - !private "Sc"
+- !private "VCSo10NSCalendar4Unit"
 - "VCSo17JSONSerialization14WritingOptions"
 - "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"
@@ -4066,10 +4549,12 @@ depends-nominal:
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation14_MutableBoxing"
 - "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
+- "Ps20_SwiftNewtypeWrapper"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -4086,4 +4571,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "2771a7db22ee5df169ccacbfa60f7e8b"
+interface-hash: "c5d0cfa001b4607b7ef69a6ffbd04563"
