@@ -1,0 +1,547 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BuddiesWithHealthGoingTableViewController"
+provides-nominal:
+- "C5Buddy41BuddiesWithHealthGoingTableViewController"
+provides-member:
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", ""]
+provides-dynamic-lookup:
+- "prepare"
+- "numberOfSections"
+- "restaurant"
+- "didReceiveMemoryWarning"
+- "restaurantLongitude"
+- "viewDidLoad"
+- "cuisine"
+- "tableView"
+- "restaurantLatitude"
+depends-top-level:
+- "BuddiesWithHealthGoingTableViewController"
+- "UITableViewController"
+- !private "print"
+- !private "=="
+- "AssignmentPrecedence"
+- "UIStoryboardSegue"
+- "CastingPrecedence"
+- !private "DirectionWithHealthViewController"
+- "String"
+- "UITableView"
+- !private "UINavigationController"
+- "StringLiteralType"
+- "Int"
+- "Double"
+depends-member:
+- ["Ps9AnyObject", "cuisine"]
+- !private ["Ps9AnyObject", "destination"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "identifier"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "numberOfSections"]
+- ["Ps9AnyObject", "prepare"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "restaurant"]
+- ["Ps9AnyObject", "restaurantLatitude"]
+- ["Ps9AnyObject", "restaurantLongitude"]
+- ["Ps9AnyObject", "tableView"]
+- !private ["Ps9AnyObject", "topViewController"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "DirectionWithHealthViewController"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "Double"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "Int"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "String"]
+- !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "UINavigationController"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "UIStoryboardSegue"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "UITableView"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "cuisine"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "deinit"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "didReceiveMemoryWarning"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "init"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "numberOfSections"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "prepare"]
+- !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "print"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurant"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurantLatitude"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurantLongitude"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "tableView"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "viewDidLoad"]
+- !private ["PSo25CLLocationManagerDelegate", "restaurantLatitude"]
+- !private ["PSo25CLLocationManagerDelegate", "restaurantLongitude"]
+- ["Ps7CVarArg", "cuisine"]
+- !private ["Ps7CVarArg", "destination"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "identifier"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "numberOfSections"]
+- ["Ps7CVarArg", "prepare"]
+- !private ["Ps7CVarArg", "print"]
+- ["Ps7CVarArg", "restaurant"]
+- ["Ps7CVarArg", "restaurantLatitude"]
+- ["Ps7CVarArg", "restaurantLongitude"]
+- ["Ps7CVarArg", "tableView"]
+- !private ["Ps7CVarArg", "topViewController"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Vs9Character", "deinit"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "cuisine"]
+- !private ["Ps28CustomDebugStringConvertible", "destination"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "numberOfSections"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "restaurant"]
+- ["Ps28CustomDebugStringConvertible", "restaurantLatitude"]
+- ["Ps28CustomDebugStringConvertible", "restaurantLongitude"]
+- ["Ps28CustomDebugStringConvertible", "tableView"]
+- !private ["Ps28CustomDebugStringConvertible", "topViewController"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "cuisine"]
+- !private ["Ps23CustomStringConvertible", "destination"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "numberOfSections"]
+- ["Ps23CustomStringConvertible", "prepare"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "restaurant"]
+- ["Ps23CustomStringConvertible", "restaurantLatitude"]
+- ["Ps23CustomStringConvertible", "restaurantLongitude"]
+- ["Ps23CustomStringConvertible", "tableView"]
+- !private ["Ps23CustomStringConvertible", "topViewController"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["C5Buddy33DirectionWithHealthViewController", "deinit"]
+- !private ["C5Buddy33DirectionWithHealthViewController", "restaurantLatitude"]
+- !private ["C5Buddy33DirectionWithHealthViewController", "restaurantLongitude"]
+- ["Sd", "deinit"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "cuisine"]
+- !private ["Ps9Equatable", "destination"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "identifier"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "numberOfSections"]
+- ["Ps9Equatable", "prepare"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "restaurant"]
+- ["Ps9Equatable", "restaurantLatitude"]
+- ["Ps9Equatable", "restaurantLongitude"]
+- ["Ps9Equatable", "tableView"]
+- !private ["Ps9Equatable", "topViewController"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "cuisine"]
+- !private ["Ps8Hashable", "destination"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "identifier"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "numberOfSections"]
+- ["Ps8Hashable", "prepare"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "restaurant"]
+- ["Ps8Hashable", "restaurantLatitude"]
+- ["Ps8Hashable", "restaurantLongitude"]
+- ["Ps8Hashable", "tableView"]
+- !private ["Ps8Hashable", "topViewController"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["PSo17MKMapViewDelegate", "restaurantLatitude"]
+- !private ["PSo17MKMapViewDelegate", "restaurantLongitude"]
+- ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "cuisine"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "numberOfSections"]
+- ["PSo8NSCoding", "prepare"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "restaurant"]
+- ["PSo8NSCoding", "restaurantLatitude"]
+- ["PSo8NSCoding", "restaurantLongitude"]
+- ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "topViewController"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo9NSCopying", "init"]
+- ["PSo26NSExtensionRequestHandling", "cuisine"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSections"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "restaurant"]
+- ["PSo26NSExtensionRequestHandling", "restaurantLatitude"]
+- ["PSo26NSExtensionRequestHandling", "restaurantLongitude"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- !private ["PSo26NSExtensionRequestHandling", "topViewController"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "DirectionWithHealthViewController"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UINavigationController"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "cuisine"]
+- !private ["CSo8NSObject", "destination"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "identifier"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "numberOfSections"]
+- ["CSo8NSObject", "prepare"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "restaurant"]
+- ["CSo8NSObject", "restaurantLatitude"]
+- ["CSo8NSObject", "restaurantLongitude"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "topViewController"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "cuisine"]
+- !private ["PSo16NSObjectProtocol", "destination"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "numberOfSections"]
+- ["PSo16NSObjectProtocol", "prepare"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "restaurant"]
+- ["PSo16NSObjectProtocol", "restaurantLatitude"]
+- ["PSo16NSObjectProtocol", "restaurantLongitude"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "topViewController"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["PSo21UIAppearanceContainer", "cuisine"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "numberOfSections"]
+- ["PSo21UIAppearanceContainer", "prepare"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "restaurant"]
+- ["PSo21UIAppearanceContainer", "restaurantLatitude"]
+- ["PSo21UIAppearanceContainer", "restaurantLongitude"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "topViewController"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "cuisine"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "numberOfSections"]
+- ["PSo18UIContentContainer", "prepare"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "restaurant"]
+- ["PSo18UIContentContainer", "restaurantLatitude"]
+- ["PSo18UIContentContainer", "restaurantLongitude"]
+- ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo18UIContentContainer", "topViewController"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "cuisine"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "numberOfSections"]
+- ["PSo18UIFocusEnvironment", "prepare"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "restaurant"]
+- ["PSo18UIFocusEnvironment", "restaurantLatitude"]
+- ["PSo18UIFocusEnvironment", "restaurantLongitude"]
+- ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "topViewController"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "topViewController"]
+- !private ["CSo11UIResponder", "DirectionWithHealthViewController"]
+- ["CSo11UIResponder", "Double"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UINavigationController"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "cuisine"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "numberOfSections"]
+- ["CSo11UIResponder", "prepare"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "restaurant"]
+- ["CSo11UIResponder", "restaurantLatitude"]
+- ["CSo11UIResponder", "restaurantLongitude"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "topViewController"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "cuisine"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "numberOfSections"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- ["PSo30UIResponderStandardEditActions", "restaurant"]
+- ["PSo30UIResponderStandardEditActions", "restaurantLatitude"]
+- ["PSo30UIResponderStandardEditActions", "restaurantLongitude"]
+- ["PSo30UIResponderStandardEditActions", "tableView"]
+- !private ["PSo30UIResponderStandardEditActions", "topViewController"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo20UIScrollViewDelegate", "cuisine"]
+- ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- ["PSo20UIScrollViewDelegate", "numberOfSections"]
+- ["PSo20UIScrollViewDelegate", "prepare"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
+- ["PSo20UIScrollViewDelegate", "restaurant"]
+- ["PSo20UIScrollViewDelegate", "restaurantLatitude"]
+- ["PSo20UIScrollViewDelegate", "restaurantLongitude"]
+- ["PSo20UIScrollViewDelegate", "tableView"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- ["PSo16UIStateRestoring", "cuisine"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "numberOfSections"]
+- ["PSo16UIStateRestoring", "prepare"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "restaurant"]
+- ["PSo16UIStateRestoring", "restaurantLatitude"]
+- ["PSo16UIStateRestoring", "restaurantLongitude"]
+- ["PSo16UIStateRestoring", "tableView"]
+- !private ["PSo16UIStateRestoring", "topViewController"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["CSo17UIStoryboardSegue", "deinit"]
+- !private ["CSo17UIStoryboardSegue", "destination"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
+- !private ["CSo21UITableViewController", "DirectionWithHealthViewController"]
+- ["CSo21UITableViewController", "Double"]
+- ["CSo21UITableViewController", "Int"]
+- ["CSo21UITableViewController", "String"]
+- !private ["CSo21UITableViewController", "UINavigationController"]
+- ["CSo21UITableViewController", "UIStoryboardSegue"]
+- ["CSo21UITableViewController", "UITableView"]
+- ["CSo21UITableViewController", "cuisine"]
+- ["CSo21UITableViewController", "deinit"]
+- ["CSo21UITableViewController", "didReceiveMemoryWarning"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "numberOfSections"]
+- ["CSo21UITableViewController", "prepare"]
+- !private ["CSo21UITableViewController", "print"]
+- ["CSo21UITableViewController", "restaurant"]
+- ["CSo21UITableViewController", "restaurantLatitude"]
+- ["CSo21UITableViewController", "restaurantLongitude"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- ["PSo21UITableViewDataSource", "cuisine"]
+- ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- ["PSo21UITableViewDataSource", "numberOfSections"]
+- ["PSo21UITableViewDataSource", "prepare"]
+- !private ["PSo21UITableViewDataSource", "print"]
+- ["PSo21UITableViewDataSource", "restaurant"]
+- ["PSo21UITableViewDataSource", "restaurantLatitude"]
+- ["PSo21UITableViewDataSource", "restaurantLongitude"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- ["PSo19UITableViewDelegate", "cuisine"]
+- ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- ["PSo19UITableViewDelegate", "numberOfSections"]
+- ["PSo19UITableViewDelegate", "prepare"]
+- !private ["PSo19UITableViewDelegate", "print"]
+- ["PSo19UITableViewDelegate", "restaurant"]
+- ["PSo19UITableViewDelegate", "restaurantLatitude"]
+- ["PSo19UITableViewDelegate", "restaurantLongitude"]
+- ["PSo19UITableViewDelegate", "tableView"]
+- ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- ["OSC16UITableViewStyle", "deinit"]
+- ["PSo18UITraitEnvironment", "cuisine"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "numberOfSections"]
+- ["PSo18UITraitEnvironment", "prepare"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "restaurant"]
+- ["PSo18UITraitEnvironment", "restaurantLatitude"]
+- ["PSo18UITraitEnvironment", "restaurantLongitude"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "topViewController"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "DirectionWithHealthViewController"]
+- ["CSo16UIViewController", "Double"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UINavigationController"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "cuisine"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "numberOfSections"]
+- ["CSo16UIViewController", "prepare"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "restaurant"]
+- ["CSo16UIViewController", "restaurantLatitude"]
+- ["CSo16UIViewController", "restaurantLongitude"]
+- ["CSo16UIViewController", "tableView"]
+- !private ["CSo16UIViewController", "topViewController"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "cuisine"]
+- !private ["Ps9_Hashable", "destination"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "identifier"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "numberOfSections"]
+- ["Ps9_Hashable", "prepare"]
+- !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "restaurant"]
+- ["Ps9_Hashable", "restaurantLatitude"]
+- ["Ps9_Hashable", "restaurantLongitude"]
+- ["Ps9_Hashable", "tableView"]
+- !private ["Ps9_Hashable", "topViewController"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "C5Buddy41BuddiesWithHealthGoingTableViewController"
+- !private "PSo25CLLocationManagerDelegate"
+- "Ps7CVarArg"
+- !private "Vs9Character"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "C5Buddy33DirectionWithHealthViewController"
+- "Sd"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- "Ps8Hashable"
+- "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- "Ps25LosslessStringConvertible"
+- !private "PSo17MKMapViewDelegate"
+- "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Sq"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "CSo17UIStoryboardSegue"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "OSC16UITableViewStyle"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/apple/Desktop/iOS/Buddy/Buddy/Buddy-Bridging-Header.h"
+- "/Users/apple/Desktop/iOS/Buddy/Buddy/SWRevealViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "99886c2e4d15a4310bcd53fcda08aa92"

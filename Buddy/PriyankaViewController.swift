@@ -10,14 +10,18 @@ import UIKit
 
 class PriyankaViewController: UIViewController {
 
-    @IBOutlet weak var pri: UILabel!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+  
     var trytext:String = "";
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        print("\(trytext)")
-        pri.text=trytext
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
 
     override func didReceiveMemoryWarning() {

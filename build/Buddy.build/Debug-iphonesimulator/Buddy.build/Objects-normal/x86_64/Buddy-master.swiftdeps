@@ -1,11 +1,14 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "8287bf2b150039cd4e867cbbefa704b7"
-build_time: [533617479, 193146000]
+build_time: [533675035, 370870000]
 inputs:
-  "/Users/apple/Desktop/iOS/Buddy/Buddy/DirectionViewController.swift": [533617478, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/DirectionViewController.swift": [533617725, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/BuddiesWithHealthGoingTableViewController.swift": [533674361, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/GeoWithHealthViewController.swift": [533675032, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/LoginViewController.swift": [533598045, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/ViewController.swift": [533600723, 0]
-  "/Users/apple/Desktop/iOS/Buddy/Buddy/GeoViewController.swift": [533617471, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/GeoViewController.swift": [533669129, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/DirectionWithHealthViewController.swift": [533674416, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/AppDelegate.swift": [533531254, 0]
-  "/Users/apple/Desktop/iOS/Buddy/Buddy/PriyankaViewController.swift": [533542589, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/PriyankaViewController.swift": [533670854, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/BuddiesGoingTableViewController.swift": [533617478, 0]

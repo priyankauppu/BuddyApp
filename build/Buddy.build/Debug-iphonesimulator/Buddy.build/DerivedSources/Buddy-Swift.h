@@ -158,6 +158,23 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
+@interface BuddiesWithHealthGoingTableViewController : UITableViewController
+@property (nonatomic, copy) NSString * _Nonnull restaurant;
+@property (nonatomic, copy) NSString * _Nonnull cuisine;
+@property (nonatomic) double restaurantLatitude;
+@property (nonatomic) double restaurantLongitude;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CLLocationManager;
 @class MKMapView;
 @protocol MKOverlay;
@@ -165,6 +182,20 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 
 SWIFT_CLASS("_TtC5Buddy23DirectionViewController")
 @interface DirectionViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic) double restaurantLatitude;
+@property (nonatomic) double restaurantLongitude;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Buddy33DirectionWithHealthViewController")
+@interface DirectionWithHealthViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic) double restaurantLatitude;
 @property (nonatomic) double restaurantLongitude;
@@ -233,6 +264,50 @@ SWIFT_CLASS("_TtC5Buddy17GeoViewController")
 @end
 
 
+SWIFT_CLASS("_TtC5Buddy27GeoWithHealthViewController")
+@interface GeoWithHealthViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified healthData;
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic, strong) CLLocation * _Nonnull location;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified slider;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sliderValue;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified knn;
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified picker;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull pickerData;
+@property (nonatomic, copy) NSString * _Nonnull selectedPickerData;
+@property (nonatomic, copy) NSArray<MKPointAnnotation *> * _Nonnull annotations;
+@property (nonatomic, strong) MKPolygon * _Nullable polygon;
+@property (nonatomic) NSInteger radius;
+@property (nonatomic, copy) NSString * _Nonnull trytext;
+@property (nonatomic, copy) NSString * _Nonnull urll;
+@property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)drawCircleWithLocation:(CLLocation * _Nonnull)location radius:(NSInteger)radius;
+- (void)addRadiusCircleWithLocation:(CLLocation * _Nonnull)location radius:(double)radius;
+- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
+- (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation;
+- (void)mapView:(MKMapView * _Nonnull)mapView annotationView:(MKAnnotationView * _Nonnull)view calloutAccessoryControlTapped:(UIControl * _Nonnull)control;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)sliderMoved:(UISlider * _Nonnull)sender;
+- (void)addLongPressGesture;
+- (void)handleLongPressWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer;
+- (void)mapView:(MKMapView * _Nonnull)mapView annotationView:(MKAnnotationView * _Nonnull)view didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState;
+- (void)updateOverlay;
+- (NSArray<NSValue *> * _Nonnull)sortConvexWithInput:(NSArray<NSValue *> * _Nonnull)input;
+- (IBAction)knnChanged:(UITextField * _Nonnull)sender;
+- (void)plotKnnWithLocation:(CLLocation * _Nonnull)location k:(NSInteger)k;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC5Buddy19LoginViewController")
 @interface LoginViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
@@ -250,7 +325,7 @@ SWIFT_CLASS("_TtC5Buddy19LoginViewController")
 
 SWIFT_CLASS("_TtC5Buddy22PriyankaViewController")
 @interface PriyankaViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pri;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
 @property (nonatomic, copy) NSString * _Nonnull trytext;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
