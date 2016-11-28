@@ -6,115 +6,117 @@ provides-nominal:
 provides-member:
 - ["C5Buddy17GeoViewController", ""]
 provides-dynamic-lookup:
-- "annotations"
-- "menuButton"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
-- "didReceiveMemoryWarning"
-- "sliderMoved"
-- "numberOfComponents"
-- "sliderValue"
-- "para"
-- "addRadiusCircle"
-- "updateOverlay"
-- "knnChanged"
-- "viewDidLoad"
-- "urll"
-- "slider"
-- "drawCircle"
-- "sortConvex"
-- "picker"
-- "trytext"
 - "pickerData"
-- "plotKnn"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
 - "radius"
+- "handleLongPress"
+- "sliderMoved"
+- "polygon"
+- "addRadiusCircle"
+- "plotKnn"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "picker"
+- "viewDidLoad"
+- "numberOfComponents"
+- "knn"
+- "didReceiveMemoryWarning"
+- "annotations"
+- "para"
+- "location"
+- "urll"
+- "locationManager"
+- "sliderValue"
+- "selectedPickerData"
+- "drawCircle"
+- "slider"
+- "updateOverlay"
 - "prepare"
 - "addLongPressGesture"
-- "knn"
-- "polygon"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "locationManager"
-- "handleLongPress"
-- "location"
+- "trytext"
+- "knnChanged"
+- "sortConvex"
+- "menuButton"
 depends-top-level:
 - !private "UIButton"
-- "NSMutableDictionary"
-- "UIStoryboardSegue"
-- "MKOverlayRenderer"
-- !private "BuddiesGoingTableViewController"
-- !private ">="
-- "UIPickerViewDelegate"
-- "MKPointAnnotation"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "=="
-- !private "UILongPressGestureRecognizer"
-- "MKAnnotationView"
-- !private "!="
-- "MKMapView"
-- "Double"
-- !private "TernaryPrecedence"
-- !private "AnyObject"
-- "UILabel"
-- !private "MKUserLocation"
+- !private "-"
+- !private "SWRevealViewController"
+- !private "CLLocationCoordinate2DMake"
+- "MKAnnotationViewDragState"
 - !private "URLSession"
 - !private "UIColor"
-- "UISlider"
-- !private "&&"
-- "UIViewController"
-- "MKOverlay"
-- "Int"
-- !private "JSONSerialization"
-- "String"
-- !private "NSDictionary"
-- "Array"
-- "GeoViewController"
-- "CLLocationManagerDelegate"
-- !private "Dictionary"
-- !private "MKCircleRenderer"
-- "UIPickerViewDataSource"
-- "UIGestureRecognizer"
-- !private "print"
-- !private "MKCoordinateSpanMake"
-- !private "+"
-- "MKMapViewDelegate"
-- !private "SWRevealViewController"
-- "UIBarButtonItem"
-- !private "CLLocationCoordinate2DMake"
-- !private "MKPolygonRenderer"
-- "CLLocation"
-- !private "kCLLocationAccuracyBest"
-- !private "URLRequest"
 - !private "UIImage"
-- !private "CLLocationDegrees"
-- !private "*"
-- !private "<"
-- !private "URL"
-- "UITextField"
-- !private "MKCoordinateRegion"
-- "CLLocationCoordinate2D"
-- "CLLocationManager"
-- !private "NSMutableURLRequest"
 - !private "BooleanLiteralType"
+- !private "CGPoint"
 - !private "<="
-- !private "CLLocationDistance"
-- "MKAnnotation"
+- !private "AnyObject"
+- !private "CLLocationDegrees"
+- "StringLiteralType"
+- "CLLocationCoordinate2D"
+- "MKMapView"
+- "UITextField"
+- !private "kCLLocationAccuracyBest"
+- !private "MKPolygonRenderer"
+- "UIViewController"
+- !private "!="
+- !private "DispatchQueue"
+- "Array"
+- !private "+"
+- "Int"
+- !private "MKCoordinateRegion"
+- !private "JSONSerialization"
+- !private "MKCircleRenderer"
+- !private "MKCoordinateSpanMake"
+- !private ">="
+- !private "UINavigationController"
+- "MKMapViewDelegate"
+- "CLLocationManager"
+- "NSMutableDictionary"
+- "CLLocationManagerDelegate"
+- "String"
+- "UIBarButtonItem"
+- !private "print"
+- "CLLocation"
+- "UISlider"
+- !private "NSMutableURLRequest"
+- "MKPointAnnotation"
+- !private "UILongPressGestureRecognizer"
+- "MKOverlayRenderer"
+- "UILabel"
+- !private "&&"
+- "UIPickerView"
+- "MKPolygon"
+- "AssignmentPrecedence"
 - !private "Float"
 - "UIControl"
-- "MKPolygon"
-- !private "-"
-- !private "DispatchQueue"
-- "UIPickerView"
-- !private "CGPoint"
-- "MKAnnotationViewDragState"
 - !private "MKCircle"
-- "StringLiteralType"
+- "CastingPrecedence"
+- !private "NSDictionary"
 - !private "MKPinAnnotationView"
+- "GeoViewController"
+- !private "=="
+- "MKOverlay"
+- "Double"
+- "UIGestureRecognizer"
+- !private "Dictionary"
+- "UIPickerViewDataSource"
+- !private "BuddiesGoingTableViewController"
+- "UIPickerViewDelegate"
+- !private "MKUserLocation"
+- !private "*"
+- !private "CLLocationDistance"
+- !private "URL"
+- !private "<"
+- "MKAnnotation"
+- !private "URLRequest"
+- "MKAnnotationView"
+- "UIStoryboardSegue"
+- !private "TernaryPrecedence"
 - !private "NSURL"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -167,6 +169,7 @@ depends-member:
 - !private ["Ps9AnyObject", "canShowCallout"]
 - !private ["Ps9AnyObject", "convert"]
 - !private ["Ps9AnyObject", "coordinate"]
+- !private ["Ps9AnyObject", "cuisine"]
 - !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "dataTask"]
@@ -225,9 +228,13 @@ depends-member:
 - !private ["Ps9AnyObject", "removeAnnotations"]
 - !private ["Ps9AnyObject", "removeOverlays"]
 - !private ["Ps9AnyObject", "requestWhenInUseAuthorization"]
+- !private ["Ps9AnyObject", "restaurant"]
+- !private ["Ps9AnyObject", "restaurantLatitude"]
+- !private ["Ps9AnyObject", "restaurantLongitude"]
 - !private ["Ps9AnyObject", "resume"]
 - !private ["Ps9AnyObject", "revealToggle"]
 - !private ["Ps9AnyObject", "revealViewController"]
+- ["Ps9AnyObject", "selectedPickerData"]
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "setRegion"]
 - !private ["Ps9AnyObject", "setValue"]
@@ -244,6 +251,7 @@ depends-member:
 - !private ["Ps9AnyObject", "target"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
+- !private ["Ps9AnyObject", "topViewController"]
 - ["Ps9AnyObject", "trytext"]
 - ["Ps9AnyObject", "updateOverlay"]
 - !private ["Ps9AnyObject", "url"]
@@ -314,8 +322,11 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["C5Buddy31BuddiesGoingTableViewController", "cuisine"]
 - ["C5Buddy31BuddiesGoingTableViewController", "deinit"]
-- !private ["C5Buddy31BuddiesGoingTableViewController", "trytext"]
+- !private ["C5Buddy31BuddiesGoingTableViewController", "restaurant"]
+- !private ["C5Buddy31BuddiesGoingTableViewController", "restaurantLatitude"]
+- !private ["C5Buddy31BuddiesGoingTableViewController", "restaurantLongitude"]
 - !private ["PSo15CALayerDelegate", "add"]
 - !private ["PSo15CALayerDelegate", "addAnnotation"]
 - !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
@@ -425,6 +436,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "radius"]
 - !private ["PSo25CLLocationManagerDelegate", "revealViewController"]
+- !private ["PSo25CLLocationManagerDelegate", "selectedPickerData"]
 - !private ["PSo25CLLocationManagerDelegate", "sliderValue"]
 - !private ["PSo25CLLocationManagerDelegate", "sortConvex"]
 - !private ["PSo25CLLocationManagerDelegate", "trytext"]
@@ -492,6 +504,7 @@ depends-member:
 - !private ["Ps7CVarArg", "convert"]
 - !private ["Ps7CVarArg", "coordinate"]
 - !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "cuisine"]
 - !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "dataSource"]
 - !private ["Ps7CVarArg", "dataTask"]
@@ -553,10 +566,14 @@ depends-member:
 - !private ["Ps7CVarArg", "removeLast"]
 - !private ["Ps7CVarArg", "removeOverlays"]
 - !private ["Ps7CVarArg", "requestWhenInUseAuthorization"]
+- !private ["Ps7CVarArg", "restaurant"]
+- !private ["Ps7CVarArg", "restaurantLatitude"]
+- !private ["Ps7CVarArg", "restaurantLongitude"]
 - !private ["Ps7CVarArg", "resume"]
 - !private ["Ps7CVarArg", "revealToggle"]
 - !private ["Ps7CVarArg", "revealViewController"]
 - !private ["Ps7CVarArg", "reversed"]
+- ["Ps7CVarArg", "selectedPickerData"]
 - !private ["Ps7CVarArg", "setImage"]
 - !private ["Ps7CVarArg", "setRegion"]
 - !private ["Ps7CVarArg", "setValue"]
@@ -574,6 +591,7 @@ depends-member:
 - !private ["Ps7CVarArg", "target"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "title"]
+- !private ["Ps7CVarArg", "topViewController"]
 - ["Ps7CVarArg", "trytext"]
 - ["Ps7CVarArg", "updateOverlay"]
 - !private ["Ps7CVarArg", "url"]
@@ -661,6 +679,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "convert"]
 - !private ["Ps28CustomDebugStringConvertible", "coordinate"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "cuisine"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "dataTask"]
@@ -723,10 +742,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "removeLast"]
 - !private ["Ps28CustomDebugStringConvertible", "removeOverlays"]
 - !private ["Ps28CustomDebugStringConvertible", "requestWhenInUseAuthorization"]
+- !private ["Ps28CustomDebugStringConvertible", "restaurant"]
+- !private ["Ps28CustomDebugStringConvertible", "restaurantLatitude"]
+- !private ["Ps28CustomDebugStringConvertible", "restaurantLongitude"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
 - !private ["Ps28CustomDebugStringConvertible", "revealToggle"]
 - !private ["Ps28CustomDebugStringConvertible", "revealViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "reversed"]
+- ["Ps28CustomDebugStringConvertible", "selectedPickerData"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setRegion"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
@@ -745,6 +768,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "target"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
+- !private ["Ps28CustomDebugStringConvertible", "topViewController"]
 - ["Ps28CustomDebugStringConvertible", "trytext"]
 - ["Ps28CustomDebugStringConvertible", "updateOverlay"]
 - !private ["Ps28CustomDebugStringConvertible", "url"]
@@ -847,6 +871,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "convert"]
 - !private ["Ps23CustomStringConvertible", "coordinate"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "cuisine"]
 - !private ["Ps23CustomStringConvertible", "data"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "dataTask"]
@@ -908,10 +933,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "removeLast"]
 - !private ["Ps23CustomStringConvertible", "removeOverlays"]
 - !private ["Ps23CustomStringConvertible", "requestWhenInUseAuthorization"]
+- !private ["Ps23CustomStringConvertible", "restaurant"]
+- !private ["Ps23CustomStringConvertible", "restaurantLatitude"]
+- !private ["Ps23CustomStringConvertible", "restaurantLongitude"]
 - !private ["Ps23CustomStringConvertible", "resume"]
 - !private ["Ps23CustomStringConvertible", "revealToggle"]
 - !private ["Ps23CustomStringConvertible", "revealViewController"]
 - !private ["Ps23CustomStringConvertible", "reversed"]
+- ["Ps23CustomStringConvertible", "selectedPickerData"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "setRegion"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
@@ -929,6 +958,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "target"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "topViewController"]
 - ["Ps23CustomStringConvertible", "trytext"]
 - ["Ps23CustomStringConvertible", "updateOverlay"]
 - !private ["Ps23CustomStringConvertible", "url"]
@@ -1016,6 +1046,7 @@ depends-member:
 - !private ["Ps9Equatable", "canShowCallout"]
 - !private ["Ps9Equatable", "convert"]
 - !private ["Ps9Equatable", "coordinate"]
+- !private ["Ps9Equatable", "cuisine"]
 - !private ["Ps9Equatable", "data"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "dataTask"]
@@ -1076,9 +1107,13 @@ depends-member:
 - !private ["Ps9Equatable", "removeAnnotations"]
 - !private ["Ps9Equatable", "removeOverlays"]
 - !private ["Ps9Equatable", "requestWhenInUseAuthorization"]
+- !private ["Ps9Equatable", "restaurant"]
+- !private ["Ps9Equatable", "restaurantLatitude"]
+- !private ["Ps9Equatable", "restaurantLongitude"]
 - !private ["Ps9Equatable", "resume"]
 - !private ["Ps9Equatable", "revealToggle"]
 - !private ["Ps9Equatable", "revealViewController"]
+- ["Ps9Equatable", "selectedPickerData"]
 - !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "setRegion"]
 - !private ["Ps9Equatable", "setValue"]
@@ -1096,6 +1131,7 @@ depends-member:
 - !private ["Ps9Equatable", "target"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "topViewController"]
 - ["Ps9Equatable", "trytext"]
 - ["Ps9Equatable", "updateOverlay"]
 - !private ["Ps9Equatable", "url"]
@@ -1187,6 +1223,7 @@ depends-member:
 - !private ["C5Buddy17GeoViewController", "UIImage"]
 - ["C5Buddy17GeoViewController", "UILabel"]
 - !private ["C5Buddy17GeoViewController", "UILongPressGestureRecognizer"]
+- !private ["C5Buddy17GeoViewController", "UINavigationController"]
 - ["C5Buddy17GeoViewController", "UIPickerView"]
 - ["C5Buddy17GeoViewController", "UISlider"]
 - ["C5Buddy17GeoViewController", "UIStoryboardSegue"]
@@ -1232,6 +1269,7 @@ depends-member:
 - !private ["C5Buddy17GeoViewController", "print"]
 - ["C5Buddy17GeoViewController", "radius"]
 - !private ["C5Buddy17GeoViewController", "revealViewController"]
+- ["C5Buddy17GeoViewController", "selectedPickerData"]
 - ["C5Buddy17GeoViewController", "slider"]
 - ["C5Buddy17GeoViewController", "sliderMoved"]
 - ["C5Buddy17GeoViewController", "sliderValue"]
@@ -1296,6 +1334,7 @@ depends-member:
 - !private ["Ps8Hashable", "canShowCallout"]
 - !private ["Ps8Hashable", "convert"]
 - !private ["Ps8Hashable", "coordinate"]
+- !private ["Ps8Hashable", "cuisine"]
 - !private ["Ps8Hashable", "data"]
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "dataTask"]
@@ -1354,9 +1393,13 @@ depends-member:
 - !private ["Ps8Hashable", "removeAnnotations"]
 - !private ["Ps8Hashable", "removeOverlays"]
 - !private ["Ps8Hashable", "requestWhenInUseAuthorization"]
+- !private ["Ps8Hashable", "restaurant"]
+- !private ["Ps8Hashable", "restaurantLatitude"]
+- !private ["Ps8Hashable", "restaurantLongitude"]
 - !private ["Ps8Hashable", "resume"]
 - !private ["Ps8Hashable", "revealToggle"]
 - !private ["Ps8Hashable", "revealViewController"]
+- ["Ps8Hashable", "selectedPickerData"]
 - !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "setRegion"]
 - !private ["Ps8Hashable", "setValue"]
@@ -1373,6 +1416,7 @@ depends-member:
 - !private ["Ps8Hashable", "target"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "topViewController"]
 - ["Ps8Hashable", "trytext"]
 - ["Ps8Hashable", "updateOverlay"]
 - !private ["Ps8Hashable", "url"]
@@ -1540,6 +1584,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "print"]
 - !private ["PSo17MKMapViewDelegate", "radius"]
 - !private ["PSo17MKMapViewDelegate", "revealViewController"]
+- !private ["PSo17MKMapViewDelegate", "selectedPickerData"]
 - !private ["PSo17MKMapViewDelegate", "sliderValue"]
 - !private ["PSo17MKMapViewDelegate", "sortConvex"]
 - !private ["PSo17MKMapViewDelegate", "trytext"]
@@ -1663,6 +1708,7 @@ depends-member:
 - !private ["PSo8NSCoding", "canShowCallout"]
 - !private ["PSo8NSCoding", "convert"]
 - !private ["PSo8NSCoding", "coordinate"]
+- !private ["PSo8NSCoding", "cuisine"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dequeueReusableAnnotationView"]
@@ -1710,8 +1756,12 @@ depends-member:
 - !private ["PSo8NSCoding", "remove"]
 - !private ["PSo8NSCoding", "removeAnnotations"]
 - !private ["PSo8NSCoding", "removeOverlays"]
+- !private ["PSo8NSCoding", "restaurant"]
+- !private ["PSo8NSCoding", "restaurantLatitude"]
+- !private ["PSo8NSCoding", "restaurantLongitude"]
 - !private ["PSo8NSCoding", "revealToggle"]
 - !private ["PSo8NSCoding", "revealViewController"]
+- ["PSo8NSCoding", "selectedPickerData"]
 - !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setRegion"]
 - !private ["PSo8NSCoding", "setValue"]
@@ -1723,6 +1773,7 @@ depends-member:
 - !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo8NSCoding", "target"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "topViewController"]
 - ["PSo8NSCoding", "trytext"]
 - ["PSo8NSCoding", "updateOverlay"]
 - !private ["PSo8NSCoding", "url"]
@@ -1783,6 +1834,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "addLongPressGesture"]
 - ["PSo26NSExtensionRequestHandling", "addRadiusCircle"]
 - ["PSo26NSExtensionRequestHandling", "annotations"]
+- !private ["PSo26NSExtensionRequestHandling", "cuisine"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "drawCircle"]
 - ["PSo26NSExtensionRequestHandling", "handleLongPress"]
@@ -1817,12 +1869,17 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "radius"]
+- !private ["PSo26NSExtensionRequestHandling", "restaurant"]
+- !private ["PSo26NSExtensionRequestHandling", "restaurantLatitude"]
+- !private ["PSo26NSExtensionRequestHandling", "restaurantLongitude"]
 - !private ["PSo26NSExtensionRequestHandling", "revealToggle"]
 - !private ["PSo26NSExtensionRequestHandling", "revealViewController"]
+- ["PSo26NSExtensionRequestHandling", "selectedPickerData"]
 - ["PSo26NSExtensionRequestHandling", "slider"]
 - ["PSo26NSExtensionRequestHandling", "sliderMoved"]
 - ["PSo26NSExtensionRequestHandling", "sliderValue"]
 - ["PSo26NSExtensionRequestHandling", "sortConvex"]
+- !private ["PSo26NSExtensionRequestHandling", "topViewController"]
 - ["PSo26NSExtensionRequestHandling", "trytext"]
 - ["PSo26NSExtensionRequestHandling", "updateOverlay"]
 - ["PSo26NSExtensionRequestHandling", "urll"]
@@ -1892,6 +1949,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "UILongPressGestureRecognizer"]
+- !private ["CSo8NSObject", "UINavigationController"]
 - ["CSo8NSObject", "UIPickerView"]
 - ["CSo8NSObject", "UISlider"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -1916,6 +1974,7 @@ depends-member:
 - !private ["CSo8NSObject", "canShowCallout"]
 - !private ["CSo8NSObject", "convert"]
 - !private ["CSo8NSObject", "coordinate"]
+- !private ["CSo8NSObject", "cuisine"]
 - !private ["CSo8NSObject", "data"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "dataTask"]
@@ -1975,9 +2034,13 @@ depends-member:
 - !private ["CSo8NSObject", "removeAnnotations"]
 - !private ["CSo8NSObject", "removeOverlays"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
+- !private ["CSo8NSObject", "restaurant"]
+- !private ["CSo8NSObject", "restaurantLatitude"]
+- !private ["CSo8NSObject", "restaurantLongitude"]
 - !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "revealToggle"]
 - !private ["CSo8NSObject", "revealViewController"]
+- ["CSo8NSObject", "selectedPickerData"]
 - !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setRegion"]
 - !private ["CSo8NSObject", "setValue"]
@@ -1994,6 +2057,7 @@ depends-member:
 - !private ["CSo8NSObject", "target"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "topViewController"]
 - ["CSo8NSObject", "trytext"]
 - ["CSo8NSObject", "updateOverlay"]
 - !private ["CSo8NSObject", "url"]
@@ -2051,6 +2115,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "canShowCallout"]
 - !private ["PSo16NSObjectProtocol", "convert"]
 - !private ["PSo16NSObjectProtocol", "coordinate"]
+- !private ["PSo16NSObjectProtocol", "cuisine"]
 - !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "dataTask"]
@@ -2110,9 +2175,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "removeAnnotations"]
 - !private ["PSo16NSObjectProtocol", "removeOverlays"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
+- !private ["PSo16NSObjectProtocol", "restaurant"]
+- !private ["PSo16NSObjectProtocol", "restaurantLatitude"]
+- !private ["PSo16NSObjectProtocol", "restaurantLongitude"]
 - !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "revealToggle"]
 - !private ["PSo16NSObjectProtocol", "revealViewController"]
+- ["PSo16NSObjectProtocol", "selectedPickerData"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setRegion"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
@@ -2129,6 +2198,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "target"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "topViewController"]
 - ["PSo16NSObjectProtocol", "trytext"]
 - ["PSo16NSObjectProtocol", "updateOverlay"]
 - !private ["PSo16NSObjectProtocol", "url"]
@@ -2385,6 +2455,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "calloutOffset"]
 - !private ["PSo21UIAppearanceContainer", "canShowCallout"]
 - !private ["PSo21UIAppearanceContainer", "convert"]
+- !private ["PSo21UIAppearanceContainer", "cuisine"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableAnnotationView"]
@@ -2429,8 +2500,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "remove"]
 - !private ["PSo21UIAppearanceContainer", "removeAnnotations"]
 - !private ["PSo21UIAppearanceContainer", "removeOverlays"]
+- !private ["PSo21UIAppearanceContainer", "restaurant"]
+- !private ["PSo21UIAppearanceContainer", "restaurantLatitude"]
+- !private ["PSo21UIAppearanceContainer", "restaurantLongitude"]
 - !private ["PSo21UIAppearanceContainer", "revealToggle"]
 - !private ["PSo21UIAppearanceContainer", "revealViewController"]
+- ["PSo21UIAppearanceContainer", "selectedPickerData"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "setRegion"]
 - !private ["PSo21UIAppearanceContainer", "showsUserLocation"]
@@ -2439,6 +2514,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sliderValue"]
 - ["PSo21UIAppearanceContainer", "sortConvex"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "topViewController"]
 - ["PSo21UIAppearanceContainer", "trytext"]
 - ["PSo21UIAppearanceContainer", "updateOverlay"]
 - ["PSo21UIAppearanceContainer", "urll"]
@@ -2494,6 +2570,7 @@ depends-member:
 - ["PSo18UIContentContainer", "addLongPressGesture"]
 - ["PSo18UIContentContainer", "addRadiusCircle"]
 - ["PSo18UIContentContainer", "annotations"]
+- !private ["PSo18UIContentContainer", "cuisine"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "drawCircle"]
 - ["PSo18UIContentContainer", "handleLongPress"]
@@ -2528,12 +2605,17 @@ depends-member:
 - ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "radius"]
+- !private ["PSo18UIContentContainer", "restaurant"]
+- !private ["PSo18UIContentContainer", "restaurantLatitude"]
+- !private ["PSo18UIContentContainer", "restaurantLongitude"]
 - !private ["PSo18UIContentContainer", "revealToggle"]
 - !private ["PSo18UIContentContainer", "revealViewController"]
+- ["PSo18UIContentContainer", "selectedPickerData"]
 - ["PSo18UIContentContainer", "slider"]
 - ["PSo18UIContentContainer", "sliderMoved"]
 - ["PSo18UIContentContainer", "sliderValue"]
 - ["PSo18UIContentContainer", "sortConvex"]
+- !private ["PSo18UIContentContainer", "topViewController"]
 - ["PSo18UIContentContainer", "trytext"]
 - ["PSo18UIContentContainer", "updateOverlay"]
 - ["PSo18UIContentContainer", "urll"]
@@ -2642,6 +2724,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "calloutOffset"]
 - !private ["PSo18UIFocusEnvironment", "canShowCallout"]
 - !private ["PSo18UIFocusEnvironment", "convert"]
+- !private ["PSo18UIFocusEnvironment", "cuisine"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableAnnotationView"]
@@ -2686,8 +2769,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "remove"]
 - !private ["PSo18UIFocusEnvironment", "removeAnnotations"]
 - !private ["PSo18UIFocusEnvironment", "removeOverlays"]
+- !private ["PSo18UIFocusEnvironment", "restaurant"]
+- !private ["PSo18UIFocusEnvironment", "restaurantLatitude"]
+- !private ["PSo18UIFocusEnvironment", "restaurantLongitude"]
 - !private ["PSo18UIFocusEnvironment", "revealToggle"]
 - !private ["PSo18UIFocusEnvironment", "revealViewController"]
+- ["PSo18UIFocusEnvironment", "selectedPickerData"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "setRegion"]
 - !private ["PSo18UIFocusEnvironment", "showsUserLocation"]
@@ -2696,6 +2783,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sliderValue"]
 - ["PSo18UIFocusEnvironment", "sortConvex"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "topViewController"]
 - ["PSo18UIFocusEnvironment", "trytext"]
 - ["PSo18UIFocusEnvironment", "updateOverlay"]
 - ["PSo18UIFocusEnvironment", "urll"]
@@ -2742,6 +2830,8 @@ depends-member:
 - ["CSo28UILongPressGestureRecognizer", "deinit"]
 - !private ["CSo28UILongPressGestureRecognizer", "init"]
 - !private ["CSo28UILongPressGestureRecognizer", "minimumPressDuration"]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "topViewController"]
 - !private ["CSo12UIPickerView", "dataSource"]
 - !private ["CSo12UIPickerView", "delegate"]
 - !private ["PSo22UIPickerViewDataSource", "CGPoint"]
@@ -2808,6 +2898,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "print"]
 - !private ["PSo22UIPickerViewDataSource", "radius"]
 - !private ["PSo22UIPickerViewDataSource", "revealViewController"]
+- !private ["PSo22UIPickerViewDataSource", "selectedPickerData"]
 - !private ["PSo22UIPickerViewDataSource", "sliderValue"]
 - !private ["PSo22UIPickerViewDataSource", "sortConvex"]
 - !private ["PSo22UIPickerViewDataSource", "trytext"]
@@ -2879,6 +2970,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "print"]
 - !private ["PSo20UIPickerViewDelegate", "radius"]
 - !private ["PSo20UIPickerViewDelegate", "revealViewController"]
+- !private ["PSo20UIPickerViewDelegate", "selectedPickerData"]
 - !private ["PSo20UIPickerViewDelegate", "sliderValue"]
 - !private ["PSo20UIPickerViewDelegate", "sortConvex"]
 - !private ["PSo20UIPickerViewDelegate", "trytext"]
@@ -2930,6 +3022,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "UILongPressGestureRecognizer"]
+- !private ["CSo11UIResponder", "UINavigationController"]
 - ["CSo11UIResponder", "UIPickerView"]
 - ["CSo11UIResponder", "UISlider"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -2948,6 +3041,7 @@ depends-member:
 - !private ["CSo11UIResponder", "calloutOffset"]
 - !private ["CSo11UIResponder", "canShowCallout"]
 - !private ["CSo11UIResponder", "convert"]
+- !private ["CSo11UIResponder", "cuisine"]
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "deinit"]
 - !private ["CSo11UIResponder", "delegate"]
@@ -2993,8 +3087,12 @@ depends-member:
 - !private ["CSo11UIResponder", "remove"]
 - !private ["CSo11UIResponder", "removeAnnotations"]
 - !private ["CSo11UIResponder", "removeOverlays"]
+- !private ["CSo11UIResponder", "restaurant"]
+- !private ["CSo11UIResponder", "restaurantLatitude"]
+- !private ["CSo11UIResponder", "restaurantLongitude"]
 - !private ["CSo11UIResponder", "revealToggle"]
 - !private ["CSo11UIResponder", "revealViewController"]
+- ["CSo11UIResponder", "selectedPickerData"]
 - !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "setRegion"]
 - !private ["CSo11UIResponder", "showsUserLocation"]
@@ -3003,6 +3101,7 @@ depends-member:
 - ["CSo11UIResponder", "sliderValue"]
 - ["CSo11UIResponder", "sortConvex"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "topViewController"]
 - ["CSo11UIResponder", "trytext"]
 - ["CSo11UIResponder", "updateOverlay"]
 - ["CSo11UIResponder", "urll"]
@@ -3051,6 +3150,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "calloutOffset"]
 - !private ["PSo30UIResponderStandardEditActions", "canShowCallout"]
 - !private ["PSo30UIResponderStandardEditActions", "convert"]
+- !private ["PSo30UIResponderStandardEditActions", "cuisine"]
 - !private ["PSo30UIResponderStandardEditActions", "dataSource"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableAnnotationView"]
@@ -3095,8 +3195,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "remove"]
 - !private ["PSo30UIResponderStandardEditActions", "removeAnnotations"]
 - !private ["PSo30UIResponderStandardEditActions", "removeOverlays"]
+- !private ["PSo30UIResponderStandardEditActions", "restaurant"]
+- !private ["PSo30UIResponderStandardEditActions", "restaurantLatitude"]
+- !private ["PSo30UIResponderStandardEditActions", "restaurantLongitude"]
 - !private ["PSo30UIResponderStandardEditActions", "revealToggle"]
 - !private ["PSo30UIResponderStandardEditActions", "revealViewController"]
+- ["PSo30UIResponderStandardEditActions", "selectedPickerData"]
 - !private ["PSo30UIResponderStandardEditActions", "setImage"]
 - !private ["PSo30UIResponderStandardEditActions", "setRegion"]
 - !private ["PSo30UIResponderStandardEditActions", "showsUserLocation"]
@@ -3105,6 +3209,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "sliderValue"]
 - ["PSo30UIResponderStandardEditActions", "sortConvex"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "topViewController"]
 - ["PSo30UIResponderStandardEditActions", "trytext"]
 - ["PSo30UIResponderStandardEditActions", "updateOverlay"]
 - ["PSo30UIResponderStandardEditActions", "urll"]
@@ -3112,7 +3217,10 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo20UIScrollViewDelegate", "trytext"]
+- !private ["PSo20UIScrollViewDelegate", "cuisine"]
+- !private ["PSo20UIScrollViewDelegate", "restaurant"]
+- !private ["PSo20UIScrollViewDelegate", "restaurantLatitude"]
+- !private ["PSo20UIScrollViewDelegate", "restaurantLongitude"]
 - ["CSo8UISlider", "deinit"]
 - !private ["CSo8UISlider", "value"]
 - !private ["PSo16UIStateRestoring", "CGPoint"]
@@ -3149,6 +3257,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "addLongPressGesture"]
 - ["PSo16UIStateRestoring", "addRadiusCircle"]
 - ["PSo16UIStateRestoring", "annotations"]
+- !private ["PSo16UIStateRestoring", "cuisine"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "drawCircle"]
 - ["PSo16UIStateRestoring", "handleLongPress"]
@@ -3183,12 +3292,17 @@ depends-member:
 - ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "radius"]
+- !private ["PSo16UIStateRestoring", "restaurant"]
+- !private ["PSo16UIStateRestoring", "restaurantLatitude"]
+- !private ["PSo16UIStateRestoring", "restaurantLongitude"]
 - !private ["PSo16UIStateRestoring", "revealToggle"]
 - !private ["PSo16UIStateRestoring", "revealViewController"]
+- ["PSo16UIStateRestoring", "selectedPickerData"]
 - ["PSo16UIStateRestoring", "slider"]
 - ["PSo16UIStateRestoring", "sliderMoved"]
 - ["PSo16UIStateRestoring", "sliderValue"]
 - ["PSo16UIStateRestoring", "sortConvex"]
+- !private ["PSo16UIStateRestoring", "topViewController"]
 - ["PSo16UIStateRestoring", "trytext"]
 - ["PSo16UIStateRestoring", "updateOverlay"]
 - ["PSo16UIStateRestoring", "urll"]
@@ -3198,9 +3312,18 @@ depends-member:
 - ["CSo17UIStoryboardSegue", "deinit"]
 - !private ["CSo17UIStoryboardSegue", "destination"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
-- !private ["CSo21UITableViewController", "trytext"]
-- !private ["PSo21UITableViewDataSource", "trytext"]
-- !private ["PSo19UITableViewDelegate", "trytext"]
+- !private ["CSo21UITableViewController", "cuisine"]
+- !private ["CSo21UITableViewController", "restaurant"]
+- !private ["CSo21UITableViewController", "restaurantLatitude"]
+- !private ["CSo21UITableViewController", "restaurantLongitude"]
+- !private ["PSo21UITableViewDataSource", "cuisine"]
+- !private ["PSo21UITableViewDataSource", "restaurant"]
+- !private ["PSo21UITableViewDataSource", "restaurantLatitude"]
+- !private ["PSo21UITableViewDataSource", "restaurantLongitude"]
+- !private ["PSo19UITableViewDelegate", "cuisine"]
+- !private ["PSo19UITableViewDelegate", "restaurant"]
+- !private ["PSo19UITableViewDelegate", "restaurantLatitude"]
+- !private ["PSo19UITableViewDelegate", "restaurantLongitude"]
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "text"]
@@ -3246,6 +3369,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "calloutOffset"]
 - !private ["PSo18UITraitEnvironment", "canShowCallout"]
 - !private ["PSo18UITraitEnvironment", "convert"]
+- !private ["PSo18UITraitEnvironment", "cuisine"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableAnnotationView"]
@@ -3290,8 +3414,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "remove"]
 - !private ["PSo18UITraitEnvironment", "removeAnnotations"]
 - !private ["PSo18UITraitEnvironment", "removeOverlays"]
+- !private ["PSo18UITraitEnvironment", "restaurant"]
+- !private ["PSo18UITraitEnvironment", "restaurantLatitude"]
+- !private ["PSo18UITraitEnvironment", "restaurantLongitude"]
 - !private ["PSo18UITraitEnvironment", "revealToggle"]
 - !private ["PSo18UITraitEnvironment", "revealViewController"]
+- ["PSo18UITraitEnvironment", "selectedPickerData"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "setRegion"]
 - !private ["PSo18UITraitEnvironment", "showsUserLocation"]
@@ -3300,6 +3428,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sliderValue"]
 - ["PSo18UITraitEnvironment", "sortConvex"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "topViewController"]
 - ["PSo18UITraitEnvironment", "trytext"]
 - ["PSo18UITraitEnvironment", "updateOverlay"]
 - ["PSo18UITraitEnvironment", "urll"]
@@ -3377,6 +3506,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "UILongPressGestureRecognizer"]
+- !private ["CSo16UIViewController", "UINavigationController"]
 - ["CSo16UIViewController", "UIPickerView"]
 - ["CSo16UIViewController", "UISlider"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
@@ -3387,6 +3517,7 @@ depends-member:
 - ["CSo16UIViewController", "addLongPressGesture"]
 - ["CSo16UIViewController", "addRadiusCircle"]
 - ["CSo16UIViewController", "annotations"]
+- !private ["CSo16UIViewController", "cuisine"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "drawCircle"]
@@ -3422,12 +3553,17 @@ depends-member:
 - ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "radius"]
+- !private ["CSo16UIViewController", "restaurant"]
+- !private ["CSo16UIViewController", "restaurantLatitude"]
+- !private ["CSo16UIViewController", "restaurantLongitude"]
 - !private ["CSo16UIViewController", "revealToggle"]
 - !private ["CSo16UIViewController", "revealViewController"]
+- ["CSo16UIViewController", "selectedPickerData"]
 - ["CSo16UIViewController", "slider"]
 - ["CSo16UIViewController", "sliderMoved"]
 - ["CSo16UIViewController", "sliderValue"]
 - ["CSo16UIViewController", "sortConvex"]
+- !private ["CSo16UIViewController", "topViewController"]
 - ["CSo16UIViewController", "trytext"]
 - ["CSo16UIViewController", "updateOverlay"]
 - ["CSo16UIViewController", "urll"]
@@ -3583,6 +3719,7 @@ depends-member:
 - !private ["Ps9_Hashable", "canShowCallout"]
 - !private ["Ps9_Hashable", "convert"]
 - !private ["Ps9_Hashable", "coordinate"]
+- !private ["Ps9_Hashable", "cuisine"]
 - !private ["Ps9_Hashable", "data"]
 - !private ["Ps9_Hashable", "dataSource"]
 - !private ["Ps9_Hashable", "dataTask"]
@@ -3641,9 +3778,13 @@ depends-member:
 - !private ["Ps9_Hashable", "removeAnnotations"]
 - !private ["Ps9_Hashable", "removeOverlays"]
 - !private ["Ps9_Hashable", "requestWhenInUseAuthorization"]
+- !private ["Ps9_Hashable", "restaurant"]
+- !private ["Ps9_Hashable", "restaurantLatitude"]
+- !private ["Ps9_Hashable", "restaurantLongitude"]
 - !private ["Ps9_Hashable", "resume"]
 - !private ["Ps9_Hashable", "revealToggle"]
 - !private ["Ps9_Hashable", "revealViewController"]
+- ["Ps9_Hashable", "selectedPickerData"]
 - !private ["Ps9_Hashable", "setImage"]
 - !private ["Ps9_Hashable", "setRegion"]
 - !private ["Ps9_Hashable", "setValue"]
@@ -3660,6 +3801,7 @@ depends-member:
 - !private ["Ps9_Hashable", "target"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "title"]
+- !private ["Ps9_Hashable", "topViewController"]
 - ["Ps9_Hashable", "trytext"]
 - ["Ps9_Hashable", "updateOverlay"]
 - !private ["Ps9_Hashable", "url"]
@@ -3858,6 +4000,7 @@ depends-nominal:
 - !private "PSo10UIKeyInput"
 - !private "CSo7UILabel"
 - "CSo28UILongPressGestureRecognizer"
+- "CSo22UINavigationController"
 - !private "CSo12UIPickerView"
 - "PSo22UIPickerViewDataSource"
 - "PSo20UIPickerViewDelegate"
@@ -3926,4 +4069,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "c5d26de2a8a5df8775a6e08074db7d37"
+interface-hash: "6ef2ac93699cb5dae1efcf026ebf50db"

@@ -25,8 +25,8 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     
     
     @IBOutlet weak var picker: UIPickerView!
-     var pickerData=["Chinese","Coffee", "Indian","Italian", "Mexican"]
-    
+     var pickerData=["All","Chinese","Coffee", "Indian","Italian", "Mexican"]
+    var selectedPickerData="All"
     //fencing related declarations
     // Array of annotations - modified when the points are changed.
     var annotations = [MKPointAnnotation]()
@@ -245,13 +245,22 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "buddiesGoingSegue" )
         {
-            let Display1 = segue.destination as! BuddiesGoingTableViewController
-            print("\(Display1)***")
+            let next = segue.destination as! UINavigationController
+            let nextController = next.topViewController as! BuddiesGoingTableViewController
             
-            //   Display1.trytext = (sender as! MKAnnotationView).annotation!.title
-            //  print((sender as! MKAnnotationView).annotation!.title)
-            let text1:String=(sender as! MKAnnotationView).annotation!.title!!
-            Display1.trytext=text1
+            let restaurant:String=(sender as! MKAnnotationView).annotation!.title!!
+            nextController.restaurant=restaurant
+            let selectedValue = selectedPickerData
+            nextController.cuisine=selectedValue
+            //Add EMAIL
+            let latitude:Double=(sender as! MKAnnotationView).annotation!.coordinate.latitude
+            nextController.restaurantLatitude=latitude
+            let longitude:Double=(sender as! MKAnnotationView).annotation!.coordinate.longitude
+            nextController.restaurantLongitude=longitude
+            
+           // let location_coordinate=location.coordinate
+            //nextController.userLatitude=location_coordinate.latitude
+            //nextController.userLongitude=location_coordinate.longitude
             
             
         }
@@ -588,6 +597,7 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         return pickerData[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedPickerData=pickerData[row]
         print(pickerData[row])
     }
     

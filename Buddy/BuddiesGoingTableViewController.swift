@@ -9,8 +9,17 @@
 import UIKit
 
 class BuddiesGoingTableViewController: UITableViewController {
-
-    var trytext:String = "";
+    var restaurant:String = "";
+    var cuisine:String = "";
+    var restaurantLatitude:Double = 0.0
+    var restaurantLongitude:Double = 0.0
+ 
+   // var userLatitude:Double=0.0
+    //var userLongitude:Double=0.0
+   
+    //@IBOutlet weak var displayDetails: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,12 +29,36 @@ class BuddiesGoingTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        print("********\(trytext)")
+       // displayDetails.text="Your selected Cuisine:\(cuisine), Restaurant: \(restaurant)"
+
+        
+        print("********\(restaurant)********\(cuisine)***************")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*@IBAction func goAloneClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "directionSegue", sender: view)
+    }*/
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "directionSegue" )
+        {
+            let next = segue.destination as! UINavigationController
+           // let text1:String=(sender as! MKAnnotationView).annotation!.title!!
+            let nextController = next.topViewController as! DirectionViewController
+            //nextController.userLatitude=userLatitude
+            //nextController.userLongitude=userLongitude
+            nextController.restaurantLatitude=restaurantLatitude
+            nextController.restaurantLongitude=restaurantLongitude
+ 
+            
+            
+        }
     }
 
     // MARK: - Table view data source

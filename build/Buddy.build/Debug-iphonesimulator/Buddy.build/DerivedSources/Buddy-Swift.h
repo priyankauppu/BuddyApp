@@ -137,15 +137,20 @@ SWIFT_CLASS("_TtC5Buddy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
 @class UITableView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 @interface BuddiesGoingTableViewController : UITableViewController
-@property (nonatomic, copy) NSString * _Nonnull trytext;
+@property (nonatomic, copy) NSString * _Nonnull restaurant;
+@property (nonatomic, copy) NSString * _Nonnull cuisine;
+@property (nonatomic) double restaurantLatitude;
+@property (nonatomic) double restaurantLongitude;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -154,17 +159,30 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 @end
 
 @class CLLocationManager;
+@class MKMapView;
+@protocol MKOverlay;
+@class MKOverlayRenderer;
+
+SWIFT_CLASS("_TtC5Buddy23DirectionViewController")
+@interface DirectionViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic) double restaurantLatitude;
+@property (nonatomic) double restaurantLongitude;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CLLocation;
 @class MKPointAnnotation;
 @class MKPolygon;
 @class NSMutableDictionary;
-@class MKMapView;
-@protocol MKOverlay;
-@class MKOverlayRenderer;
 @protocol MKAnnotation;
 @class MKAnnotationView;
 @class UIControl;
-@class UIStoryboardSegue;
 @class UISlider;
 @class UIGestureRecognizer;
 @class UITextField;
@@ -183,6 +201,7 @@ SWIFT_CLASS("_TtC5Buddy17GeoViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified knn;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified picker;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull pickerData;
+@property (nonatomic, copy) NSString * _Nonnull selectedPickerData;
 @property (nonatomic, copy) NSArray<MKPointAnnotation *> * _Nonnull annotations;
 @property (nonatomic, strong) MKPolygon * _Nullable polygon;
 @property (nonatomic) NSInteger radius;
