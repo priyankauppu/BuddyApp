@@ -139,6 +139,7 @@ SWIFT_CLASS("_TtC5Buddy29AcceptedRequestsTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSMutableDictionary;
 @class UITableView;
 @class UIBarButtonItem;
 @class NSBundle;
@@ -146,11 +147,20 @@ SWIFT_CLASS("_TtC5Buddy29AcceptedRequestsTableViewCell")
 SWIFT_CLASS("_TtC5Buddy35AcceptedRequestsTableViewController")
 @interface AcceptedRequestsTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
+@property (nonatomic, copy) NSString * _Nonnull urll;
+@property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyName;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyEmail;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyCuisine;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyRestaurant;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyTime;
+@property (nonatomic) NSInteger count;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)getAcceptedRequestsWithUserEmail:(NSString * _Nonnull)userEmail;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -241,7 +251,6 @@ SWIFT_CLASS("_TtC5Buddy33DirectionWithHealthViewController")
 @class CLLocation;
 @class MKPointAnnotation;
 @class MKPolygon;
-@class NSMutableDictionary;
 @protocol MKAnnotation;
 @class MKAnnotationView;
 @class UIControl;

@@ -1,11 +1,11 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "8287bf2b150039cd4e867cbbefa704b7"
-build_time: [533721871, 789403000]
+build_time: [533772127, 206052000]
 inputs:
   "/Users/apple/Desktop/iOS/Buddy/Buddy/DirectionViewController.swift": [533617725, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/BuddiesWithHealthGoingTableViewController.swift": [533674361, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/GeoWithHealthViewController.swift": [533680013, 0]
-  "/Users/apple/Desktop/iOS/Buddy/Buddy/AcceptedRequestsTableViewController.swift": [533721868, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/AcceptedRequestsTableViewController.swift": [533772127, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/LoginViewController.swift": [533598045, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/ViewController.swift": [533718056, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/AcceptedRequestsTableViewCell.swift": [533721522, 0]
