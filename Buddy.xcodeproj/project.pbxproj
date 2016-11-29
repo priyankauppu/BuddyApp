@@ -24,6 +24,8 @@
 		99B09C871DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B09C861DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift */; };
 		99B09C891DECA2B700A14B8B /* DirectionWithHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */; };
 		99B09C8D1DECBD1F00A14B8B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B09C8C1DECBD1F00A14B8B /* HealthKit.framework */; };
+		99B09C961DECCC6E00A14B8B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B09C951DECCC6E00A14B8B /* ProfileViewController.swift */; };
+		99FE749B1DED3BBF0054F843 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE749A1DED3BBF0054F843 /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionWithHealthViewController.swift; sourceTree = "<group>"; };
 		99B09C8A1DECBD1F00A14B8B /* Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Buddy.entitlements; sourceTree = "<group>"; };
 		99B09C8C1DECBD1F00A14B8B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		99B09C951DECCC6E00A14B8B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		99FE749A1DED3BBF0054F843 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,9 +137,9 @@
 				999725351DEAA310004CEB70 /* LoginViewController.swift */,
 				999725421DEAB148004CEB70 /* PriyankaViewController.swift */,
 				99B09C8E1DECBE9300A14B8B /* Find a restaurant */,
-				99B09C841DEC98E300A14B8B /* GeoWithHealthViewController.swift */,
-				99B09C861DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift */,
-				99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */,
+				99B09C901DECCA3900A14B8B /* Food Challenge */,
+				99B09C951DECCC6E00A14B8B /* ProfileViewController.swift */,
+				99FE749A1DED3BBF0054F843 /* ProfileTableViewCell.swift */,
 			);
 			path = Buddy;
 			sourceTree = "<group>";
@@ -184,6 +188,16 @@
 				999D23FF1DEBA71300CAEE59 /* DirectionViewController.swift */,
 			);
 			name = "Find a restaurant";
+			sourceTree = "<group>";
+		};
+		99B09C901DECCA3900A14B8B /* Food Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				99B09C841DEC98E300A14B8B /* GeoWithHealthViewController.swift */,
+				99B09C861DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift */,
+				99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */,
+			);
+			name = "Food Challenge";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,8 +349,10 @@
 				999725361DEAA310004CEB70 /* LoginViewController.swift in Sources */,
 				999725031DEA8576004CEB70 /* ViewController.swift in Sources */,
 				999D23FC1DEB819D00CAEE59 /* GeoViewController.swift in Sources */,
+				99B09C961DECCC6E00A14B8B /* ProfileViewController.swift in Sources */,
 				99B09C891DECA2B700A14B8B /* DirectionWithHealthViewController.swift in Sources */,
 				999725011DEA8576004CEB70 /* AppDelegate.swift in Sources */,
+				99FE749B1DED3BBF0054F843 /* ProfileTableViewCell.swift in Sources */,
 				999725431DEAB148004CEB70 /* PriyankaViewController.swift in Sources */,
 				999D23FE1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift in Sources */,
 				9997253B1DEAA55E004CEB70 /* SWRevealViewController.m in Sources */,

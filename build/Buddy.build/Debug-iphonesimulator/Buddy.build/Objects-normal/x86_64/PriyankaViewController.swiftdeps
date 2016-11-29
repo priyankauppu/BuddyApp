@@ -11,14 +11,14 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "menuButton"
 depends-top-level:
+- "PriyankaViewController"
 - !private "!="
+- "StringLiteralType"
 - "UIViewController"
-- !private "SWRevealViewController"
 - "String"
 - "UIBarButtonItem"
+- !private "SWRevealViewController"
 - "AssignmentPrecedence"
-- "PriyankaViewController"
-- "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "SWRevealViewController"]
 - !private ["Ps9AnyObject", "action"]
