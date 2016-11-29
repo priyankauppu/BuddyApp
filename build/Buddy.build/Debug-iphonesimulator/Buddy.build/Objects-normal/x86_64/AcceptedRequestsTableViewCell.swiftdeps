@@ -1,0 +1,317 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AcceptedRequestsTableViewCell"
+provides-nominal:
+- "C5Buddy29AcceptedRequestsTableViewCell"
+provides-member:
+- ["C5Buddy29AcceptedRequestsTableViewCell", ""]
+provides-dynamic-lookup:
+- "setSelected"
+- "buddyName"
+- "buddyRestaurant"
+- "awakeFromNib"
+- "buddyEmail"
+- "buddyCuisine"
+- "buddyTime"
+depends-top-level:
+- "UITableViewCell"
+- "Bool"
+- "UILabel"
+- "AcceptedRequestsTableViewCell"
+depends-member:
+- ["C5Buddy29AcceptedRequestsTableViewCell", "Bool"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "UILabel"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "awakeFromNib"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "buddyCuisine"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "buddyEmail"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "buddyName"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "buddyRestaurant"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "buddyTime"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "deinit"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "init"]
+- ["C5Buddy29AcceptedRequestsTableViewCell", "setSelected"]
+- ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "buddyCuisine"]
+- ["Ps9AnyObject", "buddyEmail"]
+- ["Ps9AnyObject", "buddyName"]
+- ["Ps9AnyObject", "buddyRestaurant"]
+- ["Ps9AnyObject", "buddyTime"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "setSelected"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "awakeFromNib"]
+- ["PSo15CALayerDelegate", "buddyCuisine"]
+- ["PSo15CALayerDelegate", "buddyEmail"]
+- ["PSo15CALayerDelegate", "buddyName"]
+- ["PSo15CALayerDelegate", "buddyRestaurant"]
+- ["PSo15CALayerDelegate", "buddyTime"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "setSelected"]
+- ["PSo15CALayerDelegate", ""]
+- ["Ps7CVarArg", "awakeFromNib"]
+- ["Ps7CVarArg", "buddyCuisine"]
+- ["Ps7CVarArg", "buddyEmail"]
+- ["Ps7CVarArg", "buddyName"]
+- ["Ps7CVarArg", "buddyRestaurant"]
+- ["Ps7CVarArg", "buddyTime"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "setSelected"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "buddyCuisine"]
+- ["Ps28CustomDebugStringConvertible", "buddyEmail"]
+- ["Ps28CustomDebugStringConvertible", "buddyName"]
+- ["Ps28CustomDebugStringConvertible", "buddyRestaurant"]
+- ["Ps28CustomDebugStringConvertible", "buddyTime"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "setSelected"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "buddyCuisine"]
+- ["Ps23CustomStringConvertible", "buddyEmail"]
+- ["Ps23CustomStringConvertible", "buddyName"]
+- ["Ps23CustomStringConvertible", "buddyRestaurant"]
+- ["Ps23CustomStringConvertible", "buddyTime"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "setSelected"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "buddyCuisine"]
+- ["Ps9Equatable", "buddyEmail"]
+- ["Ps9Equatable", "buddyName"]
+- ["Ps9Equatable", "buddyRestaurant"]
+- ["Ps9Equatable", "buddyTime"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "setSelected"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "buddyCuisine"]
+- ["Ps8Hashable", "buddyEmail"]
+- ["Ps8Hashable", "buddyName"]
+- ["Ps8Hashable", "buddyRestaurant"]
+- ["Ps8Hashable", "buddyTime"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "setSelected"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "buddyCuisine"]
+- ["PSo8NSCoding", "buddyEmail"]
+- ["PSo8NSCoding", "buddyName"]
+- ["PSo8NSCoding", "buddyRestaurant"]
+- ["PSo8NSCoding", "buddyTime"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "buddyCuisine"]
+- ["CSo8NSObject", "buddyEmail"]
+- ["CSo8NSObject", "buddyName"]
+- ["CSo8NSObject", "buddyRestaurant"]
+- ["CSo8NSObject", "buddyTime"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "setSelected"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "buddyCuisine"]
+- ["PSo16NSObjectProtocol", "buddyEmail"]
+- ["PSo16NSObjectProtocol", "buddyName"]
+- ["PSo16NSObjectProtocol", "buddyRestaurant"]
+- ["PSo16NSObjectProtocol", "buddyTime"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "buddyCuisine"]
+- ["PSo29UIAccessibilityIdentification", "buddyEmail"]
+- ["PSo29UIAccessibilityIdentification", "buddyName"]
+- ["PSo29UIAccessibilityIdentification", "buddyRestaurant"]
+- ["PSo29UIAccessibilityIdentification", "buddyTime"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "buddyCuisine"]
+- ["PSo12UIAppearance", "buddyEmail"]
+- ["PSo12UIAppearance", "buddyName"]
+- ["PSo12UIAppearance", "buddyRestaurant"]
+- ["PSo12UIAppearance", "buddyTime"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "buddyCuisine"]
+- ["PSo21UIAppearanceContainer", "buddyEmail"]
+- ["PSo21UIAppearanceContainer", "buddyName"]
+- ["PSo21UIAppearanceContainer", "buddyRestaurant"]
+- ["PSo21UIAppearanceContainer", "buddyTime"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "buddyCuisine"]
+- ["PSo17UICoordinateSpace", "buddyEmail"]
+- ["PSo17UICoordinateSpace", "buddyName"]
+- ["PSo17UICoordinateSpace", "buddyRestaurant"]
+- ["PSo17UICoordinateSpace", "buddyTime"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "buddyCuisine"]
+- ["PSo13UIDynamicItem", "buddyEmail"]
+- ["PSo13UIDynamicItem", "buddyName"]
+- ["PSo13UIDynamicItem", "buddyRestaurant"]
+- ["PSo13UIDynamicItem", "buddyTime"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "buddyCuisine"]
+- ["PSo18UIFocusEnvironment", "buddyEmail"]
+- ["PSo18UIFocusEnvironment", "buddyName"]
+- ["PSo18UIFocusEnvironment", "buddyRestaurant"]
+- ["PSo18UIFocusEnvironment", "buddyTime"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo11UIFocusItem", "awakeFromNib"]
+- ["PSo11UIFocusItem", "buddyCuisine"]
+- ["PSo11UIFocusItem", "buddyEmail"]
+- ["PSo11UIFocusItem", "buddyName"]
+- ["PSo11UIFocusItem", "buddyRestaurant"]
+- ["PSo11UIFocusItem", "buddyTime"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "setSelected"]
+- ["PSo11UIFocusItem", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "buddyCuisine"]
+- ["PSo27UIGestureRecognizerDelegate", "buddyEmail"]
+- ["PSo27UIGestureRecognizerDelegate", "buddyName"]
+- ["PSo27UIGestureRecognizerDelegate", "buddyRestaurant"]
+- ["PSo27UIGestureRecognizerDelegate", "buddyTime"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "buddyCuisine"]
+- ["CSo11UIResponder", "buddyEmail"]
+- ["CSo11UIResponder", "buddyName"]
+- ["CSo11UIResponder", "buddyRestaurant"]
+- ["CSo11UIResponder", "buddyTime"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "setSelected"]
+- ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
+- ["PSo30UIResponderStandardEditActions", "buddyCuisine"]
+- ["PSo30UIResponderStandardEditActions", "buddyEmail"]
+- ["PSo30UIResponderStandardEditActions", "buddyName"]
+- ["PSo30UIResponderStandardEditActions", "buddyRestaurant"]
+- ["PSo30UIResponderStandardEditActions", "buddyTime"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "setSelected"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "buddyCuisine"]
+- ["CSo15UITableViewCell", "buddyEmail"]
+- ["CSo15UITableViewCell", "buddyName"]
+- ["CSo15UITableViewCell", "buddyRestaurant"]
+- ["CSo15UITableViewCell", "buddyTime"]
+- ["CSo15UITableViewCell", "deinit"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", ""]
+- ["OSC20UITableViewCellStyle", "deinit"]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "buddyCuisine"]
+- ["PSo18UITraitEnvironment", "buddyEmail"]
+- ["PSo18UITraitEnvironment", "buddyName"]
+- ["PSo18UITraitEnvironment", "buddyRestaurant"]
+- ["PSo18UITraitEnvironment", "buddyTime"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "buddyCuisine"]
+- ["CSo6UIView", "buddyEmail"]
+- ["CSo6UIView", "buddyName"]
+- ["CSo6UIView", "buddyRestaurant"]
+- ["CSo6UIView", "buddyTime"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "setSelected"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "buddyCuisine"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "buddyEmail"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "buddyName"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "buddyRestaurant"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "buddyTime"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- ["Ps9_Hashable", "awakeFromNib"]
+- ["Ps9_Hashable", "buddyCuisine"]
+- ["Ps9_Hashable", "buddyEmail"]
+- ["Ps9_Hashable", "buddyName"]
+- ["Ps9_Hashable", "buddyRestaurant"]
+- ["Ps9_Hashable", "buddyTime"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "setSelected"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "C5Buddy29AcceptedRequestsTableViewCell"
+- "Ps9AnyObject"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "CSo15UITableViewCell"
+- "OSC20UITableViewCellStyle"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/apple/Desktop/iOS/Buddy/Buddy/Buddy-Bridging-Header.h"
+- "/Users/apple/Desktop/iOS/Buddy/Buddy/SWRevealViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "631b34297a44948c4023c99f3279c207"

@@ -116,13 +116,46 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
 @import MapKit;
 @import CoreLocation;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UILabel;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC5Buddy29AcceptedRequestsTableViewCell")
+@interface AcceptedRequestsTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyEmail;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyRestaurant;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyCuisine;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyTime;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UIBarButtonItem;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC5Buddy35AcceptedRequestsTableViewController")
+@interface AcceptedRequestsTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -139,9 +172,6 @@ SWIFT_CLASS("_TtC5Buddy11AppDelegate")
 @end
 
 @class UIStoryboardSegue;
-@class UITableView;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 @interface BuddiesGoingTableViewController : UITableViewController
@@ -219,8 +249,6 @@ SWIFT_CLASS("_TtC5Buddy33DirectionWithHealthViewController")
 @class UIGestureRecognizer;
 @class UITextField;
 @class UIPickerView;
-@class UIBarButtonItem;
-@class UILabel;
 
 SWIFT_CLASS("_TtC5Buddy17GeoViewController")
 @interface GeoViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
@@ -323,6 +351,19 @@ SWIFT_CLASS("_TtC5Buddy19LoginViewController")
 - (void)didReceiveMemoryWarning;
 - (IBAction)Submit:(id _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Buddy34PendingRequestsTableViewController")
+@interface PendingRequestsTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
