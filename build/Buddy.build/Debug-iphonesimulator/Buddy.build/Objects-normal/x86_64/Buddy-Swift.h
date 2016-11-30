@@ -426,7 +426,6 @@ SWIFT_CLASS("_TtC5Buddy19LoginViewController")
 @interface LoginViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)Submit:(id _Nonnull)sender;

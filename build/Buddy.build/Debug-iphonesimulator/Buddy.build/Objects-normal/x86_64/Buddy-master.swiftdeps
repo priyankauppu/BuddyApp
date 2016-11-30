@@ -1,13 +1,13 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "8287bf2b150039cd4e867cbbefa704b7"
-build_time: [533851485, 147861000]
+build_time: [533852494, 344203000]
 inputs:
   "/Users/apple/Desktop/iOS/Buddy/Buddy/DirectionViewController.swift": [533813471, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/BuddiesWithHealthGoingTableViewController.swift": [533850171, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/GeoWithHealthViewController.swift": [533849840, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/PendingRequestsTableViewCell.swift": [533819313, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/AcceptedRequestsTableViewController.swift": [533851137, 0]
-  "/Users/apple/Desktop/iOS/Buddy/Buddy/LoginViewController.swift": [533849135, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/LoginViewController.swift": [533852493, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/ViewController.swift": [533718056, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/AcceptedRequestsTableViewCell.swift": [533721522, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/BuddiesWithHealthGoingTableViewCell.swift": [533799336, 0]
@@ -19,4 +19,4 @@ inputs:
   "/Users/apple/Desktop/iOS/Buddy/Buddy/ProfileTableViewCell.swift": [533711688, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/PriyankaViewController.swift": [533670854, 0]
   "/Users/apple/Desktop/iOS/Buddy/Buddy/BuddiesGoingTableViewController.swift": [533850120, 0]
-  "/Users/apple/Desktop/iOS/Buddy/Buddy/PendingRequestsTableViewController.swift": [533851477, 0]
+  "/Users/apple/Desktop/iOS/Buddy/Buddy/PendingRequestsTableViewController.swift": [533851638, 0]

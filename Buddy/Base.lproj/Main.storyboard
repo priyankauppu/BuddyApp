@@ -225,6 +225,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="OSa-Td-5eq" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="gAI-RJ-chI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -857,7 +860,7 @@
                     <navigationItem key="navigationItem" id="kVH-ct-b6A">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="rV7-qI-SLm">
                             <connections>
-                                <segue destination="lFI-Yw-FQK" kind="show" id="vND-6X-TsK"/>
+                                <segue destination="b57-gr-hTv" kind="presentation" id="84J-OY-zsW"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Go Alone" id="Ggv-bQ-fdP">
@@ -910,7 +913,7 @@
                     <navigationItem key="navigationItem" id="ALd-YK-g4k">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="tV1-6i-QAD">
                             <connections>
-                                <segue destination="H7z-lN-SYa" kind="show" id="BhX-QX-ZKQ"/>
+                                <segue destination="b57-gr-hTv" kind="presentation" id="CdQ-kI-Du7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1368,7 +1371,7 @@
                     <navigationItem key="navigationItem" title="Title" id="aYE-go-Z3W">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="4VS-bA-lJs">
                             <connections>
-                                <segue destination="fuZ-Pd-VO2" kind="show" id="LxI-W6-9P5"/>
+                                <segue destination="b57-gr-hTv" kind="presentation" id="DHh-5e-2LC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1527,7 +1530,7 @@
                     <navigationItem key="navigationItem" id="wvf-Ns-prP">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="FuU-cQ-H5G">
                             <connections>
-                                <segue destination="H7z-lN-SYa" kind="show" id="Nea-bu-eLa"/>
+                                <segue destination="b57-gr-hTv" kind="presentation" id="Gey-Ks-jqq"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Go Alone" id="evM-Q0-MzD">
@@ -1626,11 +1629,9 @@
         <image name="username" width="80" height="78"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xav-l2-Tum"/>
         <segue reference="txr-Hn-WLM"/>
-        <segue reference="LxI-W6-9P5"/>
-        <segue reference="vND-6X-TsK"/>
-        <segue reference="BhX-QX-ZKQ"/>
+        <segue reference="DHh-5e-2LC"/>
+        <segue reference="Xav-l2-Tum"/>
         <segue reference="Wye-OI-SNz"/>
     </inferredMetricsTieBreakers>
 </document>
