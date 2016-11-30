@@ -506,6 +506,12 @@ SWIFT_CLASS("_TtC5Buddy21ProfileViewController")
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull fullName;
+@property (nonatomic, copy) NSString * _Nonnull email;
+@property (nonatomic, copy) NSString * _Nonnull gender;
+@property (nonatomic, copy) NSString * _Nonnull height;
+@property (nonatomic, copy) NSString * _Nonnull weight;
+@property (nonatomic, copy) NSString * _Nonnull dailyGoal;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
