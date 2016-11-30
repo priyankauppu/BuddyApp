@@ -25,6 +25,8 @@
 		99B09C891DECA2B700A14B8B /* DirectionWithHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */; };
 		99B09C8D1DECBD1F00A14B8B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B09C8C1DECBD1F00A14B8B /* HealthKit.framework */; };
 		99B09C961DECCC6E00A14B8B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B09C951DECCC6E00A14B8B /* ProfileViewController.swift */; };
+		99C5B7D31DEE3822006DA64D /* BuddiesGoingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C5B7D21DEE3822006DA64D /* BuddiesGoingTableViewCell.swift */; };
+		99C5B7D51DEE388D006DA64D /* BuddiesWithHealthGoingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C5B7D41DEE388D006DA64D /* BuddiesWithHealthGoingTableViewCell.swift */; };
 		99FE749B1DED3BBF0054F843 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE749A1DED3BBF0054F843 /* ProfileTableViewCell.swift */; };
 		99FE749D1DED65360054F843 /* PendingRequestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE749C1DED65360054F843 /* PendingRequestsTableViewController.swift */; };
 		99FE749F1DED65C70054F843 /* AcceptedRequestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE749E1DED65C70054F843 /* AcceptedRequestsTableViewController.swift */; };
@@ -76,6 +78,8 @@
 		99B09C8A1DECBD1F00A14B8B /* Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Buddy.entitlements; sourceTree = "<group>"; };
 		99B09C8C1DECBD1F00A14B8B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		99B09C951DECCC6E00A14B8B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		99C5B7D21DEE3822006DA64D /* BuddiesGoingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddiesGoingTableViewCell.swift; sourceTree = "<group>"; };
+		99C5B7D41DEE388D006DA64D /* BuddiesWithHealthGoingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddiesWithHealthGoingTableViewCell.swift; sourceTree = "<group>"; };
 		99FE749A1DED3BBF0054F843 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		99FE749C1DED65360054F843 /* PendingRequestsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingRequestsTableViewController.swift; sourceTree = "<group>"; };
 		99FE749E1DED65C70054F843 /* AcceptedRequestsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptedRequestsTableViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				99FE749A1DED3BBF0054F843 /* ProfileTableViewCell.swift */,
 				99FE749C1DED65360054F843 /* PendingRequestsTableViewController.swift */,
 				99FE74A21DED6BBD0054F843 /* AcceptedRequests */,
+				99C5B7D21DEE3822006DA64D /* BuddiesGoingTableViewCell.swift */,
+				99C5B7D41DEE388D006DA64D /* BuddiesWithHealthGoingTableViewCell.swift */,
 			);
 			path = Buddy;
 			sourceTree = "<group>";
@@ -367,9 +373,11 @@
 				999725361DEAA310004CEB70 /* LoginViewController.swift in Sources */,
 				999725031DEA8576004CEB70 /* ViewController.swift in Sources */,
 				99FE74A11DED6B9D0054F843 /* AcceptedRequestsTableViewCell.swift in Sources */,
+				99C5B7D51DEE388D006DA64D /* BuddiesWithHealthGoingTableViewCell.swift in Sources */,
 				999D23FC1DEB819D00CAEE59 /* GeoViewController.swift in Sources */,
 				99B09C961DECCC6E00A14B8B /* ProfileViewController.swift in Sources */,
 				99B09C891DECA2B700A14B8B /* DirectionWithHealthViewController.swift in Sources */,
+				99C5B7D31DEE3822006DA64D /* BuddiesGoingTableViewCell.swift in Sources */,
 				999725011DEA8576004CEB70 /* AppDelegate.swift in Sources */,
 				99FE749B1DED3BBF0054F843 /* ProfileTableViewCell.swift in Sources */,
 				999725431DEAB148004CEB70 /* PriyankaViewController.swift in Sources */,

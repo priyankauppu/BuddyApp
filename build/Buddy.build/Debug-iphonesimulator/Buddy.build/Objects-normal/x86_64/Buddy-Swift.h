@@ -181,6 +181,15 @@ SWIFT_CLASS("_TtC5Buddy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC5Buddy25BuddiesGoingTableViewCell")
+@interface BuddiesGoingTableViewCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
@@ -200,23 +209,45 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 @end
 
 
+SWIFT_CLASS("_TtC5Buddy35BuddiesWithHealthGoingTableViewCell")
+@interface BuddiesWithHealthGoingTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyRestaurant;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyCuisine;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CLLocationManager;
+@class CLLocation;
+
 SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
 @interface BuddiesWithHealthGoingTableViewController : UITableViewController
 @property (nonatomic, copy) NSString * _Nonnull restaurant;
 @property (nonatomic, copy) NSString * _Nonnull cuisine;
 @property (nonatomic) double restaurantLatitude;
 @property (nonatomic) double restaurantLongitude;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyName;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyCuisine;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyRestaurant;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic, strong) CLLocation * _Nonnull location;
+@property (nonatomic, copy) NSString * _Nonnull urll;
+@property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)findNearByBuddies;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CLLocationManager;
 @class MKMapView;
 @protocol MKOverlay;
 @class MKOverlayRenderer;
@@ -248,7 +279,6 @@ SWIFT_CLASS("_TtC5Buddy33DirectionWithHealthViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CLLocation;
 @class MKPointAnnotation;
 @class MKPolygon;
 @protocol MKAnnotation;

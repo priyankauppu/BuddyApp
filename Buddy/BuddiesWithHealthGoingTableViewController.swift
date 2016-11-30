@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import CoreLocation
+
 
 class BuddiesWithHealthGoingTableViewController: UITableViewController {
     var restaurant:String = "";
     var cuisine:String = "";
     var restaurantLatitude:Double = 0.0
     var restaurantLongitude:Double = 0.0
+    
+    var buddyName:[String]=[]
+    var buddyCuisine:[String]=[]
+    var buddyRestaurant:[String]=[]
+    
+    
+    let locationManager = CLLocationManager()
+    var location:CLLocation=CLLocation()
+    
+    //webservice declarations
+    var urll = "http://localhost:3000";
+    let para:NSMutableDictionary = NSMutableDictionary();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +38,8 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         print("********\(restaurant)********\(cuisine)***************")
+        findNearByBuddies()
+//        self.tableView.reloadData()
         
     }
 
@@ -53,23 +69,100 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+       // print("count",buddyName.count)
+        return  buddyName.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! BuddiesWithHealthGoingTableViewCell
 
         // Configure the cell...
+        let buddyName = self.buddyName[indexPath.row]
+        let buddyRestaurant=self.buddyRestaurant[indexPath.row]
+        let buddyCuisine=self.buddyCuisine[indexPath.row]
+        //let buddyEmail=self.buddyEmail[indexPath.row]
+        
+        
+        cell.buddyName.text = buddyName
+        cell.buddyRestaurant.text = buddyRestaurant
+        cell.buddyCuisine.text = buddyCuisine
+
 
         return cell
     }
-    */
+    
+    func findNearByBuddies(){
+        let location_coordinate=location.coordinate
+        
+        para.setValue("Coffee", forKey: "cuisine");
+        para.setValue("Starbucks", forKey: "restaurant");
+        para.setValue("Snehal", forKey: "name");
+        para.setValue("snehal.sdt@gmail.com", forKey: "email")
+        para.setValue(location_coordinate.latitude, forKey: "latitude")
+        para.setValue(location_coordinate.longitude, forKey: "longitude")
+        
+        let jsonData = try! JSONSerialization.data(withJSONObject: para, options: JSONSerialization.WritingOptions());
+        let request:NSMutableURLRequest=NSMutableURLRequest();
+        let session = URLSession.shared
+        let url = urll+"/findNearbyBuddies";
+        request.url=NSURL(string:url) as URL?
+        request.httpMethod = "POST";
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type");
+        request.httpBody = jsonData;
+        print("Sending",request)
+        
+        let task = session.dataTask(with: request as URLRequest, completionHandler: {
+            (data, response, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            } else {
+                do {
+                    if let response :NSDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions()) as? NSDictionary
+                    {
+ 
+                        let resResult : [Dictionary<String, AnyObject>] = response["result"] as! [Dictionary<String, AnyObject>];
+                        
+                        if(resResult.isEmpty)
+                        {
+//                            DispatchQueue.main.async(execute: {
+//                                print("Sorry no data Found.");
+//                            })
+                        }
+                        else{
+//                            print(resResult.count)
+                            for anItem in resResult {
+                                //print(anItem)
+                                self.buddyName.append(anItem["name"] as! String)
+                                self.buddyRestaurant.append(anItem["restaurant"] as! String)
+                                self.buddyCuisine.append(anItem["cuisine"] as! String)
+                            }
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                            
+                        }
+                   }
+                
+                }//do
+                
+                catch {
+                    print("error in JSONSerialization")
+                }
+                
+            }
+            
+        })
+        task.resume()
+
+        
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
