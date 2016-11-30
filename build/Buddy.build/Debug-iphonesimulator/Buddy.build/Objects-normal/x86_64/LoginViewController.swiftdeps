@@ -7,30 +7,32 @@ provides-member:
 - ["C5Buddy19LoginViewController", ""]
 provides-dynamic-lookup:
 - "menuButton"
-- "Submit"
-- "username"
+- "password"
+- "prepare"
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
-- "prepare"
-- "password"
+- "Submit"
+- "username"
 depends-top-level:
-- "UIStoryboardSegue"
-- !private "!="
-- "LoginViewController"
-- "UIBarButtonItem"
-- !private "SWRevealViewController"
+- !private "GeoViewController"
 - !private "StringLiteralType"
+- !private "SWRevealViewController"
+- "UITextField"
+- !private "!="
 - "UIViewController"
 - !private "UINavigationController"
-- "AssignmentPrecedence"
-- !private "=="
-- "CastingPrecedence"
-- "UITextField"
 - "AnyObject"
-- !private "GeoViewController"
+- "LoginViewController"
+- "UIBarButtonItem"
+- "UIStoryboardSegue"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "=="
+- !private "UserDefaults"
 depends-member:
 - !private ["Ps9AnyObject", "SWRevealViewController"]
 - ["Ps9AnyObject", "Submit"]
+- !private ["Ps9AnyObject", "UserDefaults"]
 - !private ["Ps9AnyObject", "action"]
 - !private ["Ps9AnyObject", "addGestureRecognizer"]
 - !private ["Ps9AnyObject", "destination"]
@@ -45,6 +47,8 @@ depends-member:
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "revealToggle"]
 - !private ["Ps9AnyObject", "revealViewController"]
+- !private ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "standard"]
 - !private ["Ps9AnyObject", "target"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "topViewController"]
@@ -59,6 +63,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "prefsEmail"]
 - !private ["Ps7CVarArg", "SWRevealViewController"]
 - ["Ps7CVarArg", "Submit"]
+- !private ["Ps7CVarArg", "UserDefaults"]
 - !private ["Ps7CVarArg", "action"]
 - !private ["Ps7CVarArg", "addGestureRecognizer"]
 - !private ["Ps7CVarArg", "destination"]
@@ -73,6 +78,8 @@ depends-member:
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "revealToggle"]
 - !private ["Ps7CVarArg", "revealViewController"]
+- !private ["Ps7CVarArg", "setValue"]
+- !private ["Ps7CVarArg", "standard"]
 - !private ["Ps7CVarArg", "target"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "topViewController"]
@@ -83,6 +90,7 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "SWRevealViewController"]
 - ["Ps28CustomDebugStringConvertible", "Submit"]
+- !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "action"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
@@ -97,6 +105,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "revealToggle"]
 - !private ["Ps28CustomDebugStringConvertible", "revealViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- !private ["Ps28CustomDebugStringConvertible", "standard"]
 - !private ["Ps28CustomDebugStringConvertible", "target"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "topViewController"]
@@ -110,6 +120,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "SWRevealViewController"]
 - ["Ps23CustomStringConvertible", "Submit"]
+- !private ["Ps23CustomStringConvertible", "UserDefaults"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "action"]
 - !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
@@ -125,6 +136,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "revealToggle"]
 - !private ["Ps23CustomStringConvertible", "revealViewController"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Ps23CustomStringConvertible", "standard"]
 - !private ["Ps23CustomStringConvertible", "target"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "topViewController"]
@@ -134,6 +147,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "SWRevealViewController"]
 - ["Ps9Equatable", "Submit"]
+- !private ["Ps9Equatable", "UserDefaults"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "action"]
 - !private ["Ps9Equatable", "addGestureRecognizer"]
@@ -149,6 +163,8 @@ depends-member:
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "revealToggle"]
 - !private ["Ps9Equatable", "revealViewController"]
+- !private ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "standard"]
 - !private ["Ps9Equatable", "target"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "topViewController"]
@@ -165,6 +181,7 @@ depends-member:
 - !private ["C5Buddy17GeoViewController", "prefsEmail"]
 - !private ["Ps8Hashable", "SWRevealViewController"]
 - ["Ps8Hashable", "Submit"]
+- !private ["Ps8Hashable", "UserDefaults"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "action"]
 - !private ["Ps8Hashable", "addGestureRecognizer"]
@@ -180,6 +197,8 @@ depends-member:
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "revealToggle"]
 - !private ["Ps8Hashable", "revealViewController"]
+- !private ["Ps8Hashable", "setValue"]
+- !private ["Ps8Hashable", "standard"]
 - !private ["Ps8Hashable", "target"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "topViewController"]
@@ -196,6 +215,7 @@ depends-member:
 - !private ["C5Buddy19LoginViewController", "UINavigationController"]
 - ["C5Buddy19LoginViewController", "UIStoryboardSegue"]
 - ["C5Buddy19LoginViewController", "UITextField"]
+- !private ["C5Buddy19LoginViewController", "UserDefaults"]
 - ["C5Buddy19LoginViewController", "deinit"]
 - ["C5Buddy19LoginViewController", "didReceiveMemoryWarning"]
 - ["C5Buddy19LoginViewController", "init"]
@@ -214,6 +234,7 @@ depends-member:
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "SWRevealViewController"]
 - ["PSo8NSCoding", "Submit"]
+- !private ["PSo8NSCoding", "UserDefaults"]
 - !private ["PSo8NSCoding", "action"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -236,6 +257,7 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "SWRevealViewController"]
 - ["PSo26NSExtensionRequestHandling", "Submit"]
+- !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "menuButton"]
@@ -260,6 +282,7 @@ depends-member:
 - !private ["CSo8NSObject", "UINavigationController"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "UserDefaults"]
 - !private ["CSo8NSObject", "action"]
 - !private ["CSo8NSObject", "addGestureRecognizer"]
 - !private ["CSo8NSObject", "destination"]
@@ -274,6 +297,8 @@ depends-member:
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "revealToggle"]
 - !private ["CSo8NSObject", "revealViewController"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "standard"]
 - !private ["CSo8NSObject", "target"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "topViewController"]
@@ -282,6 +307,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "SWRevealViewController"]
 - ["PSo16NSObjectProtocol", "Submit"]
+- !private ["PSo16NSObjectProtocol", "UserDefaults"]
 - !private ["PSo16NSObjectProtocol", "action"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "destination"]
@@ -296,6 +322,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "revealToggle"]
 - !private ["PSo16NSObjectProtocol", "revealViewController"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "standard"]
 - !private ["PSo16NSObjectProtocol", "target"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "topViewController"]
@@ -323,6 +351,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "SWRevealViewController"]
 - ["PSo21UIAppearanceContainer", "Submit"]
+- !private ["PSo21UIAppearanceContainer", "UserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "init"]
@@ -346,6 +375,7 @@ depends-member:
 - !private ["CSo9UIBarItem", "target"]
 - !private ["PSo18UIContentContainer", "SWRevealViewController"]
 - ["PSo18UIContentContainer", "Submit"]
+- !private ["PSo18UIContentContainer", "UserDefaults"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "menuButton"]
@@ -369,6 +399,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "SWRevealViewController"]
 - ["PSo18UIFocusEnvironment", "Submit"]
+- !private ["PSo18UIFocusEnvironment", "UserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "init"]
@@ -401,6 +432,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UINavigationController"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITextField"]
+- !private ["CSo11UIResponder", "UserDefaults"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
@@ -419,6 +451,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "SWRevealViewController"]
 - ["PSo30UIResponderStandardEditActions", "Submit"]
+- !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
 - !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
@@ -438,6 +471,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "SWRevealViewController"]
 - ["PSo16UIStateRestoring", "Submit"]
+- !private ["PSo16UIStateRestoring", "UserDefaults"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "menuButton"]
@@ -461,6 +495,7 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "SWRevealViewController"]
 - ["PSo18UITraitEnvironment", "Submit"]
+- !private ["PSo18UITraitEnvironment", "UserDefaults"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -488,6 +523,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UINavigationController"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITextField"]
+- !private ["CSo16UIViewController", "UserDefaults"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
@@ -504,6 +540,9 @@ depends-member:
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- ["CSo12UserDefaults", "deinit"]
+- !private ["CSo12UserDefaults", "setValue"]
+- !private ["CSo12UserDefaults", "standard"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
@@ -514,6 +553,7 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "SWRevealViewController"]
 - ["Ps9_Hashable", "Submit"]
+- !private ["Ps9_Hashable", "UserDefaults"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "action"]
 - !private ["Ps9_Hashable", "addGestureRecognizer"]
@@ -529,6 +569,8 @@ depends-member:
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "revealToggle"]
 - !private ["Ps9_Hashable", "revealViewController"]
+- !private ["Ps9_Hashable", "setValue"]
+- !private ["Ps9_Hashable", "standard"]
 - !private ["Ps9_Hashable", "target"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "topViewController"]
@@ -604,6 +646,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- "CSo12UserDefaults"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"

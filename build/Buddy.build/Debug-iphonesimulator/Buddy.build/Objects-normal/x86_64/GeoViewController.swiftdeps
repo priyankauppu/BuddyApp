@@ -6,118 +6,119 @@ provides-nominal:
 provides-member:
 - ["C5Buddy17GeoViewController", ""]
 provides-dynamic-lookup:
+- "slider"
 - "annotations"
 - "knn"
+- "sortConvex"
 - "drawCircle"
+- "location"
 - "menuButton"
 - "addRadiusCircle"
-- "plotKnn"
 - "selectedPickerData"
 - "sliderValue"
+- "polygon"
+- "numberOfComponents"
+- "para"
+- "didReceiveMemoryWarning"
+- "picker"
+- "plotKnn"
+- "prefsEmail"
+- "sliderMoved"
+- "handleLongPress"
+- "knnChanged"
+- "urll"
+- "radius"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "pickerData"
+- "updateOverlay"
+- "locationManager"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
 - "viewDidLoad"
 - "addLongPressGesture"
-- "locationManager"
-- "prefsEmail"
-- "updateOverlay"
-- "slider"
 - "prepare"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "handleLongPress"
-- "sliderMoved"
-- "didReceiveMemoryWarning"
-- "numberOfComponents"
-- "radius"
-- "sortConvex"
-- "urll"
-- "pickerData"
-- "knnChanged"
-- "polygon"
-- "location"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
-- "para"
-- "picker"
 depends-top-level:
-- "MKOverlay"
-- "CLLocationCoordinate2D"
-- !private "&&"
-- !private "JSONSerialization"
-- !private "MKPinAnnotationView"
-- !private "TernaryPrecedence"
-- "MKAnnotationViewDragState"
-- !private "MKCoordinateRegion"
-- !private "NSURL"
-- !private "URL"
-- !private "MKPolygonRenderer"
-- "AssignmentPrecedence"
-- "UITextField"
-- "CastingPrecedence"
-- !private "=="
-- !private "MKCircleRenderer"
-- !private "UIImage"
-- "UIPickerViewDataSource"
-- "UIPickerViewDelegate"
-- "Double"
-- "GeoViewController"
-- !private "NSDictionary"
-- "MKOverlayRenderer"
-- !private "URLRequest"
-- !private "CLLocationDistance"
-- "StringLiteralType"
-- !private "MKCoordinateSpanMake"
-- !private "UINavigationController"
 - !private ">="
-- "CLLocationManager"
-- !private "kCLLocationAccuracyBest"
-- !private "NSMutableURLRequest"
-- !private "BuddiesGoingTableViewController"
-- "UIBarButtonItem"
-- "String"
-- "MKPointAnnotation"
-- !private "MKCircle"
-- !private "CLLocationDegrees"
-- !private "CLLocationCoordinate2DMake"
-- "UIViewController"
-- !private "BooleanLiteralType"
-- !private "<="
-- !private "*"
-- "UIPickerView"
-- !private "DispatchQueue"
-- !private "<"
-- "MKAnnotation"
-- !private "!="
-- "UIStoryboardSegue"
-- !private "Dictionary"
-- !private "URLSession"
-- "MKPolygon"
-- "UILabel"
-- "CLLocationManagerDelegate"
-- "MKMapViewDelegate"
-- "CLLocation"
-- !private "UILongPressGestureRecognizer"
-- "Array"
-- "UIGestureRecognizer"
-- "UISlider"
-- !private "print"
-- !private "UIColor"
+- "MKOverlayRenderer"
+- "Double"
 - "UIControl"
-- "NSMutableDictionary"
-- !private "+"
+- !private "BuddiesGoingTableViewController"
+- !private "JSONSerialization"
+- !private "print"
+- !private "<"
+- !private "CGPoint"
+- !private "-"
+- !private "URLRequest"
+- "UIBarButtonItem"
+- "CLLocationCoordinate2D"
+- !private "URL"
+- "MKPolygon"
+- "UIViewController"
+- !private "UserDefaults"
+- "UIPickerViewDataSource"
+- !private "UIColor"
+- "UIPickerViewDelegate"
+- "MKAnnotation"
 - "Int"
 - !private "SWRevealViewController"
-- !private "-"
-- !private "CGPoint"
 - "MKAnnotationView"
-- !private "MKUserLocation"
-- !private "UIButton"
-- "MKMapView"
-- !private "Float"
+- !private "MKCoordinateRegion"
+- "UIStoryboardSegue"
 - !private "AnyObject"
+- "NSMutableDictionary"
+- !private "+"
+- !private "MKUserLocation"
+- "GeoViewController"
+- !private "MKCircle"
+- !private "MKPinAnnotationView"
+- "MKAnnotationViewDragState"
+- "CLLocation"
+- !private "Float"
+- "UISlider"
+- "MKPointAnnotation"
+- !private "DispatchQueue"
+- "Array"
+- !private "kCLLocationAccuracyBest"
+- !private "!="
+- "UIGestureRecognizer"
+- !private "NSURL"
+- !private "NSDictionary"
+- !private "UINavigationController"
+- !private "Dictionary"
+- "String"
+- !private "URLSession"
+- !private "BooleanLiteralType"
+- "MKMapViewDelegate"
+- !private "MKPolygonRenderer"
+- !private "UIButton"
+- "CLLocationManager"
+- "StringLiteralType"
+- "CLLocationManagerDelegate"
+- !private "CLLocationDistance"
+- !private "<="
+- "AssignmentPrecedence"
+- !private "=="
+- "MKOverlay"
+- "CastingPrecedence"
+- !private "UIImage"
+- !private "*"
+- "UITextField"
+- !private "UILongPressGestureRecognizer"
+- !private "&&"
+- !private "NSMutableURLRequest"
+- !private "MKCoordinateSpanMake"
+- "UILabel"
+- !private "MKCircleRenderer"
+- !private "TernaryPrecedence"
+- !private "CLLocationDegrees"
+- !private "CLLocationCoordinate2DMake"
+- "UIPickerView"
+- "MKMapView"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGPoint"]
@@ -152,6 +153,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UILongPressGestureRecognizer"]
 - !private ["Ps9AnyObject", "URLSession"]
+- !private ["Ps9AnyObject", "UserDefaults"]
 - !private ["Ps9AnyObject", "WritingOptions"]
 - !private ["Ps9AnyObject", "action"]
 - !private ["Ps9AnyObject", "add"]
@@ -245,6 +247,7 @@ depends-member:
 - ["Ps9AnyObject", "sliderMoved"]
 - ["Ps9AnyObject", "sliderValue"]
 - ["Ps9AnyObject", "sortConvex"]
+- !private ["Ps9AnyObject", "standard"]
 - !private ["Ps9AnyObject", "startUpdatingLocation"]
 - !private ["Ps9AnyObject", "state"]
 - !private ["Ps9AnyObject", "strokeColor"]
@@ -404,6 +407,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "UIImage"]
 - !private ["PSo25CLLocationManagerDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo25CLLocationManagerDelegate", "URLSession"]
+- !private ["PSo25CLLocationManagerDelegate", "UserDefaults"]
 - !private ["PSo25CLLocationManagerDelegate", "addLongPressGesture"]
 - !private ["PSo25CLLocationManagerDelegate", "addRadiusCircle"]
 - !private ["PSo25CLLocationManagerDelegate", "annotations"]
@@ -484,6 +488,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "UILongPressGestureRecognizer"]
 - !private ["Ps7CVarArg", "URLSession"]
+- !private ["Ps7CVarArg", "UserDefaults"]
 - !private ["Ps7CVarArg", "WritingOptions"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
@@ -586,6 +591,7 @@ depends-member:
 - ["Ps7CVarArg", "sliderValue"]
 - ["Ps7CVarArg", "sortConvex"]
 - !private ["Ps7CVarArg", "sorted"]
+- !private ["Ps7CVarArg", "standard"]
 - !private ["Ps7CVarArg", "startUpdatingLocation"]
 - !private ["Ps7CVarArg", "state"]
 - !private ["Ps7CVarArg", "strokeColor"]
@@ -660,6 +666,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UILongPressGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "URLSession"]
+- !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "WritingOptions"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "action"]
@@ -763,6 +770,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "sliderValue"]
 - ["Ps28CustomDebugStringConvertible", "sortConvex"]
 - !private ["Ps28CustomDebugStringConvertible", "sorted"]
+- !private ["Ps28CustomDebugStringConvertible", "standard"]
 - !private ["Ps28CustomDebugStringConvertible", "startUpdatingLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "state"]
 - !private ["Ps28CustomDebugStringConvertible", "strokeColor"]
@@ -850,6 +858,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UILongPressGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "URLSession"]
+- !private ["Ps23CustomStringConvertible", "UserDefaults"]
 - !private ["Ps23CustomStringConvertible", "WritingOptions"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -953,6 +962,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "sliderValue"]
 - ["Ps23CustomStringConvertible", "sortConvex"]
 - !private ["Ps23CustomStringConvertible", "sorted"]
+- !private ["Ps23CustomStringConvertible", "standard"]
 - !private ["Ps23CustomStringConvertible", "startUpdatingLocation"]
 - !private ["Ps23CustomStringConvertible", "state"]
 - !private ["Ps23CustomStringConvertible", "strokeColor"]
@@ -1027,6 +1037,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UILongPressGestureRecognizer"]
 - !private ["Ps9Equatable", "URLSession"]
+- !private ["Ps9Equatable", "UserDefaults"]
 - !private ["Ps9Equatable", "WritingOptions"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -1126,6 +1137,7 @@ depends-member:
 - ["Ps9Equatable", "sliderMoved"]
 - ["Ps9Equatable", "sliderValue"]
 - ["Ps9Equatable", "sortConvex"]
+- !private ["Ps9Equatable", "standard"]
 - !private ["Ps9Equatable", "startUpdatingLocation"]
 - !private ["Ps9Equatable", "state"]
 - !private ["Ps9Equatable", "strokeColor"]
@@ -1232,6 +1244,7 @@ depends-member:
 - !private ["C5Buddy17GeoViewController", "URL"]
 - !private ["C5Buddy17GeoViewController", "URLRequest"]
 - !private ["C5Buddy17GeoViewController", "URLSession"]
+- !private ["C5Buddy17GeoViewController", "UserDefaults"]
 - ["C5Buddy17GeoViewController", "addLongPressGesture"]
 - ["C5Buddy17GeoViewController", "addRadiusCircle"]
 - ["C5Buddy17GeoViewController", "annotations"]
@@ -1315,6 +1328,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UILongPressGestureRecognizer"]
 - !private ["Ps8Hashable", "URLSession"]
+- !private ["Ps8Hashable", "UserDefaults"]
 - !private ["Ps8Hashable", "WritingOptions"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -1411,6 +1425,7 @@ depends-member:
 - ["Ps8Hashable", "sliderMoved"]
 - ["Ps8Hashable", "sliderValue"]
 - ["Ps8Hashable", "sortConvex"]
+- !private ["Ps8Hashable", "standard"]
 - !private ["Ps8Hashable", "startUpdatingLocation"]
 - !private ["Ps8Hashable", "state"]
 - !private ["Ps8Hashable", "strokeColor"]
@@ -1552,6 +1567,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "UIImage"]
 - !private ["PSo17MKMapViewDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo17MKMapViewDelegate", "URLSession"]
+- !private ["PSo17MKMapViewDelegate", "UserDefaults"]
 - !private ["PSo17MKMapViewDelegate", "addLongPressGesture"]
 - !private ["PSo17MKMapViewDelegate", "addRadiusCircle"]
 - !private ["PSo17MKMapViewDelegate", "annotations"]
@@ -1694,6 +1710,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UILongPressGestureRecognizer"]
 - !private ["PSo8NSCoding", "URLSession"]
+- !private ["PSo8NSCoding", "UserDefaults"]
 - !private ["PSo8NSCoding", "action"]
 - !private ["PSo8NSCoding", "add"]
 - !private ["PSo8NSCoding", "addAnnotation"]
@@ -1832,6 +1849,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UILongPressGestureRecognizer"]
 - !private ["PSo26NSExtensionRequestHandling", "URLSession"]
+- !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "addLongPressGesture"]
 - ["PSo26NSExtensionRequestHandling", "addRadiusCircle"]
 - ["PSo26NSExtensionRequestHandling", "annotations"]
@@ -1958,6 +1976,7 @@ depends-member:
 - !private ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "URLRequest"]
 - !private ["CSo8NSObject", "URLSession"]
+- !private ["CSo8NSObject", "UserDefaults"]
 - !private ["CSo8NSObject", "WritingOptions"]
 - !private ["CSo8NSObject", "action"]
 - !private ["CSo8NSObject", "add"]
@@ -2052,6 +2071,7 @@ depends-member:
 - ["CSo8NSObject", "sliderMoved"]
 - ["CSo8NSObject", "sliderValue"]
 - ["CSo8NSObject", "sortConvex"]
+- !private ["CSo8NSObject", "standard"]
 - !private ["CSo8NSObject", "startUpdatingLocation"]
 - !private ["CSo8NSObject", "state"]
 - !private ["CSo8NSObject", "strokeColor"]
@@ -2099,6 +2119,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UILongPressGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "URLSession"]
+- !private ["PSo16NSObjectProtocol", "UserDefaults"]
 - !private ["PSo16NSObjectProtocol", "WritingOptions"]
 - !private ["PSo16NSObjectProtocol", "action"]
 - !private ["PSo16NSObjectProtocol", "add"]
@@ -2193,6 +2214,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "sliderMoved"]
 - ["PSo16NSObjectProtocol", "sliderValue"]
 - ["PSo16NSObjectProtocol", "sortConvex"]
+- !private ["PSo16NSObjectProtocol", "standard"]
 - !private ["PSo16NSObjectProtocol", "startUpdatingLocation"]
 - !private ["PSo16NSObjectProtocol", "state"]
 - !private ["PSo16NSObjectProtocol", "strokeColor"]
@@ -2445,6 +2467,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UILongPressGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "URLSession"]
+- !private ["PSo21UIAppearanceContainer", "UserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "add"]
 - !private ["PSo21UIAppearanceContainer", "addAnnotation"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
@@ -2568,6 +2591,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UILongPressGestureRecognizer"]
 - !private ["PSo18UIContentContainer", "URLSession"]
+- !private ["PSo18UIContentContainer", "UserDefaults"]
 - ["PSo18UIContentContainer", "addLongPressGesture"]
 - ["PSo18UIContentContainer", "addRadiusCircle"]
 - ["PSo18UIContentContainer", "annotations"]
@@ -2714,6 +2738,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UILongPressGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "URLSession"]
+- !private ["PSo18UIFocusEnvironment", "UserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "add"]
 - !private ["PSo18UIFocusEnvironment", "addAnnotation"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
@@ -2866,6 +2891,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "UIImage"]
 - !private ["PSo22UIPickerViewDataSource", "UILongPressGestureRecognizer"]
 - !private ["PSo22UIPickerViewDataSource", "URLSession"]
+- !private ["PSo22UIPickerViewDataSource", "UserDefaults"]
 - !private ["PSo22UIPickerViewDataSource", "addLongPressGesture"]
 - !private ["PSo22UIPickerViewDataSource", "addRadiusCircle"]
 - !private ["PSo22UIPickerViewDataSource", "annotations"]
@@ -2938,6 +2964,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "UIImage"]
 - !private ["PSo20UIPickerViewDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo20UIPickerViewDelegate", "URLSession"]
+- !private ["PSo20UIPickerViewDelegate", "UserDefaults"]
 - !private ["PSo20UIPickerViewDelegate", "addLongPressGesture"]
 - !private ["PSo20UIPickerViewDelegate", "addRadiusCircle"]
 - !private ["PSo20UIPickerViewDelegate", "annotations"]
@@ -3031,6 +3058,7 @@ depends-member:
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "URLRequest"]
 - !private ["CSo11UIResponder", "URLSession"]
+- !private ["CSo11UIResponder", "UserDefaults"]
 - !private ["CSo11UIResponder", "add"]
 - !private ["CSo11UIResponder", "addAnnotation"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
@@ -3140,6 +3168,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UILongPressGestureRecognizer"]
 - !private ["PSo30UIResponderStandardEditActions", "URLSession"]
+- !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
 - !private ["PSo30UIResponderStandardEditActions", "add"]
 - !private ["PSo30UIResponderStandardEditActions", "addAnnotation"]
 - !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
@@ -3256,6 +3285,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UILongPressGestureRecognizer"]
 - !private ["PSo16UIStateRestoring", "URLSession"]
+- !private ["PSo16UIStateRestoring", "UserDefaults"]
 - ["PSo16UIStateRestoring", "addLongPressGesture"]
 - ["PSo16UIStateRestoring", "addRadiusCircle"]
 - ["PSo16UIStateRestoring", "annotations"]
@@ -3363,6 +3393,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UILongPressGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "URLSession"]
+- !private ["PSo18UITraitEnvironment", "UserDefaults"]
 - !private ["PSo18UITraitEnvironment", "add"]
 - !private ["PSo18UITraitEnvironment", "addAnnotation"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
@@ -3519,6 +3550,7 @@ depends-member:
 - !private ["CSo16UIViewController", "URL"]
 - !private ["CSo16UIViewController", "URLRequest"]
 - !private ["CSo16UIViewController", "URLSession"]
+- !private ["CSo16UIViewController", "UserDefaults"]
 - ["CSo16UIViewController", "addLongPressGesture"]
 - ["CSo16UIViewController", "addRadiusCircle"]
 - ["CSo16UIViewController", "annotations"]
@@ -3588,6 +3620,9 @@ depends-member:
 - !private ["CSo18URLSessionDataTask", "resume"]
 - !private ["CSo14URLSessionTask", "resume"]
 - !private ["Sc", "deinit"]
+- ["CSo12UserDefaults", "deinit"]
+- !private ["CSo12UserDefaults", "standard"]
+- !private ["CSo12UserDefaults", "value"]
 - !private ["VCSo17JSONSerialization14WritingOptions", "Element"]
 - !private ["VCSo17JSONSerialization14WritingOptions", "RawValue"]
 - ["VCSo17JSONSerialization14WritingOptions", "deinit"]
@@ -3704,6 +3739,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "UILongPressGestureRecognizer"]
 - !private ["Ps9_Hashable", "URLSession"]
+- !private ["Ps9_Hashable", "UserDefaults"]
 - !private ["Ps9_Hashable", "WritingOptions"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -3800,6 +3836,7 @@ depends-member:
 - ["Ps9_Hashable", "sliderMoved"]
 - ["Ps9_Hashable", "sliderValue"]
 - ["Ps9_Hashable", "sortConvex"]
+- !private ["Ps9_Hashable", "standard"]
 - !private ["Ps9_Hashable", "startUpdatingLocation"]
 - !private ["Ps9_Hashable", "state"]
 - !private ["Ps9_Hashable", "strokeColor"]
@@ -4034,6 +4071,7 @@ depends-nominal:
 - "CSo18URLSessionDataTask"
 - !private "CSo14URLSessionTask"
 - !private "Sc"
+- "CSo12UserDefaults"
 - "VCSo17JSONSerialization14WritingOptions"
 - "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"

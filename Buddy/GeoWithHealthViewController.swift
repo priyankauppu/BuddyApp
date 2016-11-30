@@ -52,6 +52,11 @@ class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocatio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("*************************")
+        print(UserDefaults.standard.value(forKey: "prefsEmail")!)
+
+        
         //healthData.text="500 Cal/1000 Cal"
         // Do any additional setup after loading the view.
         if self.revealViewController() != nil {

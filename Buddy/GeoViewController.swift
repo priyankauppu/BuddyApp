@@ -46,6 +46,8 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         super.viewDidLoad()
         
         print("prefEmail"+prefsEmail)
+        print("*************************")
+        print(UserDefaults.standard.value(forKey: "prefsEmail")!)
 
         // Do any additional setup after loading the view.
         //SideBar related

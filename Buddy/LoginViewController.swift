@@ -12,9 +12,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
- 
-    
     @IBOutlet weak var menuButton: UIBarButtonItem!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +45,9 @@ class LoginViewController: UIViewController {
            // performSegue(withIdentifier: "loginSeague", sender: view)
         if (segue.identifier == "loginSegue" )
         {
-            //let nextController = segue.destination as! UINavigationController
-           // print ("Next Controller: *\(nextController)*")
+            UserDefaults.standard.setValue(username.text, forKey: "prefsEmail")
+
             let next = segue.destination as! UINavigationController
-            // let text1:String=(sender as! MKAnnotationView).annotation!.title!!
             let nextController = next.topViewController as! GeoViewController
             nextController.prefsEmail = username.text!
 
