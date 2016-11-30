@@ -22,7 +22,8 @@ class ProfileViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        print("*************************")
+        print(UserDefaults.standard.value(forKey: "prefsEmail")!)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

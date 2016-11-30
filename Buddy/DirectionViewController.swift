@@ -27,7 +27,11 @@ class DirectionViewController: UIViewController,MKMapViewDelegate, CLLocationMan
 
         // Do any additional setup after loading the view.
         
+        print("*************************")
+        print(UserDefaults.standard.value(forKey: "prefsEmail")!)
+        
         print("Direction View Controller",prefsEmail)
+        
         
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest

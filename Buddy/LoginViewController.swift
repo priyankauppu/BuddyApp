@@ -35,21 +35,21 @@ class LoginViewController: UIViewController {
     @IBAction func Submit(_ sender: AnyObject) {
         //print("username=*",username.text)
         //print("password=*",password.text)
-
-        performSegue(withIdentifier: "loginSegue", sender: self)
+        performSegue(withIdentifier: "openSWL", sender: self)
+        //performSegue(withIdentifier: "loginSegue", sender: self)
     
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //if(flag==1){
            // performSegue(withIdentifier: "loginSeague", sender: view)
-        if (segue.identifier == "loginSegue" )
+        if (segue.identifier == "openSWL" )
         {
             UserDefaults.standard.setValue(username.text, forKey: "prefsEmail")
-
-            let next = segue.destination as! UINavigationController
-            let nextController = next.topViewController as! GeoViewController
-            nextController.prefsEmail = username.text!
+            
+            //let next = segue.destination as! UINavigationController
+            //let nextController = next.topViewController as! GeoViewController
+            //nextController.prefsEmail = username.text!
 
             
             }

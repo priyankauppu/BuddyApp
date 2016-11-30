@@ -45,7 +45,6 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("prefEmail"+prefsEmail)
         print("*************************")
         print(UserDefaults.standard.value(forKey: "prefsEmail")!)
 
