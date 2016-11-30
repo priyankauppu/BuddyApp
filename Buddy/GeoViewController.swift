@@ -26,7 +26,7 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     
     @IBOutlet weak var picker: UIPickerView!
      var pickerData=["All","Chinese","Coffee", "Indian","Italian", "Mexican"]
-    var selectedPickerData="All"
+    var selectedPickerData="Coffee"
     //fencing related declarations
     // Array of annotations - modified when the points are changed.
     var annotations = [MKPointAnnotation]()
@@ -36,7 +36,7 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     var radius = 500
 
     var prefsEmail:String="";
-    
+    var prefsName:String="";
     //webservice declarations
     var urll = "http://localhost:3000";
     let para:NSMutableDictionary = NSMutableDictionary();
@@ -46,7 +46,8 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         super.viewDidLoad()
         
         prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
-        //print("GEO VIEW CONTROLLER**********\(prefsEmail)***************")
+        prefsName=UserDefaults.standard.value(forKey: "prefsName")! as! String
+        //print("GEO VIEW CONTROLLER**********\(prefsName)***************")
         
         // Do any additional setup after loading the view.
         //SideBar related
@@ -495,7 +496,8 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     //Knn related
     
     @IBAction func knnChanged(_ sender: UITextField) {
-        print("Priyanka 1 \(knn.text)")
+        //print("Priyanka 1 \(knn.text)")
+        
         let k:Int = Int(self.knn.text!)!
         if(k != 0){
             plotKnn(location:location,k:k)}

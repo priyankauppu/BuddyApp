@@ -6,70 +6,72 @@ provides-nominal:
 provides-member:
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", ""]
 provides-dynamic-lookup:
-- "urll"
-- "testName"
-- "restaurant"
-- "restaurantLongitude"
-- "sendInvite"
-- "testRestaurant"
-- "buddyCuisine"
 - "restaurantLatitude"
-- "buddyRestaurant"
-- "testCuisine"
-- "prepare"
-- "viewDidLoad"
-- "locationManager"
-- "buddyName"
-- "numberOfSections"
 - "didReceiveMemoryWarning"
-- "tableView"
-- "tableView"
-- "tableView"
-- "findNearByBuddies"
-- "cuisine"
+- "testRestaurant"
+- "viewDidLoad"
 - "prefsEmail"
-- "location"
-- "para"
 - "buddyEmail"
+- "findNearByBuddies"
+- "testName"
+- "cuisine"
+- "para"
+- "buddyName"
+- "tableView"
+- "tableView"
+- "tableView"
+- "sendInviteButtonClicked"
+- "restaurantLongitude"
+- "testCuisine"
+- "buddyRestaurant"
+- "numberOfSections"
+- "prefsName"
+- "buddyCuisine"
+- "sendInvite"
+- "urll"
+- "prepare"
 - "testEmail"
+- "location"
+- "locationManager"
+- "restaurant"
 depends-top-level:
-- !private "Dictionary"
-- !private "NSMutableURLRequest"
-- "Int"
-- !private "DispatchQueue"
-- "StringLiteralType"
-- "String"
-- "CLLocation"
-- !private "DirectionWithHealthViewController"
-- !private "NSDate"
-- !private "JSONSerialization"
-- !private "BooleanLiteralType"
 - !private "UINavigationController"
-- !private "BuddiesWithHealthGoingTableViewCell"
+- "CLLocation"
+- !private "NSMutableURLRequest"
+- !private "DirectionWithHealthViewController"
 - !private "DateFormatter"
-- !private "NSDictionary"
-- !private "URLSession"
-- "Double"
+- "BuddiesWithHealthGoingTableViewController"
 - !private "UserDefaults"
-- "UIStoryboardSegue"
-- "UITableViewController"
+- !private "JSONSerialization"
+- !private "Dictionary"
+- "Int"
 - "UITableViewCell"
-- !private "!="
-- !private "AnyObject"
-- !private "NSURL"
-- !private "Date"
-- !private "print"
-- !private "URL"
 - "IndexPath"
-- !private "+"
-- "UITableView"
+- !private "NSDate"
+- "NSMutableDictionary"
+- "String"
+- "CastingPrecedence"
 - !private "URLRequest"
 - "AssignmentPrecedence"
-- "CLLocationManager"
 - !private "=="
-- "NSMutableDictionary"
-- "BuddiesWithHealthGoingTableViewController"
-- "CastingPrecedence"
+- !private "+"
+- !private "Date"
+- !private "!="
+- !private "URL"
+- !private "NSDictionary"
+- "CLLocationManager"
+- "UITableView"
+- !private "AnyObject"
+- "StringLiteralType"
+- "UIStoryboardSegue"
+- !private "NSURL"
+- "UITableViewController"
+- "Double"
+- !private "BooleanLiteralType"
+- !private "print"
+- !private "BuddiesWithHealthGoingTableViewCell"
+- !private "DispatchQueue"
+- !private "URLSession"
 depends-member:
 - ["Ps9AnyObject", "CLLocation"]
 - ["Ps9AnyObject", "CLLocationManager"]
@@ -113,6 +115,7 @@ depends-member:
 - ["Ps9AnyObject", "para"]
 - !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "prefsEmail"]
+- ["Ps9AnyObject", "prefsName"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
@@ -121,6 +124,7 @@ depends-member:
 - ["Ps9AnyObject", "restaurantLongitude"]
 - !private ["Ps9AnyObject", "resume"]
 - ["Ps9AnyObject", "sendInvite"]
+- ["Ps9AnyObject", "sendInviteButtonClicked"]
 - !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "standard"]
@@ -229,12 +233,14 @@ depends-member:
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "para"]
 - !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "performSegue"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "prefsEmail"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "prefsName"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "prepare"]
 - !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "print"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurant"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurantLatitude"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurantLongitude"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "sendInvite"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "sendInviteButtonClicked"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "tableView"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "testCuisine"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "testEmail"]
@@ -315,6 +321,7 @@ depends-member:
 - ["Ps7CVarArg", "para"]
 - !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "prefsEmail"]
+- ["Ps7CVarArg", "prefsName"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "reloadData"]
@@ -323,6 +330,7 @@ depends-member:
 - ["Ps7CVarArg", "restaurantLongitude"]
 - !private ["Ps7CVarArg", "resume"]
 - ["Ps7CVarArg", "sendInvite"]
+- ["Ps7CVarArg", "sendInviteButtonClicked"]
 - !private ["Ps7CVarArg", "setValue"]
 - !private ["Ps7CVarArg", "shared"]
 - !private ["Ps7CVarArg", "standard"]
@@ -408,6 +416,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "para"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "prefsEmail"]
+- ["Ps28CustomDebugStringConvertible", "prefsName"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
@@ -417,6 +426,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "sendInvite"]
+- ["Ps28CustomDebugStringConvertible", "sendInviteButtonClicked"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "standard"]
@@ -510,6 +520,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "para"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "prefsEmail"]
+- ["Ps23CustomStringConvertible", "prefsName"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
@@ -519,6 +530,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "resume"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "sendInvite"]
+- ["Ps23CustomStringConvertible", "sendInviteButtonClicked"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "standard"]
@@ -617,6 +629,7 @@ depends-member:
 - ["Ps9Equatable", "para"]
 - !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "prefsEmail"]
+- ["Ps9Equatable", "prefsName"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reloadData"]
@@ -626,6 +639,7 @@ depends-member:
 - !private ["Ps9Equatable", "resume"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "sendInvite"]
+- ["Ps9Equatable", "sendInviteButtonClicked"]
 - !private ["Ps9Equatable", "setValue"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "short"]
@@ -725,6 +739,7 @@ depends-member:
 - ["Ps8Hashable", "para"]
 - !private ["Ps8Hashable", "performSegue"]
 - ["Ps8Hashable", "prefsEmail"]
+- ["Ps8Hashable", "prefsName"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reloadData"]
@@ -734,6 +749,7 @@ depends-member:
 - !private ["Ps8Hashable", "resume"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "sendInvite"]
+- ["Ps8Hashable", "sendInviteButtonClicked"]
 - !private ["Ps8Hashable", "setValue"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "short"]
@@ -860,6 +876,7 @@ depends-member:
 - ["PSo8NSCoding", "para"]
 - !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "prefsEmail"]
+- ["PSo8NSCoding", "prefsName"]
 - ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -867,6 +884,7 @@ depends-member:
 - ["PSo8NSCoding", "restaurantLatitude"]
 - ["PSo8NSCoding", "restaurantLongitude"]
 - ["PSo8NSCoding", "sendInvite"]
+- ["PSo8NSCoding", "sendInviteButtonClicked"]
 - !private ["PSo8NSCoding", "setValue"]
 - !private ["PSo8NSCoding", "string"]
 - !private ["PSo8NSCoding", "subscript"]
@@ -926,12 +944,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "para"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - ["PSo26NSExtensionRequestHandling", "prefsEmail"]
+- ["PSo26NSExtensionRequestHandling", "prefsName"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "restaurant"]
 - ["PSo26NSExtensionRequestHandling", "restaurantLatitude"]
 - ["PSo26NSExtensionRequestHandling", "restaurantLongitude"]
 - ["PSo26NSExtensionRequestHandling", "sendInvite"]
+- ["PSo26NSExtensionRequestHandling", "sendInviteButtonClicked"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "testCuisine"]
 - ["PSo26NSExtensionRequestHandling", "testEmail"]
@@ -1017,6 +1037,7 @@ depends-member:
 - ["CSo8NSObject", "para"]
 - !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "prefsEmail"]
+- ["CSo8NSObject", "prefsName"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
@@ -1025,6 +1046,7 @@ depends-member:
 - ["CSo8NSObject", "restaurantLongitude"]
 - !private ["CSo8NSObject", "resume"]
 - ["CSo8NSObject", "sendInvite"]
+- ["CSo8NSObject", "sendInviteButtonClicked"]
 - !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "standard"]
@@ -1084,6 +1106,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "para"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "prefsEmail"]
+- ["PSo16NSObjectProtocol", "prefsName"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
@@ -1092,6 +1115,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "restaurantLongitude"]
 - !private ["PSo16NSObjectProtocol", "resume"]
 - ["PSo16NSObjectProtocol", "sendInvite"]
+- ["PSo16NSObjectProtocol", "sendInviteButtonClicked"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "standard"]
@@ -1270,6 +1294,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "para"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
 - ["PSo21UIAppearanceContainer", "prefsEmail"]
+- ["PSo21UIAppearanceContainer", "prefsName"]
 - ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -1277,6 +1302,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "restaurantLatitude"]
 - ["PSo21UIAppearanceContainer", "restaurantLongitude"]
 - ["PSo21UIAppearanceContainer", "sendInvite"]
+- ["PSo21UIAppearanceContainer", "sendInviteButtonClicked"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - ["PSo21UIAppearanceContainer", "testCuisine"]
 - ["PSo21UIAppearanceContainer", "testEmail"]
@@ -1313,12 +1339,14 @@ depends-member:
 - ["PSo18UIContentContainer", "para"]
 - !private ["PSo18UIContentContainer", "performSegue"]
 - ["PSo18UIContentContainer", "prefsEmail"]
+- ["PSo18UIContentContainer", "prefsName"]
 - ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "restaurant"]
 - ["PSo18UIContentContainer", "restaurantLatitude"]
 - ["PSo18UIContentContainer", "restaurantLongitude"]
 - ["PSo18UIContentContainer", "sendInvite"]
+- ["PSo18UIContentContainer", "sendInviteButtonClicked"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "testCuisine"]
 - ["PSo18UIContentContainer", "testEmail"]
@@ -1377,6 +1405,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "para"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
 - ["PSo18UIFocusEnvironment", "prefsEmail"]
+- ["PSo18UIFocusEnvironment", "prefsName"]
 - ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -1384,6 +1413,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "restaurantLatitude"]
 - ["PSo18UIFocusEnvironment", "restaurantLongitude"]
 - ["PSo18UIFocusEnvironment", "sendInvite"]
+- ["PSo18UIFocusEnvironment", "sendInviteButtonClicked"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - ["PSo18UIFocusEnvironment", "testCuisine"]
 - ["PSo18UIFocusEnvironment", "testEmail"]
@@ -1456,6 +1486,7 @@ depends-member:
 - ["CSo11UIResponder", "para"]
 - !private ["CSo11UIResponder", "performSegue"]
 - ["CSo11UIResponder", "prefsEmail"]
+- ["CSo11UIResponder", "prefsName"]
 - ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
@@ -1463,6 +1494,7 @@ depends-member:
 - ["CSo11UIResponder", "restaurantLatitude"]
 - ["CSo11UIResponder", "restaurantLongitude"]
 - ["CSo11UIResponder", "sendInvite"]
+- ["CSo11UIResponder", "sendInviteButtonClicked"]
 - ["CSo11UIResponder", "tableView"]
 - ["CSo11UIResponder", "testCuisine"]
 - ["CSo11UIResponder", "testEmail"]
@@ -1501,6 +1533,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "para"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - ["PSo30UIResponderStandardEditActions", "prefsEmail"]
+- ["PSo30UIResponderStandardEditActions", "prefsName"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "reloadData"]
@@ -1508,6 +1541,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "restaurantLatitude"]
 - ["PSo30UIResponderStandardEditActions", "restaurantLongitude"]
 - ["PSo30UIResponderStandardEditActions", "sendInvite"]
+- ["PSo30UIResponderStandardEditActions", "sendInviteButtonClicked"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - ["PSo30UIResponderStandardEditActions", "testCuisine"]
 - ["PSo30UIResponderStandardEditActions", "testEmail"]
@@ -1546,12 +1580,14 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "para"]
 - !private ["PSo20UIScrollViewDelegate", "performSegue"]
 - ["PSo20UIScrollViewDelegate", "prefsEmail"]
+- ["PSo20UIScrollViewDelegate", "prefsName"]
 - ["PSo20UIScrollViewDelegate", "prepare"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "restaurant"]
 - ["PSo20UIScrollViewDelegate", "restaurantLatitude"]
 - ["PSo20UIScrollViewDelegate", "restaurantLongitude"]
 - ["PSo20UIScrollViewDelegate", "sendInvite"]
+- ["PSo20UIScrollViewDelegate", "sendInviteButtonClicked"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "testCuisine"]
 - ["PSo20UIScrollViewDelegate", "testEmail"]
@@ -1586,12 +1622,14 @@ depends-member:
 - ["PSo16UIStateRestoring", "para"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
 - ["PSo16UIStateRestoring", "prefsEmail"]
+- ["PSo16UIStateRestoring", "prefsName"]
 - ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "restaurant"]
 - ["PSo16UIStateRestoring", "restaurantLatitude"]
 - ["PSo16UIStateRestoring", "restaurantLongitude"]
 - ["PSo16UIStateRestoring", "sendInvite"]
+- ["PSo16UIStateRestoring", "sendInviteButtonClicked"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "testCuisine"]
 - ["PSo16UIStateRestoring", "testEmail"]
@@ -1655,12 +1693,14 @@ depends-member:
 - ["CSo21UITableViewController", "para"]
 - !private ["CSo21UITableViewController", "performSegue"]
 - ["CSo21UITableViewController", "prefsEmail"]
+- ["CSo21UITableViewController", "prefsName"]
 - ["CSo21UITableViewController", "prepare"]
 - !private ["CSo21UITableViewController", "print"]
 - ["CSo21UITableViewController", "restaurant"]
 - ["CSo21UITableViewController", "restaurantLatitude"]
 - ["CSo21UITableViewController", "restaurantLongitude"]
 - ["CSo21UITableViewController", "sendInvite"]
+- ["CSo21UITableViewController", "sendInviteButtonClicked"]
 - ["CSo21UITableViewController", "tableView"]
 - ["CSo21UITableViewController", "testCuisine"]
 - ["CSo21UITableViewController", "testEmail"]
@@ -1694,12 +1734,14 @@ depends-member:
 - ["PSo21UITableViewDataSource", "para"]
 - !private ["PSo21UITableViewDataSource", "performSegue"]
 - ["PSo21UITableViewDataSource", "prefsEmail"]
+- ["PSo21UITableViewDataSource", "prefsName"]
 - ["PSo21UITableViewDataSource", "prepare"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "restaurant"]
 - ["PSo21UITableViewDataSource", "restaurantLatitude"]
 - ["PSo21UITableViewDataSource", "restaurantLongitude"]
 - ["PSo21UITableViewDataSource", "sendInvite"]
+- ["PSo21UITableViewDataSource", "sendInviteButtonClicked"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "testCuisine"]
 - ["PSo21UITableViewDataSource", "testEmail"]
@@ -1733,12 +1775,14 @@ depends-member:
 - ["PSo19UITableViewDelegate", "para"]
 - !private ["PSo19UITableViewDelegate", "performSegue"]
 - ["PSo19UITableViewDelegate", "prefsEmail"]
+- ["PSo19UITableViewDelegate", "prefsName"]
 - ["PSo19UITableViewDelegate", "prepare"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "restaurant"]
 - ["PSo19UITableViewDelegate", "restaurantLatitude"]
 - ["PSo19UITableViewDelegate", "restaurantLongitude"]
 - ["PSo19UITableViewDelegate", "sendInvite"]
+- ["PSo19UITableViewDelegate", "sendInviteButtonClicked"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "testCuisine"]
 - ["PSo19UITableViewDelegate", "testEmail"]
@@ -1777,6 +1821,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "para"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
 - ["PSo18UITraitEnvironment", "prefsEmail"]
+- ["PSo18UITraitEnvironment", "prefsName"]
 - ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -1784,6 +1829,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "restaurantLatitude"]
 - ["PSo18UITraitEnvironment", "restaurantLongitude"]
 - ["PSo18UITraitEnvironment", "sendInvite"]
+- ["PSo18UITraitEnvironment", "sendInviteButtonClicked"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - ["PSo18UITraitEnvironment", "testCuisine"]
 - ["PSo18UITraitEnvironment", "testEmail"]
@@ -1846,12 +1892,14 @@ depends-member:
 - ["CSo16UIViewController", "para"]
 - !private ["CSo16UIViewController", "performSegue"]
 - ["CSo16UIViewController", "prefsEmail"]
+- ["CSo16UIViewController", "prefsName"]
 - ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "restaurant"]
 - ["CSo16UIViewController", "restaurantLatitude"]
 - ["CSo16UIViewController", "restaurantLongitude"]
 - ["CSo16UIViewController", "sendInvite"]
+- ["CSo16UIViewController", "sendInviteButtonClicked"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "testCuisine"]
 - ["CSo16UIViewController", "testEmail"]
@@ -1967,6 +2015,7 @@ depends-member:
 - ["Ps9_Hashable", "para"]
 - !private ["Ps9_Hashable", "performSegue"]
 - ["Ps9_Hashable", "prefsEmail"]
+- ["Ps9_Hashable", "prefsName"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "reloadData"]
@@ -1976,6 +2025,7 @@ depends-member:
 - !private ["Ps9_Hashable", "resume"]
 - !private ["Ps9_Hashable", "row"]
 - ["Ps9_Hashable", "sendInvite"]
+- ["Ps9_Hashable", "sendInviteButtonClicked"]
 - !private ["Ps9_Hashable", "setValue"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "short"]
@@ -2202,4 +2252,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "506cb822e6bbddc6d312b9251c9560eb"
+interface-hash: "8a721ad5fcaceb473f9579d0fe6d0b96"

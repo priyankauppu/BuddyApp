@@ -12,6 +12,7 @@ class PendingRequestsTableViewController: UITableViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     var prefsEmail:String=""
+    var prefsName:String=""
     
     //webservice declarations
     var urll = "http://localhost:3000";
@@ -27,10 +28,16 @@ class PendingRequestsTableViewController: UITableViewController {
     var testDate:String = ""
     var testId:String=""
     
+    var testCuisine:String=""
+    var testRestaurant:String = ""
+    var testBuddyName:String = ""
+    var testBuddyEmail:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        prefsName=UserDefaults.standard.value(forKey: "prefsName")! as! String
         //print("Pending Requests View Controller**********\(prefsEmail)***************")
         
         // Uncomment the following line to preserve selection between presentations
@@ -47,7 +54,7 @@ class PendingRequestsTableViewController: UITableViewController {
         let userEmail:String="uppu@usc.edu"
         //call web service
         
-        getPendingRequests(userEmail: userEmail)
+        getPendingRequests(userEmail: prefsEmail)
         
     }
 
@@ -87,6 +94,9 @@ class PendingRequestsTableViewController: UITableViewController {
         cell.buddyCuisine.text = buddyCuisine
         cell.buddyDate.text = buddyDate
         cell.buddyId.text = buddyId
+        cell.buddyDate.isHidden=true
+        cell.buddyId.isHidden=true
+        
         // cell.time.text = buddy.time
         //cell.place.text = buddy.place
         //cell.photoImageView.image = buddy.photo
@@ -152,8 +162,10 @@ class PendingRequestsTableViewController: UITableViewController {
         print("Index",indexPath)
         testDate = cell.buddyDate.text!
         testId = cell.buddyId.text!
-        //testCuisine = cell.buddyCuisine.text!
-//        testRestaurant = cell.buddyRestaurant.text!
+        testCuisine = cell.buddyCuisine.text!
+        testRestaurant = cell.buddyRestaurant.text!
+        testBuddyName = cell.buddyName.text!
+        testBuddyEmail = cell.buddyEmail.text!
         //Access today's timestamp
         
         
@@ -163,11 +175,11 @@ class PendingRequestsTableViewController: UITableViewController {
     func buddyAccepted()
     {
         para.setValue("Coffee", forKey: "cuisine");
-        para.setValue("Starbucks", forKey: "restaurant");
-        para.setValue("Snehal", forKey: "reqSenderPersonName");
-        para.setValue("snehal.sdt@gmail.com", forKey: "reqSenderPersonEmail")
-        para.setValue("uppu@usc.edu", forKey: "reqReceiverPersonEmail");
-        para.setValue("Priyanka", forKey: "reqReceiverPersonName");
+        para.setValue(testRestaurant, forKey: "restaurant");
+        para.setValue(prefsName, forKey: "reqSenderPersonName");
+        para.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
+        para.setValue(testBuddyEmail, forKey: "reqReceiverPersonEmail");
+        para.setValue(testBuddyName, forKey: "reqReceiverPersonName");
         para.setValue("10 mins", forKey: "time");
         para.setValue(testDate, forKey: "date");
         para.setValue(testId, forKey: "id");

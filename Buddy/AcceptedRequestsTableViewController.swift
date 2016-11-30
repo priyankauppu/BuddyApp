@@ -46,7 +46,7 @@ class AcceptedRequestsTableViewController: UITableViewController {
         let userEmail:String="snehal.sdt@gmail.com"
         //call web service
         
-getAcceptedRequests(userEmail: userEmail)
+getAcceptedRequests(userEmail: prefsEmail)
         
     }
 
@@ -113,15 +113,12 @@ getAcceptedRequests(userEmail: userEmail)
             } else {
                 do {
                 let response = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions())
-                    
                         print(response)
                     for anItem in response as! [Dictionary<String, String>] {
                         self.buddyName.append(anItem["AcceptedFromName"]!)
                         self.buddyEmail.append(anItem["AcceptedFromEmail"]!)
                         self.buddyCuisine.append(anItem["cuisine"]!)
                         self.buddyRestaurant.append(anItem["restaurant"]!)
-                        
-                        
                     }
                     DispatchQueue.main.async {
                         self.tableView.reloadData()

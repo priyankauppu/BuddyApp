@@ -7,25 +7,26 @@ provides-member:
 - ["C5Buddy19LoginViewController", ""]
 provides-dynamic-lookup:
 - "Submit"
-- "didReceiveMemoryWarning"
-- "prepare"
-- "viewDidLoad"
-- "menuButton"
 - "username"
+- "menuButton"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "prepare"
 - "password"
 depends-top-level:
-- !private "SWRevealViewController"
+- "AnyObject"
 - "UITextField"
-- "LoginViewController"
 - "AssignmentPrecedence"
 - !private "=="
-- "UIBarButtonItem"
 - "UIStoryboardSegue"
-- "AnyObject"
 - !private "!="
-- !private "UserDefaults"
+- !private "String"
+- "UIBarButtonItem"
+- "LoginViewController"
 - "UIViewController"
+- !private "UserDefaults"
 - !private "StringLiteralType"
+- !private "SWRevealViewController"
 depends-member:
 - !private ["Ps9AnyObject", "SWRevealViewController"]
 - ["Ps9AnyObject", "Submit"]
@@ -185,6 +186,7 @@ depends-member:
 - ["SQ", "deinit"]
 - ["C5Buddy19LoginViewController", "AnyObject"]
 - !private ["C5Buddy19LoginViewController", "SWRevealViewController"]
+- !private ["C5Buddy19LoginViewController", "String"]
 - ["C5Buddy19LoginViewController", "Submit"]
 - ["C5Buddy19LoginViewController", "UIBarButtonItem"]
 - ["C5Buddy19LoginViewController", "UIStoryboardSegue"]
@@ -245,6 +247,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "SWRevealViewController"]
+- !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "Submit"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -377,6 +380,7 @@ depends-member:
 - !private ["PSo10UIKeyInput", "text"]
 - ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "SWRevealViewController"]
+- !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "Submit"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -457,6 +461,7 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "SWRevealViewController"]
+- !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "Submit"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]

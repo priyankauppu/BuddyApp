@@ -6,54 +6,60 @@ provides-nominal:
 provides-member:
 - ["C5Buddy34PendingRequestsTableViewController", ""]
 provides-dynamic-lookup:
-- "buddyAccepted"
-- "buddyRestaurant"
-- "buddyDate"
-- "testId"
-- "prefsEmail"
-- "acceptInvite"
-- "buddyCuisine"
-- "urll"
-- "didReceiveMemoryWarning"
-- "tableView"
-- "tableView"
-- "tableView"
 - "viewDidLoad"
-- "buddyId"
+- "prefsName"
+- "testBuddyName"
+- "buddyCuisine"
+- "testCuisine"
+- "buddyDate"
+- "buddyRestaurant"
 - "testDate"
-- "buddyEmail"
 - "numberOfSections"
-- "menuButton"
-- "para"
-- "buddyName"
+- "buddyAccepted"
 - "getPendingRequests"
+- "didReceiveMemoryWarning"
+- "testBuddyEmail"
+- "urll"
+- "testRestaurant"
+- "acceptInvite"
+- "buddyId"
+- "buddyName"
+- "tableView"
+- "tableView"
+- "tableView"
+- "prefsEmail"
+- "para"
+- "buddyEmail"
+- "menuButton"
+- "testId"
 depends-top-level:
-- !private "DispatchQueue"
+- !private "print"
+- !private "URLRequest"
+- !private "URLSession"
+- !private "SWRevealViewController"
 - "UITableView"
+- !private "BooleanLiteralType"
+- "StringLiteralType"
+- !private "PendingRequestsTableViewCell"
+- !private "URL"
+- !private "DispatchQueue"
+- "String"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "JSONSerialization"
-- !private "NSMutableURLRequest"
-- "Int"
-- !private "URLSession"
-- !private "NSURL"
-- "UITableViewController"
-- "UIBarButtonItem"
-- !private "Dictionary"
-- !private "PendingRequestsTableViewCell"
-- !private "SWRevealViewController"
-- !private "print"
-- "IndexPath"
 - "UITableViewCell"
-- !private "!="
 - !private "+"
-- !private "URLRequest"
-- !private "UserDefaults"
-- "NSMutableDictionary"
-- !private "URL"
-- "StringLiteralType"
-- "String"
 - "PendingRequestsTableViewController"
+- !private "UserDefaults"
+- !private "JSONSerialization"
+- !private "Dictionary"
+- "UIBarButtonItem"
+- "Int"
+- "UITableViewController"
+- "IndexPath"
+- !private "NSURL"
+- !private "!="
+- !private "NSMutableURLRequest"
+- "NSMutableDictionary"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchQueue"]
 - !private ["Ps9AnyObject", "JSONSerialization"]
@@ -85,6 +91,7 @@ depends-member:
 - !private ["Ps9AnyObject", "httpBody"]
 - !private ["Ps9AnyObject", "httpMethod"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "jsonObject"]
 - !private ["Ps9AnyObject", "main"]
 - ["Ps9AnyObject", "menuButton"]
@@ -92,6 +99,7 @@ depends-member:
 - !private ["Ps9AnyObject", "panGestureRecognizer"]
 - ["Ps9AnyObject", "para"]
 - ["Ps9AnyObject", "prefsEmail"]
+- ["Ps9AnyObject", "prefsName"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "resume"]
@@ -102,8 +110,12 @@ depends-member:
 - !private ["Ps9AnyObject", "standard"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "target"]
+- ["Ps9AnyObject", "testBuddyEmail"]
+- ["Ps9AnyObject", "testBuddyName"]
+- ["Ps9AnyObject", "testCuisine"]
 - ["Ps9AnyObject", "testDate"]
 - ["Ps9AnyObject", "testId"]
+- ["Ps9AnyObject", "testRestaurant"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "url"]
 - ["Ps9AnyObject", "urll"]
@@ -160,6 +172,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "buddyRestaurant"]
 - !private ["PSo15CALayerDelegate", "cellForRow"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["Ps7CVarArg", "DispatchQueue"]
@@ -202,6 +215,7 @@ depends-member:
 - !private ["Ps7CVarArg", "httpBody"]
 - !private ["Ps7CVarArg", "httpMethod"]
 - ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "jsonObject"]
 - !private ["Ps7CVarArg", "main"]
 - ["Ps7CVarArg", "menuButton"]
@@ -209,6 +223,7 @@ depends-member:
 - !private ["Ps7CVarArg", "panGestureRecognizer"]
 - ["Ps7CVarArg", "para"]
 - ["Ps7CVarArg", "prefsEmail"]
+- ["Ps7CVarArg", "prefsName"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "reloadData"]
 - !private ["Ps7CVarArg", "resume"]
@@ -220,8 +235,12 @@ depends-member:
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "target"]
+- ["Ps7CVarArg", "testBuddyEmail"]
+- ["Ps7CVarArg", "testBuddyName"]
+- ["Ps7CVarArg", "testCuisine"]
 - ["Ps7CVarArg", "testDate"]
 - ["Ps7CVarArg", "testId"]
+- ["Ps7CVarArg", "testRestaurant"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "url"]
 - ["Ps7CVarArg", "urll"]
@@ -281,6 +300,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "httpBody"]
 - !private ["Ps28CustomDebugStringConvertible", "httpMethod"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "jsonObject"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - ["Ps28CustomDebugStringConvertible", "menuButton"]
@@ -288,6 +308,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "panGestureRecognizer"]
 - ["Ps28CustomDebugStringConvertible", "para"]
 - ["Ps28CustomDebugStringConvertible", "prefsEmail"]
+- ["Ps28CustomDebugStringConvertible", "prefsName"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
@@ -300,8 +321,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "target"]
+- ["Ps28CustomDebugStringConvertible", "testBuddyEmail"]
+- ["Ps28CustomDebugStringConvertible", "testBuddyName"]
+- ["Ps28CustomDebugStringConvertible", "testCuisine"]
 - ["Ps28CustomDebugStringConvertible", "testDate"]
 - ["Ps28CustomDebugStringConvertible", "testId"]
+- ["Ps28CustomDebugStringConvertible", "testRestaurant"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "url"]
 - ["Ps28CustomDebugStringConvertible", "urll"]
@@ -370,6 +395,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "httpBody"]
 - !private ["Ps23CustomStringConvertible", "httpMethod"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "jsonObject"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - ["Ps23CustomStringConvertible", "menuButton"]
@@ -377,6 +403,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "panGestureRecognizer"]
 - ["Ps23CustomStringConvertible", "para"]
 - ["Ps23CustomStringConvertible", "prefsEmail"]
+- ["Ps23CustomStringConvertible", "prefsName"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "resume"]
@@ -389,8 +416,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "target"]
+- ["Ps23CustomStringConvertible", "testBuddyEmail"]
+- ["Ps23CustomStringConvertible", "testBuddyName"]
+- ["Ps23CustomStringConvertible", "testCuisine"]
 - ["Ps23CustomStringConvertible", "testDate"]
 - ["Ps23CustomStringConvertible", "testId"]
+- ["Ps23CustomStringConvertible", "testRestaurant"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "url"]
 - ["Ps23CustomStringConvertible", "urll"]
@@ -454,6 +485,7 @@ depends-member:
 - !private ["Ps9Equatable", "httpBody"]
 - !private ["Ps9Equatable", "httpMethod"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isHidden"]
 - !private ["Ps9Equatable", "jsonObject"]
 - !private ["Ps9Equatable", "main"]
 - ["Ps9Equatable", "menuButton"]
@@ -461,6 +493,7 @@ depends-member:
 - !private ["Ps9Equatable", "panGestureRecognizer"]
 - ["Ps9Equatable", "para"]
 - ["Ps9Equatable", "prefsEmail"]
+- ["Ps9Equatable", "prefsName"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "resume"]
@@ -472,8 +505,12 @@ depends-member:
 - !private ["Ps9Equatable", "standard"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "target"]
+- ["Ps9Equatable", "testBuddyEmail"]
+- ["Ps9Equatable", "testBuddyName"]
+- ["Ps9Equatable", "testCuisine"]
 - ["Ps9Equatable", "testDate"]
 - ["Ps9Equatable", "testId"]
+- ["Ps9Equatable", "testRestaurant"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "url"]
 - ["Ps9Equatable", "urll"]
@@ -542,6 +579,7 @@ depends-member:
 - !private ["Ps8Hashable", "httpBody"]
 - !private ["Ps8Hashable", "httpMethod"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isHidden"]
 - !private ["Ps8Hashable", "jsonObject"]
 - !private ["Ps8Hashable", "main"]
 - ["Ps8Hashable", "menuButton"]
@@ -549,6 +587,7 @@ depends-member:
 - !private ["Ps8Hashable", "panGestureRecognizer"]
 - ["Ps8Hashable", "para"]
 - ["Ps8Hashable", "prefsEmail"]
+- ["Ps8Hashable", "prefsName"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "resume"]
@@ -560,8 +599,12 @@ depends-member:
 - !private ["Ps8Hashable", "standard"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "target"]
+- ["Ps8Hashable", "testBuddyEmail"]
+- ["Ps8Hashable", "testBuddyName"]
+- ["Ps8Hashable", "testCuisine"]
 - ["Ps8Hashable", "testDate"]
 - ["Ps8Hashable", "testId"]
+- ["Ps8Hashable", "testRestaurant"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "url"]
 - ["Ps8Hashable", "urll"]
@@ -658,11 +701,13 @@ depends-member:
 - !private ["PSo8NSCoding", "httpBody"]
 - !private ["PSo8NSCoding", "httpMethod"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isHidden"]
 - ["PSo8NSCoding", "menuButton"]
 - ["PSo8NSCoding", "numberOfSections"]
 - !private ["PSo8NSCoding", "panGestureRecognizer"]
 - ["PSo8NSCoding", "para"]
 - ["PSo8NSCoding", "prefsEmail"]
+- ["PSo8NSCoding", "prefsName"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "revealToggle"]
@@ -670,8 +715,12 @@ depends-member:
 - !private ["PSo8NSCoding", "setValue"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "target"]
+- ["PSo8NSCoding", "testBuddyEmail"]
+- ["PSo8NSCoding", "testBuddyName"]
+- ["PSo8NSCoding", "testCuisine"]
 - ["PSo8NSCoding", "testDate"]
 - ["PSo8NSCoding", "testId"]
+- ["PSo8NSCoding", "testRestaurant"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "url"]
 - ["PSo8NSCoding", "urll"]
@@ -710,12 +759,17 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "panGestureRecognizer"]
 - ["PSo26NSExtensionRequestHandling", "para"]
 - ["PSo26NSExtensionRequestHandling", "prefsEmail"]
+- ["PSo26NSExtensionRequestHandling", "prefsName"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "revealToggle"]
 - !private ["PSo26NSExtensionRequestHandling", "revealViewController"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "testBuddyEmail"]
+- ["PSo26NSExtensionRequestHandling", "testBuddyName"]
+- ["PSo26NSExtensionRequestHandling", "testCuisine"]
 - ["PSo26NSExtensionRequestHandling", "testDate"]
 - ["PSo26NSExtensionRequestHandling", "testId"]
+- ["PSo26NSExtensionRequestHandling", "testRestaurant"]
 - ["PSo26NSExtensionRequestHandling", "urll"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
@@ -776,6 +830,7 @@ depends-member:
 - !private ["CSo8NSObject", "httpBody"]
 - !private ["CSo8NSObject", "httpMethod"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isHidden"]
 - !private ["CSo8NSObject", "jsonObject"]
 - !private ["CSo8NSObject", "main"]
 - ["CSo8NSObject", "menuButton"]
@@ -783,6 +838,7 @@ depends-member:
 - !private ["CSo8NSObject", "panGestureRecognizer"]
 - ["CSo8NSObject", "para"]
 - ["CSo8NSObject", "prefsEmail"]
+- ["CSo8NSObject", "prefsName"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "resume"]
@@ -793,8 +849,12 @@ depends-member:
 - !private ["CSo8NSObject", "standard"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "target"]
+- ["CSo8NSObject", "testBuddyEmail"]
+- ["CSo8NSObject", "testBuddyName"]
+- ["CSo8NSObject", "testCuisine"]
 - ["CSo8NSObject", "testDate"]
 - ["CSo8NSObject", "testId"]
+- ["CSo8NSObject", "testRestaurant"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "url"]
 - ["CSo8NSObject", "urll"]
@@ -831,6 +891,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "httpBody"]
 - !private ["PSo16NSObjectProtocol", "httpMethod"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "jsonObject"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - ["PSo16NSObjectProtocol", "menuButton"]
@@ -838,6 +899,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "panGestureRecognizer"]
 - ["PSo16NSObjectProtocol", "para"]
 - ["PSo16NSObjectProtocol", "prefsEmail"]
+- ["PSo16NSObjectProtocol", "prefsName"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "resume"]
@@ -848,8 +910,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "standard"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "target"]
+- ["PSo16NSObjectProtocol", "testBuddyEmail"]
+- ["PSo16NSObjectProtocol", "testBuddyName"]
+- ["PSo16NSObjectProtocol", "testCuisine"]
 - ["PSo16NSObjectProtocol", "testDate"]
 - ["PSo16NSObjectProtocol", "testId"]
+- ["PSo16NSObjectProtocol", "testRestaurant"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "url"]
 - ["PSo16NSObjectProtocol", "urll"]
@@ -916,11 +982,16 @@ depends-member:
 - ["C5Buddy34PendingRequestsTableViewController", "numberOfSections"]
 - ["C5Buddy34PendingRequestsTableViewController", "para"]
 - ["C5Buddy34PendingRequestsTableViewController", "prefsEmail"]
+- ["C5Buddy34PendingRequestsTableViewController", "prefsName"]
 - !private ["C5Buddy34PendingRequestsTableViewController", "print"]
 - !private ["C5Buddy34PendingRequestsTableViewController", "revealViewController"]
 - ["C5Buddy34PendingRequestsTableViewController", "tableView"]
+- ["C5Buddy34PendingRequestsTableViewController", "testBuddyEmail"]
+- ["C5Buddy34PendingRequestsTableViewController", "testBuddyName"]
+- ["C5Buddy34PendingRequestsTableViewController", "testCuisine"]
 - ["C5Buddy34PendingRequestsTableViewController", "testDate"]
 - ["C5Buddy34PendingRequestsTableViewController", "testId"]
+- ["C5Buddy34PendingRequestsTableViewController", "testRestaurant"]
 - ["C5Buddy34PendingRequestsTableViewController", "urll"]
 - !private ["C5Buddy34PendingRequestsTableViewController", "view"]
 - ["C5Buddy34PendingRequestsTableViewController", "viewDidLoad"]
@@ -1020,6 +1091,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "buddyRestaurant"]
 - !private ["PSo29UIAccessibilityIdentification", "cellForRow"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "target"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -1033,6 +1105,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "buddyRestaurant"]
 - !private ["PSo12UIAppearance", "cellForRow"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "isHidden"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "target"]
 - !private ["PSo12UIAppearance", "text"]
@@ -1058,18 +1131,24 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "getPendingRequests"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
 - ["PSo21UIAppearanceContainer", "menuButton"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - !private ["PSo21UIAppearanceContainer", "panGestureRecognizer"]
 - ["PSo21UIAppearanceContainer", "para"]
 - ["PSo21UIAppearanceContainer", "prefsEmail"]
+- ["PSo21UIAppearanceContainer", "prefsName"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "revealToggle"]
 - !private ["PSo21UIAppearanceContainer", "revealViewController"]
 - ["PSo21UIAppearanceContainer", "tableView"]
+- ["PSo21UIAppearanceContainer", "testBuddyEmail"]
+- ["PSo21UIAppearanceContainer", "testBuddyName"]
+- ["PSo21UIAppearanceContainer", "testCuisine"]
 - ["PSo21UIAppearanceContainer", "testDate"]
 - ["PSo21UIAppearanceContainer", "testId"]
+- ["PSo21UIAppearanceContainer", "testRestaurant"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "urll"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -1103,16 +1182,22 @@ depends-member:
 - !private ["PSo18UIContentContainer", "panGestureRecognizer"]
 - ["PSo18UIContentContainer", "para"]
 - ["PSo18UIContentContainer", "prefsEmail"]
+- ["PSo18UIContentContainer", "prefsName"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "revealToggle"]
 - !private ["PSo18UIContentContainer", "revealViewController"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "testBuddyEmail"]
+- ["PSo18UIContentContainer", "testBuddyName"]
+- ["PSo18UIContentContainer", "testCuisine"]
 - ["PSo18UIContentContainer", "testDate"]
 - ["PSo18UIContentContainer", "testId"]
+- ["PSo18UIContentContainer", "testRestaurant"]
 - ["PSo18UIContentContainer", "urll"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "isHidden"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
 - !private ["PSo17UICoordinateSpace", "buddyCuisine"]
@@ -1123,6 +1208,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "buddyRestaurant"]
 - !private ["PSo17UICoordinateSpace", "cellForRow"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
@@ -1134,6 +1220,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "buddyRestaurant"]
 - !private ["PSo13UIDynamicItem", "cellForRow"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "DispatchQueue"]
@@ -1158,18 +1245,24 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "getPendingRequests"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
 - ["PSo18UIFocusEnvironment", "menuButton"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - !private ["PSo18UIFocusEnvironment", "panGestureRecognizer"]
 - ["PSo18UIFocusEnvironment", "para"]
 - ["PSo18UIFocusEnvironment", "prefsEmail"]
+- ["PSo18UIFocusEnvironment", "prefsName"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "revealToggle"]
 - !private ["PSo18UIFocusEnvironment", "revealViewController"]
 - ["PSo18UIFocusEnvironment", "tableView"]
+- ["PSo18UIFocusEnvironment", "testBuddyEmail"]
+- ["PSo18UIFocusEnvironment", "testBuddyName"]
+- ["PSo18UIFocusEnvironment", "testCuisine"]
 - ["PSo18UIFocusEnvironment", "testDate"]
 - ["PSo18UIFocusEnvironment", "testId"]
+- ["PSo18UIFocusEnvironment", "testRestaurant"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "urll"]
 - !private ["PSo18UIFocusEnvironment", "view"]
@@ -1184,6 +1277,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "buddyRestaurant"]
 - !private ["PSo11UIFocusItem", "cellForRow"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo27UIGestureRecognizerDelegate", "buddyCuisine"]
@@ -1192,6 +1286,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "buddyId"]
 - !private ["PSo27UIGestureRecognizerDelegate", "buddyName"]
 - !private ["PSo27UIGestureRecognizerDelegate", "buddyRestaurant"]
+- !private ["CSo7UILabel", "isHidden"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "Dictionary"]
 - !private ["CSo11UIResponder", "DispatchQueue"]
@@ -1225,18 +1320,24 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "getPendingRequests"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isHidden"]
 - ["CSo11UIResponder", "menuButton"]
 - ["CSo11UIResponder", "numberOfSections"]
 - !private ["CSo11UIResponder", "panGestureRecognizer"]
 - ["CSo11UIResponder", "para"]
 - ["CSo11UIResponder", "prefsEmail"]
+- ["CSo11UIResponder", "prefsName"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "revealToggle"]
 - !private ["CSo11UIResponder", "revealViewController"]
 - ["CSo11UIResponder", "tableView"]
+- ["CSo11UIResponder", "testBuddyEmail"]
+- ["CSo11UIResponder", "testBuddyName"]
+- ["CSo11UIResponder", "testCuisine"]
 - ["CSo11UIResponder", "testDate"]
 - ["CSo11UIResponder", "testId"]
+- ["CSo11UIResponder", "testRestaurant"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "urll"]
 - !private ["CSo11UIResponder", "view"]
@@ -1263,18 +1364,24 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - ["PSo30UIResponderStandardEditActions", "getPendingRequests"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - ["PSo30UIResponderStandardEditActions", "menuButton"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - !private ["PSo30UIResponderStandardEditActions", "panGestureRecognizer"]
 - ["PSo30UIResponderStandardEditActions", "para"]
 - ["PSo30UIResponderStandardEditActions", "prefsEmail"]
+- ["PSo30UIResponderStandardEditActions", "prefsName"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "reloadData"]
 - !private ["PSo30UIResponderStandardEditActions", "revealToggle"]
 - !private ["PSo30UIResponderStandardEditActions", "revealViewController"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
+- ["PSo30UIResponderStandardEditActions", "testBuddyEmail"]
+- ["PSo30UIResponderStandardEditActions", "testBuddyName"]
+- ["PSo30UIResponderStandardEditActions", "testCuisine"]
 - ["PSo30UIResponderStandardEditActions", "testDate"]
 - ["PSo30UIResponderStandardEditActions", "testId"]
+- ["PSo30UIResponderStandardEditActions", "testRestaurant"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "urll"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
@@ -1306,11 +1413,16 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "para"]
 - ["PSo20UIScrollViewDelegate", "prefsEmail"]
+- ["PSo20UIScrollViewDelegate", "prefsName"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "revealViewController"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
+- ["PSo20UIScrollViewDelegate", "testBuddyEmail"]
+- ["PSo20UIScrollViewDelegate", "testBuddyName"]
+- ["PSo20UIScrollViewDelegate", "testCuisine"]
 - ["PSo20UIScrollViewDelegate", "testDate"]
 - ["PSo20UIScrollViewDelegate", "testId"]
+- ["PSo20UIScrollViewDelegate", "testRestaurant"]
 - ["PSo20UIScrollViewDelegate", "urll"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
@@ -1339,12 +1451,17 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "panGestureRecognizer"]
 - ["PSo16UIStateRestoring", "para"]
 - ["PSo16UIStateRestoring", "prefsEmail"]
+- ["PSo16UIStateRestoring", "prefsName"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "revealToggle"]
 - !private ["PSo16UIStateRestoring", "revealViewController"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "testBuddyEmail"]
+- ["PSo16UIStateRestoring", "testBuddyName"]
+- ["PSo16UIStateRestoring", "testCuisine"]
 - ["PSo16UIStateRestoring", "testDate"]
 - ["PSo16UIStateRestoring", "testId"]
+- ["PSo16UIStateRestoring", "testRestaurant"]
 - ["PSo16UIStateRestoring", "urll"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -1394,11 +1511,16 @@ depends-member:
 - ["CSo21UITableViewController", "numberOfSections"]
 - ["CSo21UITableViewController", "para"]
 - ["CSo21UITableViewController", "prefsEmail"]
+- ["CSo21UITableViewController", "prefsName"]
 - !private ["CSo21UITableViewController", "print"]
 - !private ["CSo21UITableViewController", "revealViewController"]
 - ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "testBuddyEmail"]
+- ["CSo21UITableViewController", "testBuddyName"]
+- ["CSo21UITableViewController", "testCuisine"]
 - ["CSo21UITableViewController", "testDate"]
 - ["CSo21UITableViewController", "testId"]
+- ["CSo21UITableViewController", "testRestaurant"]
 - ["CSo21UITableViewController", "urll"]
 - !private ["CSo21UITableViewController", "view"]
 - ["CSo21UITableViewController", "viewDidLoad"]
@@ -1426,11 +1548,16 @@ depends-member:
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "para"]
 - ["PSo21UITableViewDataSource", "prefsEmail"]
+- ["PSo21UITableViewDataSource", "prefsName"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "revealViewController"]
 - ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", "testBuddyEmail"]
+- ["PSo21UITableViewDataSource", "testBuddyName"]
+- ["PSo21UITableViewDataSource", "testCuisine"]
 - ["PSo21UITableViewDataSource", "testDate"]
 - ["PSo21UITableViewDataSource", "testId"]
+- ["PSo21UITableViewDataSource", "testRestaurant"]
 - ["PSo21UITableViewDataSource", "urll"]
 - !private ["PSo21UITableViewDataSource", "view"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
@@ -1458,11 +1585,16 @@ depends-member:
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "para"]
 - ["PSo19UITableViewDelegate", "prefsEmail"]
+- ["PSo19UITableViewDelegate", "prefsName"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "revealViewController"]
 - ["PSo19UITableViewDelegate", "tableView"]
+- ["PSo19UITableViewDelegate", "testBuddyEmail"]
+- ["PSo19UITableViewDelegate", "testBuddyName"]
+- ["PSo19UITableViewDelegate", "testCuisine"]
 - ["PSo19UITableViewDelegate", "testDate"]
 - ["PSo19UITableViewDelegate", "testId"]
+- ["PSo19UITableViewDelegate", "testRestaurant"]
 - ["PSo19UITableViewDelegate", "urll"]
 - !private ["PSo19UITableViewDelegate", "view"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
@@ -1490,18 +1622,24 @@ depends-member:
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "getPendingRequests"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
 - ["PSo18UITraitEnvironment", "menuButton"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - !private ["PSo18UITraitEnvironment", "panGestureRecognizer"]
 - ["PSo18UITraitEnvironment", "para"]
 - ["PSo18UITraitEnvironment", "prefsEmail"]
+- ["PSo18UITraitEnvironment", "prefsName"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "revealToggle"]
 - !private ["PSo18UITraitEnvironment", "revealViewController"]
 - ["PSo18UITraitEnvironment", "tableView"]
+- ["PSo18UITraitEnvironment", "testBuddyEmail"]
+- ["PSo18UITraitEnvironment", "testBuddyName"]
+- ["PSo18UITraitEnvironment", "testCuisine"]
 - ["PSo18UITraitEnvironment", "testDate"]
 - ["PSo18UITraitEnvironment", "testId"]
+- ["PSo18UITraitEnvironment", "testRestaurant"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "urll"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -1516,6 +1654,7 @@ depends-member:
 - !private ["CSo6UIView", "buddyRestaurant"]
 - !private ["CSo6UIView", "cellForRow"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "isHidden"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "Dictionary"]
@@ -1552,12 +1691,17 @@ depends-member:
 - !private ["CSo16UIViewController", "panGestureRecognizer"]
 - ["CSo16UIViewController", "para"]
 - ["CSo16UIViewController", "prefsEmail"]
+- ["CSo16UIViewController", "prefsName"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "revealToggle"]
 - !private ["CSo16UIViewController", "revealViewController"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "testBuddyEmail"]
+- ["CSo16UIViewController", "testBuddyName"]
+- ["CSo16UIViewController", "testCuisine"]
 - ["CSo16UIViewController", "testDate"]
 - ["CSo16UIViewController", "testId"]
+- ["CSo16UIViewController", "testRestaurant"]
 - ["CSo16UIViewController", "urll"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -1592,6 +1736,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "buddyRestaurant"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "cellForRow"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
@@ -1649,6 +1794,7 @@ depends-member:
 - !private ["Ps9_Hashable", "httpBody"]
 - !private ["Ps9_Hashable", "httpMethod"]
 - ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isHidden"]
 - !private ["Ps9_Hashable", "jsonObject"]
 - !private ["Ps9_Hashable", "main"]
 - ["Ps9_Hashable", "menuButton"]
@@ -1656,6 +1802,7 @@ depends-member:
 - !private ["Ps9_Hashable", "panGestureRecognizer"]
 - ["Ps9_Hashable", "para"]
 - ["Ps9_Hashable", "prefsEmail"]
+- ["Ps9_Hashable", "prefsName"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "reloadData"]
 - !private ["Ps9_Hashable", "resume"]
@@ -1667,8 +1814,12 @@ depends-member:
 - !private ["Ps9_Hashable", "standard"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "target"]
+- ["Ps9_Hashable", "testBuddyEmail"]
+- ["Ps9_Hashable", "testBuddyName"]
+- ["Ps9_Hashable", "testCuisine"]
 - ["Ps9_Hashable", "testDate"]
 - ["Ps9_Hashable", "testId"]
+- ["Ps9_Hashable", "testRestaurant"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "url"]
 - ["Ps9_Hashable", "urll"]
@@ -1859,4 +2010,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "6c102a01478eb2b5ea30fdd941f60570"
+interface-hash: "0bb86b37c4d5cd5f8923ded497dc20d0"

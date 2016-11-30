@@ -6,134 +6,135 @@ provides-nominal:
 provides-member:
 - ["C5Buddy27GeoWithHealthViewController", ""]
 provides-dynamic-lookup:
-- "radius"
-- "healthStore"
-- "drawCircle"
 - "locationManager"
-- "plotKnn"
-- "sliderMoved"
-- "para"
-- "pickerData"
-- "addLongPressGesture"
-- "handleLongPress"
-- "prefsEmail"
+- "knnChanged"
 - "picker"
+- "sliderMoved"
+- "handleLongPress"
 - "polygon"
+- "pickerData"
+- "radius"
+- "prefsEmail"
+- "plotKnn"
+- "menuButton"
+- "didReceiveMemoryWarning"
+- "knn"
+- "healthStore"
+- "annotations"
+- "sortConvex"
 - "addRadiusCircle"
-- "viewDidLoad"
 - "urll"
 - "healthData"
-- "prepare"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "annotations"
-- "sliderValue"
-- "knn"
-- "selectedPickerData"
-- "menuButton"
-- "activeEnergyBurnedType"
-- "updateOverlay"
-- "slider"
 - "location"
-- "didReceiveMemoryWarning"
-- "sortConvex"
-- "knnChanged"
+- "selectedPickerData"
+- "sliderValue"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
+- "para"
+- "prefsName"
 - "numberOfComponents"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
+- "drawCircle"
+- "activeEnergyBurnedType"
+- "viewDidLoad"
+- "slider"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "updateOverlay"
+- "addLongPressGesture"
+- "prepare"
 depends-top-level:
-- !private "<"
-- "UITextField"
-- !private "BooleanLiteralType"
-- !private "NSDictionary"
-- !private "MKCircle"
-- !private "MKUserLocation"
-- !private "URL"
 - !private "CLLocationDegrees"
-- !private "URLRequest"
-- !private "-"
-- !private "NSSet"
-- "HKHealthStore"
-- "UIControl"
-- "CLLocationManager"
-- "CLLocation"
-- "StringLiteralType"
-- "Array"
-- "NSMutableDictionary"
-- "Double"
-- !private "HKObjectType"
-- "UISlider"
-- !private "AnyObject"
-- !private "Set"
-- !private "MKPolygonRenderer"
-- "MKPointAnnotation"
-- !private "JSONSerialization"
-- !private "HKStatisticsQuery"
-- !private "Dictionary"
-- !private "NSURL"
-- !private "UIButton"
-- "MKOverlayRenderer"
-- !private "MKCoordinateSpanMake"
-- "UIPickerView"
-- !private "DispatchQueue"
-- "MKOverlay"
-- !private "UIImage"
-- !private "CGPoint"
-- !private "&&"
-- !private "Date"
-- "UIGestureRecognizer"
-- "MKAnnotationViewDragState"
-- !private ">="
-- !private "HKStatisticsOptions"
-- !private "!="
-- "MKMapViewDelegate"
-- "UIPickerViewDelegate"
-- "HKQuantityTypeIdentifier"
 - !private "UIColor"
-- "UIPickerViewDataSource"
-- "UIStoryboardSegue"
-- "CLLocationManagerDelegate"
-- !private "CLLocationDistance"
-- "UILabel"
-- !private "NSDate"
-- !private "BuddiesWithHealthGoingTableViewController"
-- !private "Float"
 - !private "MKCircleRenderer"
-- !private "+"
-- !private "SWRevealViewController"
 - !private "<="
-- !private "UILongPressGestureRecognizer"
-- !private "kCLLocationAccuracyBest"
-- !private "HKQuery"
-- !private "*"
-- !private "print"
-- !private "UINavigationController"
-- "MKMapView"
-- "MKPolygon"
-- "CastingPrecedence"
-- "String"
+- !private "MKCoordinateSpanMake"
+- !private "HKStatisticsOptions"
+- !private "NSSet"
+- "MKAnnotationViewDragState"
+- !private "URLRequest"
+- !private "BuddiesWithHealthGoingTableViewController"
+- !private "Dictionary"
 - "UIBarButtonItem"
-- "AssignmentPrecedence"
-- !private "MKPinAnnotationView"
-- "Int"
-- !private "=="
 - "UIViewController"
+- "CLLocationManager"
+- !private "NSDictionary"
 - !private "NSMutableURLRequest"
+- !private "SWRevealViewController"
+- !private "*"
 - !private "URLSession"
-- "GeoWithHealthViewController"
-- !private "TernaryPrecedence"
-- !private "MKCoordinateRegion"
-- !private "UserDefaults"
-- !private "CLLocationCoordinate2DMake"
-- "MKAnnotationView"
-- "HKQuantityType"
-- "CLLocationCoordinate2D"
+- "UIStoryboardSegue"
+- !private "MKPolygonRenderer"
+- !private "&&"
+- "String"
 - "MKAnnotation"
+- !private "BooleanLiteralType"
+- !private "Float"
+- !private "CGPoint"
+- !private "MKUserLocation"
+- "StringLiteralType"
+- !private "HKQuery"
+- "CLLocation"
+- "UISlider"
+- !private "HKStatisticsQuery"
+- !private "UserDefaults"
+- "GeoWithHealthViewController"
+- "CLLocationManagerDelegate"
+- "MKOverlayRenderer"
+- !private "+"
+- "MKMapViewDelegate"
+- "UIControl"
+- !private "CLLocationDistance"
+- "UIGestureRecognizer"
+- "Array"
+- "CastingPrecedence"
+- "HKQuantityTypeIdentifier"
+- "AssignmentPrecedence"
+- !private "print"
+- !private "NSDate"
+- !private "=="
+- !private "kCLLocationAccuracyBest"
+- !private "UINavigationController"
+- "Int"
+- "MKMapView"
+- "MKAnnotationView"
+- "MKPolygon"
+- !private "!="
+- "NSMutableDictionary"
+- !private "JSONSerialization"
+- !private "NSURL"
+- "CLLocationCoordinate2D"
+- !private "AnyObject"
+- !private "<"
+- !private "MKCircle"
+- "MKOverlay"
+- "UIPickerView"
+- !private "MKCoordinateRegion"
+- !private "TernaryPrecedence"
+- "HKHealthStore"
+- "UIPickerViewDelegate"
 - !private "NSCalendar"
+- !private "MKPinAnnotationView"
+- "UIPickerViewDataSource"
+- !private "Date"
+- !private "-"
+- "UITextField"
+- !private "UIImage"
+- "Double"
+- !private "UIButton"
+- !private ">="
+- !private "UILongPressGestureRecognizer"
+- "UILabel"
+- !private "URL"
+- "MKPointAnnotation"
+- !private "HKObjectType"
+- !private "Set"
+- !private "DispatchQueue"
+- "HKQuantityType"
+- !private "CLLocationCoordinate2DMake"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGPoint"]
@@ -253,6 +254,7 @@ depends-member:
 - ["Ps9AnyObject", "polygon"]
 - !private ["Ps9AnyObject", "predicateForSamples"]
 - ["Ps9AnyObject", "prefsEmail"]
+- ["Ps9AnyObject", "prefsName"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "quantityType"]
@@ -483,6 +485,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "plotKnn"]
 - !private ["PSo25CLLocationManagerDelegate", "polygon"]
 - !private ["PSo25CLLocationManagerDelegate", "prefsEmail"]
+- !private ["PSo25CLLocationManagerDelegate", "prefsName"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "radius"]
 - !private ["PSo25CLLocationManagerDelegate", "revealViewController"]
@@ -623,6 +626,7 @@ depends-member:
 - ["Ps7CVarArg", "polygon"]
 - !private ["Ps7CVarArg", "predicateForSamples"]
 - ["Ps7CVarArg", "prefsEmail"]
+- ["Ps7CVarArg", "prefsName"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "quantityType"]
@@ -831,6 +835,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "polygon"]
 - !private ["Ps28CustomDebugStringConvertible", "predicateForSamples"]
 - ["Ps28CustomDebugStringConvertible", "prefsEmail"]
+- ["Ps28CustomDebugStringConvertible", "prefsName"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "quantityType"]
@@ -1047,6 +1052,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "polygon"]
 - !private ["Ps23CustomStringConvertible", "predicateForSamples"]
 - ["Ps23CustomStringConvertible", "prefsEmail"]
+- ["Ps23CustomStringConvertible", "prefsName"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "quantityType"]
@@ -1251,6 +1257,7 @@ depends-member:
 - ["Ps9Equatable", "polygon"]
 - !private ["Ps9Equatable", "predicateForSamples"]
 - ["Ps9Equatable", "prefsEmail"]
+- ["Ps9Equatable", "prefsName"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "quantityType"]
@@ -1443,6 +1450,7 @@ depends-member:
 - ["C5Buddy27GeoWithHealthViewController", "plotKnn"]
 - ["C5Buddy27GeoWithHealthViewController", "polygon"]
 - ["C5Buddy27GeoWithHealthViewController", "prefsEmail"]
+- ["C5Buddy27GeoWithHealthViewController", "prefsName"]
 - ["C5Buddy27GeoWithHealthViewController", "prepare"]
 - !private ["C5Buddy27GeoWithHealthViewController", "print"]
 - ["C5Buddy27GeoWithHealthViewController", "radius"]
@@ -1608,6 +1616,7 @@ depends-member:
 - ["Ps8Hashable", "polygon"]
 - !private ["Ps8Hashable", "predicateForSamples"]
 - ["Ps8Hashable", "prefsEmail"]
+- ["Ps8Hashable", "prefsName"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "quantityType"]
@@ -1822,6 +1831,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "plotKnn"]
 - !private ["PSo17MKMapViewDelegate", "polygon"]
 - !private ["PSo17MKMapViewDelegate", "prefsEmail"]
+- !private ["PSo17MKMapViewDelegate", "prefsName"]
 - !private ["PSo17MKMapViewDelegate", "print"]
 - !private ["PSo17MKMapViewDelegate", "radius"]
 - !private ["PSo17MKMapViewDelegate", "revealViewController"]
@@ -2005,6 +2015,7 @@ depends-member:
 - ["PSo8NSCoding", "plotKnn"]
 - ["PSo8NSCoding", "polygon"]
 - ["PSo8NSCoding", "prefsEmail"]
+- ["PSo8NSCoding", "prefsName"]
 - ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "quantityType"]
@@ -2142,6 +2153,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "plotKnn"]
 - ["PSo26NSExtensionRequestHandling", "polygon"]
 - ["PSo26NSExtensionRequestHandling", "prefsEmail"]
+- ["PSo26NSExtensionRequestHandling", "prefsName"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "radius"]
@@ -2321,6 +2333,7 @@ depends-member:
 - ["CSo8NSObject", "polygon"]
 - !private ["CSo8NSObject", "predicateForSamples"]
 - ["CSo8NSObject", "prefsEmail"]
+- ["CSo8NSObject", "prefsName"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "quantityType"]
@@ -2482,6 +2495,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "polygon"]
 - !private ["PSo16NSObjectProtocol", "predicateForSamples"]
 - ["PSo16NSObjectProtocol", "prefsEmail"]
+- ["PSo16NSObjectProtocol", "prefsName"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "quantityType"]
@@ -2848,6 +2862,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "plotKnn"]
 - ["PSo21UIAppearanceContainer", "polygon"]
 - ["PSo21UIAppearanceContainer", "prefsEmail"]
+- ["PSo21UIAppearanceContainer", "prefsName"]
 - ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "radius"]
@@ -2969,6 +2984,7 @@ depends-member:
 - ["PSo18UIContentContainer", "plotKnn"]
 - ["PSo18UIContentContainer", "polygon"]
 - ["PSo18UIContentContainer", "prefsEmail"]
+- ["PSo18UIContentContainer", "prefsName"]
 - ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "radius"]
@@ -3143,6 +3159,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "plotKnn"]
 - ["PSo18UIFocusEnvironment", "polygon"]
 - ["PSo18UIFocusEnvironment", "prefsEmail"]
+- ["PSo18UIFocusEnvironment", "prefsName"]
 - ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "radius"]
@@ -3288,6 +3305,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "plotKnn"]
 - !private ["PSo22UIPickerViewDataSource", "polygon"]
 - !private ["PSo22UIPickerViewDataSource", "prefsEmail"]
+- !private ["PSo22UIPickerViewDataSource", "prefsName"]
 - !private ["PSo22UIPickerViewDataSource", "print"]
 - !private ["PSo22UIPickerViewDataSource", "radius"]
 - !private ["PSo22UIPickerViewDataSource", "revealViewController"]
@@ -3373,6 +3391,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "plotKnn"]
 - !private ["PSo20UIPickerViewDelegate", "polygon"]
 - !private ["PSo20UIPickerViewDelegate", "prefsEmail"]
+- !private ["PSo20UIPickerViewDelegate", "prefsName"]
 - !private ["PSo20UIPickerViewDelegate", "print"]
 - !private ["PSo20UIPickerViewDelegate", "radius"]
 - !private ["PSo20UIPickerViewDelegate", "revealViewController"]
@@ -3503,6 +3522,7 @@ depends-member:
 - ["CSo11UIResponder", "plotKnn"]
 - ["CSo11UIResponder", "polygon"]
 - ["CSo11UIResponder", "prefsEmail"]
+- ["CSo11UIResponder", "prefsName"]
 - ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "radius"]
@@ -3624,6 +3644,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "plotKnn"]
 - ["PSo30UIResponderStandardEditActions", "polygon"]
 - ["PSo30UIResponderStandardEditActions", "prefsEmail"]
+- ["PSo30UIResponderStandardEditActions", "prefsName"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "radius"]
@@ -3737,6 +3758,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "plotKnn"]
 - ["PSo16UIStateRestoring", "polygon"]
 - ["PSo16UIStateRestoring", "prefsEmail"]
+- ["PSo16UIStateRestoring", "prefsName"]
 - ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "radius"]
@@ -3869,6 +3891,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "plotKnn"]
 - ["PSo18UITraitEnvironment", "polygon"]
 - ["PSo18UITraitEnvironment", "prefsEmail"]
+- ["PSo18UITraitEnvironment", "prefsName"]
 - ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "radius"]
@@ -4027,6 +4050,7 @@ depends-member:
 - ["CSo16UIViewController", "plotKnn"]
 - ["CSo16UIViewController", "polygon"]
 - ["CSo16UIViewController", "prefsEmail"]
+- ["CSo16UIViewController", "prefsName"]
 - ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "radius"]
@@ -4275,6 +4299,7 @@ depends-member:
 - ["Ps9_Hashable", "polygon"]
 - !private ["Ps9_Hashable", "predicateForSamples"]
 - ["Ps9_Hashable", "prefsEmail"]
+- ["Ps9_Hashable", "prefsName"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "quantityType"]
@@ -4613,4 +4638,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "82da117a721186303dfdfe235458d885"
+interface-hash: "718ddd464e169b63e93172bc127b18bf"

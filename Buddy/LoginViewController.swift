@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,18 @@ class LoginViewController: UIViewController {
         if (segue.identifier == "openSWL" )
         {
             UserDefaults.standard.setValue(username.text, forKey: "prefsEmail")
+            var prefsName:String=""
+            if username.text=="uppu@usc.edu"{
+            prefsName="Priyanka Uppu"
+            }
+            else if username.text=="snehal.sdt@gmail.com"{
+                prefsName="Snehal Tiwari"
+            }
+            else if username.text == "hahluwal@usc.edu"{
+            prefsName="Harman Singh"
+            }
+            UserDefaults.standard.setValue(prefsName, forKey: "prefsName")
+            
             //let next = segue.destination as! UINavigationController
             //let nextController = next.topViewController as! GeoViewController
             //nextController.prefsEmail = username.text!

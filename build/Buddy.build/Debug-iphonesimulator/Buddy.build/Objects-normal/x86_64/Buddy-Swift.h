@@ -215,6 +215,7 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull prefsName;
 @property (nonatomic, copy) NSString * _Nonnull testEmail;
 @property (nonatomic, copy) NSString * _Nonnull testName;
 - (void)viewDidLoad;
@@ -261,6 +262,7 @@ SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull prefsName;
 @property (nonatomic, copy) NSString * _Nonnull testName;
 @property (nonatomic, copy) NSString * _Nonnull testEmail;
 @property (nonatomic, copy) NSString * _Nonnull testCuisine;
@@ -274,6 +276,7 @@ SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
 - (void)sendInvite;
 - (void)findNearByBuddies;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)sendInviteButtonClickedWithTestName:(NSString * _Nonnull)testName testEmail:(NSString * _Nonnull)testEmail;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -342,6 +345,7 @@ SWIFT_CLASS("_TtC5Buddy17GeoViewController")
 @property (nonatomic, strong) MKPolygon * _Nullable polygon;
 @property (nonatomic) NSInteger radius;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull prefsName;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 - (void)viewDidLoad;
@@ -390,6 +394,7 @@ SWIFT_CLASS("_TtC5Buddy27GeoWithHealthViewController")
 @property (nonatomic, strong) MKPolygon * _Nullable polygon;
 @property (nonatomic) NSInteger radius;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull prefsName;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 - (void)viewDidLoad;
@@ -452,6 +457,7 @@ SWIFT_CLASS("_TtC5Buddy34PendingRequestsTableViewController")
 @interface PendingRequestsTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull prefsName;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyName;
@@ -462,6 +468,10 @@ SWIFT_CLASS("_TtC5Buddy34PendingRequestsTableViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyId;
 @property (nonatomic, copy) NSString * _Nonnull testDate;
 @property (nonatomic, copy) NSString * _Nonnull testId;
+@property (nonatomic, copy) NSString * _Nonnull testCuisine;
+@property (nonatomic, copy) NSString * _Nonnull testRestaurant;
+@property (nonatomic, copy) NSString * _Nonnull testBuddyName;
+@property (nonatomic, copy) NSString * _Nonnull testBuddyEmail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;

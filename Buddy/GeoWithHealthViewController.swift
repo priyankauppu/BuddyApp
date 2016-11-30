@@ -35,7 +35,7 @@ class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocatio
     
     
     var pickerData=["All","Chinese","Coffee", "Indian","Italian", "Mexican"]
-    var selectedPickerData="All"
+    var selectedPickerData="Coffee"
     //fencing related declarations
     // Array of annotations - modified when the points are changed.
     var annotations = [MKPointAnnotation]()
@@ -45,6 +45,7 @@ class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocatio
     var radius = 500
     
     var prefsEmail:String=""
+    var prefsName:String=""
     
     //webservice declarations
     var urll = "http://localhost:3000";
@@ -54,7 +55,8 @@ class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocatio
         super.viewDidLoad()
         
         prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
-        //print("Geo with health View Controller**********\(prefsEmail)***************")
+        prefsName=UserDefaults.standard.value(forKey: "prefsName")! as! String
+        print("Geo with health View Controller**********\(prefsName)***************")
 
         
         //healthData.text="500 Cal/1000 Cal"

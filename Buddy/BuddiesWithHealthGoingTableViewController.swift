@@ -29,6 +29,7 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
     let para:NSMutableDictionary = NSMutableDictionary();
     
     var prefsEmail:String=""
+     var prefsName:String=""
     
     var testName: String = ""
     var testEmail: String = ""
@@ -45,6 +46,7 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsName")! as! String
         //print("Buddies with health View Controller**********\(prefsEmail)***************")
         print("********\(restaurant)********\(cuisine)***************")
         
@@ -135,8 +137,8 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         
         para.setValue(testCuisine, forKey: "cuisine");
         para.setValue(testRestaurant, forKey: "restaurant");
-        para.setValue("Snehal", forKey: "reqSenderPersonName");//logged in
-        para.setValue("snehal.sdt@gmail.com", forKey: "reqSenderPersonEmail")
+        para.setValue("Priyanka Uppu", forKey: "reqSenderPersonName");//logged in
+        para.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
         para.setValue(testEmail, forKey: "reqReceiverPersonEmail");
         para.setValue(testName, forKey: "reqReceiverPersonName");
         para.setValue("10 mins", forKey: "time");
@@ -166,9 +168,9 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         let location_coordinate=location.coordinate
         
         para.setValue("Coffee", forKey: "cuisine");
-        para.setValue("Starbucks", forKey: "restaurant");
-        para.setValue("Snehal", forKey: "name");
-        para.setValue("snehal.sdt@gmail.com", forKey: "email")
+        para.setValue(restaurant, forKey: "restaurant");
+        para.setValue(prefsName, forKey: "name");
+        para.setValue(prefsEmail, forKey: "email")
         para.setValue(location_coordinate.latitude, forKey: "latitude")
         para.setValue(location_coordinate.longitude, forKey: "longitude")
         
@@ -238,13 +240,42 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         testCuisine = cell.buddyCuisine.text!
         testRestaurant = cell.buddyRestaurant.text!
         //Access today's timestamp
-        
+         sendInviteButtonClicked(testName: testName, testEmail: testEmail)
        
         if let dataToSend = cell.buddyName {
             performSegue(withIdentifier: "buddyRequestSegue", sender: self)
         }
     }
+    func sendInviteButtonClicked(testName:String,testEmail:String){
+        let date = NSDate()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .medium
+        let dateString = dateFormatter.string(from: date as Date)
+        
+        para.setValue(buddyCuisine, forKey: "cuisine");
+        para.setValue(buddyRestaurant, forKey: "restaurant");
+        para.setValue(prefsName, forKey: "reqSenderPersonName");//logged in
+        para.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
+        para.setValue(testName, forKey: "reqReceiverPersonEmail");
+        para.setValue(testEmail, forKey: "reqReceiverPersonName");
+        para.setValue("10 mins", forKey: "time");
+        para.setValue(dateString, forKey: "date");
+        
+        let jsonData = try! JSONSerialization.data(withJSONObject: para, options: JSONSerialization.WritingOptions());
+        let request:NSMutableURLRequest=NSMutableURLRequest();
+        let session = URLSession.shared
+        let url = urll+"/requestBuddy";
+        request.url=NSURL(string:url) as URL?
+        request.httpMethod = "POST";
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type");
+        request.httpBody = jsonData;
+        print("Sending",request)
+        print("**********HELLLLLOOOOOO***********")
+        
+    }
     
+
     
     
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any!) {

@@ -159,12 +159,12 @@ class ProfileViewController: UITableViewController {
             
         }
         else if indexPath.row == 5 {
-            cell.key.text = "Weight"
+            cell.key.text = "Weight (in Kg)"
             cell.value.text = "50"
         }
         else {
             cell.key.text = "Daily Goal(in kCal)"
-            cell.value.text = "20000"
+            cell.value.text = "500"
             
         }
         

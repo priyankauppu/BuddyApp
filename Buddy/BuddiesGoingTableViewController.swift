@@ -29,6 +29,8 @@ class BuddiesGoingTableViewController: UITableViewController {
     
     
     var prefsEmail:String="";
+    var prefsName:String="";
+    
     var testEmail:String = ""
     var testName:String=""
     // var userLatitude:Double=0.0
@@ -51,7 +53,8 @@ class BuddiesGoingTableViewController: UITableViewController {
         
         prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
         //print("BUDDIES GOING**********\(prefsEmail)***************")
-        print("********\(restaurant)********\(cuisine)***************")
+        prefsName=UserDefaults.standard.value(forKey: "prefsName")! as! String
+        print("********\(restaurant)********\(cuisine)*****\(prefsName)**********")
         
         findNearByBuddies()
         
@@ -123,9 +126,9 @@ class BuddiesGoingTableViewController: UITableViewController {
         let location_coordinate=location.coordinate
         
         para.setValue("Coffee", forKey: "cuisine");
-        para.setValue("Starbucks", forKey: "restaurant");
-        para.setValue("Snehal", forKey: "name");
-        para.setValue("snehal.sdt@gmail.com", forKey: "email")
+        para.setValue(restaurant, forKey: "restaurant");
+        para.setValue(prefsName, forKey: "name");
+        para.setValue(prefsEmail, forKey: "email")
         para.setValue(location_coordinate.latitude, forKey: "latitude")
         para.setValue(location_coordinate.longitude, forKey: "longitude")
         
@@ -214,8 +217,8 @@ class BuddiesGoingTableViewController: UITableViewController {
         
         para.setValue(buddyCuisine, forKey: "cuisine");
         para.setValue(buddyRestaurant, forKey: "restaurant");
-        para.setValue("Snehal", forKey: "reqSenderPersonName");//logged in
-        para.setValue("snehal.sdt@gmail.com", forKey: "reqSenderPersonEmail")
+        para.setValue(prefsName, forKey: "reqSenderPersonName");//logged in
+        para.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
         para.setValue(testName, forKey: "reqReceiverPersonEmail");
         para.setValue(testEmail, forKey: "reqReceiverPersonName");
         para.setValue("10 mins", forKey: "time");

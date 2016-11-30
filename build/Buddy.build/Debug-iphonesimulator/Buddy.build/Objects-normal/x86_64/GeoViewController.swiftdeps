@@ -6,119 +6,120 @@ provides-nominal:
 provides-member:
 - ["C5Buddy17GeoViewController", ""]
 provides-dynamic-lookup:
-- "plotKnn"
 - "sliderMoved"
-- "addLongPressGesture"
-- "knnChanged"
-- "addRadiusCircle"
-- "selectedPickerData"
-- "prefsEmail"
-- "locationManager"
-- "annotations"
-- "didReceiveMemoryWarning"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "handleLongPress"
-- "location"
-- "menuButton"
-- "prepare"
-- "viewDidLoad"
-- "knn"
-- "numberOfComponents"
-- "picker"
-- "polygon"
-- "urll"
-- "updateOverlay"
-- "sliderValue"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
-- "mapView"
-- "pickerData"
-- "drawCircle"
-- "sortConvex"
 - "radius"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
+- "mapView"
+- "location"
+- "knnChanged"
+- "locationManager"
+- "pickerData"
+- "addRadiusCircle"
+- "polygon"
+- "viewDidLoad"
+- "urll"
+- "picker"
+- "drawCircle"
+- "numberOfComponents"
+- "prepare"
+- "prefsName"
+- "addLongPressGesture"
+- "handleLongPress"
+- "plotKnn"
 - "para"
+- "didReceiveMemoryWarning"
+- "knn"
+- "annotations"
+- "sliderValue"
+- "updateOverlay"
+- "prefsEmail"
+- "selectedPickerData"
+- "menuButton"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "sortConvex"
 - "slider"
 depends-top-level:
-- "CLLocation"
-- !private "UIButton"
-- "UISlider"
-- !private "UILongPressGestureRecognizer"
-- "MKAnnotationViewDragState"
-- "StringLiteralType"
-- !private "&&"
-- "Array"
-- !private "CLLocationDegrees"
-- "UILabel"
-- "UIPickerView"
-- !private "UserDefaults"
-- !private "DispatchQueue"
-- !private "SWRevealViewController"
-- !private "BooleanLiteralType"
-- !private ">="
-- !private "URLSession"
-- !private "Dictionary"
-- !private "-"
-- "String"
-- !private "!="
-- !private "CGPoint"
-- "Double"
-- !private "CLLocationCoordinate2DMake"
-- "CLLocationCoordinate2D"
-- !private "print"
-- "MKAnnotation"
-- "CLLocationManager"
-- !private "MKCoordinateRegion"
-- "GeoViewController"
-- !private "+"
-- !private "MKUserLocation"
-- "UIControl"
 - !private "AnyObject"
-- !private "MKPolygonRenderer"
-- !private "<="
-- !private "JSONSerialization"
-- !private "NSDictionary"
-- "UIStoryboardSegue"
-- !private "MKPinAnnotationView"
-- "UIBarButtonItem"
-- !private "URL"
-- !private "*"
-- "MKPolygon"
-- !private "CLLocationDistance"
-- "UIPickerViewDataSource"
-- !private "kCLLocationAccuracyBest"
 - "CLLocationManagerDelegate"
-- "MKMapViewDelegate"
-- !private "UIColor"
-- "MKPointAnnotation"
-- !private "MKCircle"
-- "Int"
-- !private "UIImage"
 - "UITextField"
+- "MKMapViewDelegate"
+- "StringLiteralType"
+- !private "Dictionary"
+- "MKOverlay"
+- "CLLocationManager"
+- !private "NSMutableURLRequest"
+- !private "URLSession"
+- "MKMapView"
+- "MKOverlayRenderer"
+- !private "MKCoordinateRegion"
+- !private "CLLocationCoordinate2DMake"
+- "UIGestureRecognizer"
+- !private "CLLocationDegrees"
+- !private "-"
+- "Array"
+- "CLLocationCoordinate2D"
+- !private "BooleanLiteralType"
+- !private "CGPoint"
+- !private "DispatchQueue"
+- !private "&&"
+- "UIBarButtonItem"
+- !private "UINavigationController"
+- !private "BuddiesGoingTableViewController"
+- !private "!="
+- !private ">="
+- "UIControl"
+- "Double"
+- "MKAnnotationViewDragState"
+- "CLLocation"
+- !private "+"
+- !private "MKCircleRenderer"
+- "UIPickerViewDataSource"
+- !private "JSONSerialization"
 - "UIPickerViewDelegate"
 - "MKAnnotationView"
-- !private "NSURL"
-- "UIGestureRecognizer"
-- !private "<"
-- !private "BuddiesGoingTableViewController"
-- !private "URLRequest"
-- "MKOverlayRenderer"
-- !private "TernaryPrecedence"
-- "UIViewController"
-- !private "NSMutableURLRequest"
-- !private "UINavigationController"
 - !private "Float"
-- !private "MKCircleRenderer"
 - "NSMutableDictionary"
+- !private "CLLocationDistance"
 - !private "MKCoordinateSpanMake"
+- "UIViewController"
+- !private "print"
+- "UIStoryboardSegue"
+- !private "MKCircle"
+- "UIPickerView"
+- !private "<="
+- "UISlider"
+- "UILabel"
+- "MKPolygon"
+- !private "UILongPressGestureRecognizer"
+- !private "MKPinAnnotationView"
+- "Int"
+- !private "NSDictionary"
+- !private "NSURL"
+- !private "TernaryPrecedence"
+- "GeoViewController"
+- !private "MKPolygonRenderer"
+- !private "UIButton"
+- !private "URL"
+- "MKAnnotation"
+- !private "URLRequest"
+- !private "UserDefaults"
+- !private "<"
+- "MKPointAnnotation"
+- !private "UIColor"
+- !private "kCLLocationAccuracyBest"
+- !private "UIImage"
+- !private "SWRevealViewController"
+- !private "MKUserLocation"
 - "CastingPrecedence"
-- "MKOverlay"
-- "MKMapView"
+- "String"
 - "AssignmentPrecedence"
 - !private "=="
+- !private "*"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGPoint"]
@@ -223,6 +224,7 @@ depends-member:
 - ["Ps9AnyObject", "plotKnn"]
 - ["Ps9AnyObject", "polygon"]
 - ["Ps9AnyObject", "prefsEmail"]
+- ["Ps9AnyObject", "prefsName"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "radius"]
@@ -439,6 +441,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "plotKnn"]
 - !private ["PSo25CLLocationManagerDelegate", "polygon"]
 - !private ["PSo25CLLocationManagerDelegate", "prefsEmail"]
+- !private ["PSo25CLLocationManagerDelegate", "prefsName"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "radius"]
 - !private ["PSo25CLLocationManagerDelegate", "revealViewController"]
@@ -564,6 +567,7 @@ depends-member:
 - ["Ps7CVarArg", "plotKnn"]
 - ["Ps7CVarArg", "polygon"]
 - ["Ps7CVarArg", "prefsEmail"]
+- ["Ps7CVarArg", "prefsName"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "radius"]
@@ -742,6 +746,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "plotKnn"]
 - ["Ps28CustomDebugStringConvertible", "polygon"]
 - ["Ps28CustomDebugStringConvertible", "prefsEmail"]
+- ["Ps28CustomDebugStringConvertible", "prefsName"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "radius"]
@@ -935,6 +940,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "plotKnn"]
 - ["Ps23CustomStringConvertible", "polygon"]
 - ["Ps23CustomStringConvertible", "prefsEmail"]
+- ["Ps23CustomStringConvertible", "prefsName"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "radius"]
@@ -1112,6 +1118,7 @@ depends-member:
 - ["Ps9Equatable", "plotKnn"]
 - ["Ps9Equatable", "polygon"]
 - ["Ps9Equatable", "prefsEmail"]
+- ["Ps9Equatable", "prefsName"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "radius"]
@@ -1280,6 +1287,7 @@ depends-member:
 - ["C5Buddy17GeoViewController", "plotKnn"]
 - ["C5Buddy17GeoViewController", "polygon"]
 - ["C5Buddy17GeoViewController", "prefsEmail"]
+- ["C5Buddy17GeoViewController", "prefsName"]
 - ["C5Buddy17GeoViewController", "prepare"]
 - !private ["C5Buddy17GeoViewController", "print"]
 - ["C5Buddy17GeoViewController", "radius"]
@@ -1401,6 +1409,7 @@ depends-member:
 - ["Ps8Hashable", "plotKnn"]
 - ["Ps8Hashable", "polygon"]
 - ["Ps8Hashable", "prefsEmail"]
+- ["Ps8Hashable", "prefsName"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "radius"]
@@ -1599,6 +1608,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "plotKnn"]
 - !private ["PSo17MKMapViewDelegate", "polygon"]
 - !private ["PSo17MKMapViewDelegate", "prefsEmail"]
+- !private ["PSo17MKMapViewDelegate", "prefsName"]
 - !private ["PSo17MKMapViewDelegate", "print"]
 - !private ["PSo17MKMapViewDelegate", "radius"]
 - !private ["PSo17MKMapViewDelegate", "revealViewController"]
@@ -1768,6 +1778,7 @@ depends-member:
 - ["PSo8NSCoding", "plotKnn"]
 - ["PSo8NSCoding", "polygon"]
 - ["PSo8NSCoding", "prefsEmail"]
+- ["PSo8NSCoding", "prefsName"]
 - ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "radius"]
@@ -1886,6 +1897,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "plotKnn"]
 - ["PSo26NSExtensionRequestHandling", "polygon"]
 - ["PSo26NSExtensionRequestHandling", "prefsEmail"]
+- ["PSo26NSExtensionRequestHandling", "prefsName"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "radius"]
@@ -2047,6 +2059,7 @@ depends-member:
 - ["CSo8NSObject", "plotKnn"]
 - ["CSo8NSObject", "polygon"]
 - ["CSo8NSObject", "prefsEmail"]
+- ["CSo8NSObject", "prefsName"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "radius"]
@@ -2190,6 +2203,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "plotKnn"]
 - ["PSo16NSObjectProtocol", "polygon"]
 - ["PSo16NSObjectProtocol", "prefsEmail"]
+- ["PSo16NSObjectProtocol", "prefsName"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "radius"]
@@ -2519,6 +2533,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "plotKnn"]
 - ["PSo21UIAppearanceContainer", "polygon"]
 - ["PSo21UIAppearanceContainer", "prefsEmail"]
+- ["PSo21UIAppearanceContainer", "prefsName"]
 - ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "radius"]
@@ -2628,6 +2643,7 @@ depends-member:
 - ["PSo18UIContentContainer", "plotKnn"]
 - ["PSo18UIContentContainer", "polygon"]
 - ["PSo18UIContentContainer", "prefsEmail"]
+- ["PSo18UIContentContainer", "prefsName"]
 - ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "radius"]
@@ -2790,6 +2806,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "plotKnn"]
 - ["PSo18UIFocusEnvironment", "polygon"]
 - ["PSo18UIFocusEnvironment", "prefsEmail"]
+- ["PSo18UIFocusEnvironment", "prefsName"]
 - ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "radius"]
@@ -2923,6 +2940,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "plotKnn"]
 - !private ["PSo22UIPickerViewDataSource", "polygon"]
 - !private ["PSo22UIPickerViewDataSource", "prefsEmail"]
+- !private ["PSo22UIPickerViewDataSource", "prefsName"]
 - !private ["PSo22UIPickerViewDataSource", "print"]
 - !private ["PSo22UIPickerViewDataSource", "radius"]
 - !private ["PSo22UIPickerViewDataSource", "revealViewController"]
@@ -2996,6 +3014,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "plotKnn"]
 - !private ["PSo20UIPickerViewDelegate", "polygon"]
 - !private ["PSo20UIPickerViewDelegate", "prefsEmail"]
+- !private ["PSo20UIPickerViewDelegate", "prefsName"]
 - !private ["PSo20UIPickerViewDelegate", "print"]
 - !private ["PSo20UIPickerViewDelegate", "radius"]
 - !private ["PSo20UIPickerViewDelegate", "revealViewController"]
@@ -3111,6 +3130,7 @@ depends-member:
 - ["CSo11UIResponder", "plotKnn"]
 - ["CSo11UIResponder", "polygon"]
 - ["CSo11UIResponder", "prefsEmail"]
+- ["CSo11UIResponder", "prefsName"]
 - ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "radius"]
@@ -3220,6 +3240,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "plotKnn"]
 - ["PSo30UIResponderStandardEditActions", "polygon"]
 - ["PSo30UIResponderStandardEditActions", "prefsEmail"]
+- ["PSo30UIResponderStandardEditActions", "prefsName"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "radius"]
@@ -3322,6 +3343,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "plotKnn"]
 - ["PSo16UIStateRestoring", "polygon"]
 - ["PSo16UIStateRestoring", "prefsEmail"]
+- ["PSo16UIStateRestoring", "prefsName"]
 - ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "radius"]
@@ -3445,6 +3467,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "plotKnn"]
 - ["PSo18UITraitEnvironment", "polygon"]
 - ["PSo18UITraitEnvironment", "prefsEmail"]
+- ["PSo18UITraitEnvironment", "prefsName"]
 - ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "radius"]
@@ -3588,6 +3611,7 @@ depends-member:
 - ["CSo16UIViewController", "plotKnn"]
 - ["CSo16UIViewController", "polygon"]
 - ["CSo16UIViewController", "prefsEmail"]
+- ["CSo16UIViewController", "prefsName"]
 - ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "radius"]
@@ -3812,6 +3836,7 @@ depends-member:
 - ["Ps9_Hashable", "plotKnn"]
 - ["Ps9_Hashable", "polygon"]
 - ["Ps9_Hashable", "prefsEmail"]
+- ["Ps9_Hashable", "prefsName"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "radius"]
@@ -4112,4 +4137,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "96614892f0235da663d5de7a98a364e1"
+interface-hash: "9c878b8de2425aab1a9bcde97db62810"
