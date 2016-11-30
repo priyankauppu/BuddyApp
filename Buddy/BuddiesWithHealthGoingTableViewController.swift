@@ -28,6 +28,8 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
     var urll = "http://localhost:3000";
     let para:NSMutableDictionary = NSMutableDictionary();
     
+    var prefsEmail:String=""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +39,8 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        //print("Buddies with health View Controller**********\(prefsEmail)***************")
         print("********\(restaurant)********\(cuisine)***************")
         findNearByBuddies()
 //        self.tableView.reloadData()

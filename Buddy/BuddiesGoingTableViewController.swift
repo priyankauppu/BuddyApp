@@ -33,8 +33,9 @@ class BuddiesGoingTableViewController: UITableViewController {
         
        // displayDetails.text="Your selected Cuisine:\(cuisine), Restaurant: \(restaurant)"
 
-        print("***********BUDDIES GOING**************")
-        print(UserDefaults.standard.value(forKey: "prefsEmail")!)
+        
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        //print("BUDDIES GOING**********\(prefsEmail)***************")
         print("********\(restaurant)********\(cuisine)***************")
     }
 

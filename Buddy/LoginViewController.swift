@@ -46,7 +46,6 @@ class LoginViewController: UIViewController {
         if (segue.identifier == "openSWL" )
         {
             UserDefaults.standard.setValue(username.text, forKey: "prefsEmail")
-            
             //let next = segue.destination as! UINavigationController
             //let nextController = next.topViewController as! GeoViewController
             //nextController.prefsEmail = username.text!

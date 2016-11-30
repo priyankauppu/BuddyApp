@@ -152,8 +152,6 @@
 				99FE749A1DED3BBF0054F843 /* ProfileTableViewCell.swift */,
 				99FE749C1DED65360054F843 /* PendingRequestsTableViewController.swift */,
 				99FE74A21DED6BBD0054F843 /* AcceptedRequests */,
-				99C5B7D21DEE3822006DA64D /* BuddiesGoingTableViewCell.swift */,
-				99C5B7D41DEE388D006DA64D /* BuddiesWithHealthGoingTableViewCell.swift */,
 			);
 			path = Buddy;
 			sourceTree = "<group>";
@@ -199,6 +197,7 @@
 			children = (
 				999D23FB1DEB819D00CAEE59 /* GeoViewController.swift */,
 				999D23FD1DEB8EC600CAEE59 /* BuddiesGoingTableViewController.swift */,
+				99C5B7D21DEE3822006DA64D /* BuddiesGoingTableViewCell.swift */,
 				999D23FF1DEBA71300CAEE59 /* DirectionViewController.swift */,
 			);
 			name = "Find a restaurant";
@@ -209,6 +208,7 @@
 			children = (
 				99B09C841DEC98E300A14B8B /* GeoWithHealthViewController.swift */,
 				99B09C861DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift */,
+				99C5B7D41DEE388D006DA64D /* BuddiesWithHealthGoingTableViewCell.swift */,
 				99B09C881DECA2B700A14B8B /* DirectionWithHealthViewController.swift */,
 			);
 			name = "Food Challenge";

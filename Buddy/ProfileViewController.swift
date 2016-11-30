@@ -20,10 +20,13 @@ class ProfileViewController: UITableViewController {
     var urll = "http://localhost:3000";
     let para:NSMutableDictionary = NSMutableDictionary();
     
+    var prefsEmail:String=""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("*************************")
-        print(UserDefaults.standard.value(forKey: "prefsEmail")!)
+        
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        //print("Profile View Controller**********\(prefsEmail)***************")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

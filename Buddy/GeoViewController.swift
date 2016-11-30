@@ -45,9 +45,9 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("*************************")
-        print(UserDefaults.standard.value(forKey: "prefsEmail")!)
-
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        //print("GEO VIEW CONTROLLER**********\(prefsEmail)***************")
+        
         // Do any additional setup after loading the view.
         //SideBar related
         

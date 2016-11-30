@@ -154,7 +154,7 @@ SWIFT_CLASS("_TtC5Buddy35AcceptedRequestsTableViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyCuisine;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyRestaurant;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyTime;
-@property (nonatomic) NSInteger count;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
@@ -241,6 +241,7 @@ SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
 @property (nonatomic, strong) CLLocation * _Nonnull location;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
@@ -281,6 +282,7 @@ SWIFT_CLASS("_TtC5Buddy33DirectionWithHealthViewController")
 @property (nonatomic, copy) NSString * _Nonnull displayMessage;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified message;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
@@ -361,7 +363,7 @@ SWIFT_CLASS("_TtC5Buddy27GeoWithHealthViewController")
 @property (nonatomic, copy) NSArray<MKPointAnnotation *> * _Nonnull annotations;
 @property (nonatomic, strong) MKPolygon * _Nullable polygon;
 @property (nonatomic) NSInteger radius;
-@property (nonatomic, copy) NSString * _Nonnull trytext;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 - (void)viewDidLoad;
@@ -406,6 +408,7 @@ SWIFT_CLASS("_TtC5Buddy19LoginViewController")
 SWIFT_CLASS("_TtC5Buddy34PendingRequestsTableViewController")
 @interface PendingRequestsTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
@@ -444,6 +447,7 @@ SWIFT_CLASS("_TtC5Buddy21ProfileViewController")
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified updateButton;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;

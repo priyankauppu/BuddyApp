@@ -22,11 +22,14 @@ class AcceptedRequestsTableViewController: UITableViewController {
     var buddyRestaurant:[String]=[]
     var buddyTime:[String]=[]
     
-    var count = 0
+    var prefsEmail:String=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        //print("Accepted Requests View Controller**********\(prefsEmail)***************")
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

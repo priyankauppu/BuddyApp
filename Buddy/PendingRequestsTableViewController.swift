@@ -11,10 +11,14 @@ import UIKit
 class PendingRequestsTableViewController: UITableViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    var prefsEmail:String=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        //print("Pending Requests View Controller**********\(prefsEmail)***************")
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -20,10 +20,15 @@ class DirectionWithHealthViewController: UIViewController,MKMapViewDelegate, CLL
     
     @IBOutlet weak var message: UILabel!
     
+    var prefsEmail:String=""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("In Direction With Health \(restaurantLatitude)")
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        //print("Direction View Controller**********\(prefsEmail)***************")
+        
+        //print("In Direction With Health \(restaurantLatitude)")
         
         message.text=displayMessage
         // Do any additional setup after loading the view.

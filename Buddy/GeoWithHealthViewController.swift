@@ -44,7 +44,7 @@ class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocatio
     
     var radius = 500
     
-    var trytext:String = "";
+    var prefsEmail:String=""
     
     //webservice declarations
     var urll = "http://localhost:3000";
@@ -53,8 +53,8 @@ class GeoWithHealthViewController: UIViewController,MKMapViewDelegate, CLLocatio
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("*************************")
-        print(UserDefaults.standard.value(forKey: "prefsEmail")!)
+        prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
+        //print("Geo with health View Controller**********\(prefsEmail)***************")
 
         
         //healthData.text="500 Cal/1000 Cal"

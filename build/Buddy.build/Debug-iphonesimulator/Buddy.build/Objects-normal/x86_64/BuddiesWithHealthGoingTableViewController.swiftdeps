@@ -6,63 +6,65 @@ provides-nominal:
 provides-member:
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", ""]
 provides-dynamic-lookup:
-- "urll"
-- "tableView"
-- "tableView"
-- "tableView"
-- "findNearByBuddies"
-- "restaurant"
 - "didReceiveMemoryWarning"
-- "prepare"
-- "buddyCuisine"
-- "numberOfSections"
-- "viewDidLoad"
-- "buddyEmail"
-- "restaurantLongitude"
-- "buddyName"
-- "buddyRestaurant"
-- "cuisine"
-- "para"
-- "location"
 - "locationManager"
+- "prefsEmail"
+- "urll"
+- "numberOfSections"
+- "restaurant"
+- "buddyEmail"
+- "buddyCuisine"
+- "tableView"
+- "tableView"
+- "tableView"
+- "buddyRestaurant"
+- "para"
+- "restaurantLongitude"
+- "location"
+- "prepare"
+- "findNearByBuddies"
+- "buddyName"
+- "viewDidLoad"
 - "restaurantLatitude"
+- "cuisine"
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "URLSession"
-- "CLLocationManager"
-- !private "URLRequest"
-- !private "NSDate"
-- !private "UINavigationController"
-- !private "AnyObject"
-- "IndexPath"
-- !private "DateFormatter"
-- !private "NSDictionary"
-- !private "Dictionary"
-- "UITableViewController"
-- !private "DirectionWithHealthViewController"
-- "UIStoryboardSegue"
-- "UITableViewCell"
 - "StringLiteralType"
-- !private "NSURL"
-- "BuddiesWithHealthGoingTableViewController"
-- !private "!="
-- !private "URL"
-- !private "print"
-- !private "BuddiesWithHealthGoingTableViewCell"
-- !private "Date"
-- "NSMutableDictionary"
-- !private "=="
-- "AssignmentPrecedence"
-- !private "NSMutableURLRequest"
-- !private "+"
-- "CastingPrecedence"
-- "Double"
-- "Int"
-- "UITableView"
-- !private "DispatchQueue"
-- "CLLocation"
+- "UIStoryboardSegue"
+- "CLLocationManager"
 - !private "JSONSerialization"
+- !private "NSURL"
+- "UITableViewController"
+- "UITableView"
+- !private "NSDate"
+- "BuddiesWithHealthGoingTableViewController"
+- !private "BuddiesWithHealthGoingTableViewCell"
+- !private "DateFormatter"
+- !private "!="
+- !private "URLRequest"
+- !private "URLSession"
+- !private "URL"
 - "String"
+- !private "BooleanLiteralType"
+- "CLLocation"
+- !private "Dictionary"
+- "Int"
+- "UITableViewCell"
+- !private "DirectionWithHealthViewController"
+- !private "UINavigationController"
+- "IndexPath"
+- "NSMutableDictionary"
+- "CastingPrecedence"
+- !private "Date"
+- !private "print"
+- !private "+"
+- "Double"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "NSDictionary"
+- !private "NSMutableURLRequest"
+- !private "AnyObject"
+- !private "UserDefaults"
+- !private "DispatchQueue"
 depends-member:
 - ["Ps9AnyObject", "CLLocation"]
 - ["Ps9AnyObject", "CLLocationManager"]
@@ -75,6 +77,7 @@ depends-member:
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "ReadingOptions"]
 - !private ["Ps9AnyObject", "URLSession"]
+- !private ["Ps9AnyObject", "UserDefaults"]
 - !private ["Ps9AnyObject", "WritingOptions"]
 - !private ["Ps9AnyObject", "async"]
 - ["Ps9AnyObject", "buddyCuisine"]
@@ -104,6 +107,7 @@ depends-member:
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "para"]
 - !private ["Ps9AnyObject", "performSegue"]
+- ["Ps9AnyObject", "prefsEmail"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
@@ -113,6 +117,7 @@ depends-member:
 - !private ["Ps9AnyObject", "resume"]
 - !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "standard"]
 - !private ["Ps9AnyObject", "string"]
 - !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "tableView"]
@@ -121,6 +126,7 @@ depends-member:
 - !private ["Ps9AnyObject", "topViewController"]
 - !private ["Ps9AnyObject", "url"]
 - ["Ps9AnyObject", "urll"]
+- !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Index"]
@@ -197,6 +203,7 @@ depends-member:
 - !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "URL"]
 - !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "URLRequest"]
 - !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "URLSession"]
+- !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "UserDefaults"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "buddyCuisine"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "buddyEmail"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "buddyName"]
@@ -211,6 +218,7 @@ depends-member:
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "numberOfSections"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "para"]
 - !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "performSegue"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "prefsEmail"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "prepare"]
 - !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "print"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurant"]
@@ -256,6 +264,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "URLSession"]
+- !private ["Ps7CVarArg", "UserDefaults"]
 - !private ["Ps7CVarArg", "WritingOptions"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
@@ -290,6 +299,7 @@ depends-member:
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "para"]
 - !private ["Ps7CVarArg", "performSegue"]
+- ["Ps7CVarArg", "prefsEmail"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "reloadData"]
@@ -299,6 +309,7 @@ depends-member:
 - !private ["Ps7CVarArg", "resume"]
 - !private ["Ps7CVarArg", "setValue"]
 - !private ["Ps7CVarArg", "shared"]
+- !private ["Ps7CVarArg", "standard"]
 - !private ["Ps7CVarArg", "string"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
@@ -307,6 +318,7 @@ depends-member:
 - !private ["Ps7CVarArg", "topViewController"]
 - !private ["Ps7CVarArg", "url"]
 - ["Ps7CVarArg", "urll"]
+- !private ["Ps7CVarArg", "value"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
@@ -341,6 +353,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "ReadingOptions"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "URLSession"]
+- !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "WritingOptions"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
@@ -374,6 +387,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "para"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
+- ["Ps28CustomDebugStringConvertible", "prefsEmail"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
@@ -384,6 +398,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps28CustomDebugStringConvertible", "standard"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
@@ -392,6 +407,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "topViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "url"]
 - ["Ps28CustomDebugStringConvertible", "urll"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
@@ -432,6 +448,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "URLSession"]
+- !private ["Ps23CustomStringConvertible", "UserDefaults"]
 - !private ["Ps23CustomStringConvertible", "WritingOptions"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -467,6 +484,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "para"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
+- ["Ps23CustomStringConvertible", "prefsEmail"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
@@ -477,6 +495,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "standard"]
 - !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
@@ -485,6 +504,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "topViewController"]
 - !private ["Ps23CustomStringConvertible", "url"]
 - ["Ps23CustomStringConvertible", "urll"]
+- !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - ["V10Foundation4Data", "deinit"]
@@ -533,6 +553,7 @@ depends-member:
 - !private ["Ps9Equatable", "ReadingOptions"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "URLSession"]
+- !private ["Ps9Equatable", "UserDefaults"]
 - !private ["Ps9Equatable", "WritingOptions"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -565,6 +586,7 @@ depends-member:
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "para"]
 - !private ["Ps9Equatable", "performSegue"]
+- ["Ps9Equatable", "prefsEmail"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reloadData"]
@@ -576,6 +598,7 @@ depends-member:
 - !private ["Ps9Equatable", "setValue"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "short"]
+- !private ["Ps9Equatable", "standard"]
 - !private ["Ps9Equatable", "string"]
 - !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tableView"]
@@ -584,6 +607,7 @@ depends-member:
 - !private ["Ps9Equatable", "topViewController"]
 - !private ["Ps9Equatable", "url"]
 - ["Ps9Equatable", "urll"]
+- !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - !private ["Ps5Error", "deinit"]
@@ -632,6 +656,7 @@ depends-member:
 - !private ["Ps8Hashable", "ReadingOptions"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "URLSession"]
+- !private ["Ps8Hashable", "UserDefaults"]
 - !private ["Ps8Hashable", "WritingOptions"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -664,6 +689,7 @@ depends-member:
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "para"]
 - !private ["Ps8Hashable", "performSegue"]
+- ["Ps8Hashable", "prefsEmail"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reloadData"]
@@ -675,6 +701,7 @@ depends-member:
 - !private ["Ps8Hashable", "setValue"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "short"]
+- !private ["Ps8Hashable", "standard"]
 - !private ["Ps8Hashable", "string"]
 - !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tableView"]
@@ -683,6 +710,7 @@ depends-member:
 - !private ["Ps8Hashable", "topViewController"]
 - !private ["Ps8Hashable", "url"]
 - ["Ps8Hashable", "urll"]
+- !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["V10Foundation9IndexPath", "deinit"]
@@ -769,6 +797,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSMutableURLRequest"]
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "URLSession"]
+- !private ["PSo8NSCoding", "UserDefaults"]
 - ["PSo8NSCoding", "buddyCuisine"]
 - ["PSo8NSCoding", "buddyEmail"]
 - ["PSo8NSCoding", "buddyName"]
@@ -790,6 +819,7 @@ depends-member:
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "para"]
 - !private ["PSo8NSCoding", "performSegue"]
+- ["PSo8NSCoding", "prefsEmail"]
 - ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -835,6 +865,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSMutableURLRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "URLSession"]
+- !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "buddyCuisine"]
 - ["PSo26NSExtensionRequestHandling", "buddyEmail"]
 - ["PSo26NSExtensionRequestHandling", "buddyName"]
@@ -849,6 +880,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "para"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
+- ["PSo26NSExtensionRequestHandling", "prefsEmail"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "restaurant"]
@@ -904,6 +936,7 @@ depends-member:
 - !private ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "URLRequest"]
 - !private ["CSo8NSObject", "URLSession"]
+- !private ["CSo8NSObject", "UserDefaults"]
 - !private ["CSo8NSObject", "WritingOptions"]
 - !private ["CSo8NSObject", "async"]
 - ["CSo8NSObject", "buddyCuisine"]
@@ -933,6 +966,7 @@ depends-member:
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "para"]
 - !private ["CSo8NSObject", "performSegue"]
+- ["CSo8NSObject", "prefsEmail"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
@@ -942,6 +976,7 @@ depends-member:
 - !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "standard"]
 - !private ["CSo8NSObject", "string"]
 - !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "tableView"]
@@ -950,6 +985,7 @@ depends-member:
 - !private ["CSo8NSObject", "topViewController"]
 - !private ["CSo8NSObject", "url"]
 - ["CSo8NSObject", "urll"]
+- !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "CLLocation"]
 - ["PSo16NSObjectProtocol", "CLLocationManager"]
@@ -962,6 +998,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "ReadingOptions"]
 - !private ["PSo16NSObjectProtocol", "URLSession"]
+- !private ["PSo16NSObjectProtocol", "UserDefaults"]
 - !private ["PSo16NSObjectProtocol", "WritingOptions"]
 - !private ["PSo16NSObjectProtocol", "async"]
 - ["PSo16NSObjectProtocol", "buddyCuisine"]
@@ -991,6 +1028,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "para"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
+- ["PSo16NSObjectProtocol", "prefsEmail"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
@@ -1000,6 +1038,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "standard"]
 - !private ["PSo16NSObjectProtocol", "string"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "tableView"]
@@ -1008,6 +1047,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "topViewController"]
 - !private ["PSo16NSObjectProtocol", "url"]
 - ["PSo16NSObjectProtocol", "urll"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "coordinate"]
@@ -1151,6 +1191,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSMutableURLRequest"]
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "URLSession"]
+- !private ["PSo21UIAppearanceContainer", "UserDefaults"]
 - ["PSo21UIAppearanceContainer", "buddyCuisine"]
 - ["PSo21UIAppearanceContainer", "buddyEmail"]
 - ["PSo21UIAppearanceContainer", "buddyName"]
@@ -1168,6 +1209,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "para"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
+- ["PSo21UIAppearanceContainer", "prefsEmail"]
 - ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -1190,6 +1232,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSMutableURLRequest"]
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "URLSession"]
+- !private ["PSo18UIContentContainer", "UserDefaults"]
 - ["PSo18UIContentContainer", "buddyCuisine"]
 - ["PSo18UIContentContainer", "buddyEmail"]
 - ["PSo18UIContentContainer", "buddyName"]
@@ -1204,6 +1247,7 @@ depends-member:
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "para"]
 - !private ["PSo18UIContentContainer", "performSegue"]
+- ["PSo18UIContentContainer", "prefsEmail"]
 - ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "restaurant"]
@@ -1244,6 +1288,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSMutableURLRequest"]
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "URLSession"]
+- !private ["PSo18UIFocusEnvironment", "UserDefaults"]
 - ["PSo18UIFocusEnvironment", "buddyCuisine"]
 - ["PSo18UIFocusEnvironment", "buddyEmail"]
 - ["PSo18UIFocusEnvironment", "buddyName"]
@@ -1261,6 +1306,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "para"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
+- ["PSo18UIFocusEnvironment", "prefsEmail"]
 - ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -1316,6 +1362,7 @@ depends-member:
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "URLRequest"]
 - !private ["CSo11UIResponder", "URLSession"]
+- !private ["CSo11UIResponder", "UserDefaults"]
 - ["CSo11UIResponder", "buddyCuisine"]
 - ["CSo11UIResponder", "buddyEmail"]
 - ["CSo11UIResponder", "buddyName"]
@@ -1333,6 +1380,7 @@ depends-member:
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "para"]
 - !private ["CSo11UIResponder", "performSegue"]
+- ["CSo11UIResponder", "prefsEmail"]
 - ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
@@ -1354,6 +1402,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSMutableURLRequest"]
 - !private ["PSo30UIResponderStandardEditActions", "NSURL"]
 - !private ["PSo30UIResponderStandardEditActions", "URLSession"]
+- !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
 - ["PSo30UIResponderStandardEditActions", "buddyCuisine"]
 - ["PSo30UIResponderStandardEditActions", "buddyEmail"]
 - ["PSo30UIResponderStandardEditActions", "buddyName"]
@@ -1371,6 +1420,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "para"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
+- ["PSo30UIResponderStandardEditActions", "prefsEmail"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "reloadData"]
@@ -1396,6 +1446,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSMutableURLRequest"]
 - !private ["PSo20UIScrollViewDelegate", "NSURL"]
 - !private ["PSo20UIScrollViewDelegate", "URLSession"]
+- !private ["PSo20UIScrollViewDelegate", "UserDefaults"]
 - ["PSo20UIScrollViewDelegate", "buddyCuisine"]
 - ["PSo20UIScrollViewDelegate", "buddyEmail"]
 - ["PSo20UIScrollViewDelegate", "buddyName"]
@@ -1409,6 +1460,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "para"]
 - !private ["PSo20UIScrollViewDelegate", "performSegue"]
+- ["PSo20UIScrollViewDelegate", "prefsEmail"]
 - ["PSo20UIScrollViewDelegate", "prepare"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "restaurant"]
@@ -1428,6 +1480,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSMutableURLRequest"]
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "URLSession"]
+- !private ["PSo16UIStateRestoring", "UserDefaults"]
 - ["PSo16UIStateRestoring", "buddyCuisine"]
 - ["PSo16UIStateRestoring", "buddyEmail"]
 - ["PSo16UIStateRestoring", "buddyName"]
@@ -1442,6 +1495,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "para"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
+- ["PSo16UIStateRestoring", "prefsEmail"]
 - ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "restaurant"]
@@ -1490,6 +1544,7 @@ depends-member:
 - !private ["CSo21UITableViewController", "URL"]
 - !private ["CSo21UITableViewController", "URLRequest"]
 - !private ["CSo21UITableViewController", "URLSession"]
+- !private ["CSo21UITableViewController", "UserDefaults"]
 - ["CSo21UITableViewController", "buddyCuisine"]
 - ["CSo21UITableViewController", "buddyEmail"]
 - ["CSo21UITableViewController", "buddyName"]
@@ -1504,6 +1559,7 @@ depends-member:
 - ["CSo21UITableViewController", "numberOfSections"]
 - ["CSo21UITableViewController", "para"]
 - !private ["CSo21UITableViewController", "performSegue"]
+- ["CSo21UITableViewController", "prefsEmail"]
 - ["CSo21UITableViewController", "prepare"]
 - !private ["CSo21UITableViewController", "print"]
 - ["CSo21UITableViewController", "restaurant"]
@@ -1523,6 +1579,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSMutableURLRequest"]
 - !private ["PSo21UITableViewDataSource", "NSURL"]
 - !private ["PSo21UITableViewDataSource", "URLSession"]
+- !private ["PSo21UITableViewDataSource", "UserDefaults"]
 - ["PSo21UITableViewDataSource", "buddyCuisine"]
 - ["PSo21UITableViewDataSource", "buddyEmail"]
 - ["PSo21UITableViewDataSource", "buddyName"]
@@ -1536,6 +1593,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "para"]
 - !private ["PSo21UITableViewDataSource", "performSegue"]
+- ["PSo21UITableViewDataSource", "prefsEmail"]
 - ["PSo21UITableViewDataSource", "prepare"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "restaurant"]
@@ -1555,6 +1613,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSMutableURLRequest"]
 - !private ["PSo19UITableViewDelegate", "NSURL"]
 - !private ["PSo19UITableViewDelegate", "URLSession"]
+- !private ["PSo19UITableViewDelegate", "UserDefaults"]
 - ["PSo19UITableViewDelegate", "buddyCuisine"]
 - ["PSo19UITableViewDelegate", "buddyEmail"]
 - ["PSo19UITableViewDelegate", "buddyName"]
@@ -1568,6 +1627,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "para"]
 - !private ["PSo19UITableViewDelegate", "performSegue"]
+- ["PSo19UITableViewDelegate", "prefsEmail"]
 - ["PSo19UITableViewDelegate", "prepare"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "restaurant"]
@@ -1588,6 +1648,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSMutableURLRequest"]
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "URLSession"]
+- !private ["PSo18UITraitEnvironment", "UserDefaults"]
 - ["PSo18UITraitEnvironment", "buddyCuisine"]
 - ["PSo18UITraitEnvironment", "buddyEmail"]
 - ["PSo18UITraitEnvironment", "buddyName"]
@@ -1605,6 +1666,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "para"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
+- ["PSo18UITraitEnvironment", "prefsEmail"]
 - ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -1652,6 +1714,7 @@ depends-member:
 - !private ["CSo16UIViewController", "URL"]
 - !private ["CSo16UIViewController", "URLRequest"]
 - !private ["CSo16UIViewController", "URLSession"]
+- !private ["CSo16UIViewController", "UserDefaults"]
 - ["CSo16UIViewController", "buddyCuisine"]
 - ["CSo16UIViewController", "buddyEmail"]
 - ["CSo16UIViewController", "buddyName"]
@@ -1667,6 +1730,7 @@ depends-member:
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "para"]
 - !private ["CSo16UIViewController", "performSegue"]
+- ["CSo16UIViewController", "prefsEmail"]
 - ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "restaurant"]
@@ -1689,6 +1753,9 @@ depends-member:
 - !private ["CSo18URLSessionDataTask", "resume"]
 - !private ["CSo14URLSessionTask", "resume"]
 - !private ["Sc", "deinit"]
+- ["CSo12UserDefaults", "deinit"]
+- !private ["CSo12UserDefaults", "standard"]
+- !private ["CSo12UserDefaults", "value"]
 - !private ["VCSo17JSONSerialization14WritingOptions", "Element"]
 - !private ["VCSo17JSONSerialization14WritingOptions", "RawValue"]
 - ["VCSo17JSONSerialization14WritingOptions", "deinit"]
@@ -1746,6 +1813,7 @@ depends-member:
 - !private ["Ps9_Hashable", "ReadingOptions"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "URLSession"]
+- !private ["Ps9_Hashable", "UserDefaults"]
 - !private ["Ps9_Hashable", "WritingOptions"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -1778,6 +1846,7 @@ depends-member:
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "para"]
 - !private ["Ps9_Hashable", "performSegue"]
+- ["Ps9_Hashable", "prefsEmail"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "reloadData"]
@@ -1789,6 +1858,7 @@ depends-member:
 - !private ["Ps9_Hashable", "setValue"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "short"]
+- !private ["Ps9_Hashable", "standard"]
 - !private ["Ps9_Hashable", "string"]
 - !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "tableView"]
@@ -1797,6 +1867,7 @@ depends-member:
 - !private ["Ps9_Hashable", "topViewController"]
 - !private ["Ps9_Hashable", "url"]
 - ["Ps9_Hashable", "urll"]
+- !private ["Ps9_Hashable", "value"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
@@ -1970,6 +2041,7 @@ depends-nominal:
 - "CSo18URLSessionDataTask"
 - !private "CSo14URLSessionTask"
 - !private "Sc"
+- "CSo12UserDefaults"
 - "VCSo17JSONSerialization14WritingOptions"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
@@ -2005,4 +2077,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "8eec676130e41753ef4f2a6608648e72"
+interface-hash: "11cc9d85412eefa991e5aa07646df422"
