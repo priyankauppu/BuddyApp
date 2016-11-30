@@ -215,6 +215,8 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull testEmail;
+@property (nonatomic, copy) NSString * _Nonnull testName;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
@@ -223,6 +225,7 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)findNearByBuddies;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)sendInviteButtonClickedWithTestName:(NSString * _Nonnull)testName testEmail:(NSString * _Nonnull)testEmail;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -258,12 +261,17 @@ SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull testName;
+@property (nonatomic, copy) NSString * _Nonnull testEmail;
+@property (nonatomic, copy) NSString * _Nonnull testCuisine;
+@property (nonatomic, copy) NSString * _Nonnull testRestaurant;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)sendInvite;
 - (void)findNearByBuddies;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -423,14 +431,46 @@ SWIFT_CLASS("_TtC5Buddy19LoginViewController")
 @end
 
 
+SWIFT_CLASS("_TtC5Buddy28PendingRequestsTableViewCell")
+@interface PendingRequestsTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyEmail;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyRestaurant;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyCuisine;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified acceptInviteButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified declineInviteButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyId;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyDate;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC5Buddy34PendingRequestsTableViewController")
 @interface PendingRequestsTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
+@property (nonatomic, copy) NSString * _Nonnull urll;
+@property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyName;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyEmail;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyCuisine;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyRestaurant;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyDate;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyId;
+@property (nonatomic, copy) NSString * _Nonnull testDate;
+@property (nonatomic, copy) NSString * _Nonnull testId;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)getPendingRequestsWithUserEmail:(NSString * _Nonnull)userEmail;
+- (IBAction)acceptInvite:(id _Nonnull)sender;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)buddyAccepted;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

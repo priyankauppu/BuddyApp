@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		993B1FEB1DEED40100452EA4 /* PendingRequestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993B1FEA1DEED40100452EA4 /* PendingRequestsTableViewCell.swift */; };
 		999725011DEA8576004CEB70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999725001DEA8576004CEB70 /* AppDelegate.swift */; };
 		999725031DEA8576004CEB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999725021DEA8576004CEB70 /* ViewController.swift */; };
 		999725061DEA8577004CEB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999725041DEA8576004CEB70 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		993B1FEA1DEED40100452EA4 /* PendingRequestsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingRequestsTableViewCell.swift; sourceTree = "<group>"; };
 		999724FD1DEA8576004CEB70 /* Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999725001DEA8576004CEB70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		999725021DEA8576004CEB70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		993B1FEC1DEED41300452EA4 /* PendingRequests */ = {
+			isa = PBXGroup;
+			children = (
+				99FE749C1DED65360054F843 /* PendingRequestsTableViewController.swift */,
+				993B1FEA1DEED40100452EA4 /* PendingRequestsTableViewCell.swift */,
+			);
+			name = PendingRequests;
+			sourceTree = "<group>";
+		};
 		999724F41DEA8576004CEB70 = {
 			isa = PBXGroup;
 			children = (
@@ -148,9 +159,9 @@
 				999725421DEAB148004CEB70 /* PriyankaViewController.swift */,
 				99B09C8E1DECBE9300A14B8B /* Find a restaurant */,
 				99B09C901DECCA3900A14B8B /* Food Challenge */,
+				993B1FEC1DEED41300452EA4 /* PendingRequests */,
 				99B09C951DECCC6E00A14B8B /* ProfileViewController.swift */,
 				99FE749A1DED3BBF0054F843 /* ProfileTableViewCell.swift */,
-				99FE749C1DED65360054F843 /* PendingRequestsTableViewController.swift */,
 				99FE74A21DED6BBD0054F843 /* AcceptedRequests */,
 			);
 			path = Buddy;
@@ -369,6 +380,7 @@
 				999D24001DEBA71300CAEE59 /* DirectionViewController.swift in Sources */,
 				99B09C871DECA27B00A14B8B /* BuddiesWithHealthGoingTableViewController.swift in Sources */,
 				99B09C851DEC98E300A14B8B /* GeoWithHealthViewController.swift in Sources */,
+				993B1FEB1DEED40100452EA4 /* PendingRequestsTableViewCell.swift in Sources */,
 				99FE749F1DED65C70054F843 /* AcceptedRequestsTableViewController.swift in Sources */,
 				999725361DEAA310004CEB70 /* LoginViewController.swift in Sources */,
 				999725031DEA8576004CEB70 /* ViewController.swift in Sources */,

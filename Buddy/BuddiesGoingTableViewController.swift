@@ -29,7 +29,8 @@ class BuddiesGoingTableViewController: UITableViewController {
     
     
     var prefsEmail:String="";
-    
+    var testEmail:String = ""
+    var testName:String=""
     // var userLatitude:Double=0.0
     //var userLongitude:Double=0.0
     
@@ -76,6 +77,9 @@ class BuddiesGoingTableViewController: UITableViewController {
         }
         if (segue.identifier == "buddyRequestSegue" )
         {
+            //Access today's timestamp
+            
+            
             let next = segue.destination as! UINavigationController
             let nextController = next.topViewController as! DirectionViewController
             nextController.displayMessage="Your request has been sent successfully"
@@ -188,29 +192,47 @@ class BuddiesGoingTableViewController: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath) as! BuddiesGoingTableViewCell
         print("Index",indexPath)
         
-        //Access today's timestamp
+        testName=cell.buddyName.text!
+        testEmail=cell.buddyEmail.text!
+        sendInviteButtonClicked(testName: testName, testEmail: testEmail)
         
+        if let dataToSend = cell.buddyName {
+            performSegue(withIdentifier: "buddyRequestSegue", sender: self)
+        }
+        
+        
+        
+        
+    }
+    
+    func sendInviteButtonClicked(testName:String,testEmail:String){
         let date = NSDate()
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .medium
-        print("Todays date",date)
         let dateString = dateFormatter.string(from: date as Date)
         
         para.setValue(buddyCuisine, forKey: "cuisine");
         para.setValue(buddyRestaurant, forKey: "restaurant");
         para.setValue("Snehal", forKey: "reqSenderPersonName");//logged in
         para.setValue("snehal.sdt@gmail.com", forKey: "reqSenderPersonEmail")
-        para.setValue(cell.buddyName, forKey: "reqReceiverPersonEmail");
-        para.setValue(cell.buddyEmail, forKey: "reqReceiverPersonName");
+        para.setValue(testName, forKey: "reqReceiverPersonEmail");
+        para.setValue(testEmail, forKey: "reqReceiverPersonName");
         para.setValue("10 mins", forKey: "time");
         para.setValue(dateString, forKey: "date");
         
-        if let dataToSend = cell.buddyName {
-            performSegue(withIdentifier: "buddyRequestSegue", sender: self)
-        }
+        let jsonData = try! JSONSerialization.data(withJSONObject: para, options: JSONSerialization.WritingOptions());
+        let request:NSMutableURLRequest=NSMutableURLRequest();
+        let session = URLSession.shared
+        let url = urll+"/requestBuddy";
+        request.url=NSURL(string:url) as URL?
+        request.httpMethod = "POST";
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type");
+        request.httpBody = jsonData;
+        print("Sending",request)
+        print("**********HELLLLLOOOOOO***********")
+
     }
-    
     
     /*
      // Override to support conditional editing of the table view.

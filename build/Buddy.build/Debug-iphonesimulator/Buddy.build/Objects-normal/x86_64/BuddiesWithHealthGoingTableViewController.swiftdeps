@@ -7,63 +7,68 @@ provides-member:
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", ""]
 provides-dynamic-lookup:
 - "urll"
-- "buddyCuisine"
-- "numberOfSections"
-- "restaurantLatitude"
-- "didReceiveMemoryWarning"
+- "testName"
 - "restaurant"
-- "prepare"
-- "buddyEmail"
-- "findNearByBuddies"
 - "restaurantLongitude"
-- "locationManager"
-- "tableView"
-- "tableView"
-- "tableView"
-- "location"
-- "cuisine"
-- "para"
-- "buddyName"
-- "viewDidLoad"
+- "sendInvite"
+- "testRestaurant"
+- "buddyCuisine"
+- "restaurantLatitude"
 - "buddyRestaurant"
+- "testCuisine"
+- "prepare"
+- "viewDidLoad"
+- "locationManager"
+- "buddyName"
+- "numberOfSections"
+- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "findNearByBuddies"
+- "cuisine"
 - "prefsEmail"
+- "location"
+- "para"
+- "buddyEmail"
+- "testEmail"
 depends-top-level:
-- !private "BuddiesWithHealthGoingTableViewCell"
-- !private "NSMutableURLRequest"
-- "CLLocationManager"
-- "Double"
-- !private "NSDictionary"
-- "StringLiteralType"
-- !private "UserDefaults"
-- !private "JSONSerialization"
-- !private "UINavigationController"
-- !private "BooleanLiteralType"
-- "UITableViewController"
-- !private "NSURL"
-- !private "!="
-- "BuddiesWithHealthGoingTableViewController"
-- !private "URLSession"
-- !private "Date"
-- "UIStoryboardSegue"
-- "UITableViewCell"
-- !private "URLRequest"
 - !private "Dictionary"
-- !private "URL"
-- !private "DispatchQueue"
-- !private "DateFormatter"
-- "NSMutableDictionary"
-- !private "print"
-- "CLLocation"
-- "IndexPath"
-- !private "DirectionWithHealthViewController"
-- "String"
-- "UITableView"
-- !private "+"
-- !private "NSDate"
-- !private "AnyObject"
+- !private "NSMutableURLRequest"
 - "Int"
+- !private "DispatchQueue"
+- "StringLiteralType"
+- "String"
+- "CLLocation"
+- !private "DirectionWithHealthViewController"
+- !private "NSDate"
+- !private "JSONSerialization"
+- !private "BooleanLiteralType"
+- !private "UINavigationController"
+- !private "BuddiesWithHealthGoingTableViewCell"
+- !private "DateFormatter"
+- !private "NSDictionary"
+- !private "URLSession"
+- "Double"
+- !private "UserDefaults"
+- "UIStoryboardSegue"
+- "UITableViewController"
+- "UITableViewCell"
+- !private "!="
+- !private "AnyObject"
+- !private "NSURL"
+- !private "Date"
+- !private "print"
+- !private "URL"
+- "IndexPath"
+- !private "+"
+- "UITableView"
+- !private "URLRequest"
 - "AssignmentPrecedence"
+- "CLLocationManager"
 - !private "=="
+- "NSMutableDictionary"
+- "BuddiesWithHealthGoingTableViewController"
 - "CastingPrecedence"
 depends-member:
 - ["Ps9AnyObject", "CLLocation"]
@@ -115,12 +120,17 @@ depends-member:
 - ["Ps9AnyObject", "restaurantLatitude"]
 - ["Ps9AnyObject", "restaurantLongitude"]
 - !private ["Ps9AnyObject", "resume"]
+- ["Ps9AnyObject", "sendInvite"]
 - !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "standard"]
 - !private ["Ps9AnyObject", "string"]
 - !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "tableView"]
+- ["Ps9AnyObject", "testCuisine"]
+- ["Ps9AnyObject", "testEmail"]
+- ["Ps9AnyObject", "testName"]
+- ["Ps9AnyObject", "testRestaurant"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "timeStyle"]
 - !private ["Ps9AnyObject", "topViewController"]
@@ -224,7 +234,12 @@ depends-member:
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurant"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurantLatitude"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "restaurantLongitude"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "sendInvite"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "tableView"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "testCuisine"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "testEmail"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "testName"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "testRestaurant"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "urll"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "viewDidLoad"]
 - !private ["PSo15CALayerDelegate", "buddyCuisine"]
@@ -307,12 +322,17 @@ depends-member:
 - ["Ps7CVarArg", "restaurantLatitude"]
 - ["Ps7CVarArg", "restaurantLongitude"]
 - !private ["Ps7CVarArg", "resume"]
+- ["Ps7CVarArg", "sendInvite"]
 - !private ["Ps7CVarArg", "setValue"]
 - !private ["Ps7CVarArg", "shared"]
 - !private ["Ps7CVarArg", "standard"]
 - !private ["Ps7CVarArg", "string"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
+- ["Ps7CVarArg", "testCuisine"]
+- ["Ps7CVarArg", "testEmail"]
+- ["Ps7CVarArg", "testName"]
+- ["Ps7CVarArg", "testRestaurant"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "timeStyle"]
 - !private ["Ps7CVarArg", "topViewController"]
@@ -396,12 +416,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "restaurantLongitude"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
+- ["Ps28CustomDebugStringConvertible", "sendInvite"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "standard"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
+- ["Ps28CustomDebugStringConvertible", "testCuisine"]
+- ["Ps28CustomDebugStringConvertible", "testEmail"]
+- ["Ps28CustomDebugStringConvertible", "testName"]
+- ["Ps28CustomDebugStringConvertible", "testRestaurant"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "timeStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "topViewController"]
@@ -493,12 +518,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "restaurantLongitude"]
 - !private ["Ps23CustomStringConvertible", "resume"]
 - !private ["Ps23CustomStringConvertible", "row"]
+- ["Ps23CustomStringConvertible", "sendInvite"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "standard"]
 - !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
+- ["Ps23CustomStringConvertible", "testCuisine"]
+- ["Ps23CustomStringConvertible", "testEmail"]
+- ["Ps23CustomStringConvertible", "testName"]
+- ["Ps23CustomStringConvertible", "testRestaurant"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "timeStyle"]
 - !private ["Ps23CustomStringConvertible", "topViewController"]
@@ -595,6 +625,7 @@ depends-member:
 - ["Ps9Equatable", "restaurantLongitude"]
 - !private ["Ps9Equatable", "resume"]
 - !private ["Ps9Equatable", "row"]
+- ["Ps9Equatable", "sendInvite"]
 - !private ["Ps9Equatable", "setValue"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "short"]
@@ -602,6 +633,10 @@ depends-member:
 - !private ["Ps9Equatable", "string"]
 - !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tableView"]
+- ["Ps9Equatable", "testCuisine"]
+- ["Ps9Equatable", "testEmail"]
+- ["Ps9Equatable", "testName"]
+- ["Ps9Equatable", "testRestaurant"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "timeStyle"]
 - !private ["Ps9Equatable", "topViewController"]
@@ -698,6 +733,7 @@ depends-member:
 - ["Ps8Hashable", "restaurantLongitude"]
 - !private ["Ps8Hashable", "resume"]
 - !private ["Ps8Hashable", "row"]
+- ["Ps8Hashable", "sendInvite"]
 - !private ["Ps8Hashable", "setValue"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "short"]
@@ -705,6 +741,10 @@ depends-member:
 - !private ["Ps8Hashable", "string"]
 - !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tableView"]
+- ["Ps8Hashable", "testCuisine"]
+- ["Ps8Hashable", "testEmail"]
+- ["Ps8Hashable", "testName"]
+- ["Ps8Hashable", "testRestaurant"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "timeStyle"]
 - !private ["Ps8Hashable", "topViewController"]
@@ -826,10 +866,15 @@ depends-member:
 - ["PSo8NSCoding", "restaurant"]
 - ["PSo8NSCoding", "restaurantLatitude"]
 - ["PSo8NSCoding", "restaurantLongitude"]
+- ["PSo8NSCoding", "sendInvite"]
 - !private ["PSo8NSCoding", "setValue"]
 - !private ["PSo8NSCoding", "string"]
 - !private ["PSo8NSCoding", "subscript"]
 - ["PSo8NSCoding", "tableView"]
+- ["PSo8NSCoding", "testCuisine"]
+- ["PSo8NSCoding", "testEmail"]
+- ["PSo8NSCoding", "testName"]
+- ["PSo8NSCoding", "testRestaurant"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "timeStyle"]
 - !private ["PSo8NSCoding", "topViewController"]
@@ -886,7 +931,12 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "restaurant"]
 - ["PSo26NSExtensionRequestHandling", "restaurantLatitude"]
 - ["PSo26NSExtensionRequestHandling", "restaurantLongitude"]
+- ["PSo26NSExtensionRequestHandling", "sendInvite"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "testCuisine"]
+- ["PSo26NSExtensionRequestHandling", "testEmail"]
+- ["PSo26NSExtensionRequestHandling", "testName"]
+- ["PSo26NSExtensionRequestHandling", "testRestaurant"]
 - !private ["PSo26NSExtensionRequestHandling", "topViewController"]
 - ["PSo26NSExtensionRequestHandling", "urll"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
@@ -974,12 +1024,17 @@ depends-member:
 - ["CSo8NSObject", "restaurantLatitude"]
 - ["CSo8NSObject", "restaurantLongitude"]
 - !private ["CSo8NSObject", "resume"]
+- ["CSo8NSObject", "sendInvite"]
 - !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "standard"]
 - !private ["CSo8NSObject", "string"]
 - !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "tableView"]
+- ["CSo8NSObject", "testCuisine"]
+- ["CSo8NSObject", "testEmail"]
+- ["CSo8NSObject", "testName"]
+- ["CSo8NSObject", "testRestaurant"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "timeStyle"]
 - !private ["CSo8NSObject", "topViewController"]
@@ -1036,12 +1091,17 @@ depends-member:
 - ["PSo16NSObjectProtocol", "restaurantLatitude"]
 - ["PSo16NSObjectProtocol", "restaurantLongitude"]
 - !private ["PSo16NSObjectProtocol", "resume"]
+- ["PSo16NSObjectProtocol", "sendInvite"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "standard"]
 - !private ["PSo16NSObjectProtocol", "string"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "tableView"]
+- ["PSo16NSObjectProtocol", "testCuisine"]
+- ["PSo16NSObjectProtocol", "testEmail"]
+- ["PSo16NSObjectProtocol", "testName"]
+- ["PSo16NSObjectProtocol", "testRestaurant"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "timeStyle"]
 - !private ["PSo16NSObjectProtocol", "topViewController"]
@@ -1216,7 +1276,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "restaurant"]
 - ["PSo21UIAppearanceContainer", "restaurantLatitude"]
 - ["PSo21UIAppearanceContainer", "restaurantLongitude"]
+- ["PSo21UIAppearanceContainer", "sendInvite"]
 - ["PSo21UIAppearanceContainer", "tableView"]
+- ["PSo21UIAppearanceContainer", "testCuisine"]
+- ["PSo21UIAppearanceContainer", "testEmail"]
+- ["PSo21UIAppearanceContainer", "testName"]
+- ["PSo21UIAppearanceContainer", "testRestaurant"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "topViewController"]
 - ["PSo21UIAppearanceContainer", "urll"]
@@ -1253,7 +1318,12 @@ depends-member:
 - ["PSo18UIContentContainer", "restaurant"]
 - ["PSo18UIContentContainer", "restaurantLatitude"]
 - ["PSo18UIContentContainer", "restaurantLongitude"]
+- ["PSo18UIContentContainer", "sendInvite"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "testCuisine"]
+- ["PSo18UIContentContainer", "testEmail"]
+- ["PSo18UIContentContainer", "testName"]
+- ["PSo18UIContentContainer", "testRestaurant"]
 - !private ["PSo18UIContentContainer", "topViewController"]
 - ["PSo18UIContentContainer", "urll"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
@@ -1313,7 +1383,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "restaurant"]
 - ["PSo18UIFocusEnvironment", "restaurantLatitude"]
 - ["PSo18UIFocusEnvironment", "restaurantLongitude"]
+- ["PSo18UIFocusEnvironment", "sendInvite"]
 - ["PSo18UIFocusEnvironment", "tableView"]
+- ["PSo18UIFocusEnvironment", "testCuisine"]
+- ["PSo18UIFocusEnvironment", "testEmail"]
+- ["PSo18UIFocusEnvironment", "testName"]
+- ["PSo18UIFocusEnvironment", "testRestaurant"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "topViewController"]
 - ["PSo18UIFocusEnvironment", "urll"]
@@ -1387,7 +1462,12 @@ depends-member:
 - ["CSo11UIResponder", "restaurant"]
 - ["CSo11UIResponder", "restaurantLatitude"]
 - ["CSo11UIResponder", "restaurantLongitude"]
+- ["CSo11UIResponder", "sendInvite"]
 - ["CSo11UIResponder", "tableView"]
+- ["CSo11UIResponder", "testCuisine"]
+- ["CSo11UIResponder", "testEmail"]
+- ["CSo11UIResponder", "testName"]
+- ["CSo11UIResponder", "testRestaurant"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "topViewController"]
 - ["CSo11UIResponder", "urll"]
@@ -1427,7 +1507,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "restaurant"]
 - ["PSo30UIResponderStandardEditActions", "restaurantLatitude"]
 - ["PSo30UIResponderStandardEditActions", "restaurantLongitude"]
+- ["PSo30UIResponderStandardEditActions", "sendInvite"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
+- ["PSo30UIResponderStandardEditActions", "testCuisine"]
+- ["PSo30UIResponderStandardEditActions", "testEmail"]
+- ["PSo30UIResponderStandardEditActions", "testName"]
+- ["PSo30UIResponderStandardEditActions", "testRestaurant"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "topViewController"]
 - ["PSo30UIResponderStandardEditActions", "urll"]
@@ -1466,7 +1551,12 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "restaurant"]
 - ["PSo20UIScrollViewDelegate", "restaurantLatitude"]
 - ["PSo20UIScrollViewDelegate", "restaurantLongitude"]
+- ["PSo20UIScrollViewDelegate", "sendInvite"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
+- ["PSo20UIScrollViewDelegate", "testCuisine"]
+- ["PSo20UIScrollViewDelegate", "testEmail"]
+- ["PSo20UIScrollViewDelegate", "testName"]
+- ["PSo20UIScrollViewDelegate", "testRestaurant"]
 - ["PSo20UIScrollViewDelegate", "urll"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
@@ -1501,7 +1591,12 @@ depends-member:
 - ["PSo16UIStateRestoring", "restaurant"]
 - ["PSo16UIStateRestoring", "restaurantLatitude"]
 - ["PSo16UIStateRestoring", "restaurantLongitude"]
+- ["PSo16UIStateRestoring", "sendInvite"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "testCuisine"]
+- ["PSo16UIStateRestoring", "testEmail"]
+- ["PSo16UIStateRestoring", "testName"]
+- ["PSo16UIStateRestoring", "testRestaurant"]
 - !private ["PSo16UIStateRestoring", "topViewController"]
 - ["PSo16UIStateRestoring", "urll"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -1565,7 +1660,12 @@ depends-member:
 - ["CSo21UITableViewController", "restaurant"]
 - ["CSo21UITableViewController", "restaurantLatitude"]
 - ["CSo21UITableViewController", "restaurantLongitude"]
+- ["CSo21UITableViewController", "sendInvite"]
 - ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "testCuisine"]
+- ["CSo21UITableViewController", "testEmail"]
+- ["CSo21UITableViewController", "testName"]
+- ["CSo21UITableViewController", "testRestaurant"]
 - ["CSo21UITableViewController", "urll"]
 - ["CSo21UITableViewController", "viewDidLoad"]
 - ["CSo21UITableViewController", ""]
@@ -1599,7 +1699,12 @@ depends-member:
 - ["PSo21UITableViewDataSource", "restaurant"]
 - ["PSo21UITableViewDataSource", "restaurantLatitude"]
 - ["PSo21UITableViewDataSource", "restaurantLongitude"]
+- ["PSo21UITableViewDataSource", "sendInvite"]
 - ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", "testCuisine"]
+- ["PSo21UITableViewDataSource", "testEmail"]
+- ["PSo21UITableViewDataSource", "testName"]
+- ["PSo21UITableViewDataSource", "testRestaurant"]
 - ["PSo21UITableViewDataSource", "urll"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", ""]
@@ -1633,7 +1738,12 @@ depends-member:
 - ["PSo19UITableViewDelegate", "restaurant"]
 - ["PSo19UITableViewDelegate", "restaurantLatitude"]
 - ["PSo19UITableViewDelegate", "restaurantLongitude"]
+- ["PSo19UITableViewDelegate", "sendInvite"]
 - ["PSo19UITableViewDelegate", "tableView"]
+- ["PSo19UITableViewDelegate", "testCuisine"]
+- ["PSo19UITableViewDelegate", "testEmail"]
+- ["PSo19UITableViewDelegate", "testName"]
+- ["PSo19UITableViewDelegate", "testRestaurant"]
 - ["PSo19UITableViewDelegate", "urll"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
@@ -1673,7 +1783,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "restaurant"]
 - ["PSo18UITraitEnvironment", "restaurantLatitude"]
 - ["PSo18UITraitEnvironment", "restaurantLongitude"]
+- ["PSo18UITraitEnvironment", "sendInvite"]
 - ["PSo18UITraitEnvironment", "tableView"]
+- ["PSo18UITraitEnvironment", "testCuisine"]
+- ["PSo18UITraitEnvironment", "testEmail"]
+- ["PSo18UITraitEnvironment", "testName"]
+- ["PSo18UITraitEnvironment", "testRestaurant"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "topViewController"]
 - ["PSo18UITraitEnvironment", "urll"]
@@ -1736,7 +1851,12 @@ depends-member:
 - ["CSo16UIViewController", "restaurant"]
 - ["CSo16UIViewController", "restaurantLatitude"]
 - ["CSo16UIViewController", "restaurantLongitude"]
+- ["CSo16UIViewController", "sendInvite"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "testCuisine"]
+- ["CSo16UIViewController", "testEmail"]
+- ["CSo16UIViewController", "testName"]
+- ["CSo16UIViewController", "testRestaurant"]
 - !private ["CSo16UIViewController", "topViewController"]
 - ["CSo16UIViewController", "urll"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -1855,6 +1975,7 @@ depends-member:
 - ["Ps9_Hashable", "restaurantLongitude"]
 - !private ["Ps9_Hashable", "resume"]
 - !private ["Ps9_Hashable", "row"]
+- ["Ps9_Hashable", "sendInvite"]
 - !private ["Ps9_Hashable", "setValue"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "short"]
@@ -1862,6 +1983,10 @@ depends-member:
 - !private ["Ps9_Hashable", "string"]
 - !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "tableView"]
+- ["Ps9_Hashable", "testCuisine"]
+- ["Ps9_Hashable", "testEmail"]
+- ["Ps9_Hashable", "testName"]
+- ["Ps9_Hashable", "testRestaurant"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "timeStyle"]
 - !private ["Ps9_Hashable", "topViewController"]
@@ -2077,4 +2202,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "11cc9d85412eefa991e5aa07646df422"
+interface-hash: "506cb822e6bbddc6d312b9251c9560eb"

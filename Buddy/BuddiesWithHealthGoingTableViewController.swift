@@ -30,12 +30,17 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
     
     var prefsEmail:String=""
     
+    var testName: String = ""
+    var testEmail: String = ""
+    
+    var testCuisine: String = ""
+    var testRestaurant: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
@@ -45,16 +50,16 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         
         //Calling webservice to retrieve the nearby Buddies
         findNearByBuddies()
-
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "directionWithHealthSegue" )
@@ -72,13 +77,14 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         }
         if (segue.identifier == "buddyRequestSegue" )
         {
+            sendInvite()
             let next = segue.destination as! UINavigationController
             // let text1:String=(sender as! MKAnnotationView).annotation!.title!!
             let nextController = next.topViewController as! DirectionWithHealthViewController
             //nextController.userLatitude=userLatitude
             //nextController.userLongitude=userLongitude
             nextController.displayMessage="Your request has been sent successfully"
-//            nextController.buddyEmail=
+            //            nextController.buddyEmail=
             nextController.restaurantLatitude=restaurantLatitude
             nextController.restaurantLongitude=restaurantLongitude
             
@@ -91,21 +97,21 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return  buddyName.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! BuddiesWithHealthGoingTableViewCell
-
+        
         // Configure the cell...
-        let buddyName = self.buddyName[indexPath.row]
-        let buddyRestaurant=self.buddyRestaurant[indexPath.row]
-        let buddyCuisine=self.buddyCuisine[indexPath.row]
-        let buddyEmail=self.buddyEmail[indexPath.row]
+         let buddyName = self.buddyName[indexPath.row]
+         let buddyRestaurant=self.buddyRestaurant[indexPath.row]
+         let buddyCuisine=self.buddyCuisine[indexPath.row]
+         let buddyEmail=self.buddyEmail[indexPath.row]
         
         
         cell.buddyName.text = buddyName
@@ -113,7 +119,47 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         cell.buddyCuisine.text = buddyCuisine
         cell.buddyEmail.text=buddyEmail
         cell.buddyEmail.isHidden=true
+        
+        
         return cell
+    }
+    
+    func sendInvite()
+    {
+        let date = NSDate()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .medium
+        print("Todays date",date)
+        let dateString = dateFormatter.string(from: date as Date)
+        
+        para.setValue(testCuisine, forKey: "cuisine");
+        para.setValue(testRestaurant, forKey: "restaurant");
+        para.setValue("Snehal", forKey: "reqSenderPersonName");//logged in
+        para.setValue("snehal.sdt@gmail.com", forKey: "reqSenderPersonEmail")
+        para.setValue(testEmail, forKey: "reqReceiverPersonEmail");
+        para.setValue(testName, forKey: "reqReceiverPersonName");
+        para.setValue("10 mins", forKey: "time");
+        para.setValue(dateString, forKey: "date");
+        
+        let jsonData = try! JSONSerialization.data(withJSONObject: para, options: JSONSerialization.WritingOptions());
+        let request:NSMutableURLRequest=NSMutableURLRequest();
+        let session = URLSession.shared
+        let url = urll+"/requestBuddy";
+        request.url=NSURL(string:url) as URL?
+        request.httpMethod = "POST";
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type");
+        request.httpBody = jsonData;
+        print("Sending",request)
+        print("**********HELLLLLOOOOOO***********")
+        let task = session.dataTask(with: request as URLRequest, completionHandler: {
+            (data, response, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        })
+        task.resume()
+
     }
     
     func findNearByBuddies(){
@@ -144,17 +190,17 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
                 do {
                     if let response :NSDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions()) as? NSDictionary
                     {
- 
+                        
                         let resResult : [Dictionary<String, AnyObject>] = response["result"] as! [Dictionary<String, AnyObject>];
                         
                         if(resResult.isEmpty)
                         {
-//                            DispatchQueue.main.async(execute: {
-//                                print("Sorry no data Found.");
-//                            })
+                            //                            DispatchQueue.main.async(execute: {
+                            //                                print("Sorry no data Found.");
+                            //                            })
                         }
                         else{
-//                            print(resResult.count)
+                            //                            print(resResult.count)
                             for anItem in resResult {
                                 //print(anItem)
                                 self.buddyName.append(anItem["name"] as! String)
@@ -167,10 +213,10 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
                             }
                             
                         }
-                   }
-                
+                    }
+                    
                 }//do
-                
+                    
                 catch {
                     print("error in JSONSerialization")
                 }
@@ -179,7 +225,7 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
             
         })
         task.resume()
-
+        
         
         
     }
@@ -187,91 +233,79 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let cell = tableView.cellForRow(at: indexPath) as! BuddiesWithHealthGoingTableViewCell
         print("Index",indexPath)
-        
+        testName = cell.buddyName.text!
+        testEmail = cell.buddyEmail.text!
+        testCuisine = cell.buddyCuisine.text!
+        testRestaurant = cell.buddyRestaurant.text!
         //Access today's timestamp
         
-        let date = NSDate()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .medium
-        print("Todays date",date)
-        let dateString = dateFormatter.string(from: date as Date)
-        
-        para.setValue(buddyCuisine, forKey: "cuisine");
-        para.setValue(buddyRestaurant, forKey: "restaurant");
-                para.setValue("Snehal", forKey: "reqSenderPersonName");//logged in
-                para.setValue("snehal.sdt@gmail.com", forKey: "reqSenderPersonEmail")
-                para.setValue(cell.buddyName, forKey: "reqReceiverPersonEmail");
-                para.setValue(cell.buddyEmail, forKey: "reqReceiverPersonName");
-               para.setValue("10 mins", forKey: "time");
-                para.setValue(dateString, forKey: "date");
-        
-       if let dataToSend = cell.buddyName {
+       
+        if let dataToSend = cell.buddyName {
             performSegue(withIdentifier: "buddyRequestSegue", sender: self)
         }
     }
     
-  
+    
     
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
-        if (segue.identifier == "buddyRequestSegue" )
-        {
-            
-            let next = segue.destination as! UINavigationController
-            let nextController = next.topViewController as! DirectionWithHealthViewController
-            
-            nextController.message="Your request has been sent"
-            
-            
-        }
-    }*/
-
-
+     if (segue.identifier == "buddyRequestSegue" )
+     {
+     
+     let next = segue.destination as! UINavigationController
+     let nextController = next.topViewController as! DirectionWithHealthViewController
+     
+     nextController.message="Your request has been sent"
+     
+     
+     }
+     }*/
+    
+    
     /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
+     // Override to support conditional editing of the table view.
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
+    
     /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
+     // Override to support editing the table view.
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == .delete {
+     // Delete the row from the data source
+     tableView.deleteRows(at: [indexPath], with: .fade)
+     } else if editingStyle == .insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
+    
     /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
+     // Override to support rearranging the table view.
+     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+     
+     }
+     */
+    
     /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+     // Override to support conditional rearranging of the table view.
+     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the item to be re-orderable.
+     return true
+     }
+     */
+    
     
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
-        
-    }*/
     
-
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     
+     
+     }*/
+    
+    
 }
