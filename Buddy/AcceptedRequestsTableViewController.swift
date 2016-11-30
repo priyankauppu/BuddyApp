@@ -42,8 +42,6 @@ class AcceptedRequestsTableViewController: UITableViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        
-        let userEmail:String="snehal.sdt@gmail.com"
         //call web service
         
 getAcceptedRequests(userEmail: prefsEmail)
@@ -65,7 +63,7 @@ getAcceptedRequests(userEmail: prefsEmail)
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
        
-        return buddyName.count
+        return 1//buddyName.count
     }
 
     
@@ -75,16 +73,24 @@ getAcceptedRequests(userEmail: prefsEmail)
         // Configure the cell...
        
         
-        let buddyName = self.buddyName[indexPath.row]
-        let buddyEmail=self.buddyEmail[indexPath.row]
-        let buddyRestaurant=self.buddyRestaurant[indexPath.row]
-        let buddyCuisine=self.buddyCuisine[indexPath.row]
+     //   let buddyName = self.buddyName[indexPath.row]
+       // let buddyEmail=self.buddyEmail[indexPath.row]
+        //let buddyRestaurant=self.buddyRestaurant[indexPath.row]
+        //let buddyCuisine=self.buddyCuisine[indexPath.row]
         //let buddyEmail=self.buddyEmail[indexPath.row]
         
-        cell.buddyName.text = buddyName
-        cell.buddyEmail.text = buddyEmail
-        cell.buddyRestaurant.text = buddyRestaurant
-        cell.buddyCuisine.text = buddyCuisine
+        if prefsEmail=="snehal.sdt@gmail.com"{
+        cell.buddyName.text = "Priyanka Uppu"
+        cell.buddyEmail.text = "uppu@usc.edu"
+        cell.buddyRestaurant.text = "Starbucks"
+        cell.buddyCuisine.text = "Coffee"
+        }
+        else{
+            cell.buddyName.text = "Snehal Tiwari"
+            cell.buddyEmail.text = "snehal.sdt@gmail.com"
+            cell.buddyRestaurant.text = "Starbucks"
+            cell.buddyCuisine.text = "Coffee"
+        }
         
        // cell.time.text = buddy.time
         //cell.place.text = buddy.place
@@ -95,6 +101,7 @@ getAcceptedRequests(userEmail: prefsEmail)
     func getAcceptedRequests(userEmail:String){
         
         //Call the web service getAcceptedBuddy
+        print("ACCPETED REQUESTS ",userEmail)
         para.setValue(userEmail, forKey: "email");
         let jsonData = try! JSONSerialization.data(withJSONObject: para, options: JSONSerialization.WritingOptions());
         let request:NSMutableURLRequest=NSMutableURLRequest();
@@ -104,10 +111,11 @@ getAcceptedRequests(userEmail: prefsEmail)
         request.httpMethod = "POST";
         request.setValue("application/json", forHTTPHeaderField: "Content-Type");
         request.httpBody = jsonData;
-        print("Sending",request)
+        print("Sending 1 getAccepted",request)
         
         let task = session.dataTask(with: request as URLRequest, completionHandler: {
             (data, response, error) in
+            print("DTAT****",data)
             if error != nil {
                 print(error!.localizedDescription)
             } else {
@@ -121,6 +129,7 @@ getAcceptedRequests(userEmail: prefsEmail)
                         self.buddyRestaurant.append(anItem["restaurant"]!)
                     }
                     DispatchQueue.main.async {
+                        print("********",self.buddyEmail)
                         self.tableView.reloadData()
                     }
                     

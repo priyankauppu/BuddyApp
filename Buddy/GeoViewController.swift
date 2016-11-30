@@ -433,6 +433,8 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
                                 let dropPin = MKPointAnnotation();
                                 dropPin.coordinate = location;
                                 dropPin.title = name;
+                               
+                                
                                 
                                 self.mapView.addAnnotation(dropPin)
                             }
@@ -572,6 +574,7 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
                                 let dropPin = MKPointAnnotation();
                                 dropPin.coordinate = location;
                                 dropPin.title = name;
+                                //dropPin.image=
                                 
                                 self.mapView.addAnnotation(dropPin)
                             }

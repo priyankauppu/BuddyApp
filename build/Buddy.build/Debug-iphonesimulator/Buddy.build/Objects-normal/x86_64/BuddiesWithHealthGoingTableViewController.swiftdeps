@@ -6,72 +6,73 @@ provides-nominal:
 provides-member:
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", ""]
 provides-dynamic-lookup:
-- "restaurantLatitude"
-- "didReceiveMemoryWarning"
-- "testRestaurant"
 - "viewDidLoad"
-- "prefsEmail"
-- "buddyEmail"
-- "findNearByBuddies"
-- "testName"
-- "cuisine"
-- "para"
-- "buddyName"
-- "tableView"
-- "tableView"
-- "tableView"
-- "sendInviteButtonClicked"
-- "restaurantLongitude"
-- "testCuisine"
+- "testRestaurant"
 - "buddyRestaurant"
 - "numberOfSections"
-- "prefsName"
+- "restaurantLongitude"
+- "restaurantLatitude"
 - "buddyCuisine"
-- "sendInvite"
+- "sendInviteButtonClicked"
+- "testName"
 - "urll"
-- "prepare"
-- "testEmail"
-- "location"
-- "locationManager"
+- "sendInvite"
 - "restaurant"
+- "findNearByBuddies"
+- "para1"
+- "prefsEmail"
+- "testCuisine"
+- "prepare"
+- "buddyEmail"
+- "prefsName"
+- "didReceiveMemoryWarning"
+- "cuisine"
+- "locationManager"
+- "para"
+- "location"
+- "tableView"
+- "tableView"
+- "tableView"
+- "buddyName"
+- "testEmail"
 depends-top-level:
-- !private "UINavigationController"
-- "CLLocation"
-- !private "NSMutableURLRequest"
-- !private "DirectionWithHealthViewController"
-- !private "DateFormatter"
-- "BuddiesWithHealthGoingTableViewController"
-- !private "UserDefaults"
-- !private "JSONSerialization"
-- !private "Dictionary"
-- "Int"
-- "UITableViewCell"
-- "IndexPath"
-- !private "NSDate"
-- "NSMutableDictionary"
-- "String"
-- "CastingPrecedence"
-- !private "URLRequest"
+- !private "+"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "+"
-- !private "Date"
-- !private "!="
-- !private "URL"
-- !private "NSDictionary"
-- "CLLocationManager"
-- "UITableView"
-- !private "AnyObject"
-- "StringLiteralType"
+- "CLLocation"
 - "UIStoryboardSegue"
-- !private "NSURL"
-- "UITableViewController"
-- "Double"
-- !private "BooleanLiteralType"
-- !private "print"
+- "CastingPrecedence"
 - !private "BuddiesWithHealthGoingTableViewCell"
-- !private "DispatchQueue"
+- !private "NSMutableURLRequest"
+- !private "URLRequest"
+- "UITableView"
+- !private "UserDefaults"
+- !private "NSDictionary"
+- !private "!="
+- !private "Date"
+- !private "print"
+- "String"
+- !private "AnyObject"
+- !private "URL"
+- "Double"
+- !private "NSDate"
+- "IndexPath"
+- !private "NSURL"
+- "UITableViewCell"
+- "BuddiesWithHealthGoingTableViewController"
+- !private "UINavigationController"
+- "Int"
+- !private "BooleanLiteralType"
 - !private "URLSession"
+- "CLLocationManager"
+- !private "JSONSerialization"
+- !private "DispatchQueue"
+- "UITableViewController"
+- "StringLiteralType"
+- !private "Dictionary"
+- "NSMutableDictionary"
+- !private "DateFormatter"
+- !private "DirectionWithHealthViewController"
 depends-member:
 - ["Ps9AnyObject", "CLLocation"]
 - ["Ps9AnyObject", "CLLocationManager"]
@@ -113,6 +114,7 @@ depends-member:
 - !private ["Ps9AnyObject", "main"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "para"]
+- ["Ps9AnyObject", "para1"]
 - !private ["Ps9AnyObject", "performSegue"]
 - ["Ps9AnyObject", "prefsEmail"]
 - ["Ps9AnyObject", "prefsName"]
@@ -231,6 +233,7 @@ depends-member:
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "locationManager"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "numberOfSections"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "para"]
+- ["C5Buddy41BuddiesWithHealthGoingTableViewController", "para1"]
 - !private ["C5Buddy41BuddiesWithHealthGoingTableViewController", "performSegue"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "prefsEmail"]
 - ["C5Buddy41BuddiesWithHealthGoingTableViewController", "prefsName"]
@@ -319,6 +322,7 @@ depends-member:
 - !private ["Ps7CVarArg", "main"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "para"]
+- ["Ps7CVarArg", "para1"]
 - !private ["Ps7CVarArg", "performSegue"]
 - ["Ps7CVarArg", "prefsEmail"]
 - ["Ps7CVarArg", "prefsName"]
@@ -414,6 +418,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "para"]
+- ["Ps28CustomDebugStringConvertible", "para1"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - ["Ps28CustomDebugStringConvertible", "prefsEmail"]
 - ["Ps28CustomDebugStringConvertible", "prefsName"]
@@ -518,6 +523,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "main"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "para"]
+- ["Ps23CustomStringConvertible", "para1"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - ["Ps23CustomStringConvertible", "prefsEmail"]
 - ["Ps23CustomStringConvertible", "prefsName"]
@@ -627,6 +633,7 @@ depends-member:
 - !private ["Ps9Equatable", "medium"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "para"]
+- ["Ps9Equatable", "para1"]
 - !private ["Ps9Equatable", "performSegue"]
 - ["Ps9Equatable", "prefsEmail"]
 - ["Ps9Equatable", "prefsName"]
@@ -737,6 +744,7 @@ depends-member:
 - !private ["Ps8Hashable", "medium"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "para"]
+- ["Ps8Hashable", "para1"]
 - !private ["Ps8Hashable", "performSegue"]
 - ["Ps8Hashable", "prefsEmail"]
 - ["Ps8Hashable", "prefsName"]
@@ -874,6 +882,7 @@ depends-member:
 - ["PSo8NSCoding", "locationManager"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "para"]
+- ["PSo8NSCoding", "para1"]
 - !private ["PSo8NSCoding", "performSegue"]
 - ["PSo8NSCoding", "prefsEmail"]
 - ["PSo8NSCoding", "prefsName"]
@@ -942,6 +951,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "locationManager"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "para"]
+- ["PSo26NSExtensionRequestHandling", "para1"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
 - ["PSo26NSExtensionRequestHandling", "prefsEmail"]
 - ["PSo26NSExtensionRequestHandling", "prefsName"]
@@ -1035,6 +1045,7 @@ depends-member:
 - !private ["CSo8NSObject", "main"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "para"]
+- ["CSo8NSObject", "para1"]
 - !private ["CSo8NSObject", "performSegue"]
 - ["CSo8NSObject", "prefsEmail"]
 - ["CSo8NSObject", "prefsName"]
@@ -1104,6 +1115,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "main"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "para"]
+- ["PSo16NSObjectProtocol", "para1"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
 - ["PSo16NSObjectProtocol", "prefsEmail"]
 - ["PSo16NSObjectProtocol", "prefsName"]
@@ -1292,6 +1304,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locationManager"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "para"]
+- ["PSo21UIAppearanceContainer", "para1"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
 - ["PSo21UIAppearanceContainer", "prefsEmail"]
 - ["PSo21UIAppearanceContainer", "prefsName"]
@@ -1337,6 +1350,7 @@ depends-member:
 - ["PSo18UIContentContainer", "locationManager"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "para"]
+- ["PSo18UIContentContainer", "para1"]
 - !private ["PSo18UIContentContainer", "performSegue"]
 - ["PSo18UIContentContainer", "prefsEmail"]
 - ["PSo18UIContentContainer", "prefsName"]
@@ -1403,6 +1417,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "locationManager"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "para"]
+- ["PSo18UIFocusEnvironment", "para1"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
 - ["PSo18UIFocusEnvironment", "prefsEmail"]
 - ["PSo18UIFocusEnvironment", "prefsName"]
@@ -1484,6 +1499,7 @@ depends-member:
 - ["CSo11UIResponder", "locationManager"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "para"]
+- ["CSo11UIResponder", "para1"]
 - !private ["CSo11UIResponder", "performSegue"]
 - ["CSo11UIResponder", "prefsEmail"]
 - ["CSo11UIResponder", "prefsName"]
@@ -1531,6 +1547,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "locationManager"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "para"]
+- ["PSo30UIResponderStandardEditActions", "para1"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
 - ["PSo30UIResponderStandardEditActions", "prefsEmail"]
 - ["PSo30UIResponderStandardEditActions", "prefsName"]
@@ -1578,6 +1595,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "locationManager"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "para"]
+- ["PSo20UIScrollViewDelegate", "para1"]
 - !private ["PSo20UIScrollViewDelegate", "performSegue"]
 - ["PSo20UIScrollViewDelegate", "prefsEmail"]
 - ["PSo20UIScrollViewDelegate", "prefsName"]
@@ -1620,6 +1638,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "locationManager"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "para"]
+- ["PSo16UIStateRestoring", "para1"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
 - ["PSo16UIStateRestoring", "prefsEmail"]
 - ["PSo16UIStateRestoring", "prefsName"]
@@ -1691,6 +1710,7 @@ depends-member:
 - ["CSo21UITableViewController", "locationManager"]
 - ["CSo21UITableViewController", "numberOfSections"]
 - ["CSo21UITableViewController", "para"]
+- ["CSo21UITableViewController", "para1"]
 - !private ["CSo21UITableViewController", "performSegue"]
 - ["CSo21UITableViewController", "prefsEmail"]
 - ["CSo21UITableViewController", "prefsName"]
@@ -1732,6 +1752,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "locationManager"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "para"]
+- ["PSo21UITableViewDataSource", "para1"]
 - !private ["PSo21UITableViewDataSource", "performSegue"]
 - ["PSo21UITableViewDataSource", "prefsEmail"]
 - ["PSo21UITableViewDataSource", "prefsName"]
@@ -1773,6 +1794,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "locationManager"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "para"]
+- ["PSo19UITableViewDelegate", "para1"]
 - !private ["PSo19UITableViewDelegate", "performSegue"]
 - ["PSo19UITableViewDelegate", "prefsEmail"]
 - ["PSo19UITableViewDelegate", "prefsName"]
@@ -1819,6 +1841,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locationManager"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "para"]
+- ["PSo18UITraitEnvironment", "para1"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
 - ["PSo18UITraitEnvironment", "prefsEmail"]
 - ["PSo18UITraitEnvironment", "prefsName"]
@@ -1890,6 +1913,7 @@ depends-member:
 - ["CSo16UIViewController", "locationManager"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "para"]
+- ["CSo16UIViewController", "para1"]
 - !private ["CSo16UIViewController", "performSegue"]
 - ["CSo16UIViewController", "prefsEmail"]
 - ["CSo16UIViewController", "prefsName"]
@@ -2013,6 +2037,7 @@ depends-member:
 - !private ["Ps9_Hashable", "medium"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "para"]
+- ["Ps9_Hashable", "para1"]
 - !private ["Ps9_Hashable", "performSegue"]
 - ["Ps9_Hashable", "prefsEmail"]
 - ["Ps9_Hashable", "prefsName"]
@@ -2252,4 +2277,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "8a721ad5fcaceb473f9579d0fe6d0b96"
+interface-hash: "a2ec555a2793b792091d436db3451231"

@@ -214,6 +214,7 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 @property (nonatomic, strong) CLLocation * _Nonnull location;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
+@property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para1;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 @property (nonatomic, copy) NSString * _Nonnull prefsName;
 @property (nonatomic, copy) NSString * _Nonnull testEmail;
@@ -261,6 +262,7 @@ SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
 @property (nonatomic, strong) CLLocation * _Nonnull location;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
+@property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para1;
 @property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 @property (nonatomic, copy) NSString * _Nonnull prefsName;
 @property (nonatomic, copy) NSString * _Nonnull testName;
@@ -496,11 +498,13 @@ SWIFT_CLASS("_TtC5Buddy22PriyankaViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
 
 SWIFT_CLASS("_TtC5Buddy20ProfileTableViewCell")
 @interface ProfileTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified key;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified value;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified img;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;

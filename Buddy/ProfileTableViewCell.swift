@@ -14,6 +14,8 @@ class ProfileTableViewCell: UITableViewCell {
     
     @IBOutlet weak var value: UITextField!
     
+    @IBOutlet weak var img: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

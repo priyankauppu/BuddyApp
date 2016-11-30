@@ -26,6 +26,7 @@ class BuddiesGoingTableViewController: UITableViewController {
     //webservice declarations
     var urll = "http://localhost:3000";
     let para:NSMutableDictionary = NSMutableDictionary();
+    let para1:NSMutableDictionary = NSMutableDictionary();
     
     
     var prefsEmail:String="";
@@ -215,16 +216,16 @@ class BuddiesGoingTableViewController: UITableViewController {
         dateFormatter.timeStyle = .medium
         let dateString = dateFormatter.string(from: date as Date)
         
-        para.setValue(buddyCuisine, forKey: "cuisine");
-        para.setValue(buddyRestaurant, forKey: "restaurant");
-        para.setValue(prefsName, forKey: "reqSenderPersonName");//logged in
-        para.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
-        para.setValue(testName, forKey: "reqReceiverPersonEmail");
-        para.setValue(testEmail, forKey: "reqReceiverPersonName");
-        para.setValue("10 mins", forKey: "time");
-        para.setValue(dateString, forKey: "date");
+        para1.setValue(buddyCuisine, forKey: "cuisine");
+        para1.setValue(buddyRestaurant, forKey: "restaurant");
+        para1.setValue(prefsName, forKey: "reqSenderPersonName");//logged in
+        para1.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
+        para1.setValue(testName, forKey: "reqReceiverPersonEmail");
+        para1.setValue(testEmail, forKey: "reqReceiverPersonName");
+        para1.setValue("10 mins", forKey: "time");
+        para1.setValue(dateString, forKey: "date");
         
-        let jsonData = try! JSONSerialization.data(withJSONObject: para, options: JSONSerialization.WritingOptions());
+        let jsonData = try! JSONSerialization.data(withJSONObject: para1, options: JSONSerialization.WritingOptions());
         let request:NSMutableURLRequest=NSMutableURLRequest();
         let session = URLSession.shared
         let url = urll+"/requestBuddy";

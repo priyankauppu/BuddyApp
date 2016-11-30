@@ -6,44 +6,46 @@ provides-nominal:
 provides-member:
 - ["C5Buddy21ProfileViewController", ""]
 provides-dynamic-lookup:
+- "numberOfSections"
+- "email"
+- "height"
+- "weight"
+- "updateButtonClicked"
+- "para"
+- "prefsEmail"
 - "menuButton"
+- "gender"
+- "updateButton"
 - "dailyGoal"
 - "fullName"
-- "updateButton"
-- "para"
-- "tableView"
-- "tableView"
-- "height"
-- "updateButtonClicked"
-- "email"
-- "numberOfSections"
-- "weight"
-- "viewDidLoad"
-- "urll"
-- "prefsEmail"
 - "didReceiveMemoryWarning"
-- "gender"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "urll"
 depends-top-level:
-- "AssignmentPrecedence"
-- !private "=="
-- "CastingPrecedence"
-- "Int"
-- "IndexPath"
-- "ProfileViewController"
-- "NSMutableDictionary"
-- !private "!="
-- !private "ProfileTableViewCell"
-- "UITableView"
-- !private "UserDefaults"
 - "UITableViewController"
+- "UITableView"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
 - !private "SWRevealViewController"
-- "String"
+- !private "=="
+- "NSMutableDictionary"
+- "ProfileViewController"
+- "StringLiteralType"
 - "UIBarButtonItem"
 - "UITableViewCell"
-- "StringLiteralType"
+- "String"
+- "IndexPath"
+- "Int"
+- !private "!="
+- !private "ProfileTableViewCell"
+- !private "UserDefaults"
+- !private "UIImage"
 depends-member:
 - ["Ps9AnyObject", "NSMutableDictionary"]
 - !private ["Ps9AnyObject", "SWRevealViewController"]
+- !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UserDefaults"]
 - !private ["Ps9AnyObject", "action"]
 - !private ["Ps9AnyObject", "addGestureRecognizer"]
@@ -54,6 +56,8 @@ depends-member:
 - ["Ps9AnyObject", "fullName"]
 - ["Ps9AnyObject", "gender"]
 - ["Ps9AnyObject", "height"]
+- !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "img"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "key"]
 - ["Ps9AnyObject", "menuButton"]
@@ -81,11 +85,14 @@ depends-member:
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "image"]
+- !private ["PSo15CALayerDelegate", "img"]
 - !private ["PSo15CALayerDelegate", "key"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "value"]
 - ["Ps7CVarArg", "NSMutableDictionary"]
 - !private ["Ps7CVarArg", "SWRevealViewController"]
+- !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "UserDefaults"]
 - !private ["Ps7CVarArg", "action"]
 - !private ["Ps7CVarArg", "addGestureRecognizer"]
@@ -96,6 +103,8 @@ depends-member:
 - ["Ps7CVarArg", "fullName"]
 - ["Ps7CVarArg", "gender"]
 - ["Ps7CVarArg", "height"]
+- !private ["Ps7CVarArg", "image"]
+- !private ["Ps7CVarArg", "img"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "key"]
 - ["Ps7CVarArg", "menuButton"]
@@ -122,6 +131,7 @@ depends-member:
 - !private ["Ps10Comparable", "row"]
 - ["Ps28CustomDebugStringConvertible", "NSMutableDictionary"]
 - !private ["Ps28CustomDebugStringConvertible", "SWRevealViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "action"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
@@ -132,6 +142,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "fullName"]
 - ["Ps28CustomDebugStringConvertible", "gender"]
 - ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- !private ["Ps28CustomDebugStringConvertible", "img"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "key"]
 - ["Ps28CustomDebugStringConvertible", "menuButton"]
@@ -161,6 +173,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "row"]
 - ["Ps23CustomStringConvertible", "NSMutableDictionary"]
 - !private ["Ps23CustomStringConvertible", "SWRevealViewController"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UserDefaults"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "action"]
@@ -172,6 +185,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "fullName"]
 - ["Ps23CustomStringConvertible", "gender"]
 - ["Ps23CustomStringConvertible", "height"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- !private ["Ps23CustomStringConvertible", "img"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "key"]
 - ["Ps23CustomStringConvertible", "menuButton"]
@@ -196,6 +211,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "NSMutableDictionary"]
 - !private ["Ps9Equatable", "SWRevealViewController"]
+- !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UserDefaults"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "action"]
@@ -207,6 +223,8 @@ depends-member:
 - ["Ps9Equatable", "fullName"]
 - ["Ps9Equatable", "gender"]
 - ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "image"]
+- !private ["Ps9Equatable", "img"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "key"]
 - ["Ps9Equatable", "menuButton"]
@@ -238,6 +256,7 @@ depends-member:
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["Ps8Hashable", "NSMutableDictionary"]
 - !private ["Ps8Hashable", "SWRevealViewController"]
+- !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UserDefaults"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "action"]
@@ -249,6 +268,8 @@ depends-member:
 - ["Ps8Hashable", "fullName"]
 - ["Ps8Hashable", "gender"]
 - ["Ps8Hashable", "height"]
+- !private ["Ps8Hashable", "image"]
+- !private ["Ps8Hashable", "img"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "key"]
 - ["Ps8Hashable", "menuButton"]
@@ -285,6 +306,7 @@ depends-member:
 - ["CSo7NSCoder", "deinit"]
 - ["PSo8NSCoding", "NSMutableDictionary"]
 - !private ["PSo8NSCoding", "SWRevealViewController"]
+- !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UserDefaults"]
 - !private ["PSo8NSCoding", "action"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
@@ -295,6 +317,8 @@ depends-member:
 - ["PSo8NSCoding", "fullName"]
 - ["PSo8NSCoding", "gender"]
 - ["PSo8NSCoding", "height"]
+- !private ["PSo8NSCoding", "image"]
+- !private ["PSo8NSCoding", "img"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "key"]
 - ["PSo8NSCoding", "menuButton"]
@@ -319,6 +343,7 @@ depends-member:
 - ["CSo12NSDictionary", "init"]
 - ["PSo26NSExtensionRequestHandling", "NSMutableDictionary"]
 - !private ["PSo26NSExtensionRequestHandling", "SWRevealViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "dailyGoal"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -353,6 +378,7 @@ depends-member:
 - !private ["CSo8NSObject", "SWRevealViewController"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
+- !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "UserDefaults"]
@@ -365,6 +391,8 @@ depends-member:
 - ["CSo8NSObject", "fullName"]
 - ["CSo8NSObject", "gender"]
 - ["CSo8NSObject", "height"]
+- !private ["CSo8NSObject", "image"]
+- !private ["CSo8NSObject", "img"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "key"]
 - ["CSo8NSObject", "menuButton"]
@@ -387,6 +415,7 @@ depends-member:
 - ["CSo8NSObject", "weight"]
 - ["PSo16NSObjectProtocol", "NSMutableDictionary"]
 - !private ["PSo16NSObjectProtocol", "SWRevealViewController"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UserDefaults"]
 - !private ["PSo16NSObjectProtocol", "action"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
@@ -397,6 +426,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "fullName"]
 - ["PSo16NSObjectProtocol", "gender"]
 - ["PSo16NSObjectProtocol", "height"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "img"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "key"]
 - ["PSo16NSObjectProtocol", "menuButton"]
@@ -422,6 +453,7 @@ depends-member:
 - ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
 - ["C5Buddy20ProfileTableViewCell", "deinit"]
+- !private ["C5Buddy20ProfileTableViewCell", "img"]
 - !private ["C5Buddy20ProfileTableViewCell", "key"]
 - !private ["C5Buddy20ProfileTableViewCell", "value"]
 - ["C5Buddy21ProfileViewController", "IndexPath"]
@@ -431,6 +463,7 @@ depends-member:
 - !private ["C5Buddy21ProfileViewController", "SWRevealViewController"]
 - ["C5Buddy21ProfileViewController", "String"]
 - ["C5Buddy21ProfileViewController", "UIBarButtonItem"]
+- !private ["C5Buddy21ProfileViewController", "UIImage"]
 - ["C5Buddy21ProfileViewController", "UITableView"]
 - ["C5Buddy21ProfileViewController", "UITableViewCell"]
 - !private ["C5Buddy21ProfileViewController", "UserDefaults"]
@@ -469,6 +502,9 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "action"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "img"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "key"]
 - !private ["PSo29UIAccessibilityIdentification", "target"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -476,12 +512,15 @@ depends-member:
 - !private ["PSo12UIAppearance", "action"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "img"]
 - !private ["PSo12UIAppearance", "key"]
 - !private ["PSo12UIAppearance", "target"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "value"]
 - ["PSo21UIAppearanceContainer", "NSMutableDictionary"]
 - !private ["PSo21UIAppearanceContainer", "SWRevealViewController"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
 - ["PSo21UIAppearanceContainer", "dailyGoal"]
@@ -491,6 +530,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "fullName"]
 - ["PSo21UIAppearanceContainer", "gender"]
 - ["PSo21UIAppearanceContainer", "height"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- !private ["PSo21UIAppearanceContainer", "img"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "key"]
 - ["PSo21UIAppearanceContainer", "menuButton"]
@@ -516,6 +557,7 @@ depends-member:
 - !private ["CSo9UIBarItem", "target"]
 - ["PSo18UIContentContainer", "NSMutableDictionary"]
 - !private ["PSo18UIContentContainer", "SWRevealViewController"]
+- !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UserDefaults"]
 - ["PSo18UIContentContainer", "dailyGoal"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -543,16 +585,21 @@ depends-member:
 - !private ["CSo9UIControl", "text"]
 - !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "img"]
 - !private ["PSo17UICoordinateSpace", "key"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "img"]
 - !private ["PSo13UIDynamicItem", "key"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "value"]
 - ["PSo18UIFocusEnvironment", "NSMutableDictionary"]
 - !private ["PSo18UIFocusEnvironment", "SWRevealViewController"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
 - ["PSo18UIFocusEnvironment", "dailyGoal"]
@@ -562,6 +609,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "fullName"]
 - ["PSo18UIFocusEnvironment", "gender"]
 - ["PSo18UIFocusEnvironment", "height"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- !private ["PSo18UIFocusEnvironment", "img"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "key"]
 - ["PSo18UIFocusEnvironment", "menuButton"]
@@ -583,11 +632,17 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addGestureRecognizer"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "image"]
+- !private ["PSo11UIFocusItem", "img"]
 - !private ["PSo11UIFocusItem", "key"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "value"]
+- !private ["PSo27UIGestureRecognizerDelegate", "img"]
 - !private ["PSo27UIGestureRecognizerDelegate", "key"]
 - !private ["PSo27UIGestureRecognizerDelegate", "value"]
+- ["CSo7UIImage", "deinit"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "IndexPath"]
@@ -597,6 +652,7 @@ depends-member:
 - !private ["CSo11UIResponder", "SWRevealViewController"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
+- !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "UserDefaults"]
@@ -608,6 +664,8 @@ depends-member:
 - ["CSo11UIResponder", "fullName"]
 - ["CSo11UIResponder", "gender"]
 - ["CSo11UIResponder", "height"]
+- !private ["CSo11UIResponder", "image"]
+- !private ["CSo11UIResponder", "img"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "key"]
 - ["CSo11UIResponder", "menuButton"]
@@ -628,6 +686,7 @@ depends-member:
 - ["CSo11UIResponder", "weight"]
 - ["PSo30UIResponderStandardEditActions", "NSMutableDictionary"]
 - !private ["PSo30UIResponderStandardEditActions", "SWRevealViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
 - !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
 - ["PSo30UIResponderStandardEditActions", "dailyGoal"]
@@ -637,6 +696,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "fullName"]
 - ["PSo30UIResponderStandardEditActions", "gender"]
 - ["PSo30UIResponderStandardEditActions", "height"]
+- !private ["PSo30UIResponderStandardEditActions", "image"]
+- !private ["PSo30UIResponderStandardEditActions", "img"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "key"]
 - ["PSo30UIResponderStandardEditActions", "menuButton"]
@@ -659,6 +720,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - ["PSo20UIScrollViewDelegate", "NSMutableDictionary"]
 - !private ["PSo20UIScrollViewDelegate", "SWRevealViewController"]
+- !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UserDefaults"]
 - ["PSo20UIScrollViewDelegate", "dailyGoal"]
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
@@ -682,6 +744,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "NSMutableDictionary"]
 - !private ["PSo16UIStateRestoring", "SWRevealViewController"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UserDefaults"]
 - ["PSo16UIStateRestoring", "dailyGoal"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -708,6 +771,7 @@ depends-member:
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
 - ["CSo15UITableViewCell", "deinit"]
+- !private ["CSo15UITableViewCell", "img"]
 - !private ["CSo15UITableViewCell", "key"]
 - !private ["CSo15UITableViewCell", "value"]
 - ["CSo21UITableViewController", "IndexPath"]
@@ -717,6 +781,7 @@ depends-member:
 - !private ["CSo21UITableViewController", "SWRevealViewController"]
 - ["CSo21UITableViewController", "String"]
 - ["CSo21UITableViewController", "UIBarButtonItem"]
+- !private ["CSo21UITableViewController", "UIImage"]
 - ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITableViewCell"]
 - !private ["CSo21UITableViewController", "UserDefaults"]
@@ -743,6 +808,7 @@ depends-member:
 - ["CSo21UITableViewController", ""]
 - ["PSo21UITableViewDataSource", "NSMutableDictionary"]
 - !private ["PSo21UITableViewDataSource", "SWRevealViewController"]
+- !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UserDefaults"]
 - ["PSo21UITableViewDataSource", "dailyGoal"]
 - ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
@@ -766,6 +832,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "NSMutableDictionary"]
 - !private ["PSo19UITableViewDelegate", "SWRevealViewController"]
+- !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UserDefaults"]
 - ["PSo19UITableViewDelegate", "dailyGoal"]
 - ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
@@ -793,6 +860,7 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - ["PSo18UITraitEnvironment", "NSMutableDictionary"]
 - !private ["PSo18UITraitEnvironment", "SWRevealViewController"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UserDefaults"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
 - ["PSo18UITraitEnvironment", "dailyGoal"]
@@ -802,6 +870,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "fullName"]
 - ["PSo18UITraitEnvironment", "gender"]
 - ["PSo18UITraitEnvironment", "height"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- !private ["PSo18UITraitEnvironment", "img"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "key"]
 - ["PSo18UITraitEnvironment", "menuButton"]
@@ -823,6 +893,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addGestureRecognizer"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "img"]
 - !private ["CSo6UIView", "key"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "value"]
@@ -833,6 +905,7 @@ depends-member:
 - !private ["CSo16UIViewController", "SWRevealViewController"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
+- !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "UserDefaults"]
@@ -862,6 +935,8 @@ depends-member:
 - !private ["CSo12UserDefaults", "value"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "img"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "key"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "value"]
@@ -870,9 +945,11 @@ depends-member:
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "NSMutableDictionary"]
 - !private ["Ps9_Hashable", "SWRevealViewController"]
+- !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "UserDefaults"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "action"]
@@ -884,6 +961,8 @@ depends-member:
 - ["Ps9_Hashable", "fullName"]
 - ["Ps9_Hashable", "gender"]
 - ["Ps9_Hashable", "height"]
+- !private ["Ps9_Hashable", "image"]
+- !private ["Ps9_Hashable", "img"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "key"]
 - ["Ps9_Hashable", "menuButton"]
@@ -978,6 +1057,8 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - !private "PSo27UIGestureRecognizerDelegate"
+- "CSo7UIImage"
+- !private "CSo11UIImageView"
 - !private "PSo10UIKeyInput"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
@@ -1004,6 +1085,7 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"

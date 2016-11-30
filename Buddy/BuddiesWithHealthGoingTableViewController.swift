@@ -27,6 +27,7 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
     //webservice declarations
     var urll = "http://localhost:3000";
     let para:NSMutableDictionary = NSMutableDictionary();
+    let para1:NSMutableDictionary = NSMutableDictionary();
     
     var prefsEmail:String=""
      var prefsName:String=""
@@ -46,8 +47,8 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
-        prefsEmail=UserDefaults.standard.value(forKey: "prefsName")! as! String
-        //print("Buddies with health View Controller**********\(prefsEmail)***************")
+        prefsName=UserDefaults.standard.value(forKey: "prefsName")! as! String
+        print("Buddies with health View Controller**********\(prefsEmail)***************")
         print("********\(restaurant)********\(cuisine)***************")
         
         //Calling webservice to retrieve the nearby Buddies
@@ -135,16 +136,18 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         print("Todays date",date)
         let dateString = dateFormatter.string(from: date as Date)
         
-        para.setValue(testCuisine, forKey: "cuisine");
-        para.setValue(testRestaurant, forKey: "restaurant");
-        para.setValue("Priyanka Uppu", forKey: "reqSenderPersonName");//logged in
-        para.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
-        para.setValue(testEmail, forKey: "reqReceiverPersonEmail");
-        para.setValue(testName, forKey: "reqReceiverPersonName");
-        para.setValue("10 mins", forKey: "time");
-        para.setValue(dateString, forKey: "date");
+        para1.setValue("Coffee", forKey: "cuisine");
+        para1.setValue(testRestaurant, forKey: "restaurant");
+        para1.setValue(prefsName, forKey: "reqSenderPersonName");//logged in
+        para1.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
+        para1.setValue(testEmail, forKey: "reqReceiverPersonEmail");
+        para1.setValue(testName, forKey: "reqReceiverPersonName");
+        para1.setValue("10 mins", forKey: "time");
+        para1.setValue(dateString, forKey: "date");
         
-        let jsonData = try! JSONSerialization.data(withJSONObject: para, options: JSONSerialization.WritingOptions());
+        print("*****NAME",prefsEmail,"*******NORPREFS",testEmail)
+        
+        let jsonData = try! JSONSerialization.data(withJSONObject: para1, options: JSONSerialization.WritingOptions());
         let request:NSMutableURLRequest=NSMutableURLRequest();
         let session = URLSession.shared
         let url = urll+"/requestBuddy";

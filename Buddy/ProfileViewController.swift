@@ -137,34 +137,48 @@ class ProfileViewController: UITableViewController {
         if indexPath.row == 0 {
             cell.key.text = "Full Name"
             cell.value.text = "Priyanka Uppu"
+            var image1: UIImage = UIImage(named: "user")!
+            cell.img.image=image1
             
         }
         else if indexPath.row == 1 {
             cell.key.text = "Password"
             cell.value.text = "*****"
+            var image1: UIImage = UIImage(named: "lock")!
+            cell.img.image=image1
         }
         else if indexPath.row == 2 {
             cell.key.text = "Email"
             cell.value.text = "uppu@usc.edu"
+            var image1: UIImage = UIImage(named: "email")!
+            cell.img.image=image1
         }
         else if indexPath.row == 3 {
             cell.key.text = "Gender"
             cell.value.text = "Female"
+            var image1: UIImage = UIImage(named: "gender")!
+            cell.img.image=image1
            
         }
         else if indexPath.row == 4 {
             cell.key.text = "Height"
             cell.value.text = "5.5"
             self.height = cell.value.text!
+            var image1: UIImage = UIImage(named: "height")!
+            cell.img.image=image1
             
         }
         else if indexPath.row == 5 {
             cell.key.text = "Weight (in Kg)"
             cell.value.text = "50"
+            var image1: UIImage = UIImage(named: "weight")!
+            cell.img.image=image1
         }
         else {
             cell.key.text = "Daily Goal(in kCal)"
             cell.value.text = "500"
+            var image1: UIImage = UIImage(named: "goal")!
+            cell.img.image=image1
             
         }
         

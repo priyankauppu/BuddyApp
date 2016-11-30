@@ -167,19 +167,20 @@ class PendingRequestsTableViewController: UITableViewController {
         testBuddyName = cell.buddyName.text!
         testBuddyEmail = cell.buddyEmail.text!
         //Access today's timestamp
-        
+    
         
         buddyAccepted()
     }
 
     func buddyAccepted()
     {
+        //print("*******IDDDDDD",testId,"******",testDate,"*****",testBuddyEmail)
         para.setValue("Coffee", forKey: "cuisine");
         para.setValue(testRestaurant, forKey: "restaurant");
-        para.setValue(prefsName, forKey: "reqSenderPersonName");
-        para.setValue(prefsEmail, forKey: "reqSenderPersonEmail")
-        para.setValue(testBuddyEmail, forKey: "reqReceiverPersonEmail");
-        para.setValue(testBuddyName, forKey: "reqReceiverPersonName");
+        para.setValue(testBuddyName, forKey: "reqSenderPersonName");
+        para.setValue(testBuddyEmail, forKey: "reqSenderPersonEmail")
+        para.setValue(prefsEmail, forKey: "reqReceiverPersonEmail");
+        para.setValue(prefsName, forKey: "reqReceiverPersonName");
         para.setValue("10 mins", forKey: "time");
         para.setValue(testDate, forKey: "date");
         para.setValue(testId, forKey: "id");
