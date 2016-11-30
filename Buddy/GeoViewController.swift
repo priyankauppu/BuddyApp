@@ -35,7 +35,7 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     
     var radius = 500
 
-    var trytext:String = "";
+    var prefsEmail:String="";
     
     //webservice declarations
     var urll = "http://localhost:3000";
@@ -45,7 +45,7 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(trytext)
+        print("prefEmail"+prefsEmail)
 
         // Do any additional setup after loading the view.
         //SideBar related
@@ -252,7 +252,9 @@ class GeoViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
             nextController.restaurant=restaurant
             let selectedValue = selectedPickerData
             nextController.cuisine=selectedValue
-            //Add EMAIL
+            
+            nextController.prefsEmail = prefsEmail
+            
             let latitude:Double=(sender as! MKAnnotationView).annotation!.coordinate.latitude
             nextController.restaurantLatitude=latitude
             let longitude:Double=(sender as! MKAnnotationView).annotation!.coordinate.longitude

@@ -198,6 +198,7 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 @property (nonatomic, copy) NSString * _Nonnull cuisine;
 @property (nonatomic) double restaurantLatitude;
 @property (nonatomic) double restaurantLongitude;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
@@ -208,12 +209,15 @@ SWIFT_CLASS("_TtC5Buddy31BuddiesGoingTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
 SWIFT_CLASS("_TtC5Buddy35BuddiesWithHealthGoingTableViewCell")
 @interface BuddiesWithHealthGoingTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyRestaurant;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyCuisine;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified sendInviteButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified buddyEmail;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -232,6 +236,7 @@ SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyName;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyCuisine;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyRestaurant;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull buddyEmail;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, strong) CLLocation * _Nonnull location;
 @property (nonatomic, copy) NSString * _Nonnull urll;
@@ -243,6 +248,7 @@ SWIFT_CLASS("_TtC5Buddy41BuddiesWithHealthGoingTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)findNearByBuddies;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -257,6 +263,7 @@ SWIFT_CLASS("_TtC5Buddy23DirectionViewController")
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic) double restaurantLatitude;
 @property (nonatomic) double restaurantLongitude;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -271,7 +278,9 @@ SWIFT_CLASS("_TtC5Buddy33DirectionWithHealthViewController")
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic) double restaurantLatitude;
 @property (nonatomic) double restaurantLongitude;
+@property (nonatomic, copy) NSString * _Nonnull displayMessage;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified message;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
@@ -304,7 +313,7 @@ SWIFT_CLASS("_TtC5Buddy17GeoViewController")
 @property (nonatomic, copy) NSArray<MKPointAnnotation *> * _Nonnull annotations;
 @property (nonatomic, strong) MKPolygon * _Nullable polygon;
 @property (nonatomic) NSInteger radius;
-@property (nonatomic, copy) NSString * _Nonnull trytext;
+@property (nonatomic, copy) NSString * _Nonnull prefsEmail;
 @property (nonatomic, copy) NSString * _Nonnull urll;
 @property (nonatomic, readonly, strong) NSMutableDictionary * _Nonnull para;
 - (void)viewDidLoad;
@@ -384,7 +393,6 @@ SWIFT_CLASS("_TtC5Buddy19LoginViewController")
 @interface LoginViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
-@property (nonatomic) NSInteger flag;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified menuButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;

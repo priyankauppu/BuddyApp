@@ -14,6 +14,8 @@ class BuddiesGoingTableViewController: UITableViewController {
     var restaurantLatitude:Double = 0.0
     var restaurantLongitude:Double = 0.0
  
+     var prefsEmail:String="";
+    
    // var userLatitude:Double=0.0
     //var userLongitude:Double=0.0
    
@@ -55,7 +57,7 @@ class BuddiesGoingTableViewController: UITableViewController {
             //nextController.userLongitude=userLongitude
             nextController.restaurantLatitude=restaurantLatitude
             nextController.restaurantLongitude=restaurantLongitude
- 
+            nextController.prefsEmail = prefsEmail
             
             
         }

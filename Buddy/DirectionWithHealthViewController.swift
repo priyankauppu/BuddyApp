@@ -15,14 +15,17 @@ class DirectionWithHealthViewController: UIViewController,MKMapViewDelegate, CLL
     @IBOutlet weak var mapView: MKMapView!
     var restaurantLatitude:Double=0.0
     var restaurantLongitude:Double=0.0
-    
+    var displayMessage:String=""
     let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var message: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print("In Direction With Health \(restaurantLatitude)")
         
+        message.text=displayMessage
         // Do any additional setup after loading the view.
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest

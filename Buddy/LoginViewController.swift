@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-    var flag=0
+ 
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
@@ -25,6 +25,7 @@ class LoginViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        //menuButton.accessibilityElementsHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,11 +34,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func Submit(_ sender: AnyObject) {
-        print("username=*",username.text)
-        print("password=*",password.text)
-        
-        self.flag=1
-    performSegue(withIdentifier: "loginSegue", sender: view)
+        //print("username=*",username.text)
+        //print("password=*",password.text)
+
+        performSegue(withIdentifier: "loginSegue", sender: self)
     
     }
     
@@ -46,13 +46,15 @@ class LoginViewController: UIViewController {
            // performSegue(withIdentifier: "loginSeague", sender: view)
         if (segue.identifier == "loginSegue" )
         {
-            let nextController = segue.destination as! UINavigationController
-            print ("Next Controller: *\(nextController)*")
+            //let nextController = segue.destination as! UINavigationController
+           // print ("Next Controller: *\(nextController)*")
+            let next = segue.destination as! UINavigationController
+            // let text1:String=(sender as! MKAnnotationView).annotation!.title!!
+            let nextController = next.topViewController as! GeoViewController
+            nextController.prefsEmail = username.text!
+
             
-           let text1:String=String(describing: username.text)
-      // nextController.trytext=text1
-            
-            }//}
+            }
     }
 
     /*

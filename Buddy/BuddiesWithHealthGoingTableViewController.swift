@@ -19,7 +19,7 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
     var buddyName:[String]=[]
     var buddyCuisine:[String]=[]
     var buddyRestaurant:[String]=[]
-    
+    var buddyEmail:[String]=[]
     
     let locationManager = CLLocationManager()
     var location:CLLocation=CLLocation()
@@ -65,6 +65,21 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
             
             
         }
+        if (segue.identifier == "buddyRequestSegue" )
+        {
+            let next = segue.destination as! UINavigationController
+            // let text1:String=(sender as! MKAnnotationView).annotation!.title!!
+            let nextController = next.topViewController as! DirectionWithHealthViewController
+            //nextController.userLatitude=userLatitude
+            //nextController.userLongitude=userLongitude
+            nextController.displayMessage="Your request has been sent successfully"
+//            nextController.buddyEmail=
+            nextController.restaurantLatitude=restaurantLatitude
+            nextController.restaurantLongitude=restaurantLongitude
+            
+            
+            
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -86,14 +101,14 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         let buddyName = self.buddyName[indexPath.row]
         let buddyRestaurant=self.buddyRestaurant[indexPath.row]
         let buddyCuisine=self.buddyCuisine[indexPath.row]
-        //let buddyEmail=self.buddyEmail[indexPath.row]
+        let buddyEmail=self.buddyEmail[indexPath.row]
         
         
         cell.buddyName.text = buddyName
         cell.buddyRestaurant.text = buddyRestaurant
         cell.buddyCuisine.text = buddyCuisine
-
-
+        cell.buddyEmail.text=buddyEmail
+        cell.buddyEmail.isHidden=true
         return cell
     }
     
@@ -141,6 +156,7 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
                                 self.buddyName.append(anItem["name"] as! String)
                                 self.buddyRestaurant.append(anItem["restaurant"] as! String)
                                 self.buddyCuisine.append(anItem["cuisine"] as! String)
+                                self.buddyEmail.append(anItem["email"] as! String)
                             }
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
@@ -163,6 +179,49 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         
         
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let cell = tableView.cellForRow(at: indexPath) as! BuddiesWithHealthGoingTableViewCell
+        print("Index",indexPath)
+        
+        //Access today's timestamp
+        
+        let date = NSDate()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .medium
+        print("Todays date",date)
+        let dateString = dateFormatter.string(from: date as Date)
+        
+        para.setValue(buddyCuisine, forKey: "cuisine");
+        para.setValue(buddyRestaurant, forKey: "restaurant");
+                para.setValue("Snehal", forKey: "reqSenderPersonName");//logged in
+                para.setValue("snehal.sdt@gmail.com", forKey: "reqSenderPersonEmail")
+                para.setValue(cell.buddyName, forKey: "reqReceiverPersonEmail");
+                para.setValue(cell.buddyEmail, forKey: "reqReceiverPersonName");
+               para.setValue("10 mins", forKey: "time");
+                para.setValue(dateString, forKey: "date");
+        
+       if let dataToSend = cell.buddyName {
+            performSegue(withIdentifier: "buddyRequestSegue", sender: self)
+        }
+    }
+    
+  
+    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if (segue.identifier == "buddyRequestSegue" )
+        {
+            
+            let next = segue.destination as! UINavigationController
+            let nextController = next.topViewController as! DirectionWithHealthViewController
+            
+            nextController.message="Your request has been sent"
+            
+            
+        }
+    }*/
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -199,14 +258,16 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+        
+        
+    }*/
+    
 
 }

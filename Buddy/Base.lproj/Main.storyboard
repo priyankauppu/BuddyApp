@@ -60,6 +60,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Submit:" destination="VC6-Q2-Bo1" eventType="touchUpInside" id="TfT-5G-Obj"/>
+                                    <segue destination="toW-T2-fXW" kind="show" identifier="loginSegue" id="XJ1-5g-80T"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,12 +73,11 @@
                         <outlet property="menuButton" destination="adJ-yF-Amu" id="148-eD-g5w"/>
                         <outlet property="password" destination="gD3-i4-stQ" id="hhI-Mv-sH4"/>
                         <outlet property="username" destination="swa-ds-dH5" id="PL4-wX-ehB"/>
-                        <segue destination="toW-T2-fXW" kind="show" identifier="loginSegue" id="3YE-DJ-9If"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOY-1t-3Dl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744.8" y="37.331334332833585"/>
+            <point key="canvasLocation" x="1745" y="-81"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="ltU-rF-a3t">
@@ -834,15 +834,26 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlE-i9-WSY">
+                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlE-i9-WSY">
                                             <rect key="frame" x="98" y="97" width="76" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Send Invite"/>
+                                            <connections>
+                                                <segue destination="uR2-ey-Y3X" kind="show" identifier="buddyRequestSegue" id="txr-Hn-WLM"/>
+                                            </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIl-dx-uBn">
+                                            <rect key="frame" x="267" y="102" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="buddyCuisine" destination="kn0-wl-B8b" id="az5-dv-2XE"/>
+                                    <outlet property="buddyEmail" destination="gIl-dx-uBn" id="QVm-pe-Qki"/>
                                     <outlet property="buddyName" destination="WQH-5b-wyF" id="Rdd-hU-C09"/>
                                     <outlet property="buddyRestaurant" destination="Vmm-wh-kVh" id="t7l-OU-9mm"/>
                                     <outlet property="sendInviteButton" destination="MlE-i9-WSY" id="07j-3T-oIV"/>
@@ -1244,6 +1255,13 @@
                                     <constraint firstAttribute="height" constant="550" id="eGx-dw-yW8"/>
                                 </constraints>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-hy-9uM">
+                                <rect key="frame" x="16" y="631" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1255,17 +1273,18 @@
                     <navigationItem key="navigationItem" title="Title" id="aYE-go-Z3W">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="4VS-bA-lJs">
                             <connections>
-                                <segue destination="F4w-S9-UIX" kind="show" id="Ztc-zu-oSk"/>
+                                <segue destination="fuZ-Pd-VO2" kind="show" id="LxI-W6-9P5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="gR0-mo-XB5" id="QbM-nJ-AmT"/>
+                        <outlet property="message" destination="f6a-hy-9uM" id="gxk-ci-aNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBV-v6-cEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8138" y="519"/>
+            <point key="canvasLocation" x="8136.8000000000002" y="517.6911544227886"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a6t-D5-P4A">
@@ -1388,10 +1407,11 @@
         <image name="username" width="80" height="78"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xav-l2-Tum"/>
+        <segue reference="txr-Hn-WLM"/>
+        <segue reference="LxI-W6-9P5"/>
         <segue reference="nRa-Fb-dLF"/>
         <segue reference="c5y-bt-GV9"/>
-        <segue reference="vND-6X-TsK"/>
-        <segue reference="Ztc-zu-oSk"/>
+        <segue reference="KOb-cZ-eps"/>
+        <segue reference="XJ1-5g-80T"/>
     </inferredMetricsTieBreakers>
 </document>

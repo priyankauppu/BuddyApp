@@ -6,118 +6,118 @@ provides-nominal:
 provides-member:
 - ["C5Buddy17GeoViewController", ""]
 provides-dynamic-lookup:
-- "picker"
-- "addLongPressGesture"
-- "addRadiusCircle"
-- "polygon"
-- "updateOverlay"
-- "location"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "knn"
 - "annotations"
+- "knn"
+- "drawCircle"
+- "menuButton"
+- "addRadiusCircle"
+- "plotKnn"
+- "selectedPickerData"
+- "sliderValue"
+- "viewDidLoad"
+- "addLongPressGesture"
+- "locationManager"
+- "prefsEmail"
+- "updateOverlay"
+- "slider"
+- "prepare"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "handleLongPress"
+- "sliderMoved"
+- "didReceiveMemoryWarning"
+- "numberOfComponents"
+- "radius"
+- "sortConvex"
+- "urll"
+- "pickerData"
+- "knnChanged"
+- "polygon"
+- "location"
 - "mapView"
 - "mapView"
 - "mapView"
 - "mapView"
 - "mapView"
 - "para"
-- "handleLongPress"
-- "viewDidLoad"
-- "sliderMoved"
-- "menuButton"
-- "selectedPickerData"
-- "slider"
-- "urll"
-- "sortConvex"
-- "sliderValue"
-- "prepare"
-- "numberOfComponents"
-- "didReceiveMemoryWarning"
-- "locationManager"
-- "trytext"
-- "plotKnn"
-- "knnChanged"
-- "drawCircle"
-- "pickerData"
-- "radius"
+- "picker"
 depends-top-level:
-- !private "+"
-- !private "SWRevealViewController"
-- "CLLocationManagerDelegate"
-- "MKMapViewDelegate"
-- !private "Float"
-- !private "MKPolygonRenderer"
-- "UIPickerView"
-- !private ">="
 - "MKOverlay"
-- !private "CLLocationDistance"
-- !private "DispatchQueue"
-- !private "NSDictionary"
-- !private "BuddiesGoingTableViewController"
-- "CLLocation"
-- "Int"
-- !private "&&"
-- !private "UINavigationController"
-- "CLLocationManager"
-- "UIPickerViewDelegate"
-- "MKAnnotationViewDragState"
-- !private "URLSession"
-- "UIControl"
-- !private "<="
-- "MKOverlayRenderer"
-- "MKPointAnnotation"
-- "MKMapView"
-- !private "UIColor"
-- "UIPickerViewDataSource"
-- "NSMutableDictionary"
-- !private "Dictionary"
-- "Array"
-- !private "MKPinAnnotationView"
-- !private "CLLocationCoordinate2DMake"
-- !private "UIButton"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "MKUserLocation"
-- !private "MKCircle"
-- !private "TernaryPrecedence"
-- "CastingPrecedence"
-- !private "CLLocationDegrees"
-- "UIGestureRecognizer"
-- !private "UIImage"
-- !private "AnyObject"
-- "UISlider"
-- "MKAnnotation"
-- "MKAnnotationView"
-- !private "NSMutableURLRequest"
-- "StringLiteralType"
-- !private "kCLLocationAccuracyBest"
-- !private "BooleanLiteralType"
-- "UITextField"
-- !private "print"
-- !private "!="
-- !private "<"
-- "UIStoryboardSegue"
-- "MKPolygon"
-- !private "URLRequest"
-- "UILabel"
-- !private "NSURL"
-- !private "MKCoordinateSpanMake"
-- !private "MKCoordinateRegion"
-- !private "UILongPressGestureRecognizer"
-- !private "-"
 - "CLLocationCoordinate2D"
-- !private "CGPoint"
-- !private "MKCircleRenderer"
+- !private "&&"
+- !private "JSONSerialization"
+- !private "MKPinAnnotationView"
+- !private "TernaryPrecedence"
+- "MKAnnotationViewDragState"
+- !private "MKCoordinateRegion"
+- !private "NSURL"
 - !private "URL"
+- !private "MKPolygonRenderer"
+- "AssignmentPrecedence"
+- "UITextField"
+- "CastingPrecedence"
+- !private "=="
+- !private "MKCircleRenderer"
+- !private "UIImage"
+- "UIPickerViewDataSource"
+- "UIPickerViewDelegate"
 - "Double"
+- "GeoViewController"
+- !private "NSDictionary"
+- "MKOverlayRenderer"
+- !private "URLRequest"
+- !private "CLLocationDistance"
+- "StringLiteralType"
+- !private "MKCoordinateSpanMake"
+- !private "UINavigationController"
+- !private ">="
+- "CLLocationManager"
+- !private "kCLLocationAccuracyBest"
+- !private "NSMutableURLRequest"
+- !private "BuddiesGoingTableViewController"
 - "UIBarButtonItem"
 - "String"
-- "GeoViewController"
-- !private "JSONSerialization"
-- !private "*"
+- "MKPointAnnotation"
+- !private "MKCircle"
+- !private "CLLocationDegrees"
+- !private "CLLocationCoordinate2DMake"
 - "UIViewController"
+- !private "BooleanLiteralType"
+- !private "<="
+- !private "*"
+- "UIPickerView"
+- !private "DispatchQueue"
+- !private "<"
+- "MKAnnotation"
+- !private "!="
+- "UIStoryboardSegue"
+- !private "Dictionary"
+- !private "URLSession"
+- "MKPolygon"
+- "UILabel"
+- "CLLocationManagerDelegate"
+- "MKMapViewDelegate"
+- "CLLocation"
+- !private "UILongPressGestureRecognizer"
+- "Array"
+- "UIGestureRecognizer"
+- "UISlider"
+- !private "print"
+- !private "UIColor"
+- "UIControl"
+- "NSMutableDictionary"
+- !private "+"
+- "Int"
+- !private "SWRevealViewController"
+- !private "-"
+- !private "CGPoint"
+- "MKAnnotationView"
+- !private "MKUserLocation"
+- !private "UIButton"
+- "MKMapView"
+- !private "Float"
+- !private "AnyObject"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGPoint"]
@@ -220,6 +220,7 @@ depends-member:
 - ["Ps9AnyObject", "pickerView"]
 - ["Ps9AnyObject", "plotKnn"]
 - ["Ps9AnyObject", "polygon"]
+- ["Ps9AnyObject", "prefsEmail"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "radius"]
@@ -252,7 +253,6 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "topViewController"]
-- ["Ps9AnyObject", "trytext"]
 - ["Ps9AnyObject", "updateOverlay"]
 - !private ["Ps9AnyObject", "url"]
 - ["Ps9AnyObject", "urll"]
@@ -324,6 +324,7 @@ depends-member:
 - ["Sb", "deinit"]
 - !private ["C5Buddy31BuddiesGoingTableViewController", "cuisine"]
 - ["C5Buddy31BuddiesGoingTableViewController", "deinit"]
+- !private ["C5Buddy31BuddiesGoingTableViewController", "prefsEmail"]
 - !private ["C5Buddy31BuddiesGoingTableViewController", "restaurant"]
 - !private ["C5Buddy31BuddiesGoingTableViewController", "restaurantLatitude"]
 - !private ["C5Buddy31BuddiesGoingTableViewController", "restaurantLongitude"]
@@ -433,13 +434,13 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "pickerView"]
 - !private ["PSo25CLLocationManagerDelegate", "plotKnn"]
 - !private ["PSo25CLLocationManagerDelegate", "polygon"]
+- !private ["PSo25CLLocationManagerDelegate", "prefsEmail"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "radius"]
 - !private ["PSo25CLLocationManagerDelegate", "revealViewController"]
 - !private ["PSo25CLLocationManagerDelegate", "selectedPickerData"]
 - !private ["PSo25CLLocationManagerDelegate", "sliderValue"]
 - !private ["PSo25CLLocationManagerDelegate", "sortConvex"]
-- !private ["PSo25CLLocationManagerDelegate", "trytext"]
 - !private ["PSo25CLLocationManagerDelegate", "updateOverlay"]
 - !private ["PSo25CLLocationManagerDelegate", "urll"]
 - !private ["PSo25CLLocationManagerDelegate", "view"]
@@ -557,6 +558,7 @@ depends-member:
 - ["Ps7CVarArg", "pickerView"]
 - ["Ps7CVarArg", "plotKnn"]
 - ["Ps7CVarArg", "polygon"]
+- ["Ps7CVarArg", "prefsEmail"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "radius"]
@@ -592,7 +594,6 @@ depends-member:
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "title"]
 - !private ["Ps7CVarArg", "topViewController"]
-- ["Ps7CVarArg", "trytext"]
 - ["Ps7CVarArg", "updateOverlay"]
 - !private ["Ps7CVarArg", "url"]
 - ["Ps7CVarArg", "urll"]
@@ -733,6 +734,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "pickerView"]
 - ["Ps28CustomDebugStringConvertible", "plotKnn"]
 - ["Ps28CustomDebugStringConvertible", "polygon"]
+- ["Ps28CustomDebugStringConvertible", "prefsEmail"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "radius"]
@@ -769,7 +771,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "topViewController"]
-- ["Ps28CustomDebugStringConvertible", "trytext"]
 - ["Ps28CustomDebugStringConvertible", "updateOverlay"]
 - !private ["Ps28CustomDebugStringConvertible", "url"]
 - ["Ps28CustomDebugStringConvertible", "urll"]
@@ -924,6 +925,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "pickerView"]
 - ["Ps23CustomStringConvertible", "plotKnn"]
 - ["Ps23CustomStringConvertible", "polygon"]
+- ["Ps23CustomStringConvertible", "prefsEmail"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "radius"]
@@ -959,7 +961,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "topViewController"]
-- ["Ps23CustomStringConvertible", "trytext"]
 - ["Ps23CustomStringConvertible", "updateOverlay"]
 - !private ["Ps23CustomStringConvertible", "url"]
 - ["Ps23CustomStringConvertible", "urll"]
@@ -1099,6 +1100,7 @@ depends-member:
 - ["Ps9Equatable", "pickerView"]
 - ["Ps9Equatable", "plotKnn"]
 - ["Ps9Equatable", "polygon"]
+- ["Ps9Equatable", "prefsEmail"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "radius"]
@@ -1132,7 +1134,6 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "topViewController"]
-- ["Ps9Equatable", "trytext"]
 - ["Ps9Equatable", "updateOverlay"]
 - !private ["Ps9Equatable", "url"]
 - ["Ps9Equatable", "urll"]
@@ -1265,6 +1266,7 @@ depends-member:
 - ["C5Buddy17GeoViewController", "pickerView"]
 - ["C5Buddy17GeoViewController", "plotKnn"]
 - ["C5Buddy17GeoViewController", "polygon"]
+- ["C5Buddy17GeoViewController", "prefsEmail"]
 - ["C5Buddy17GeoViewController", "prepare"]
 - !private ["C5Buddy17GeoViewController", "print"]
 - ["C5Buddy17GeoViewController", "radius"]
@@ -1274,7 +1276,6 @@ depends-member:
 - ["C5Buddy17GeoViewController", "sliderMoved"]
 - ["C5Buddy17GeoViewController", "sliderValue"]
 - ["C5Buddy17GeoViewController", "sortConvex"]
-- ["C5Buddy17GeoViewController", "trytext"]
 - ["C5Buddy17GeoViewController", "updateOverlay"]
 - ["C5Buddy17GeoViewController", "urll"]
 - !private ["C5Buddy17GeoViewController", "view"]
@@ -1385,6 +1386,7 @@ depends-member:
 - ["Ps8Hashable", "pickerView"]
 - ["Ps8Hashable", "plotKnn"]
 - ["Ps8Hashable", "polygon"]
+- ["Ps8Hashable", "prefsEmail"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "radius"]
@@ -1417,7 +1419,6 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "topViewController"]
-- ["Ps8Hashable", "trytext"]
 - ["Ps8Hashable", "updateOverlay"]
 - !private ["Ps8Hashable", "url"]
 - ["Ps8Hashable", "urll"]
@@ -1581,13 +1582,13 @@ depends-member:
 - ["PSo17MKMapViewDelegate", "pickerView"]
 - !private ["PSo17MKMapViewDelegate", "plotKnn"]
 - !private ["PSo17MKMapViewDelegate", "polygon"]
+- !private ["PSo17MKMapViewDelegate", "prefsEmail"]
 - !private ["PSo17MKMapViewDelegate", "print"]
 - !private ["PSo17MKMapViewDelegate", "radius"]
 - !private ["PSo17MKMapViewDelegate", "revealViewController"]
 - !private ["PSo17MKMapViewDelegate", "selectedPickerData"]
 - !private ["PSo17MKMapViewDelegate", "sliderValue"]
 - !private ["PSo17MKMapViewDelegate", "sortConvex"]
-- !private ["PSo17MKMapViewDelegate", "trytext"]
 - !private ["PSo17MKMapViewDelegate", "updateOverlay"]
 - !private ["PSo17MKMapViewDelegate", "urll"]
 - !private ["PSo17MKMapViewDelegate", "view"]
@@ -1749,6 +1750,7 @@ depends-member:
 - ["PSo8NSCoding", "pickerView"]
 - ["PSo8NSCoding", "plotKnn"]
 - ["PSo8NSCoding", "polygon"]
+- ["PSo8NSCoding", "prefsEmail"]
 - ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "radius"]
@@ -1774,7 +1776,6 @@ depends-member:
 - !private ["PSo8NSCoding", "target"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "topViewController"]
-- ["PSo8NSCoding", "trytext"]
 - ["PSo8NSCoding", "updateOverlay"]
 - !private ["PSo8NSCoding", "url"]
 - ["PSo8NSCoding", "urll"]
@@ -1866,6 +1867,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "pickerView"]
 - ["PSo26NSExtensionRequestHandling", "plotKnn"]
 - ["PSo26NSExtensionRequestHandling", "polygon"]
+- ["PSo26NSExtensionRequestHandling", "prefsEmail"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "radius"]
@@ -1880,7 +1882,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sliderValue"]
 - ["PSo26NSExtensionRequestHandling", "sortConvex"]
 - !private ["PSo26NSExtensionRequestHandling", "topViewController"]
-- ["PSo26NSExtensionRequestHandling", "trytext"]
 - ["PSo26NSExtensionRequestHandling", "updateOverlay"]
 - ["PSo26NSExtensionRequestHandling", "urll"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -2026,6 +2027,7 @@ depends-member:
 - ["CSo8NSObject", "pickerView"]
 - ["CSo8NSObject", "plotKnn"]
 - ["CSo8NSObject", "polygon"]
+- ["CSo8NSObject", "prefsEmail"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "radius"]
@@ -2058,7 +2060,6 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "topViewController"]
-- ["CSo8NSObject", "trytext"]
 - ["CSo8NSObject", "updateOverlay"]
 - !private ["CSo8NSObject", "url"]
 - ["CSo8NSObject", "urll"]
@@ -2167,6 +2168,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "pickerView"]
 - ["PSo16NSObjectProtocol", "plotKnn"]
 - ["PSo16NSObjectProtocol", "polygon"]
+- ["PSo16NSObjectProtocol", "prefsEmail"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "radius"]
@@ -2199,7 +2201,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "topViewController"]
-- ["PSo16NSObjectProtocol", "trytext"]
 - ["PSo16NSObjectProtocol", "updateOverlay"]
 - !private ["PSo16NSObjectProtocol", "url"]
 - ["PSo16NSObjectProtocol", "urll"]
@@ -2494,6 +2495,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "pickerView"]
 - ["PSo21UIAppearanceContainer", "plotKnn"]
 - ["PSo21UIAppearanceContainer", "polygon"]
+- ["PSo21UIAppearanceContainer", "prefsEmail"]
 - ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "radius"]
@@ -2515,7 +2517,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sortConvex"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "topViewController"]
-- ["PSo21UIAppearanceContainer", "trytext"]
 - ["PSo21UIAppearanceContainer", "updateOverlay"]
 - ["PSo21UIAppearanceContainer", "urll"]
 - !private ["PSo21UIAppearanceContainer", "value"]
@@ -2602,6 +2603,7 @@ depends-member:
 - ["PSo18UIContentContainer", "pickerView"]
 - ["PSo18UIContentContainer", "plotKnn"]
 - ["PSo18UIContentContainer", "polygon"]
+- ["PSo18UIContentContainer", "prefsEmail"]
 - ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "radius"]
@@ -2616,7 +2618,6 @@ depends-member:
 - ["PSo18UIContentContainer", "sliderValue"]
 - ["PSo18UIContentContainer", "sortConvex"]
 - !private ["PSo18UIContentContainer", "topViewController"]
-- ["PSo18UIContentContainer", "trytext"]
 - ["PSo18UIContentContainer", "updateOverlay"]
 - ["PSo18UIContentContainer", "urll"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -2763,6 +2764,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "pickerView"]
 - ["PSo18UIFocusEnvironment", "plotKnn"]
 - ["PSo18UIFocusEnvironment", "polygon"]
+- ["PSo18UIFocusEnvironment", "prefsEmail"]
 - ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "radius"]
@@ -2784,7 +2786,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sortConvex"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "topViewController"]
-- ["PSo18UIFocusEnvironment", "trytext"]
 - ["PSo18UIFocusEnvironment", "updateOverlay"]
 - ["PSo18UIFocusEnvironment", "urll"]
 - !private ["PSo18UIFocusEnvironment", "value"]
@@ -2895,13 +2896,13 @@ depends-member:
 - ["PSo22UIPickerViewDataSource", "pickerView"]
 - !private ["PSo22UIPickerViewDataSource", "plotKnn"]
 - !private ["PSo22UIPickerViewDataSource", "polygon"]
+- !private ["PSo22UIPickerViewDataSource", "prefsEmail"]
 - !private ["PSo22UIPickerViewDataSource", "print"]
 - !private ["PSo22UIPickerViewDataSource", "radius"]
 - !private ["PSo22UIPickerViewDataSource", "revealViewController"]
 - !private ["PSo22UIPickerViewDataSource", "selectedPickerData"]
 - !private ["PSo22UIPickerViewDataSource", "sliderValue"]
 - !private ["PSo22UIPickerViewDataSource", "sortConvex"]
-- !private ["PSo22UIPickerViewDataSource", "trytext"]
 - !private ["PSo22UIPickerViewDataSource", "updateOverlay"]
 - !private ["PSo22UIPickerViewDataSource", "urll"]
 - !private ["PSo22UIPickerViewDataSource", "view"]
@@ -2967,13 +2968,13 @@ depends-member:
 - ["PSo20UIPickerViewDelegate", "pickerView"]
 - !private ["PSo20UIPickerViewDelegate", "plotKnn"]
 - !private ["PSo20UIPickerViewDelegate", "polygon"]
+- !private ["PSo20UIPickerViewDelegate", "prefsEmail"]
 - !private ["PSo20UIPickerViewDelegate", "print"]
 - !private ["PSo20UIPickerViewDelegate", "radius"]
 - !private ["PSo20UIPickerViewDelegate", "revealViewController"]
 - !private ["PSo20UIPickerViewDelegate", "selectedPickerData"]
 - !private ["PSo20UIPickerViewDelegate", "sliderValue"]
 - !private ["PSo20UIPickerViewDelegate", "sortConvex"]
-- !private ["PSo20UIPickerViewDelegate", "trytext"]
 - !private ["PSo20UIPickerViewDelegate", "updateOverlay"]
 - !private ["PSo20UIPickerViewDelegate", "urll"]
 - !private ["PSo20UIPickerViewDelegate", "view"]
@@ -3081,6 +3082,7 @@ depends-member:
 - ["CSo11UIResponder", "pickerView"]
 - ["CSo11UIResponder", "plotKnn"]
 - ["CSo11UIResponder", "polygon"]
+- ["CSo11UIResponder", "prefsEmail"]
 - ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "radius"]
@@ -3102,7 +3104,6 @@ depends-member:
 - ["CSo11UIResponder", "sortConvex"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "topViewController"]
-- ["CSo11UIResponder", "trytext"]
 - ["CSo11UIResponder", "updateOverlay"]
 - ["CSo11UIResponder", "urll"]
 - !private ["CSo11UIResponder", "value"]
@@ -3189,6 +3190,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "pickerView"]
 - ["PSo30UIResponderStandardEditActions", "plotKnn"]
 - ["PSo30UIResponderStandardEditActions", "polygon"]
+- ["PSo30UIResponderStandardEditActions", "prefsEmail"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "radius"]
@@ -3210,7 +3212,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "sortConvex"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "topViewController"]
-- ["PSo30UIResponderStandardEditActions", "trytext"]
 - ["PSo30UIResponderStandardEditActions", "updateOverlay"]
 - ["PSo30UIResponderStandardEditActions", "urll"]
 - !private ["PSo30UIResponderStandardEditActions", "value"]
@@ -3218,6 +3219,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo20UIScrollViewDelegate", "cuisine"]
+- !private ["PSo20UIScrollViewDelegate", "prefsEmail"]
 - !private ["PSo20UIScrollViewDelegate", "restaurant"]
 - !private ["PSo20UIScrollViewDelegate", "restaurantLatitude"]
 - !private ["PSo20UIScrollViewDelegate", "restaurantLongitude"]
@@ -3289,6 +3291,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "pickerView"]
 - ["PSo16UIStateRestoring", "plotKnn"]
 - ["PSo16UIStateRestoring", "polygon"]
+- ["PSo16UIStateRestoring", "prefsEmail"]
 - ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "radius"]
@@ -3303,7 +3306,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "sliderValue"]
 - ["PSo16UIStateRestoring", "sortConvex"]
 - !private ["PSo16UIStateRestoring", "topViewController"]
-- ["PSo16UIStateRestoring", "trytext"]
 - ["PSo16UIStateRestoring", "updateOverlay"]
 - ["PSo16UIStateRestoring", "urll"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -3313,14 +3315,17 @@ depends-member:
 - !private ["CSo17UIStoryboardSegue", "destination"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
 - !private ["CSo21UITableViewController", "cuisine"]
+- !private ["CSo21UITableViewController", "prefsEmail"]
 - !private ["CSo21UITableViewController", "restaurant"]
 - !private ["CSo21UITableViewController", "restaurantLatitude"]
 - !private ["CSo21UITableViewController", "restaurantLongitude"]
 - !private ["PSo21UITableViewDataSource", "cuisine"]
+- !private ["PSo21UITableViewDataSource", "prefsEmail"]
 - !private ["PSo21UITableViewDataSource", "restaurant"]
 - !private ["PSo21UITableViewDataSource", "restaurantLatitude"]
 - !private ["PSo21UITableViewDataSource", "restaurantLongitude"]
 - !private ["PSo19UITableViewDelegate", "cuisine"]
+- !private ["PSo19UITableViewDelegate", "prefsEmail"]
 - !private ["PSo19UITableViewDelegate", "restaurant"]
 - !private ["PSo19UITableViewDelegate", "restaurantLatitude"]
 - !private ["PSo19UITableViewDelegate", "restaurantLongitude"]
@@ -3408,6 +3413,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "pickerView"]
 - ["PSo18UITraitEnvironment", "plotKnn"]
 - ["PSo18UITraitEnvironment", "polygon"]
+- ["PSo18UITraitEnvironment", "prefsEmail"]
 - ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "radius"]
@@ -3429,7 +3435,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sortConvex"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "topViewController"]
-- ["PSo18UITraitEnvironment", "trytext"]
 - ["PSo18UITraitEnvironment", "updateOverlay"]
 - ["PSo18UITraitEnvironment", "urll"]
 - !private ["PSo18UITraitEnvironment", "value"]
@@ -3550,6 +3555,7 @@ depends-member:
 - ["CSo16UIViewController", "pickerView"]
 - ["CSo16UIViewController", "plotKnn"]
 - ["CSo16UIViewController", "polygon"]
+- ["CSo16UIViewController", "prefsEmail"]
 - ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "radius"]
@@ -3564,7 +3570,6 @@ depends-member:
 - ["CSo16UIViewController", "sliderValue"]
 - ["CSo16UIViewController", "sortConvex"]
 - !private ["CSo16UIViewController", "topViewController"]
-- ["CSo16UIViewController", "trytext"]
 - ["CSo16UIViewController", "updateOverlay"]
 - ["CSo16UIViewController", "urll"]
 - !private ["CSo16UIViewController", "view"]
@@ -3770,6 +3775,7 @@ depends-member:
 - ["Ps9_Hashable", "pickerView"]
 - ["Ps9_Hashable", "plotKnn"]
 - ["Ps9_Hashable", "polygon"]
+- ["Ps9_Hashable", "prefsEmail"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "radius"]
@@ -3802,7 +3808,6 @@ depends-member:
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "title"]
 - !private ["Ps9_Hashable", "topViewController"]
-- ["Ps9_Hashable", "trytext"]
 - ["Ps9_Hashable", "updateOverlay"]
 - !private ["Ps9_Hashable", "url"]
 - ["Ps9_Hashable", "urll"]
@@ -4069,4 +4074,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "6ef2ac93699cb5dae1efcf026ebf50db"
+interface-hash: "96614892f0235da663d5de7a98a364e1"
