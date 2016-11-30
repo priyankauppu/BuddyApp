@@ -7,45 +7,48 @@ provides-member:
 - ["C5Buddy23DirectionViewController", ""]
 provides-dynamic-lookup:
 - "prefsEmail"
+- "displayMessage"
 - "viewDidLoad"
 - "mapView"
 - "mapView"
+- "didReceiveMemoryWarning"
 - "restaurantLongitude"
+- "message"
 - "locationManager"
 - "restaurantLatitude"
-- "didReceiveMemoryWarning"
 depends-top-level:
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "Void"
 - "MKMapView"
-- !private "UserDefaults"
-- "MKOverlayRenderer"
-- !private "MKCoordinateSpanMake"
 - !private "CLLocation"
-- !private "MKPointAnnotation"
-- !private "MKMapItem"
-- !private "print"
-- !private "kCLLocationAccuracyBest"
-- !private "MKDirectionsRequest"
-- !private "MKCoordinateRegion"
 - "String"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "Void"
+- !private "print"
 - "UIViewController"
-- "MKMapViewDelegate"
-- !private "BooleanLiteralType"
-- !private "CLLocationCoordinate2D"
+- !private "MKDirectionsRequest"
+- !private "UserDefaults"
 - !private "MKPolylineRenderer"
-- "CLLocationManagerDelegate"
-- "StringLiteralType"
-- !private "MKDirections"
-- "MKOverlay"
-- "DirectionViewController"
-- !private "UIColor"
-- !private "MKCoordinateRegionForMapRect"
-- "Double"
 - !private "MKOverlayLevel"
-- !private "MKPlacemark"
+- !private "MKCoordinateRegionForMapRect"
+- !private "CLLocationCoordinate2D"
+- "MKOverlay"
+- !private "MKCoordinateRegion"
+- "CLLocationManagerDelegate"
+- !private "MKPointAnnotation"
+- !private "UIColor"
+- !private "BooleanLiteralType"
+- "MKMapViewDelegate"
+- !private "MKMapItem"
 - "CLLocationManager"
+- "DirectionViewController"
+- !private "MKCoordinateSpanMake"
+- "StringLiteralType"
+- "Double"
+- "MKOverlayRenderer"
+- !private "kCLLocationAccuracyBest"
+- !private "MKDirections"
+- !private "MKPlacemark"
+- "UILabel"
 depends-member:
 - !private ["Ps9AnyObject", "CLLocationCoordinate2D"]
 - ["Ps9AnyObject", "CLLocationManager"]
@@ -70,6 +73,7 @@ depends-member:
 - !private ["Ps9AnyObject", "desiredAccuracy"]
 - !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "displayMessage"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "kCLLocationAccuracyBest"]
 - !private ["Ps9AnyObject", "lineWidth"]
@@ -86,6 +90,7 @@ depends-member:
 - ["Ps9AnyObject", "mapViewWillStartLoadingMap"]
 - ["Ps9AnyObject", "mapViewWillStartLocatingUser"]
 - ["Ps9AnyObject", "mapViewWillStartRenderingMap"]
+- ["Ps9AnyObject", "message"]
 - !private ["Ps9AnyObject", "polyline"]
 - ["Ps9AnyObject", "prefsEmail"]
 - !private ["Ps9AnyObject", "print"]
@@ -100,6 +105,7 @@ depends-member:
 - !private ["Ps9AnyObject", "standard"]
 - !private ["Ps9AnyObject", "startUpdatingLocation"]
 - !private ["Ps9AnyObject", "strokeColor"]
+- !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "transportType"]
 - !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -137,6 +143,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "setRegion"]
 - !private ["PSo15CALayerDelegate", "showsUserLocation"]
+- !private ["PSo15CALayerDelegate", "text"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["CSo10CLLocation", "coordinate"]
 - ["CSo10CLLocation", "deinit"]
@@ -165,6 +172,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "MKPolylineRenderer"]
 - !private ["PSo25CLLocationManagerDelegate", "UIColor"]
 - !private ["PSo25CLLocationManagerDelegate", "UserDefaults"]
+- !private ["PSo25CLLocationManagerDelegate", "displayMessage"]
 - !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyBest"]
 - ["PSo25CLLocationManagerDelegate", "locationManager"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidPauseLocationUpdates"]
@@ -178,6 +186,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "mapViewWillStartLoadingMap"]
 - ["PSo25CLLocationManagerDelegate", "mapViewWillStartLocatingUser"]
 - ["PSo25CLLocationManagerDelegate", "mapViewWillStartRenderingMap"]
+- !private ["PSo25CLLocationManagerDelegate", "message"]
 - !private ["PSo25CLLocationManagerDelegate", "prefsEmail"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "restaurantLatitude"]
@@ -212,6 +221,7 @@ depends-member:
 - !private ["Ps7CVarArg", "desiredAccuracy"]
 - !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "displayMessage"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "kCLLocationAccuracyBest"]
 - !private ["Ps7CVarArg", "lineWidth"]
@@ -228,6 +238,7 @@ depends-member:
 - ["Ps7CVarArg", "mapViewWillStartLoadingMap"]
 - ["Ps7CVarArg", "mapViewWillStartLocatingUser"]
 - ["Ps7CVarArg", "mapViewWillStartRenderingMap"]
+- ["Ps7CVarArg", "message"]
 - !private ["Ps7CVarArg", "polyline"]
 - ["Ps7CVarArg", "prefsEmail"]
 - !private ["Ps7CVarArg", "print"]
@@ -243,6 +254,7 @@ depends-member:
 - !private ["Ps7CVarArg", "startUpdatingLocation"]
 - !private ["Ps7CVarArg", "strokeColor"]
 - !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "transportType"]
 - !private ["Ps7CVarArg", "value"]
 - ["Ps7CVarArg", "viewDidLoad"]
@@ -284,6 +296,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "desiredAccuracy"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "displayMessage"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "kCLLocationAccuracyBest"]
 - !private ["Ps28CustomDebugStringConvertible", "lineWidth"]
@@ -300,6 +313,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "mapViewWillStartLoadingMap"]
 - ["Ps28CustomDebugStringConvertible", "mapViewWillStartLocatingUser"]
 - ["Ps28CustomDebugStringConvertible", "mapViewWillStartRenderingMap"]
+- ["Ps28CustomDebugStringConvertible", "message"]
 - !private ["Ps28CustomDebugStringConvertible", "polyline"]
 - ["Ps28CustomDebugStringConvertible", "prefsEmail"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -315,6 +329,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "startUpdatingLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "strokeColor"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "transportType"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -358,6 +373,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "desiredAccuracy"]
 - !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "displayMessage"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "kCLLocationAccuracyBest"]
 - !private ["Ps23CustomStringConvertible", "lineWidth"]
@@ -374,6 +390,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "mapViewWillStartLoadingMap"]
 - ["Ps23CustomStringConvertible", "mapViewWillStartLocatingUser"]
 - ["Ps23CustomStringConvertible", "mapViewWillStartRenderingMap"]
+- ["Ps23CustomStringConvertible", "message"]
 - !private ["Ps23CustomStringConvertible", "polyline"]
 - ["Ps23CustomStringConvertible", "prefsEmail"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -389,6 +406,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "startUpdatingLocation"]
 - !private ["Ps23CustomStringConvertible", "strokeColor"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "transportType"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -422,10 +440,12 @@ depends-member:
 - !private ["C5Buddy23DirectionViewController", "MKPolylineRenderer"]
 - ["C5Buddy23DirectionViewController", "String"]
 - !private ["C5Buddy23DirectionViewController", "UIColor"]
+- ["C5Buddy23DirectionViewController", "UILabel"]
 - !private ["C5Buddy23DirectionViewController", "UserDefaults"]
 - !private ["C5Buddy23DirectionViewController", "Void"]
 - ["C5Buddy23DirectionViewController", "deinit"]
 - ["C5Buddy23DirectionViewController", "didReceiveMemoryWarning"]
+- ["C5Buddy23DirectionViewController", "displayMessage"]
 - ["C5Buddy23DirectionViewController", "init"]
 - !private ["C5Buddy23DirectionViewController", "kCLLocationAccuracyBest"]
 - ["C5Buddy23DirectionViewController", "locationManager"]
@@ -440,6 +460,7 @@ depends-member:
 - ["C5Buddy23DirectionViewController", "mapViewWillStartLoadingMap"]
 - ["C5Buddy23DirectionViewController", "mapViewWillStartLocatingUser"]
 - ["C5Buddy23DirectionViewController", "mapViewWillStartRenderingMap"]
+- ["C5Buddy23DirectionViewController", "message"]
 - ["C5Buddy23DirectionViewController", "prefsEmail"]
 - !private ["C5Buddy23DirectionViewController", "print"]
 - ["C5Buddy23DirectionViewController", "restaurantLatitude"]
@@ -473,6 +494,7 @@ depends-member:
 - !private ["Ps9Equatable", "desiredAccuracy"]
 - !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "displayMessage"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "kCLLocationAccuracyBest"]
 - !private ["Ps9Equatable", "lineWidth"]
@@ -489,6 +511,7 @@ depends-member:
 - ["Ps9Equatable", "mapViewWillStartLoadingMap"]
 - ["Ps9Equatable", "mapViewWillStartLocatingUser"]
 - ["Ps9Equatable", "mapViewWillStartRenderingMap"]
+- ["Ps9Equatable", "message"]
 - !private ["Ps9Equatable", "polyline"]
 - ["Ps9Equatable", "prefsEmail"]
 - !private ["Ps9Equatable", "print"]
@@ -503,6 +526,7 @@ depends-member:
 - !private ["Ps9Equatable", "standard"]
 - !private ["Ps9Equatable", "startUpdatingLocation"]
 - !private ["Ps9Equatable", "strokeColor"]
+- !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "transportType"]
 - !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -548,6 +572,7 @@ depends-member:
 - !private ["Ps8Hashable", "desiredAccuracy"]
 - !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "displayMessage"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "kCLLocationAccuracyBest"]
 - !private ["Ps8Hashable", "lineWidth"]
@@ -564,6 +589,7 @@ depends-member:
 - ["Ps8Hashable", "mapViewWillStartLoadingMap"]
 - ["Ps8Hashable", "mapViewWillStartLocatingUser"]
 - ["Ps8Hashable", "mapViewWillStartRenderingMap"]
+- ["Ps8Hashable", "message"]
 - !private ["Ps8Hashable", "polyline"]
 - ["Ps8Hashable", "prefsEmail"]
 - !private ["Ps8Hashable", "print"]
@@ -578,6 +604,7 @@ depends-member:
 - !private ["Ps8Hashable", "standard"]
 - !private ["Ps8Hashable", "startUpdatingLocation"]
 - !private ["Ps8Hashable", "strokeColor"]
+- !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "transportType"]
 - !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -654,6 +681,7 @@ depends-member:
 - !private ["PSo17MKMapViewDelegate", "MKPolylineRenderer"]
 - !private ["PSo17MKMapViewDelegate", "UIColor"]
 - !private ["PSo17MKMapViewDelegate", "UserDefaults"]
+- !private ["PSo17MKMapViewDelegate", "displayMessage"]
 - !private ["PSo17MKMapViewDelegate", "kCLLocationAccuracyBest"]
 - ["PSo17MKMapViewDelegate", "locationManager"]
 - ["PSo17MKMapViewDelegate", "locationManagerDidPauseLocationUpdates"]
@@ -667,6 +695,7 @@ depends-member:
 - ["PSo17MKMapViewDelegate", "mapViewWillStartLoadingMap"]
 - ["PSo17MKMapViewDelegate", "mapViewWillStartLocatingUser"]
 - ["PSo17MKMapViewDelegate", "mapViewWillStartRenderingMap"]
+- !private ["PSo17MKMapViewDelegate", "message"]
 - !private ["PSo17MKMapViewDelegate", "prefsEmail"]
 - !private ["PSo17MKMapViewDelegate", "print"]
 - !private ["PSo17MKMapViewDelegate", "restaurantLatitude"]
@@ -729,6 +758,7 @@ depends-member:
 - !private ["PSo8NSCoding", "coordinate"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "displayMessage"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "kCLLocationAccuracyBest"]
 - ["PSo8NSCoding", "locationManager"]
@@ -743,6 +773,7 @@ depends-member:
 - ["PSo8NSCoding", "mapViewWillStartLoadingMap"]
 - ["PSo8NSCoding", "mapViewWillStartLocatingUser"]
 - ["PSo8NSCoding", "mapViewWillStartRenderingMap"]
+- ["PSo8NSCoding", "message"]
 - ["PSo8NSCoding", "prefsEmail"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "red"]
@@ -750,6 +781,7 @@ depends-member:
 - ["PSo8NSCoding", "restaurantLongitude"]
 - !private ["PSo8NSCoding", "setRegion"]
 - !private ["PSo8NSCoding", "showsUserLocation"]
+- !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "coordinate"]
@@ -770,6 +802,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "displayMessage"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "kCLLocationAccuracyBest"]
 - ["PSo26NSExtensionRequestHandling", "locationManager"]
@@ -784,6 +817,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "mapViewWillStartLoadingMap"]
 - ["PSo26NSExtensionRequestHandling", "mapViewWillStartLocatingUser"]
 - ["PSo26NSExtensionRequestHandling", "mapViewWillStartRenderingMap"]
+- ["PSo26NSExtensionRequestHandling", "message"]
 - ["PSo26NSExtensionRequestHandling", "prefsEmail"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "restaurantLatitude"]
@@ -810,6 +844,7 @@ depends-member:
 - !private ["CSo8NSObject", "MKPolylineRenderer"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "UserDefaults"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "add"]
@@ -821,6 +856,7 @@ depends-member:
 - !private ["CSo8NSObject", "desiredAccuracy"]
 - !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "displayMessage"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "kCLLocationAccuracyBest"]
 - !private ["CSo8NSObject", "lineWidth"]
@@ -837,6 +873,7 @@ depends-member:
 - ["CSo8NSObject", "mapViewWillStartLoadingMap"]
 - ["CSo8NSObject", "mapViewWillStartLocatingUser"]
 - ["CSo8NSObject", "mapViewWillStartRenderingMap"]
+- ["CSo8NSObject", "message"]
 - !private ["CSo8NSObject", "polyline"]
 - ["CSo8NSObject", "prefsEmail"]
 - !private ["CSo8NSObject", "print"]
@@ -851,6 +888,7 @@ depends-member:
 - !private ["CSo8NSObject", "standard"]
 - !private ["CSo8NSObject", "startUpdatingLocation"]
 - !private ["CSo8NSObject", "strokeColor"]
+- !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "transportType"]
 - !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -877,6 +915,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "desiredAccuracy"]
 - !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "displayMessage"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyBest"]
 - !private ["PSo16NSObjectProtocol", "lineWidth"]
@@ -893,6 +932,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "mapViewWillStartLoadingMap"]
 - ["PSo16NSObjectProtocol", "mapViewWillStartLocatingUser"]
 - ["PSo16NSObjectProtocol", "mapViewWillStartRenderingMap"]
+- ["PSo16NSObjectProtocol", "message"]
 - !private ["PSo16NSObjectProtocol", "polyline"]
 - ["PSo16NSObjectProtocol", "prefsEmail"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -907,6 +947,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "standard"]
 - !private ["PSo16NSObjectProtocol", "startUpdatingLocation"]
 - !private ["PSo16NSObjectProtocol", "strokeColor"]
+- !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "transportType"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -976,11 +1017,13 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "setRegion"]
 - !private ["PSo29UIAccessibilityIdentification", "showsUserLocation"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "add"]
 - !private ["PSo12UIAppearance", "addAnnotation"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "setRegion"]
 - !private ["PSo12UIAppearance", "showsUserLocation"]
+- !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "CLLocationCoordinate2D"]
 - ["PSo21UIAppearanceContainer", "CLLocationManager"]
 - !private ["PSo21UIAppearanceContainer", "MKCoordinateRegion"]
@@ -999,6 +1042,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addAnnotation"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "displayMessage"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyBest"]
 - ["PSo21UIAppearanceContainer", "locationManager"]
@@ -1013,12 +1057,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "mapViewWillStartLoadingMap"]
 - ["PSo21UIAppearanceContainer", "mapViewWillStartLocatingUser"]
 - ["PSo21UIAppearanceContainer", "mapViewWillStartRenderingMap"]
+- ["PSo21UIAppearanceContainer", "message"]
 - ["PSo21UIAppearanceContainer", "prefsEmail"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "restaurantLatitude"]
 - ["PSo21UIAppearanceContainer", "restaurantLongitude"]
 - !private ["PSo21UIAppearanceContainer", "setRegion"]
 - !private ["PSo21UIAppearanceContainer", "showsUserLocation"]
+- !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo7UIColor", "deinit"]
@@ -1038,6 +1084,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UserDefaults"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "displayMessage"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "kCLLocationAccuracyBest"]
 - ["PSo18UIContentContainer", "locationManager"]
@@ -1052,22 +1099,26 @@ depends-member:
 - ["PSo18UIContentContainer", "mapViewWillStartLoadingMap"]
 - ["PSo18UIContentContainer", "mapViewWillStartLocatingUser"]
 - ["PSo18UIContentContainer", "mapViewWillStartRenderingMap"]
+- ["PSo18UIContentContainer", "message"]
 - ["PSo18UIContentContainer", "prefsEmail"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "restaurantLatitude"]
 - ["PSo18UIContentContainer", "restaurantLongitude"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "add"]
 - !private ["PSo17UICoordinateSpace", "addAnnotation"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "setRegion"]
 - !private ["PSo17UICoordinateSpace", "showsUserLocation"]
+- !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "add"]
 - !private ["PSo13UIDynamicItem", "addAnnotation"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "setRegion"]
 - !private ["PSo13UIDynamicItem", "showsUserLocation"]
+- !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "CLLocationCoordinate2D"]
 - ["PSo18UIFocusEnvironment", "CLLocationManager"]
 - !private ["PSo18UIFocusEnvironment", "MKCoordinateRegion"]
@@ -1086,6 +1137,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addAnnotation"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "displayMessage"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBest"]
 - ["PSo18UIFocusEnvironment", "locationManager"]
@@ -1100,12 +1152,14 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "mapViewWillStartLoadingMap"]
 - ["PSo18UIFocusEnvironment", "mapViewWillStartLocatingUser"]
 - ["PSo18UIFocusEnvironment", "mapViewWillStartRenderingMap"]
+- ["PSo18UIFocusEnvironment", "message"]
 - ["PSo18UIFocusEnvironment", "prefsEmail"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "restaurantLatitude"]
 - ["PSo18UIFocusEnvironment", "restaurantLongitude"]
 - !private ["PSo18UIFocusEnvironment", "setRegion"]
 - !private ["PSo18UIFocusEnvironment", "showsUserLocation"]
+- !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "add"]
@@ -1113,6 +1167,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "setRegion"]
 - !private ["PSo11UIFocusItem", "showsUserLocation"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "CLLocation"]
 - !private ["CSo11UIResponder", "CLLocationCoordinate2D"]
 - ["CSo11UIResponder", "CLLocationManager"]
@@ -1132,12 +1188,14 @@ depends-member:
 - !private ["CSo11UIResponder", "MKPolylineRenderer"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "UserDefaults"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "add"]
 - !private ["CSo11UIResponder", "addAnnotation"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "displayMessage"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "kCLLocationAccuracyBest"]
 - ["CSo11UIResponder", "locationManager"]
@@ -1152,12 +1210,14 @@ depends-member:
 - ["CSo11UIResponder", "mapViewWillStartLoadingMap"]
 - ["CSo11UIResponder", "mapViewWillStartLocatingUser"]
 - ["CSo11UIResponder", "mapViewWillStartRenderingMap"]
+- ["CSo11UIResponder", "message"]
 - ["CSo11UIResponder", "prefsEmail"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "restaurantLatitude"]
 - ["CSo11UIResponder", "restaurantLongitude"]
 - !private ["CSo11UIResponder", "setRegion"]
 - !private ["CSo11UIResponder", "showsUserLocation"]
+- !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "CLLocationCoordinate2D"]
 - ["PSo30UIResponderStandardEditActions", "CLLocationManager"]
@@ -1177,6 +1237,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "addAnnotation"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "displayMessage"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "kCLLocationAccuracyBest"]
 - ["PSo30UIResponderStandardEditActions", "locationManager"]
@@ -1191,12 +1252,14 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "mapViewWillStartLoadingMap"]
 - ["PSo30UIResponderStandardEditActions", "mapViewWillStartLocatingUser"]
 - ["PSo30UIResponderStandardEditActions", "mapViewWillStartRenderingMap"]
+- ["PSo30UIResponderStandardEditActions", "message"]
 - ["PSo30UIResponderStandardEditActions", "prefsEmail"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "restaurantLatitude"]
 - ["PSo30UIResponderStandardEditActions", "restaurantLongitude"]
 - !private ["PSo30UIResponderStandardEditActions", "setRegion"]
 - !private ["PSo30UIResponderStandardEditActions", "showsUserLocation"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "CLLocationCoordinate2D"]
@@ -1214,6 +1277,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UserDefaults"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "displayMessage"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "kCLLocationAccuracyBest"]
 - ["PSo16UIStateRestoring", "locationManager"]
@@ -1228,6 +1292,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "mapViewWillStartLoadingMap"]
 - ["PSo16UIStateRestoring", "mapViewWillStartLocatingUser"]
 - ["PSo16UIStateRestoring", "mapViewWillStartRenderingMap"]
+- ["PSo16UIStateRestoring", "message"]
 - ["PSo16UIStateRestoring", "prefsEmail"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "restaurantLatitude"]
@@ -1252,6 +1317,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addAnnotation"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "displayMessage"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyBest"]
 - ["PSo18UITraitEnvironment", "locationManager"]
@@ -1266,12 +1332,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "mapViewWillStartLoadingMap"]
 - ["PSo18UITraitEnvironment", "mapViewWillStartLocatingUser"]
 - ["PSo18UITraitEnvironment", "mapViewWillStartRenderingMap"]
+- ["PSo18UITraitEnvironment", "message"]
 - ["PSo18UITraitEnvironment", "prefsEmail"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "restaurantLatitude"]
 - ["PSo18UITraitEnvironment", "restaurantLongitude"]
 - !private ["PSo18UITraitEnvironment", "setRegion"]
 - !private ["PSo18UITraitEnvironment", "showsUserLocation"]
+- !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "add"]
@@ -1279,6 +1347,7 @@ depends-member:
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "setRegion"]
 - !private ["CSo6UIView", "showsUserLocation"]
+- !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "CLLocation"]
 - !private ["CSo16UIViewController", "CLLocationCoordinate2D"]
 - ["CSo16UIViewController", "CLLocationManager"]
@@ -1298,10 +1367,12 @@ depends-member:
 - !private ["CSo16UIViewController", "MKPolylineRenderer"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "UserDefaults"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "displayMessage"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "kCLLocationAccuracyBest"]
 - ["CSo16UIViewController", "locationManager"]
@@ -1316,6 +1387,7 @@ depends-member:
 - ["CSo16UIViewController", "mapViewWillStartLoadingMap"]
 - ["CSo16UIViewController", "mapViewWillStartLocatingUser"]
 - ["CSo16UIViewController", "mapViewWillStartRenderingMap"]
+- ["CSo16UIViewController", "message"]
 - ["CSo16UIViewController", "prefsEmail"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "restaurantLatitude"]
@@ -1339,6 +1411,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setRegion"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsUserLocation"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
@@ -1378,6 +1451,7 @@ depends-member:
 - !private ["Ps9_Hashable", "desiredAccuracy"]
 - !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["Ps9_Hashable", "displayMessage"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "kCLLocationAccuracyBest"]
 - !private ["Ps9_Hashable", "lineWidth"]
@@ -1394,6 +1468,7 @@ depends-member:
 - ["Ps9_Hashable", "mapViewWillStartLoadingMap"]
 - ["Ps9_Hashable", "mapViewWillStartLocatingUser"]
 - ["Ps9_Hashable", "mapViewWillStartRenderingMap"]
+- ["Ps9_Hashable", "message"]
 - !private ["Ps9_Hashable", "polyline"]
 - ["Ps9_Hashable", "prefsEmail"]
 - !private ["Ps9_Hashable", "print"]
@@ -1408,6 +1483,7 @@ depends-member:
 - !private ["Ps9_Hashable", "standard"]
 - !private ["Ps9_Hashable", "startUpdatingLocation"]
 - !private ["Ps9_Hashable", "strokeColor"]
+- !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "transportType"]
 - !private ["Ps9_Hashable", "value"]
 - ["Ps9_Hashable", "viewDidLoad"]
@@ -1542,10 +1618,12 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
@@ -1592,4 +1670,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "e70b000a4ea93be48b7f32fd8bd019e9"
+interface-hash: "78494decf4bf37290c347adea4495210"

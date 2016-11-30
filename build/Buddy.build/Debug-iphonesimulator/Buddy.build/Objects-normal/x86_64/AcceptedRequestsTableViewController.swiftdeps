@@ -6,48 +6,48 @@ provides-nominal:
 provides-member:
 - ["C5Buddy35AcceptedRequestsTableViewController", ""]
 provides-dynamic-lookup:
+- "urll"
+- "buddyCuisine"
+- "numberOfSections"
+- "buddyEmail"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "didReceiveMemoryWarning"
 - "buddyTime"
 - "para"
-- "buddyRestaurant"
-- "tableView"
-- "tableView"
+- "buddyName"
 - "getAcceptedRequests"
 - "menuButton"
-- "buddyName"
+- "buddyRestaurant"
 - "prefsEmail"
-- "didReceiveMemoryWarning"
-- "buddyEmail"
-- "urll"
-- "numberOfSections"
-- "viewDidLoad"
-- "buddyCuisine"
 depends-top-level:
-- "IndexPath"
-- "AcceptedRequestsTableViewController"
-- "AssignmentPrecedence"
-- "Int"
-- "NSMutableDictionary"
-- "CastingPrecedence"
 - !private "+"
-- "String"
-- !private "SWRevealViewController"
-- "UITableView"
-- !private "DispatchQueue"
-- !private "AcceptedRequestsTableViewCell"
-- !private "print"
-- !private "JSONSerialization"
-- "UIBarButtonItem"
-- !private "NSMutableURLRequest"
-- !private "NSURL"
+- "AcceptedRequestsTableViewController"
+- !private "Dictionary"
 - !private "!="
 - "UITableViewCell"
-- !private "UserDefaults"
-- !private "URLSession"
-- "UITableViewController"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
 - !private "URLRequest"
-- "StringLiteralType"
-- !private "Dictionary"
 - !private "URL"
+- !private "SWRevealViewController"
+- !private "UserDefaults"
+- !private "print"
+- "UITableView"
+- !private "URLSession"
+- "UIBarButtonItem"
+- !private "NSURL"
+- "NSMutableDictionary"
+- "String"
+- !private "JSONSerialization"
+- "UITableViewController"
+- "StringLiteralType"
+- "Int"
+- !private "AcceptedRequestsTableViewCell"
+- !private "DispatchQueue"
+- !private "NSMutableURLRequest"
+- "IndexPath"
 depends-member:
 - !private ["C5Buddy29AcceptedRequestsTableViewCell", "buddyCuisine"]
 - !private ["C5Buddy29AcceptedRequestsTableViewCell", "buddyEmail"]
@@ -250,7 +250,6 @@ depends-member:
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
-- !private ["Vs9Character", "deinit"]
 - !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Indices"]
@@ -428,7 +427,6 @@ depends-member:
 - !private ["CSo13DispatchQueue", "async"]
 - !private ["CSo13DispatchQueue", "deinit"]
 - !private ["CSo13DispatchQueue", "main"]
-- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "DispatchQueue"]
 - !private ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
@@ -513,7 +511,6 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "DispatchQueue"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSONSerialization"]
@@ -597,10 +594,6 @@ depends-member:
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
 - ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
 - !private ["Ps7Integer", "IntegerLiteralType"]
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "_DisabledRangeIndex"]
@@ -1404,11 +1397,6 @@ depends-member:
 - ["CSo16UIViewController", "urll"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
 - ["V10Foundation10URLRequest", "deinit"]
 - !private ["CSo10URLSession", "dataTask"]
 - ["CSo10URLSession", "deinit"]
@@ -1416,7 +1404,6 @@ depends-member:
 - ["CSo18URLSessionDataTask", "deinit"]
 - !private ["CSo18URLSessionDataTask", "resume"]
 - !private ["CSo14URLSessionTask", "resume"]
-- !private ["Sc", "deinit"]
 - ["CSo12UserDefaults", "deinit"]
 - !private ["CSo12UserDefaults", "standard"]
 - !private ["CSo12UserDefaults", "value"]
@@ -1558,7 +1545,6 @@ depends-nominal:
 - "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
-- !private "Vs9Character"
 - !private "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -1571,7 +1557,6 @@ depends-nominal:
 - !private "Vs10Dictionary"
 - !private "CSo14DispatchObject"
 - !private "CSo13DispatchQueue"
-- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps5Error"
 - !private "Ps25ExpressibleByArrayLiteral"
@@ -1582,7 +1567,6 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "Sf"
 - "Ps8Hashable"
 - "SQ"
 - "V10Foundation9IndexPath"
@@ -1590,10 +1574,6 @@ depends-nominal:
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
 - "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
@@ -1666,16 +1646,10 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
 - "V10Foundation10URLRequest"
 - "CSo10URLSession"
 - "CSo18URLSessionDataTask"
 - !private "CSo14URLSessionTask"
-- !private "Sc"
 - "CSo12UserDefaults"
 - "VCSo17JSONSerialization14WritingOptions"
 - !private "Ps14_ArrayProtocol"

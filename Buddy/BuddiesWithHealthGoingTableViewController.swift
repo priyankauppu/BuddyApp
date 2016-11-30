@@ -42,9 +42,10 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
         prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
         //print("Buddies with health View Controller**********\(prefsEmail)***************")
         print("********\(restaurant)********\(cuisine)***************")
-        findNearByBuddies()
-//        self.tableView.reloadData()
         
+        //Calling webservice to retrieve the nearby Buddies
+        findNearByBuddies()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,7 +94,6 @@ class BuddiesWithHealthGoingTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-       // print("count",buddyName.count)
         return  buddyName.count
     }
 

@@ -66,11 +66,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8j1-az-Rh3">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="adJ-yF-Amu"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="8j1-az-Rh3"/>
                     <connections>
-                        <outlet property="menuButton" destination="adJ-yF-Amu" id="148-eD-g5w"/>
                         <outlet property="password" destination="gD3-i4-stQ" id="hhI-Mv-sH4"/>
                         <outlet property="username" destination="swa-ds-dH5" id="PL4-wX-ehB"/>
                     </connections>
@@ -665,7 +662,7 @@
                         <outlet property="picker" destination="OxK-uc-K7b" id="H3M-ka-nGq"/>
                         <outlet property="slider" destination="06V-dy-RmN" id="WlW-Oh-5pF"/>
                         <outlet property="sliderValue" destination="eHh-9t-zfC" id="cYK-bK-SJu"/>
-                        <segue destination="mry-dh-mda" kind="show" identifier="buddiesGoingSegue" id="dgE-MZ-bjd"/>
+                        <segue destination="6le-t4-Eeo" kind="show" identifier="buddiesGoingSegue" id="xQO-rv-MEI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWf-p3-WBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -731,12 +728,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOK-fc-1KM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7060" y="-1073.6131934032985"/>
+            <point key="canvasLocation" x="7999.1999999999998" y="-1073.6131934032985"/>
         </scene>
-        <!--Buddies Going Table View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="yX9-6v-6H0">
             <objects>
-                <tableViewController id="PWb-PT-C7T" customClass="BuddiesGoingTableViewController" customModule="Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="PWb-PT-C7T" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ur2-FD-952">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -759,22 +756,14 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vO4-Er-16K">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="f77-jW-FcO">
-                            <connections>
-                                <segue destination="H7z-lN-SYa" kind="show" id="nRa-Fb-dLF"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Go Alone" id="YtO-yI-zVn">
-                            <connections>
-                                <segue destination="Hwk-Xv-pRc" kind="show" identifier="directionSegue" id="IsT-FS-udo"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="f77-jW-FcO"/>
+                        <barButtonItem key="rightBarButtonItem" title="Go Alone" id="YtO-yI-zVn"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlm-Z3-JT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6150" y="-357"/>
+            <point key="canvasLocation" x="6217" y="1255"/>
         </scene>
         <!--Buddies With Health Going Table View Controller-->
         <scene sceneID="hAU-qi-sca">
@@ -901,6 +890,13 @@
                                     <constraint firstAttribute="width" constant="375" id="DCy-cx-pog"/>
                                 </constraints>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGq-Vs-btW">
+                                <rect key="frame" x="16" y="612" width="343" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -914,13 +910,14 @@
                     <navigationItem key="navigationItem" id="ALd-YK-g4k">
                         <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="tV1-6i-QAD">
                             <connections>
-                                <segue destination="PWb-PT-C7T" kind="show" id="c5y-bt-GV9"/>
+                                <segue destination="H7z-lN-SYa" kind="show" id="BhX-QX-ZKQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="nRK-nh-NGx" id="IB2-f7-KF3"/>
+                        <outlet property="message" destination="TGq-Vs-btW" id="AHu-vU-QMh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xsg-J5-wFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -979,7 +976,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brQ-vI-x2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5340" y="-359.37031484257875"/>
+            <point key="canvasLocation" x="5441" y="1254"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6mN-CY-qta">
@@ -1340,6 +1337,112 @@
             </objects>
             <point key="canvasLocation" x="5380" y="-1779"/>
         </scene>
+        <!--Buddies Going Table View Controller-->
+        <scene sceneID="JnG-kB-OJ2">
+            <objects>
+                <tableViewController id="HUV-FH-3ed" customClass="BuddiesGoingTableViewController" customModule="Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="146" sectionHeaderHeight="28" sectionFooterHeight="28" id="c4A-hj-GCq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="146" id="zZm-4X-yv4" customClass="BuddiesGoingTableViewCell" customModule="Buddy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="146"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zZm-4X-yv4" id="0XJ-WA-oD0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buddy Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odL-Kk-JsD">
+                                            <rect key="frame" x="8" y="8" width="106" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuD-KQ-raI">
+                                            <rect key="frame" x="8" y="42" width="106" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cuisine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci0-a0-6Qn">
+                                            <rect key="frame" x="8" y="76" width="106" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-kj-PSY">
+                                            <rect key="frame" x="122" y="8" width="245" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g5-a4-uDU">
+                                            <rect key="frame" x="122" y="42" width="245" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCC-qi-8wi">
+                                            <rect key="frame" x="122" y="76" width="245" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJZ-hu-0cN">
+                                            <rect key="frame" x="125" y="107" width="76" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Send Invite"/>
+                                            <connections>
+                                                <segue destination="Hwk-Xv-pRc" kind="show" identifier="buddyRequestSegue" id="Wye-OI-SNz"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKT-Og-4Bj">
+                                            <rect key="frame" x="303" y="109" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="buddyCuisine" destination="TCC-qi-8wi" id="s42-nK-9wx"/>
+                                    <outlet property="buddyEmail" destination="iKT-Og-4Bj" id="j2u-n2-G0q"/>
+                                    <outlet property="buddyName" destination="H4g-kj-PSY" id="UBV-dO-Xc7"/>
+                                    <outlet property="buddyRestaurant" destination="1g5-a4-uDU" id="nge-Tf-DST"/>
+                                    <outlet property="sendInviteButton" destination="uJZ-hu-0cN" id="CYd-Mr-wDy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HUV-FH-3ed" id="J91-aN-0CE"/>
+                            <outlet property="delegate" destination="HUV-FH-3ed" id="SKL-yW-UWO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="wvf-Ns-prP">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="FuU-cQ-H5G">
+                            <connections>
+                                <segue destination="H7z-lN-SYa" kind="show" id="Nea-bu-eLa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Go Alone" id="evM-Q0-MzD">
+                            <connections>
+                                <segue destination="Hwk-Xv-pRc" kind="show" identifier="directionSegue" id="IwK-xQ-t5j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPh-tE-yov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6080.8000000000002" y="-358.4707646176912"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="aOb-4j-naB">
             <objects>
@@ -1356,7 +1459,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUy-jd-qkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6120.8000000000002" y="-1073.6131934032985"/>
+            <point key="canvasLocation" x="7060" y="-1073.6131934032985"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pK1-hD-X1Z">
@@ -1394,6 +1497,24 @@
             </objects>
             <point key="canvasLocation" x="3830" y="1930"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Oft-Bi-iqa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6le-t4-Eeo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kdX-Fh-Tku">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HUV-FH-3ed" kind="relationship" relationship="rootViewController" id="y2j-Nb-3yU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elA-zA-367" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5207" y="-358"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Buddy" width="1587" height="2245"/>
@@ -1407,11 +1528,11 @@
         <image name="username" width="80" height="78"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Xav-l2-Tum"/>
         <segue reference="txr-Hn-WLM"/>
         <segue reference="LxI-W6-9P5"/>
-        <segue reference="nRa-Fb-dLF"/>
-        <segue reference="c5y-bt-GV9"/>
-        <segue reference="KOb-cZ-eps"/>
-        <segue reference="Xav-l2-Tum"/>
+        <segue reference="vND-6X-TsK"/>
+        <segue reference="BhX-QX-ZKQ"/>
+        <segue reference="Wye-OI-SNz"/>
     </inferredMetricsTieBreakers>
 </document>

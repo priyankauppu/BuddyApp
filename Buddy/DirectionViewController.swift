@@ -20,7 +20,11 @@ class DirectionViewController: UIViewController,MKMapViewDelegate, CLLocationMan
     var restaurantLatitude:Double=0.0
     var restaurantLongitude:Double=0.0
     var prefsEmail:String="";
-       let locationManager = CLLocationManager()
+    var displayMessage:String=""
+    let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var message: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +32,9 @@ class DirectionViewController: UIViewController,MKMapViewDelegate, CLLocationMan
         // Do any additional setup after loading the view.
         
         prefsEmail=UserDefaults.standard.value(forKey: "prefsEmail")! as! String
-        //print("Direction View Controller**********\(prefsEmail)***************")
+        //print("Direction View Controller**********\(prefsEmail)********\(displayMessage) \(message)*******")
+        
+        message.text=displayMessage
         
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest

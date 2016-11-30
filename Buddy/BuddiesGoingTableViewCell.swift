@@ -10,6 +10,12 @@ import UIKit
 
 class BuddiesGoingTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var buddyName: UILabel!
+    @IBOutlet weak var buddyRestaurant: UILabel!
+    @IBOutlet weak var buddyCuisine: UILabel!
+    @IBOutlet weak var buddyEmail: UILabel!
+    @IBOutlet weak var sendInviteButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
